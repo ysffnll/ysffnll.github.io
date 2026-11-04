@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "starterUndo": true,
+    "starterRedo": true,
+    "oldOpenExact": true,
+    "refreshStoneOnlyExact": true,
+    "refreshUndoExact": true,
+    "refreshRedoExact": true,
+    "coldReloadExact": true
+  },
+  "allPass": true,
+  "parts": 72,
+  "stones": 45,
+  "scope": "normal product UI imports, exports, reducers and cold persistence; no hidden app-state writes"
+}

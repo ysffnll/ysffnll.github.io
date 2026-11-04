@@ -1,0 +1,51 @@
+{
+  "schema": "jew-studio.V45-product32-pair.v1",
+  "rendererSourceRevision": "8ef58f24efd07d11c93c803cbab60898207f1c30",
+  "family": "bracelet",
+  "normalProductUI": true,
+  "camera": {
+    "resetElevationDegrees": 32,
+    "azimuthDegrees": 0,
+    "sameResetControlUsed": true
+  },
+  "scene": "terrace",
+  "quality": "high",
+  "canvas": [
+    1710,
+    842
+  ],
+  "recipeIdenticalExcept21StoneVersionFields": true,
+  "changes": 21,
+  "rendererId": 1,
+  "consoleWarningsErrors": [],
+  "unoccludedFloorRoi": [
+    100,
+    80,
+    500,
+    200
+  ],
+  "floorRoiMaxAbsRGB255": 0,
+  "wholeImageMeanAbsRGB255": [
+    0.5875046880860108,
+    0.5681397674709339,
+    0.5551784250809129
+  ],
+  "files": [
+    {
+      "path": "sampling-ab/V45-product32-matched-v2-bracelet.png",
+      "bytes": 1137313,
+      "sha256": "65772f5dcca990e6155945dfd163ab13a3ef43109f545a0b1670aec1bd26fa92"
+    },
+    {
+      "path": "sampling-ab/V45-product32-matched-v3-bracelet.png",
+      "bytes": 1126824,
+      "sha256": "05f799c1fe785f93306a0f4bfca0334d36cef1084a27ef9017b4d8294aed530d"
+    }
+  ],
+  "limits": [
+    "Version-pair product comparison, not an old-live baseline",
+    "No optical calibration or physical-device acceptance",
+    "Material intrinsic A unchanged; v3 delegates nine families to exactv2",
+    "Goal remains FIX"
+  ]
+}

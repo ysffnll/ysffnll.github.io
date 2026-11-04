@@ -1,0 +1,141 @@
+{
+  "oldCaptureUnchangedSha256": "73fbe4164b73e0dd343f69690925bf41fa0346698d76e8a711d4b094b05df269",
+  "newCaptureSha256": "23247d0cd8e0e0b24cc3b5c3c7c1707ac21182a9b267caac9a0cd7ef4fa5b7ce",
+  "all11PNGByteIdenticalToV63Inspected": true,
+  "captures": [
+    {
+      "id": "premium-onyx",
+      "sha256": "9874ddab713a749cd2b111f5b68d43beb9973f89e3f1547795a24ba542d1337b",
+      "V61PixelBytesIdentical": true,
+      "sourceBinding": {
+        "nodeName": "round-bead",
+        "meshIndex": 0,
+        "role": "main-stone",
+        "verifiedSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+        "verifiedBytes": 81412
+      }
+    },
+    {
+      "id": "premium-moonstone",
+      "sha256": "8784c6df952e8da4cdfcefbbe7322a35978507b178aec735103bff91b72695c4",
+      "V61PixelBytesIdentical": true,
+      "sourceBinding": {
+        "nodeName": "round-bead",
+        "meshIndex": 0,
+        "role": "main-stone",
+        "verifiedSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+        "verifiedBytes": 81412
+      }
+    },
+    {
+      "id": "premium-amethyst",
+      "sha256": "f3c61366b3b68a2ecec16efbf4af61597696267ab6189bd1f9b8767bc6b010fe",
+      "V61PixelBytesIdentical": true,
+      "sourceBinding": {
+        "nodeName": "round-bead",
+        "meshIndex": 0,
+        "role": "main-stone",
+        "verifiedSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+        "verifiedBytes": 81412
+      }
+    },
+    {
+      "id": "premium-turquoise",
+      "sha256": "4f8115387f6fba02abc27b8102b3a7af8df65befa37a78dd579278826e239e3c",
+      "V61PixelBytesIdentical": true,
+      "sourceBinding": {
+        "nodeName": "round-bead",
+        "meshIndex": 0,
+        "role": "main-stone",
+        "verifiedSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+        "verifiedBytes": 81412
+      }
+    },
+    {
+      "id": "premium-lapis",
+      "sha256": "1e342789f3ab8e22b50bd3e7b1d46fb8b50f83b8f672c93c887cd2abea53dfef",
+      "V61PixelBytesIdentical": true,
+      "sourceBinding": {
+        "nodeName": "round-bead",
+        "meshIndex": 0,
+        "role": "main-stone",
+        "verifiedSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+        "verifiedBytes": 81412
+      }
+    },
+    {
+      "id": "premium-garnet",
+      "sha256": "ccf2f28d9ea8f5f8b870dc244418425b7664d81c1227a07f1bed9065e206cb8c",
+      "V61PixelBytesIdentical": true,
+      "sourceBinding": {
+        "nodeName": "round-bead",
+        "meshIndex": 0,
+        "role": "main-stone",
+        "verifiedSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+        "verifiedBytes": 81412
+      }
+    },
+    {
+      "id": "premium-tiger-eye",
+      "sha256": "4fe61339118ceb898e9b25ab6f461f30d3fd34ef0909ef7360cc1360e2850250",
+      "V61PixelBytesIdentical": true,
+      "sourceBinding": {
+        "nodeName": "round-bead",
+        "meshIndex": 0,
+        "role": "main-stone",
+        "verifiedSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+        "verifiedBytes": 81412
+      }
+    },
+    {
+      "id": "realism-pearl-v1",
+      "sha256": "3a8c23c4da2ff9a5224736cd5449e3f4ddfeb5220f8b1daf0a91b3c4ac385adf",
+      "V61PixelBytesIdentical": true,
+      "sourceBinding": {
+        "nodeName": "round-bead",
+        "meshIndex": 0,
+        "role": "main-stone",
+        "verifiedSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+        "verifiedBytes": 81412
+      }
+    },
+    {
+      "id": "realism-jade-v1",
+      "sha256": "6809669f59d09a4bcb96eef2a4e5af729c55319ececc52b2ca1403e5a0771c17",
+      "V61PixelBytesIdentical": true,
+      "sourceBinding": {
+        "nodeName": "round-bead",
+        "meshIndex": 0,
+        "role": "main-stone",
+        "verifiedSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+        "verifiedBytes": 81412
+      }
+    },
+    {
+      "id": "realism-larvikite-v1",
+      "sha256": "59deb1d0f8fbcbed204120c1534b14332b91adb7dbda0315d05b01bd567248af",
+      "V61PixelBytesIdentical": true,
+      "sourceBinding": {
+        "nodeName": "round-bead",
+        "meshIndex": 0,
+        "role": "main-stone",
+        "verifiedSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+        "verifiedBytes": 81412
+      }
+    },
+    {
+      "id": "realism-hematite-v1",
+      "sha256": "905fb30f8168eee0566dc894197ac0ed5378846410951f5ba96c40ad4e0c2425",
+      "V61PixelBytesIdentical": true,
+      "sourceBinding": {
+        "nodeName": "round-bead",
+        "meshIndex": 0,
+        "role": "main-stone",
+        "verifiedSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+        "verifiedBytes": 81412
+      }
+    }
+  ],
+  "browserErrors": [],
+  "incrementalUSD": 0
+}

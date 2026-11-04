@@ -1,0 +1,20 @@
+{
+  "asset": "Studio Small 08",
+  "author": "Sergej Majboroda",
+  "publisher": "Poly Haven",
+  "license": "CC0-1.0",
+  "assetPage": "https://polyhaven.com/a/studio_small_08",
+  "licensePage": "https://polyhaven.com/license",
+  "originalUrl": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/studio_small_08_1k.hdr",
+  "bytes": 1508872,
+  "sha256": "f6a989f89432eb4eee3191364a9c1ceed195c4ec3544173a3c04fd96cb91d0ba",
+  "originalUnmodified": true,
+  "inputDimensions": [
+    1024,
+    512
+  ],
+  "scope": "sole photographic HDR; original photo-v1 marble maps and fallback retained",
+  "selectionEvidence": "V102/V108/V115: bounded curved reflection/volume gain both ordinary families; not V03 quality or calibrated optics",
+  "runtimeProviderApi": false,
+  "incrementalSpendUSD": 0
+}

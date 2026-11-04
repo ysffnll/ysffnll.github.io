@@ -1,0 +1,42 @@
+{
+  "recipeJsonDeepEqualAfterAddUndo": true,
+  "occurrences": 36,
+  "canvasCount": 1,
+  "assetLoadsBeforeAfter": 3,
+  "noConsoleErrors": true,
+  "desktopViewport": [
+    1280,
+    720
+  ],
+  "mobileViewport": [
+    375,
+    667
+  ],
+  "viewportOverridesCleared": true,
+  "physicalPhone": false,
+  "images": {
+    "V64-desktop-selected.png": {
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "a150c9619e7bd864350bb848d2ec84d48a61b80a782cb78f572a2cfd1d5d9c19"
+    },
+    "V64-desktop-focused.png": {
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "468c3407f026c4aedec67a717e66e62bab87ca38b8b244055dff3a6b7aecaf24"
+    },
+    "V64-mobile-375x667.png": {
+      "size": [
+        375,
+        667
+      ],
+      "sha256": "1a956e17af4c18e218bb425fca818b8cac81913771794ee334cae674116e6a3f"
+    }
+  },
+  "scope": "actual current3 preview UI only; no pearl/polished-look acceptance",
+  "incrementalUSD": 0
+}

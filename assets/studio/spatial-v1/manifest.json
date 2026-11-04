@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "preparedDate": "2026-11-04",
+  "provider": "Poly Haven",
+  "providerLicenseURL": "https://polyhaven.com/license",
+  "freeServiceVerificationURL": "https://polyhaven.com/our-api",
+  "runtimeAPIRequests": false,
+  "apiUserAgent": "JEW-Studio-AssetPreparation/1.0 (local CC0 derivative research)",
+  "incrementalCostUSD": 0,
+  "assets": [
+    {
+      "mode": "terrace",
+      "id": "studio_garden",
+      "file": "terrace-garden.webp",
+      "name": "Studio Garden",
+      "authors": {
+        "Sergej Majboroda": "All"
+      },
+      "sourcePage": "https://polyhaven.com/a/studio_garden",
+      "sourceMetadata": "https://api.polyhaven.com/files/studio_garden",
+      "sourceURL": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/studio_garden.jpg",
+      "license": "CC0-1.0",
+      "licenseURL": "https://polyhaven.com/license",
+      "originalSHA256": "ebbb008b17d00f1a1e6ac1a08563ba7135f643e81625b86a3eca18f6964501c6",
+      "originalMD5": "1bb36df4cd11eca675cf21838fd89090",
+      "originalBytes": 55266261,
+      "originalDimensions": [
+        8192,
+        4096
+      ],
+      "sourceColor": "embedded sRGB",
+      "derivation": {
+        "operation": "sRGB profile normalization; 4:1 Lanczos reduction; WebP encoding",
+        "outputDimensions": [
+          2048,
+          1024
+        ],
+        "quality": 88,
+        "method": 6,
+        "exposureAdjustmentEV": 0,
+        "retouching": false,
+        "upscaling": false,
+        "pillowVersion": "11.2.1",
+        "libwebpVersion": "1.5.0"
+      },
+      "outputSHA256": "de99ba17957d110d05a8c15d7a57836733be465baf03646a9d1e5aed02663603",
+      "outputBytes": 822164,
+      "outputColor": "sRGB",
+      "projection": "equirectangular-2:1",
+      "suggestedViewCenterU": 0.22,
+      "usage": "Distant spherical sky/garden background beyond actual 3D architecture; never a flat photo floor",
+      "incrementalCostUSD": 0
+    },
+    {
+      "mode": "gallery",
+      "id": "moonless_golf",
+      "file": "gallery-night.webp",
+      "name": "Moonless Golf",
+      "authors": {
+        "Greg Zaal": "All"
+      },
+      "sourcePage": "https://polyhaven.com/a/moonless_golf",
+      "sourceMetadata": "https://api.polyhaven.com/files/moonless_golf",
+      "sourceURL": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/moonless_golf.jpg",
+      "license": "CC0-1.0",
+      "licenseURL": "https://polyhaven.com/license",
+      "originalSHA256": "8d8a5f349a7678992e2822bf0088b4551b8978e040ab66b22ec4a5ade50ef73b",
+      "originalMD5": "e7b15224feb4aec17bb543f8e67c26a0",
+      "originalBytes": 3880095,
+      "originalDimensions": [
+        8192,
+        4096
+      ],
+      "sourceColor": "official tonemapped display JPEG, no embedded ICC; treated as sRGB",
+      "derivation": {
+        "operation": "sRGB profile normalization; 4:1 Lanczos reduction; WebP encoding",
+        "outputDimensions": [
+          2048,
+          1024
+        ],
+        "quality": 88,
+        "method": 6,
+        "exposureAdjustmentEV": 0,
+        "retouching": false,
+        "upscaling": false,
+        "pillowVersion": "11.2.1",
+        "libwebpVersion": "1.5.0"
+      },
+      "outputSHA256": "1820b2bb7480b50c99eeb6cc114ae82e976825eccf257623f934d81eaab1ce61",
+      "outputBytes": 139164,
+      "outputColor": "sRGB",
+      "projection": "equirectangular-2:1",
+      "suggestedViewCenterU": 0.74,
+      "usage": "Distant spherical sky/garden background beyond actual 3D architecture; never a flat photo floor",
+      "incrementalCostUSD": 0
+    },
+    {
+      "mode": "acrylic",
+      "id": "garden_nook",
+      "file": "acrylic-garden.webp",
+      "name": "Garden Nook",
+      "authors": {
+        "Dimitrios Savva": "Photography",
+        "Jarod Guest": "Processing"
+      },
+      "sourcePage": "https://polyhaven.com/a/garden_nook",
+      "sourceMetadata": "https://api.polyhaven.com/files/garden_nook",
+      "sourceURL": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/garden_nook.jpg",
+      "license": "CC0-1.0",
+      "licenseURL": "https://polyhaven.com/license",
+      "originalSHA256": "9f44aeb1e7cef8630dc9edd517c449d0b357542994421e8f2296d2803fe84c98",
+      "originalMD5": "e9db80ff4705ea7c03942c3a5bbf3619",
+      "originalBytes": 62836504,
+      "originalDimensions": [
+        8192,
+        4096
+      ],
+      "sourceColor": "embedded sRGB",
+      "derivation": {
+        "operation": "sRGB profile normalization; 4:1 Lanczos reduction; WebP encoding",
+        "outputDimensions": [
+          2048,
+          1024
+        ],
+        "quality": 88,
+        "method": 6,
+        "exposureAdjustmentEV": 0,
+        "retouching": false,
+        "upscaling": false,
+        "pillowVersion": "11.2.1",
+        "libwebpVersion": "1.5.0"
+      },
+      "outputSHA256": "feff464d761b8e627257d2372be9e0d23044bc420a4ccd871d60af5684c7bb40",
+      "outputBytes": 881890,
+      "outputColor": "sRGB",
+      "projection": "equirectangular-2:1",
+      "suggestedViewCenterU": 0.25,
+      "usage": "Distant spherical sky/garden background beyond actual 3D architecture; never a flat photo floor",
+      "incrementalCostUSD": 0
+    }
+  ]
+}

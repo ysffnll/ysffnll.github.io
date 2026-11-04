@@ -1,0 +1,72 @@
+{
+  "schema": "jew.public-gallery-files.v1",
+  "destination": "/gorseller/20261101-natural5/",
+  "files": [
+    {
+      "path": "images/bileklik-once.png",
+      "bytes": 1285716,
+      "sha256": "0a37d0e75188a782daabfc07ac1734b6c11c37dd3fcbc6832a931d47c518aac9"
+    },
+    {
+      "path": "images/bileklik-yeni.png",
+      "bytes": 1321889,
+      "sha256": "bda4d2c4dc2800f46c060bdaf83680553a17926f7111952ff48417f36b2dca5b"
+    },
+    {
+      "path": "images/kolye-once.png",
+      "bytes": 1208596,
+      "sha256": "f25c63ed922babad5668a9f498a42902932f3682ac65e2fed0069c5393a54722"
+    },
+    {
+      "path": "images/kolye-yeni.png",
+      "bytes": 1233091,
+      "sha256": "973ba27b50a314785ee6de310a260f92a54249543d6e3453e8b22862aa587da5"
+    },
+    {
+      "path": "index.html",
+      "bytes": 14932,
+      "sha256": "01451f87b9f5bc365e0c1e2e3d8d76b187b4556be100088ee27c4778895d5d03"
+    },
+    {
+      "path": "JEW-Studio-natural5-gercek-goruntuler-20261101.zip",
+      "bytes": 12060356,
+      "sha256": "02f9fa647640944a3b97fd2fab5bbf873e6425c5b92bbabb4b964747ecfec1eb"
+    },
+    {
+      "path": "materials/premium-tiger-eye-rondelle-thumbnail.png",
+      "bytes": 270708,
+      "sha256": "12369ae8205c041d878e52f38efaa998668769f6a316e4f2b869792b53175680"
+    },
+    {
+      "path": "materials/premium-tiger-eye-thumbnail.png",
+      "bytes": 218296,
+      "sha256": "22d0e24970f2acdcef35c6928e1044f2022a97ffb48651dcf4f29c51f6bc605d"
+    },
+    {
+      "path": "materials/realism-drop-fork-v1-thumbnail.png",
+      "bytes": 166344,
+      "sha256": "4bd0813929567574c6dd75f8d92cc4611b346537f8829a883c4c22890af51a0a"
+    },
+    {
+      "path": "materials/realism-prism-yoke-v1-thumbnail.png",
+      "bytes": 132807,
+      "sha256": "2e6f7399d44560645aa73a2da3267875c3a322826ccaf02002c414c4d8140dbf"
+    },
+    {
+      "path": "proof-summary.json",
+      "bytes": 1698,
+      "sha256": "3a9e7005440d46d3857fe603a0b9b73a5a71055afdff5319489c9bf7ac8dd2dd"
+    },
+    {
+      "path": "recipes/bileklik-natural5.json",
+      "bytes": 16042,
+      "sha256": "1880ad915dc5ef1703d247247defd59937a8fbf30b42a87f731314f0f7cf07cb"
+    },
+    {
+      "path": "recipes/kolye-natural5.json",
+      "bytes": 31855,
+      "sha256": "8a4f852fd544ae64b2618677435766a9f15529fe97d8ef69ce48b5e4c30b72b2"
+    }
+  ],
+  "selfHashExcluded": true
+}

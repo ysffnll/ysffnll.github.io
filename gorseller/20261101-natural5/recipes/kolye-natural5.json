@@ -1,0 +1,1600 @@
+{
+  "version": 2,
+  "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d",
+  "name": "Atelier · Kaplan gözü damla",
+  "kind": "necklace",
+  "assemblyVersion": "shared-bead-assembly-v1",
+  "carrier": {
+    "shape": "ellipse",
+    "size": 30.38206546629535,
+    "aspect": 1.4,
+    "phase": 0,
+    "style": "cord"
+  },
+  "occurrences": [
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-0",
+      "componentId": "realism-drop-fork-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-1",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-2",
+      "componentId": "realism-pearl-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-3",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-4",
+      "componentId": "realism-larvikite-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-5",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-6",
+      "componentId": "premium-onyx",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-7",
+      "componentId": "premium-garnet",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-8",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-9",
+      "componentId": "premium-tiger-eye",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-10",
+      "componentId": "realism-pearl-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-11",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-12",
+      "componentId": "realism-larvikite-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-13",
+      "componentId": "premium-garnet",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-14",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-15",
+      "componentId": "premium-onyx",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-16",
+      "componentId": "realism-pearl-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-17",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-18",
+      "componentId": "premium-tiger-eye",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-19",
+      "componentId": "realism-larvikite-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-20",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-21",
+      "componentId": "realism-pearl-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-22",
+      "componentId": "premium-onyx",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-23",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-24",
+      "componentId": "premium-garnet",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-25",
+      "componentId": "realism-pearl-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-26",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-27",
+      "componentId": "premium-tiger-eye",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-28",
+      "componentId": "realism-larvikite-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-29",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-30",
+      "componentId": "premium-onyx",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-31",
+      "componentId": "premium-garnet",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-32",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-33",
+      "componentId": "realism-pearl-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-34",
+      "componentId": "premium-tiger-eye",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-35",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-36",
+      "componentId": "realism-lobster-linked-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-37",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-38",
+      "componentId": "premium-tiger-eye",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-39",
+      "componentId": "realism-pearl-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-40",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-41",
+      "componentId": "premium-garnet",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-42",
+      "componentId": "premium-onyx",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-43",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-44",
+      "componentId": "realism-larvikite-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-45",
+      "componentId": "premium-tiger-eye",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-46",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-47",
+      "componentId": "realism-pearl-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-48",
+      "componentId": "premium-garnet",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-49",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-50",
+      "componentId": "premium-onyx",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-51",
+      "componentId": "realism-pearl-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-52",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-53",
+      "componentId": "realism-larvikite-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-54",
+      "componentId": "premium-tiger-eye",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-55",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-56",
+      "componentId": "realism-pearl-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-57",
+      "componentId": "premium-onyx",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-58",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-59",
+      "componentId": "premium-garnet",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-60",
+      "componentId": "realism-larvikite-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-61",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-62",
+      "componentId": "realism-pearl-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-63",
+      "componentId": "premium-tiger-eye",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-64",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-65",
+      "componentId": "premium-garnet",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-66",
+      "componentId": "premium-onyx",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-67",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-68",
+      "componentId": "realism-larvikite-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-69",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-70",
+      "componentId": "realism-pearl-v1",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.7692307692307692,
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    },
+    {
+      "id": "design-546d3126-8680-495e-9f83-dde3e26aeb7d-atelier-71",
+      "componentId": "premium-disc-gold",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.64,
+          0.64,
+          0.64
+        ]
+      },
+      "appearanceVersion": "natural-v5"
+    }
+  ]
+}

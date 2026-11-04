@@ -1,0 +1,32 @@
+{
+  "sourceRevision": "2a9a3199f545abcbece96b44042fa26aa9f5be08",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 22101,
+      "sha256": "b69c8e0b9fe94448c367e62776ce7989b9bc7c62de0e6c9e9be3f35fa80e91f8"
+    },
+    {
+      "path": "assets/appearance-versions-ByKRYrfQ.js",
+      "bytes": 467676,
+      "sha256": "e3d68e2f4982eb8fe8caaece07ba420763a02e1a4f78ee594f5968d21aafd6a0"
+    },
+    {
+      "path": "assets/index-CViPSBRi.js",
+      "bytes": 399809,
+      "sha256": "3ef6a9091f507c496c16859f76ca847a987ab0641f2fa6e8d87d129f22f164d7"
+    },
+    {
+      "path": "assets/scene-D80kbG3v.js",
+      "bytes": 691097,
+      "sha256": "46f6a63628b9bdb17ddefa2ae9fe3dbc316dec2057ef572f332b95fbc5aba038"
+    },
+    {
+      "path": "assets/index-BwRzQ526.css",
+      "bytes": 68846,
+      "sha256": "a03864abd57ae7d7c7dbcc28a33a6b7f64628d007c80f026f81533c90dc7d1e7"
+    }
+  ],
+  "localServedBundleExact": true,
+  "normalUI": "http://localhost:5202/"
+}

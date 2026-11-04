@@ -1,0 +1,51 @@
+{
+  "schema": "jew-studio.V45-final-activation.v1",
+  "sourceRevision": "2a9a3199f545abcbece96b44042fa26aa9f5be08",
+  "checks": {
+    "oldV2OpenExact": true,
+    "refreshV3Exact": true,
+    "newAddV3": true,
+    "newAddUndoExact": true,
+    "newBraceletV3": true,
+    "newNecklaceV3": true,
+    "initialRestoredExact": true,
+    "compatibleAndActivationPixelsExact": true
+  },
+  "allPass": true,
+  "normalUI": "http://localhost:5202/",
+  "rendererId": 1,
+  "consoleWarningsErrors": [],
+  "mobile": {
+    "viewport": [
+      375,
+      812
+    ],
+    "autoQuality": true,
+    "canvases": 1,
+    "overflow": false,
+    "stickyLibraryScene": [
+      8,
+      33,
+      344,
+      352.90625
+    ],
+    "fullscreenScene": [
+      0,
+      26,
+      375,
+      737
+    ],
+    "exitExpanded": false,
+    "exitFocus": "scene-fullscreen",
+    "viewportOverrideReset": true,
+    "scope": "Actual desktop browser emulation; not a physical phone/FPS measurement",
+    "captureMethod": "Native CDP Page.captureScreenshot; all three PNGs375x812. Initial scaled/invalid convenience captures replaced before publication."
+  },
+  "visualReview": "V49 NO-FIX for bounded incremental new-v3 preview; wholeGoal FIX",
+  "compatibleFallbackRevision": "8ef58f24efd07d11c93c803cbab60898207f1c30",
+  "limits": [
+    "Pearl remains ceramic; target photo realism not reached",
+    "No physical-phone or optical calibration",
+    "Public result and provider acceptance recorded separately"
+  ]
+}

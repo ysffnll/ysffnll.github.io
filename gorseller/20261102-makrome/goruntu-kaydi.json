@@ -1,0 +1,69 @@
+{
+  "kind": "JEW Studio actual native render development evidence",
+  "capturedLocalBase": "920764a7c8d0590aed3881fa87cc3fca2a771938",
+  "workingPostimages": "V330 build receipt pins finished macrame source; V326 pins R44 source; V332 uses same exact V330 build",
+  "quality": "High",
+  "families": [
+    "bracelet",
+    "necklace"
+  ],
+  "independentReview": "V331 task2: development preview for desktop and390px mobile; V327: hidden Unakit development appearance",
+  "limits": [
+    "physical phone not tested",
+    "manufacturing not verified",
+    "existing authored clasps retained",
+    "new Unakit remains a hidden derivative pending other-angle verification",
+    "Goal remains active"
+  ],
+  "files": [
+    {
+      "file": "bileklik-makrome.png",
+      "label": "Bileklik",
+      "bytes": 1706768,
+      "sha256": "a177f84d0892728fbc2304cf08bce7db15582fbbbaef0d99b48ca652a860c185",
+      "captureWave": "V330-canonical-current-native"
+    },
+    {
+      "file": "kolye-makrome.png",
+      "label": "Kolye",
+      "bytes": 1818125,
+      "sha256": "52e422bbd9493b7b5f1a64ad11f96a8fadec9a7639b9ba0d6ad45921f3897755",
+      "captureWave": "V330-canonical-current-native"
+    },
+    {
+      "file": "makrome-yakin.png",
+      "label": "Kapama yakın görünüm",
+      "bytes": 1281393,
+      "sha256": "ae2ecdc8f82799a0fc09392f8a7de4072fec0f4ceb76eef1f1c02d9173e4d77d",
+      "captureWave": "V330-canonical-current-native"
+    },
+    {
+      "file": "mobil-bileklik.png",
+      "label": "Mobil bileklik",
+      "bytes": 690368,
+      "sha256": "76035ad87f31d763787e3b5a23040d552c0c01a4815c1d0941361bce07763998",
+      "captureWave": "V332-unakite-angle-native"
+    },
+    {
+      "file": "mobil-kolye.png",
+      "label": "Mobil kolye",
+      "bytes": 682236,
+      "sha256": "37c381680b586d0847ba9e5ab1e27c6732f418529f24b3fa593b88bd5b765497",
+      "captureWave": "V332-unakite-angle-native"
+    },
+    {
+      "file": "unakit-once.png",
+      "label": "Unakit önce",
+      "bytes": 1353950,
+      "sha256": "47b260e58a01b7a46dec364017d2f901da110f3b585a6914e68773bb16c12047",
+      "captureWave": "V326-unakite-current-native"
+    },
+    {
+      "file": "unakit-yeni.png",
+      "label": "Unakit yeni çalışma",
+      "bytes": 1692413,
+      "sha256": "ce14306cfefb5de8c88684524f9311714528c2431e46f53f490d74b708b068d4",
+      "captureWave": "V326-unakite-current-native"
+    }
+  ]
+}

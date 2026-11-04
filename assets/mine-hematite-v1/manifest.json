@@ -1,0 +1,244 @@
+{
+  "schema": "jew.mine-hematite-assets.v1",
+  "unit": "metres",
+  "authoringUnit": "mm",
+  "outputUnitConversion": "mm * 0.001 exactly once in vertex construction",
+  "noEmbeddedMaterials": true,
+  "forms": {
+    "thin-heishi-disc": {
+      "sha256": "00a1950308313cecbae7555bc71de7d0fd5734e879885e9937115454328cbc5c",
+      "bytes": 147208,
+      "url": "/assets/mine-hematite-v1/00a1950308313cecbae7555bc71de7d0fd5734e879885e9937115454328cbc5c.glb",
+      "sourcePath": "public/assets/mine-hematite-v1/00a1950308313cecbae7555bc71de7d0fd5734e879885e9937115454328cbc5c.glb",
+      "nominalDimensionsMm": {
+        "diameterMm": 4.8,
+        "axialLengthMm": 0.9,
+        "boreDiameterMm": 1
+      },
+      "geometryVersion": "mine-hematite-parametric-v1",
+      "vertexCount": 3840,
+      "triangleCount": 1920,
+      "boundsM": {
+        "min": [
+          -0.002400000113993883,
+          -0.00044999999227002263,
+          -0.002400000113993883
+        ],
+        "max": [
+          0.002400000113993883,
+          0.00044999999227002263,
+          0.002400000113993883
+        ]
+      },
+      "extentM": [
+        0.004800000227987766,
+        0.0008999999845400453,
+        0.004800000227987766
+      ],
+      "boreAxis": [
+        0,
+        1,
+        0
+      ],
+      "threadAxis": [
+        0,
+        1,
+        0
+      ],
+      "anchorM": [
+        0,
+        0,
+        0
+      ],
+      "physicalVerified": false
+    },
+    "smooth-rondelle": {
+      "sha256": "18c7d8f5e1c21830a6ffc131bf1d28be2d51cd29f9f34e2e311bd05098ced659",
+      "bytes": 190980,
+      "url": "/assets/mine-hematite-v1/18c7d8f5e1c21830a6ffc131bf1d28be2d51cd29f9f34e2e311bd05098ced659.glb",
+      "sourcePath": "public/assets/mine-hematite-v1/18c7d8f5e1c21830a6ffc131bf1d28be2d51cd29f9f34e2e311bd05098ced659.glb",
+      "nominalDimensionsMm": {
+        "diameterMm": 6,
+        "axialLengthMm": 3,
+        "boreDiameterMm": 1.1
+      },
+      "geometryVersion": "mine-hematite-parametric-v1",
+      "vertexCount": 4992,
+      "triangleCount": 2496,
+      "boundsM": {
+        "min": [
+          -0.003000000026077032,
+          -0.001500000013038516,
+          -0.003000000026077032
+        ],
+        "max": [
+          0.003000000026077032,
+          0.001500000013038516,
+          0.003000000026077032
+        ]
+      },
+      "extentM": [
+        0.006000000052154064,
+        0.003000000026077032,
+        0.006000000052154064
+      ],
+      "boreAxis": [
+        0,
+        1,
+        0
+      ],
+      "threadAxis": [
+        0,
+        1,
+        0
+      ],
+      "anchorM": [
+        0,
+        0,
+        0
+      ],
+      "physicalVerified": false
+    },
+    "straight-tube": {
+      "sha256": "2c69fdaf2d35b0ff493f1cb2ed14b98e05eefbc6ce147afff7ecf24038664741",
+      "bytes": 147208,
+      "url": "/assets/mine-hematite-v1/2c69fdaf2d35b0ff493f1cb2ed14b98e05eefbc6ce147afff7ecf24038664741.glb",
+      "sourcePath": "public/assets/mine-hematite-v1/2c69fdaf2d35b0ff493f1cb2ed14b98e05eefbc6ce147afff7ecf24038664741.glb",
+      "nominalDimensionsMm": {
+        "diameterMm": 2.5,
+        "axialLengthMm": 4,
+        "boreDiameterMm": 0.9
+      },
+      "geometryVersion": "mine-hematite-parametric-v1",
+      "vertexCount": 3840,
+      "triangleCount": 1920,
+      "boundsM": {
+        "min": [
+          -0.0012499999720603228,
+          -0.0020000000949949026,
+          -0.0012499999720603228
+        ],
+        "max": [
+          0.0012499999720603228,
+          0.0020000000949949026,
+          0.0012499999720603228
+        ]
+      },
+      "extentM": [
+        0.0024999999441206455,
+        0.004000000189989805,
+        0.0024999999441206455
+      ],
+      "boreAxis": [
+        0,
+        1,
+        0
+      ],
+      "threadAxis": [
+        0,
+        1,
+        0
+      ],
+      "anchorM": [
+        0,
+        0,
+        0
+      ],
+      "physicalVerified": false
+    },
+    "faceted-rondelle": {
+      "sha256": "7361ac2fe11c4d45f6c326941f9e2908ba7b198c467faaa610f9c216744b41a2",
+      "bytes": 23156,
+      "url": "/assets/mine-hematite-v1/7361ac2fe11c4d45f6c326941f9e2908ba7b198c467faaa610f9c216744b41a2.glb",
+      "sourcePath": "public/assets/mine-hematite-v1/7361ac2fe11c4d45f6c326941f9e2908ba7b198c467faaa610f9c216744b41a2.glb",
+      "nominalDimensionsMm": {
+        "diameterMm": 6,
+        "axialLengthMm": 3,
+        "boreDiameterMm": 1
+      },
+      "geometryVersion": "mine-hematite-parametric-v1",
+      "vertexCount": 576,
+      "triangleCount": 288,
+      "boundsM": {
+        "min": [
+          -0.003000000026077032,
+          -0.001500000013038516,
+          -0.003000000026077032
+        ],
+        "max": [
+          0.003000000026077032,
+          0.001500000013038516,
+          0.003000000026077032
+        ]
+      },
+      "extentM": [
+        0.006000000052154064,
+        0.003000000026077032,
+        0.006000000052154064
+      ],
+      "boreAxis": [
+        0,
+        1,
+        0
+      ],
+      "threadAxis": [
+        0,
+        1,
+        0
+      ],
+      "anchorM": [
+        0,
+        0,
+        0
+      ],
+      "physicalVerified": false
+    },
+    "hexagonal-rondelle": {
+      "sha256": "639b18f75a543ed46db0908c6a4e7b5ecd25cbd788c8c538f9e202456aaa8be2",
+      "bytes": 88836,
+      "url": "/assets/mine-hematite-v1/639b18f75a543ed46db0908c6a4e7b5ecd25cbd788c8c538f9e202456aaa8be2.glb",
+      "sourcePath": "public/assets/mine-hematite-v1/639b18f75a543ed46db0908c6a4e7b5ecd25cbd788c8c538f9e202456aaa8be2.glb",
+      "nominalDimensionsMm": {
+        "diameterMm": 6,
+        "axialLengthMm": 3,
+        "boreDiameterMm": 1
+      },
+      "geometryVersion": "mine-hematite-parametric-v1",
+      "vertexCount": 2304,
+      "triangleCount": 1152,
+      "boundsM": {
+        "min": [
+          -0.0025980761274695396,
+          -0.001500000013038516,
+          -0.003000000026077032
+        ],
+        "max": [
+          0.0025980761274695396,
+          0.001500000013038516,
+          0.003000000026077032
+        ]
+      },
+      "extentM": [
+        0.005196152254939079,
+        0.003000000026077032,
+        0.006000000052154064
+      ],
+      "boreAxis": [
+        0,
+        1,
+        0
+      ],
+      "threadAxis": [
+        0,
+        1,
+        0
+      ],
+      "anchorM": [
+        0,
+        0,
+        0
+      ],
+      "physicalVerified": false
+    }
+  }
+}

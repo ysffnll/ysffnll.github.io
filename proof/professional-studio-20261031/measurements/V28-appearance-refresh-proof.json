@@ -1,0 +1,15 @@
+{
+  "occurrences": 37,
+  "changedAppearanceOnly": 22,
+  "idsAndOtherFieldsExact": true,
+  "undoExact": true,
+  "redoExact": true,
+  "coldReloadExact": true,
+  "hashes": {
+    "V28-before-explicit-appearance": "e64b359d6835f8f964625da71423c18c073ef3f93e63db26da55b3212c797dc5",
+    "V28-after-explicit-appearance": "cb2540182e8ee0625c7d9b955eb223aa20216e9208980a06c5642e6407db6e59",
+    "V28-undo-explicit-appearance": "e64b359d6835f8f964625da71423c18c073ef3f93e63db26da55b3212c797dc5",
+    "V28-redo-explicit-appearance": "cb2540182e8ee0625c7d9b955eb223aa20216e9208980a06c5642e6407db6e59",
+    "V28-reload-explicit-appearance": "cb2540182e8ee0625c7d9b955eb223aa20216e9208980a06c5642e6407db6e59"
+  }
+}

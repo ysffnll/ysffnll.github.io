@@ -1,0 +1,549 @@
+{
+  "schema": "jew-studio.professional-preview-proof.v1",
+  "productSourceRevision": "8c6b759c2c4e4250d9e492b274bc103f6f225843",
+  "beforeCheckpoint": {
+    "name": "V22 fixed photographic checkpoint before contact/ivory/v2 creation refinement",
+    "bundleSha256": "b368724ba2e3390c1e5d90eab73ee9a105a72d1a7ecd5d9ccfcffc9d4f6bf1b6",
+    "sourceLimit": "checkpoint assembled from consumed V14/V15 postimages; this is a frozen compiled-bundle pin, not a claim of a standalone clean Git source revision"
+  },
+  "after": "V64 actual main UI and current-natural-v3 catalog/selected previews; V45 product frames retained; V22/V30 comparisons remain explicitly historical",
+  "files": [
+    {
+      "file": "bracelet-after.png",
+      "bytes": 1680584,
+      "sha256": "2292a33181957b7f86c1bb17d6736ff5284a689008b3223d1abdef50c7547519",
+      "origin": "sampling-ab/V30-current-photo-bracelet.png"
+    },
+    {
+      "file": "bracelet-before.png",
+      "bytes": 2521051,
+      "sha256": "abfa3c43ac23b70c9f23292113c9d8ca2e3e4400e3140a84081c259399d358ce",
+      "origin": "sampling-ab/V22-photographic-bracelet-natural-v1.png"
+    },
+    {
+      "file": "bracelet-product.png",
+      "bytes": 1126824,
+      "sha256": "05f799c1fe785f93306a0f4bfca0334d36cef1084a27ef9017b4d8294aed530d",
+      "origin": "V45 final activation normal UI source2a9a319"
+    },
+    {
+      "file": "bracelet-v2.png",
+      "bytes": 1137313,
+      "sha256": "65772f5dcca990e6155945dfd163ab13a3ef43109f545a0b1670aec1bd26fa92",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "bracelet-v3.png",
+      "bytes": 1126824,
+      "sha256": "05f799c1fe785f93306a0f4bfca0334d36cef1084a27ef9017b4d8294aed530d",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "concept-A.png",
+      "bytes": 1933901,
+      "sha256": "dc2a2152558903f8940a9966a1b8d32a0c9906427772b702b157847fba07a050",
+      "origin": "concepts/V03-final-A.png"
+    },
+    {
+      "file": "desktop-necklace.png",
+      "bytes": 333155,
+      "sha256": "bf2237a33d7b4206b4ad5a7a2dd4feebdd172f89bc2c5fff1d2cb1a97c085cce",
+      "origin": "integrated-ui/V30-desktop-necklace.png"
+    },
+    {
+      "file": "measurements/V22-checkpoint-necklace-natural-v1.json",
+      "bytes": 54800,
+      "sha256": "1370d1654b4471133d5945d8da69607cd3d680ee496c656bcda293ece0d55492",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "measurements/V22-photographic-bracelet-natural-v1.json",
+      "bytes": 37005,
+      "sha256": "94a83b32ab14cc88bbbf252531e116bc2efab6b37fcee5dfdac6a7c1690e8fa4",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "measurements/V28-appearance-refresh-proof.json",
+      "bytes": 714,
+      "sha256": "43655a3a2fe4263941bf986769c3f3d3f56e89aab821e296ddb35167902be5b9",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "measurements/V30-current-photo-bracelet.json",
+      "bytes": 99200,
+      "sha256": "1036f8db812ee8e6cec3407afb0eec148d94549d1e348a36166b5eaf2cfc667d",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "measurements/V30-current-photo-necklace.json",
+      "bytes": 114251,
+      "sha256": "a606472309349932a28f13219901212211675b983795a2e64e0f251014c8bed8",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "measurements/V30-mobile-fullscreen-proof.json",
+      "bytes": 1464,
+      "sha256": "9baedac2d0cac3dae407838ff229ab5f110b4e954e7823b32fb63dfb0045e141",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "measurements/V30-photo-context-recovery.json",
+      "bytes": 67190,
+      "sha256": "1256a260edbc16c18232b627875a3cb4db8fab272c2a4757a7f23baed02183b9",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "measurements/V30-photo-idle-settled.json",
+      "bytes": 100067,
+      "sha256": "7aedd0fca475e5fe72475495c28aaacad2e34d9ceb1ee71f0ad99f5ae2e00f49",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "measurements/V30-photo-stable-orbit-proof.json",
+      "bytes": 214292,
+      "sha256": "742478cd0d82cd356bedfc3d3193ea26da675896a563b198ac1158e6935712a3",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "measurements/V45-activation-build-parity.json",
+      "bytes": 994,
+      "sha256": "e704bfbc2e17942ce486daffc505ab753f2c235797482531e9fb90f0f7c8e253",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "measurements/V45-compatible-fallback-proof.json",
+      "bytes": 926,
+      "sha256": "a7ff5d6472e3f273d20aff4c600ba0798edf476a1f2b3cf5407efdadf935740b",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "measurements/V45-final-activation-proof.json",
+      "bytes": 1468,
+      "sha256": "a58aae92de543fddfd5d35224a646399dbb59c9e6eb33f3c008efa158701b1a4",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "measurements/V45-normal-ui-roundtrip-proof.json",
+      "bytes": 379,
+      "sha256": "7aec0f0ad03aa5f02ef5c93320526c99adb576c40965396d7733aba3e106de90",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "measurements/V45-normal-ui-size-proof.json",
+      "bytes": 373,
+      "sha256": "10e8b4494d10d0db1adb5166d497ac6235aaa3ea1f136039f94a894caf2440b9",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "measurements/V45-product32-pair-proof.json",
+      "bytes": 1371,
+      "sha256": "b8d035315271202169b54d4d1492ce1e3c7e5f8f7f7373f1f822a7b09fb25948",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "mobile-bracelet.png",
+      "bytes": 120316,
+      "sha256": "5634240ff8863f69cb8847b70df4c30bd6e51cb2997d8a4e94505c04df85cc99",
+      "origin": "V45 final activation normal UI source2a9a319"
+    },
+    {
+      "file": "mobile-fullscreen.png",
+      "bytes": 158236,
+      "sha256": "04c8f4f495f61015893dbbad5f33b7172d39b5547a4b8c840c2e82c2bd337403",
+      "origin": "V45 final activation normal UI source2a9a319"
+    },
+    {
+      "file": "mobile-necklace.png",
+      "bytes": 123076,
+      "sha256": "94ea15cb09f0d39a3993866747e80bac93ca6d411250c495b6dac211a5f2f4a2",
+      "origin": "V45 final activation normal UI source2a9a319"
+    },
+    {
+      "file": "necklace-after.png",
+      "bytes": 1792868,
+      "sha256": "59dc1c24259805bd70248d727f0838164f3a7f4211df0c3b2d1d9c9e85ba1e7b",
+      "origin": "sampling-ab/V30-current-photo-necklace.png"
+    },
+    {
+      "file": "necklace-before.png",
+      "bytes": 2758850,
+      "sha256": "4888bccd57ae264d4c9c7dcc084af35ca9eaef1b489d3a081aa60147b6ab8f57",
+      "origin": "sampling-ab/V22-checkpoint-necklace-natural-v1.png"
+    },
+    {
+      "file": "necklace-product.png",
+      "bytes": 1120589,
+      "sha256": "eae10c5515b65e21d56be060cd3bc814bd916dab4ff3212ca025b87e0ea35335",
+      "origin": "V45 final activation normal UI source2a9a319"
+    },
+    {
+      "file": "professional-V26-pixel-acceptance-20261031.md",
+      "bytes": 6835,
+      "sha256": "2698691ea71df1fd775f2d48920cb376f48eb926d34bb980d4341de054639cac",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "professional-V29-pixel-readback-20261031.md",
+      "bytes": 4998,
+      "sha256": "042a271b4b693af1bce9e0cb4278923556f477cd25de3d6d945fd3a1205c5ade",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "professional-V47-admission-review-20261031.md",
+      "bytes": 11296,
+      "sha256": "4818910837900869f499ef8df6763f2029eaf60310d7b5ffa5753031f0bdfcdb",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "professional-V49-product-pixel-review-20261031.md",
+      "bytes": 4642,
+      "sha256": "e1aa8c248cefd34bde87d858e6bb2b2595bc976e3126112777da4a9ee4f583d8",
+      "origin": "V45 derived actual UI/proof/review"
+    },
+    {
+      "file": "README.txt",
+      "bytes": 4621,
+      "sha256": "61d79a8d7b99b6ad835e21c1670dbe4eafe35cecb6a684664321aecb1e29de80",
+      "origin": "V65 additive index: V64 preview/UI evidence followed by the exact retained V45 README"
+    },
+    {
+      "file": "rotation-tiger-minus30.png",
+      "bytes": 1122423,
+      "sha256": "ed28d3ac48ce5e72c9b1ee49ae7a04d230bff8e7a563d997770a9c16cafbc0f8",
+      "origin": "sampling-ab/V30-tiger-minus30.png"
+    },
+    {
+      "file": "rotation-tiger-plus30.png",
+      "bytes": 1147867,
+      "sha256": "6793e8b1110324a6f89af66cecb99037d6efc98f66fab2c9a6cba36ce89e3b6a",
+      "origin": "sampling-ab/V30-tiger-plus30.png"
+    },
+    {
+      "file": "V64-desktop-selected.png",
+      "bytes": 301739,
+      "sha256": "a150c9619e7bd864350bb848d2ec84d48a61b80a782cb78f572a2cfd1d5d9c19",
+      "origin": "outputs/waves/professional-studio-20261030/integrated-ui/V64-desktop-selected.png",
+      "sourceRevision": "8c6b759c2c4e4250d9e492b274bc103f6f225843",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "V64-desktop-focused.png",
+      "bytes": 293086,
+      "sha256": "468c3407f026c4aedec67a717e66e62bab87ca38b8b244055dff3a6b7aecaf24",
+      "origin": "outputs/waves/professional-studio-20261030/integrated-ui/V64-desktop-focused.png",
+      "sourceRevision": "8c6b759c2c4e4250d9e492b274bc103f6f225843",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "V64-mobile-375x667.png",
+      "bytes": 105357,
+      "sha256": "1a956e17af4c18e218bb425fca818b8cac81913771794ee334cae674116e6a3f",
+      "origin": "outputs/waves/professional-studio-20261030/integrated-ui/V64-mobile-375x667.png",
+      "sourceRevision": "8c6b759c2c4e4250d9e492b274bc103f6f225843",
+      "dimensions": [
+        375,
+        667
+      ]
+    },
+    {
+      "file": "measurements/V64-main-ui-proof.json",
+      "bytes": 981,
+      "sha256": "cd1346c3d905fac062a8ad55f31b5da33143ce791223b715d4b9f0b2ee630787",
+      "origin": "outputs/waves/professional-studio-20261030/V64-main-ui-proof.json",
+      "sourceRevision": "8c6b759c2c4e4250d9e492b274bc103f6f225843"
+    },
+    {
+      "file": "measurements/V64-promotion-readback.json",
+      "bytes": 256,
+      "sha256": "b69654a52fd0afe068940c20b1c7ace6f1ce1266de03fa3bfd1ff03a78205d38",
+      "origin": "outputs/waves/professional-studio-20261030/V64-promotion-readback.json",
+      "sourceRevision": "8c6b759c2c4e4250d9e492b274bc103f6f225843"
+    },
+    {
+      "file": "measurements/V64-import-and-art-readback.json",
+      "bytes": 4989,
+      "sha256": "c01bac5d35bf52f0d7fd56c694c18561c35bef4166dee722cd8934b1a6e5e694",
+      "origin": "outputs/waves/professional-studio-20261030/V64-import-and-art-readback.json",
+      "sourceRevision": "8c6b759c2c4e4250d9e492b274bc103f6f225843"
+    }
+  ],
+  "proofs": {
+    "braceletMatched": {
+      "family": "bracelet",
+      "before": "V22-photographic-bracelet-natural-v1",
+      "after": "V30-current-photo-bracelet",
+      "sameRecipeExceptExplicitAppearanceVersion": true,
+      "sameCamera": true,
+      "sameCanvas": true,
+      "occurrences": 36
+    },
+    "necklaceMatched": {
+      "family": "necklace",
+      "before": "V22-checkpoint-necklace-natural-v1",
+      "after": "V30-current-photo-necklace",
+      "sameRecipeExceptExplicitAppearanceVersion": true,
+      "sameCamera": true,
+      "sameCanvas": true,
+      "occurrences": 72
+    },
+    "savedAppearanceHistory": {
+      "occurrences": 37,
+      "changedAppearanceOnly": 22,
+      "idsAndOtherFieldsExact": true,
+      "undoExact": true,
+      "redoExact": true,
+      "coldReloadExact": true,
+      "hashes": {
+        "V28-before-explicit-appearance": "e64b359d6835f8f964625da71423c18c073ef3f93e63db26da55b3212c797dc5",
+        "V28-after-explicit-appearance": "cb2540182e8ee0625c7d9b955eb223aa20216e9208980a06c5642e6407db6e59",
+        "V28-undo-explicit-appearance": "e64b359d6835f8f964625da71423c18c073ef3f93e63db26da55b3212c797dc5",
+        "V28-redo-explicit-appearance": "cb2540182e8ee0625c7d9b955eb223aa20216e9208980a06c5642e6407db6e59",
+        "V28-reload-explicit-appearance": "cb2540182e8ee0625c7d9b955eb223aa20216e9208980a06c5642e6407db6e59"
+      }
+    },
+    "screenPng": {
+      "nativeSize": [
+        960,
+        720
+      ],
+      "pngSize": [
+        1825,
+        1369
+      ],
+      "meanAbsRgb255": [
+        1.0798003472222222,
+        0.1906322337962963,
+        0.25645399305555555
+      ],
+      "rmsRgb255": [
+        1.4021622687042246,
+        0.9485971306111481,
+        1.143514699536283
+      ],
+      "method": "actual aligned screen960x720 versus exported1825x1369 downsampledLANCZOS; no optical calibration"
+    },
+    "mobileFullscreen": {
+      "pinState": {
+        "canvases": 1,
+        "focus": "library-panel",
+        "overflow": false,
+        "scene": {
+          "bottom": 385.90625,
+          "height": 352.90625,
+          "left": 8,
+          "right": 367,
+          "top": 33,
+          "width": 359,
+          "x": 8,
+          "y": 33
+        },
+        "scrollY": 71,
+        "stage": {
+          "bottom": 434.90625,
+          "height": 427.90625,
+          "left": 8,
+          "right": 367,
+          "top": 7,
+          "width": 359,
+          "x": 8,
+          "y": 7
+        }
+      },
+      "fullState": {
+        "canvases": 1,
+        "expanded": "true",
+        "focus": "scene-fullscreen",
+        "scene": {
+          "bottom": 763,
+          "height": 737,
+          "left": 0,
+          "right": 375,
+          "top": 26,
+          "width": 375,
+          "x": 0,
+          "y": 26
+        },
+        "scrollY": 0,
+        "stage": {
+          "bottom": 812,
+          "height": 812,
+          "left": 0,
+          "right": 375,
+          "top": 0,
+          "width": 375,
+          "x": 0,
+          "y": 0
+        }
+      },
+      "returnState": {
+        "canvases": 1,
+        "expanded": "false",
+        "focus": "scene-fullscreen",
+        "scene": {
+          "bottom": 385.90625,
+          "height": 352.90625,
+          "left": 8,
+          "right": 367,
+          "top": 33,
+          "width": 359,
+          "x": 8,
+          "y": 33
+        },
+        "scrollY": 76,
+        "stage": {
+          "bottom": 434.90625,
+          "height": 427.90625,
+          "left": 8,
+          "right": 367,
+          "top": 7,
+          "width": 359,
+          "x": 8,
+          "y": 7
+        }
+      }
+    },
+    "catalogPreviewRefresh": {
+      "schema": "jew-studio.V64-current3-preview-proof-index.v1",
+      "appSourceRevision": "8c6b759c2c4e4250d9e492b274bc103f6f225843",
+      "captureSourceRevision": "86eab430b0b970408754dc6ab7e601608e29b58e",
+      "appearanceVersion": "natural-v3",
+      "targetCount": 11,
+      "unchangedOtherMappingCount": 18,
+      "labelsUnchanged": true,
+      "historicalPerEntryProvenancePreserved": true,
+      "all29AssetHashesVerifiedByRoot": true,
+      "intrinsicMaterialChanged": false,
+      "creationDefaultChanged": false,
+      "recipeSourceChanged": false,
+      "newIconBytes": 4007063,
+      "previousTargetIconBytes": 1189637,
+      "artAcceptance": "V63 bounded current3 representative accuracy only; all11 PNG byte-identical to independently inspected originals",
+      "uiProof": "measurements/V64-main-ui-proof.json",
+      "promotionProof": "measurements/V64-promotion-readback.json",
+      "importAndArtProof": "measurements/V64-import-and-art-readback.json",
+      "uiSummary": {
+        "desktopViewport": [
+          1280,
+          720
+        ],
+        "mobileViewport": [
+          375,
+          667
+        ],
+        "recipeJsonDeepEqualAfterAddUndo": true,
+        "restoredOccurrences": 36,
+        "canvasCount": 1,
+        "assetLoadsBeforeAfter": 3,
+        "noConsoleErrors": true,
+        "physicalPhone": false
+      },
+      "goalStatus": "ACTIVE / FIX",
+      "pendingNotShipped": [
+        "V57 pearl",
+        "V60 polished larvikite"
+      ]
+    }
+  },
+  "tests": {
+    "passed": 470,
+    "failed": 0,
+    "durationMs": 30049.112,
+    "sourceRevision": "2103cfc399ad997a733d7ca4ed7e929ec87a2e49"
+  },
+  "review": "V63 ACCEPT bounded current3 icon representative accuracy; prior V49 NO-FIX incremental v3 preview retained; whole reference-quality Goal ACTIVE/FIX",
+  "limits": [
+    "No physical-phone or calibrated-optics acceptance",
+    "Larvikite still procedural; pearl/garnet remain below the generated concepts",
+    "Contact mask approximates transparent stones as opaque",
+    "This package contains synthetic QA designs, not user saved designs",
+    "Local images do not establish public GPU acceptance; release readback is recorded separately",
+    "V64 refresh changes representative catalog art only, not intrinsic natural-v3 materials, creation defaults, Recipe or old saved designs",
+    "Amethyst's diagonal internal band may be the cord seen through the body; not a promised natural mineral zone",
+    "Icon bytes rose from 1189637 to 4007063; no new loading/FPS/detail-usability measurement",
+    "V57 pearl and V60 polished-larvikite work are pending and not shipped in this proof"
+  ],
+  "incrementalSpendUsd": 0,
+  "historicalV1V2SourceRevision": "2103cfc399ad997a733d7ca4ed7e929ec87a2e49",
+  "latestChecks": {
+    "compatibleFull": {
+      "passed": 499,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 35149.0674,
+      "sourceRevision": "8ef58f24efd07d11c93c803cbab60898207f1c30"
+    },
+    "activationFocused": {
+      "passed": 74,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 1798.2125,
+      "sourceRevision": "2a9a3199f545abcbece96b44042fa26aa9f5be08"
+    }
+  },
+  "v3ProductPair": {
+    "schema": "jew-studio.V45-product32-pair.v1",
+    "rendererSourceRevision": "8ef58f24efd07d11c93c803cbab60898207f1c30",
+    "family": "bracelet",
+    "normalProductUI": true,
+    "camera": {
+      "resetElevationDegrees": 32,
+      "azimuthDegrees": 0,
+      "sameResetControlUsed": true
+    },
+    "scene": "terrace",
+    "quality": "high",
+    "canvas": [
+      1710,
+      842
+    ],
+    "recipeIdenticalExcept21StoneVersionFields": true,
+    "changes": 21,
+    "rendererId": 1,
+    "consoleWarningsErrors": [],
+    "unoccludedFloorRoi": [
+      100,
+      80,
+      500,
+      200
+    ],
+    "floorRoiMaxAbsRGB255": 0,
+    "wholeImageMeanAbsRGB255": [
+      0.5875046880860108,
+      0.5681397674709339,
+      0.5551784250809129
+    ],
+    "files": [
+      {
+        "path": "sampling-ab/V45-product32-matched-v2-bracelet.png",
+        "bytes": 1137313,
+        "sha256": "65772f5dcca990e6155945dfd163ab13a3ef43109f545a0b1670aec1bd26fa92"
+      },
+      {
+        "path": "sampling-ab/V45-product32-matched-v3-bracelet.png",
+        "bytes": 1126824,
+        "sha256": "05f799c1fe785f93306a0f4bfca0334d36cef1084a27ef9017b4d8294aed530d"
+      }
+    ],
+    "limits": [
+      "Version-pair product comparison, not an old-live baseline",
+      "No optical calibration or physical-device acceptance",
+      "Material intrinsic A unchanged; v3 delegates nine families to exactv2",
+      "Goal remains FIX"
+    ]
+  },
+  "compatibleFallbackRevision": "8ef58f24efd07d11c93c803cbab60898207f1c30",
+  "productFramesSourceRevision": "2a9a3199f545abcbece96b44042fa26aa9f5be08",
+  "historicalCheckScope": "Existing tests/latestChecks/proofs retain their recorded V30/V45 source scopes; V65 performs no new product build/tests/GPU run. V64 UI readback is separately linked.",
+  "releaseIdentity": {
+    "appSourceRevision": "8c6b759c2c4e4250d9e492b274bc103f6f225843",
+    "releaseCommit": null,
+    "buildInfoPath": "/build-info.json",
+    "note": "Preparation does not invent a future release/main commit; deployed build identity is read separately."
+  }
+}

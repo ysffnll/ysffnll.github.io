@@ -1,0 +1,3452 @@
+{
+  "schema": "jew-studio.professional-capture.v1",
+  "capturedAt": "2026-10-30T22:32:15.526Z",
+  "page": "http://127.0.0.1:5203/qa/tools/professional-capture.html",
+  "settings": {
+    "sourceLabel": null,
+    "sourceLabelVerifiedByTool": false,
+    "design": "bracelet",
+    "specimen": null,
+    "rotationDegrees": null,
+    "lighting": "terrace",
+    "quality": "high",
+    "depth": "auto",
+    "view": "perspective",
+    "requestedCssSize": "960x720",
+    "appearanceOverride": "stored",
+    "inspection": true,
+    "fibreStrength": 0.38,
+    "revision": 6,
+    "canonicalImportPolicy": "unknown-external; only missing appearanceVersion receives legacy-r27",
+    "starterIdentityPolicy": "professional-capture-v1 stable IDs before canonicalization; natural starter versions retained"
+  },
+  "recipe": {
+    "version": 2,
+    "id": "professional-capture-v1-bracelet",
+    "name": "Atelier · Sedef ve mineral",
+    "kind": "bracelet",
+    "carrier": {
+      "shape": "circle",
+      "size": 6.6160336162387114,
+      "aspect": 1,
+      "phase": 0,
+      "style": "cord"
+    },
+    "occurrences": [
+      {
+        "id": "professional-capture-v1-bracelet-part-0",
+        "componentId": "premium-tiger-eye",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-1",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.72,
+            0.72,
+            0.72
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-2",
+        "componentId": "realism-pearl-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-3",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.72,
+            0.72,
+            0.72
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-4",
+        "componentId": "realism-larvikite-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-5",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.72,
+            0.72,
+            0.72
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-6",
+        "componentId": "premium-garnet",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-7",
+        "componentId": "premium-onyx",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-8",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.72,
+            0.72,
+            0.72
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-9",
+        "componentId": "realism-pearl-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-10",
+        "componentId": "premium-tiger-eye",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-11",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.72,
+            0.72,
+            0.72
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-12",
+        "componentId": "realism-larvikite-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-13",
+        "componentId": "premium-garnet",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-14",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.72,
+            0.72,
+            0.72
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-15",
+        "componentId": "premium-onyx",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-16",
+        "componentId": "realism-pearl-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-17",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.72,
+            0.72,
+            0.72
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-18",
+        "componentId": "premium-lobster-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-19",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.72,
+            0.72,
+            0.72
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-20",
+        "componentId": "realism-pearl-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-21",
+        "componentId": "premium-onyx",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-22",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.72,
+            0.72,
+            0.72
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-23",
+        "componentId": "premium-garnet",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-24",
+        "componentId": "realism-larvikite-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-25",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.72,
+            0.72,
+            0.72
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-26",
+        "componentId": "premium-tiger-eye",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-27",
+        "componentId": "realism-pearl-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-28",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.72,
+            0.72,
+            0.72
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-29",
+        "componentId": "premium-onyx",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-30",
+        "componentId": "premium-garnet",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-31",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.72,
+            0.72,
+            0.72
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-32",
+        "componentId": "realism-larvikite-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-33",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.72,
+            0.72,
+            0.72
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-34",
+        "componentId": "realism-pearl-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.0256410256410255,
+            1.0256410256410255,
+            1.0256410256410255
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      },
+      {
+        "id": "professional-capture-v1-bracelet-part-35",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.72,
+            0.72,
+            0.72
+          ]
+        },
+        "appearanceVersion": "natural-v2"
+      }
+    ]
+  },
+  "scene": {
+    "rendererId": 1,
+    "assetLoads": 3,
+    "frames": 39,
+    "occurrenceCreates": 36,
+    "contentChanges": 72,
+    "transformUpdates": 72,
+    "groundingChecks": 0,
+    "occurrenceCount": 36,
+    "cachedAssets": 3,
+    "pendingAssets": 0,
+    "failedAssets": 0,
+    "geometryCount": 18,
+    "textureCount": 25,
+    "carrierPresent": true,
+    "carrierTight": false,
+    "carrierSize": 6.6160336162387114,
+    "mode": "select",
+    "view": "perspective",
+    "fitRadius": 5.234334938368157,
+    "quality": "high",
+    "qualityChoice": "high",
+    "lighting": "terrace",
+    "presentation": {
+      "mode": "terrace",
+      "disposed": false,
+      "environment": "photographic",
+      "error": null,
+      "cachedEnvironmentCount": 3,
+      "environmentCaptures": 3,
+      "photographic": {
+        "active": true,
+        "admission": "eligible",
+        "interacting": false,
+        "status": "ready",
+        "error": null,
+        "notificationError": null,
+        "disposed": false,
+        "requests": 4,
+        "captures": 1,
+        "settlements": 1,
+        "retainedTextures": 4,
+        "retainedEstimatedBytes": 9502720,
+        "pmremCubeSize": 256
+      },
+      "reflection": "environment-only",
+      "floorMirror": false,
+      "reflectionState": null,
+      "reflectionError": null,
+      "groundContact": {
+        "enabled": true,
+        "disposed": false,
+        "rendering": false,
+        "dirty": false,
+        "validBounds": true,
+        "boundsReason": null,
+        "faulted": null,
+        "abiCompatible": true,
+        "ready": true,
+        "requestedSize": 512,
+        "allocatedSize": 512,
+        "captures": 2,
+        "blurPasses": 4,
+        "allocations": 2,
+        "disposals": 0,
+        "resizes": 1,
+        "skipped": 0,
+        "failures": 0,
+        "strength": 0.72,
+        "captureHeight": 0.32,
+        "falloff": 3,
+        "blurStep": 0.45,
+        "planeY": 0,
+        "estimatedRetainedBytes": 3145728,
+        "projectionRect": [
+          -3.9775744925946572,
+          -3.8477208409286137,
+          0.12570474819035746,
+          0.12811089034256284
+        ]
+      },
+      "groundContactError": null,
+      "stageTriangles": 984,
+      "cachedCinematicStages": 1,
+      "stageTextures": 8,
+      "stageTextureBaseBytes": 2998304,
+      "softboxTextureBytes": 16384,
+      "backgroundPath": "working-linear-texture",
+      "architectureDepthBounds": {
+        "min": [
+          -21.328124217689037,
+          0,
+          -21.27297623409366
+        ],
+        "max": [
+          21.328124217689037,
+          3.6640346024533574,
+          15.136409640773778
+        ]
+      },
+      "ownsEnvironment": true,
+      "quality": "high",
+      "shadowSize": 1024,
+      "shadow": {
+        "fit": "product",
+        "pcf": "five-sample-vogel-ign",
+        "key": {
+          "texel": 0.011246921975445379,
+          "radius": 4.188613964617452,
+          "size": 1024
+        },
+        "contact": null,
+        "assumedDepthBytes": 4194304,
+        "castingStageMeshes": 0
+      },
+      "inspection": null,
+      "rig": {
+        "keyDirection": [
+          -0.7465190120595252,
+          0.4116734222164866,
+          0.5227182396609449
+        ],
+        "fillDirection": [
+          0.6983277086763391,
+          0.6691306063588582,
+          0.2541704997215075
+        ],
+        "keyIntensity": 0.68,
+        "fillIntensity": 0.04,
+        "hemisphereIntensity": 0.035,
+        "contactIntensity": 0,
+        "environmentIntensity": 0.78,
+        "exposure": 1.06,
+        "environmentRotation": [
+          0,
+          -1.8944,
+          0
+        ]
+      },
+      "support": {
+        "kind": "finite-photographic-cream-marble",
+        "width": 32.8125,
+        "depth": 32.8125,
+        "radius": 16.40625,
+        "thickness": 0,
+        "sourceWidthMeters": 0.328125,
+        "textureScale": 1,
+        "topWorldY": 3.642919299551295e-15
+      }
+    },
+    "depth": {
+      "choice": "auto",
+      "active": false,
+      "state": "sharp",
+      "reason": "auto-sharp",
+      "label": "Net · otomatik güvenli görünüm",
+      "focus": null,
+      "nearDepth": null,
+      "farDepth": null,
+      "aperture": 0,
+      "maxblur": 0,
+      "targetWidth": 0,
+      "targetHeight": 0,
+      "samples": 0,
+      "allocations": 0,
+      "disposals": 0,
+      "allocated": false,
+      "autoEnabled": false
+    },
+    "materialTextures": {
+      "presets": 5,
+      "variants": 5,
+      "textures": 6,
+      "textureSize": 256,
+      "cpuTextureBytes": 131092,
+      "gpuTextureBytesWithMipmaps": 131092,
+      "liveOpticalMaterials": 17,
+      "opticsEnabled": true,
+      "directionalCompatible": true,
+      "disposed": false,
+      "naturalV2": {
+        "species": 5,
+        "fieldTextures": 1,
+        "fallbackSwatches": 5,
+        "cpuTextureBytes": 131092,
+        "gpuTextureBytes": 131092
+      },
+      "bodyStrengthMultiplier": 1,
+      "bodyModels": [
+        "artistic-continuous-object-depth-natural-v2"
+      ]
+    },
+    "activeFrameIntervals": [],
+    "focusScope": "design",
+    "firstUsefulMs": 628.8000000007451,
+    "contextLost": false,
+    "destroyed": false,
+    "sampling": {
+      "phase": "settled",
+      "reason": "settled",
+      "pixelRatio": 1.9018144357818267,
+      "width": 1825,
+      "height": 1369,
+      "pixels": 2498425,
+      "available": true,
+      "canRefine": true,
+      "settleDelayMs": 180,
+      "maxPixels": 2500000,
+      "pending": false,
+      "canvasSamples": 4,
+      "capabilityLimitsVerified": true,
+      "lowPower": false
+    },
+    "inspection": null,
+    "inspectionCamera": {
+      "position": [
+        4.141016239646989,
+        14.554867579666782,
+        10.304522838129028
+      ],
+      "target": [
+        -1.5543122344752194e-15,
+        0.40600000000000014,
+        0.0551479835953761
+      ],
+      "zoom": 1
+    },
+    "inspectionMeshes": [
+      {
+        "occurrenceId": "professional-capture-v1-bracelet-part-0",
+        "componentId": "premium-tiger-eye",
+        "meshName": "round-bead_1",
+        "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+        "matrixWorldColumnMajor": [
+          -3.323506446927654e-15,
+          0,
+          0.12903226203402432,
+          0,
+          0.12903226203402432,
+          0,
+          3.3091809881046896e-15,
+          0,
+          0,
+          0.12903226203402432,
+          0,
+          0,
+          -8.480004986877125e-14,
+          0.40600000000000014,
+          3.3080168081193557,
+          1
+        ],
+        "materials": [
+          {
+            "appearance": "tiger-eye-banded",
+            "variant": 1,
+            "appearanceVersion": "natural-v2",
+            "naturalStatus": "active",
+            "variationStatus": "active",
+            "bodyModel": "artistic-continuous-object-depth-natural-v2",
+            "directional": "natural-v2/tiger-eye-banded"
+          }
+        ]
+      },
+      {
+        "occurrenceId": "professional-capture-v1-bracelet-part-2",
+        "componentId": "realism-pearl-v1",
+        "meshName": "round-bead_1",
+        "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+        "matrixWorldColumnMajor": [
+          -0.03663819172673671,
+          0,
+          0.12372133022487272,
+          0,
+          0.12372133022487272,
+          0,
+          0.0366381917267367,
+          0,
+          0,
+          0.12903226203402432,
+          0,
+          0,
+          -0.9392980650000966,
+          0.40600000000000014,
+          3.1718597616993165,
+          1
+        ],
+        "materials": [
+          {
+            "appearance": "pearl-ivory",
+            "variant": 1,
+            "appearanceVersion": "natural-v2",
+            "naturalStatus": "active",
+            "variationStatus": "active",
+            "bodyModel": "artistic-continuous-object-depth-natural-v2",
+            "directional": "natural-v2/pearl-ivory"
+          }
+        ]
+      },
+      {
+        "occurrenceId": "professional-capture-v1-bracelet-part-4",
+        "componentId": "realism-larvikite-v1",
+        "meshName": "round-bead_1",
+        "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+        "matrixWorldColumnMajor": [
+          -0.07026034800924932,
+          0,
+          0.10822572773253271,
+          0,
+          0.10822572773253271,
+          -2.8650917645928047e-17,
+          0.0702603480092493,
+          0,
+          0,
+          0.12903226203402435,
+          -2.8650917645928047e-17,
+          0,
+          -1.8012736388177466,
+          0.40600000000000014,
+          2.7745969943219584,
+          1
+        ],
+        "materials": [
+          {
+            "appearance": "larvikite-matte",
+            "variant": 1,
+            "appearanceVersion": "natural-v2",
+            "naturalStatus": "active",
+            "variationStatus": "active",
+            "bodyModel": "artistic-continuous-object-depth-natural-v2",
+            "directional": "natural-v2/larvikite-matte"
+          }
+        ]
+      },
+      {
+        "occurrenceId": "professional-capture-v1-bracelet-part-6",
+        "componentId": "premium-garnet",
+        "meshName": "round-bead_1",
+        "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+        "matrixWorldColumnMajor": [
+          -0.09809871175364608,
+          0,
+          0.08382104388452928,
+          0,
+          0.08382104388452928,
+          0,
+          0.09809871175364607,
+          0,
+          0,
+          0.12903226203402432,
+          0,
+          0,
+          -2.5149693744836217,
+          0.40600000000000014,
+          2.1489309547329887,
+          1
+        ],
+        "materials": [
+          {
+            "appearance": "garnet-wine",
+            "variant": 0,
+            "appearanceVersion": "natural-v2",
+            "naturalStatus": "active",
+            "variationStatus": "active",
+            "bodyModel": "artistic-continuous-object-depth-natural-v2",
+            "directional": "natural-v2/garnet-wine"
+          }
+        ]
+      },
+      {
+        "occurrenceId": "professional-capture-v1-bracelet-part-7",
+        "componentId": "premium-onyx",
+        "meshName": "round-bead_1",
+        "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+        "matrixWorldColumnMajor": [
+          -0.11596224251801102,
+          0,
+          0.056586950402112375,
+          0,
+          0.056586950402112375,
+          -2.8650917645928047e-17,
+          0.11596224251801099,
+          0,
+          0,
+          0.12903226203402435,
+          -2.8650917645928047e-17,
+          0,
+          -2.9729390255565775,
+          0.40600000000000014,
+          1.4507269740109188,
+          1
+        ],
+        "materials": [
+          {
+            "appearance": "onyx-polished",
+            "variant": 0,
+            "appearanceVersion": "natural-v2",
+            "naturalStatus": "active",
+            "variationStatus": "active"
+          }
+        ]
+      },
+      {
+        "occurrenceId": "professional-capture-v1-bracelet-part-9",
+        "componentId": "realism-pearl-v1",
+        "meshName": "round-bead_1",
+        "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+        "matrixWorldColumnMajor": [
+          -0.1272569059815571,
+          0,
+          0.02133083508956609,
+          0,
+          0.02133083508956609,
+          -2.8650917645928047e-17,
+          0.12725690598155706,
+          0,
+          0,
+          0.12903226203402435,
+          -2.8650917645928047e-17,
+          0,
+          -3.2625017751393903,
+          0.40600000000000014,
+          0.5468613809847042,
+          1
+        ],
+        "materials": [
+          {
+            "appearance": "pearl-ivory",
+            "variant": 1,
+            "appearanceVersion": "natural-v2",
+            "naturalStatus": "active",
+            "variationStatus": "active",
+            "bodyModel": "artistic-continuous-object-depth-natural-v2",
+            "directional": "natural-v2/pearl-ivory"
+          }
+        ]
+      },
+      {
+        "occurrenceId": "professional-capture-v1-bracelet-part-10",
+        "componentId": "premium-tiger-eye",
+        "meshName": "round-bead_1",
+        "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+        "matrixWorldColumnMajor": [
+          -0.12854407127517062,
+          0,
+          -0.011213669587650089,
+          0,
+          -0.011213669587650089,
+          -2.8650917645928047e-17,
+          0.1285440712751706,
+          0,
+          0,
+          0.12903226203402435,
+          -2.8650917645928047e-17,
+          0,
+          -3.2955009984264976,
+          0.40600000000000014,
+          -0.28748629909984674,
+          1
+        ],
+        "materials": [
+          {
+            "appearance": "tiger-eye-banded",
+            "variant": 0,
+            "appearanceVersion": "natural-v2",
+            "naturalStatus": "active",
+            "variationStatus": "active",
+            "bodyModel": "artistic-continuous-object-depth-natural-v2",
+            "directional": "natural-v2/tiger-eye-banded"
+          }
+        ]
+      },
+      {
+        "occurrenceId": "professional-capture-v1-bracelet-part-12",
+        "componentId": "realism-larvikite-v1",
+        "meshName": "round-bead_1",
+        "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+        "matrixWorldColumnMajor": [
+          -0.12006915689261749,
+          0,
+          -0.04725169000906883,
+          0,
+          -0.04725169000906883,
+          -2.8650917645928047e-17,
+          0.12006915689261746,
+          0,
+          0,
+          0.12903226203402435,
+          -2.8650917645928047e-17,
+          0,
+          -3.07822852111795,
+          0.40600000000000014,
+          -1.2113976946387877,
+          1
+        ],
+        "materials": [
+          {
+            "appearance": "larvikite-matte",
+            "variant": 1,
+            "appearanceVersion": "natural-v2",
+            "naturalStatus": "active",
+            "variationStatus": "active",
+            "bodyModel": "artistic-continuous-object-depth-natural-v2",
+            "directional": "natural-v2/larvikite-matte"
+          }
+        ]
+      }
+    ]
+  },
+  "lastStatus": {
+    "state": "ready",
+    "firstUsefulFrame": true,
+    "firstUsefulMs": 628.8000000007451,
+    "failedAssets": 0,
+    "message": "3D sahne hazır"
+  },
+  "viewport": {
+    "innerWidth": 1136,
+    "innerHeight": 884,
+    "devicePixelRatio": 1,
+    "visibility": "visible"
+  },
+  "canvas": {
+    "width": 1825,
+    "height": 1369,
+    "cssWidth": 960,
+    "cssHeight": 720,
+    "frameWidth": 960,
+    "frameHeight": 720,
+    "data": {
+      "engine": "three.js r186",
+      "rendererId": "1",
+      "assetLoads": "3",
+      "occurrenceCreates": "36",
+      "contentChanges": "72",
+      "transformUpdates": "72",
+      "groundingChecks": "0",
+      "occurrenceCount": "36",
+      "frames": "39",
+      "pendingAssets": "0",
+      "failedAssets": "0",
+      "selectionCount": "0",
+      "carrierPresent": "true",
+      "carrierTight": "false",
+      "carrierSize": "6.6160336162387114",
+      "focusScope": "design",
+      "firstUsefulMs": "628.8",
+      "quality": "high",
+      "qualityChoice": "high",
+      "lighting": "terrace",
+      "samplingPhase": "settled",
+      "samplingReason": "settled",
+      "samplingRatio": "1.9018144357818267",
+      "samplingTarget": "1825x1369",
+      "samplingPixels": "2498425",
+      "samplingMaxPixels": "2500000",
+      "canvasSamples": "4",
+      "samplingLowPower": "false",
+      "depthChoice": "auto",
+      "depthActive": "false",
+      "depthState": "sharp",
+      "depthReason": "auto-sharp",
+      "depthFocus": "",
+      "depthAperture": "0",
+      "depthTarget": "0x0",
+      "depthSamples": "0",
+      "cameraFov": "30",
+      "cameraDistance": "17.95517",
+      "environmentCaptures": "3",
+      "cachedEnvironments": "3",
+      "environmentState": "photographic",
+      "drawCalls": "133",
+      "triangles": "660172",
+      "geometries": "18",
+      "textures": "25",
+      "activeFrameSamples": "0",
+      "activeFrameP95": ""
+    }
+  },
+  "idleSample": null,
+  "recoverySample": {
+    "method": "explicit native WEBGL_lose_context fixture action",
+    "elapsedMs": 1365.9000000003725,
+    "lostObserved": true,
+    "restoredObserved": true,
+    "before": {
+      "rendererId": 1,
+      "assetLoads": 3,
+      "frames": 33,
+      "occurrenceCreates": 36,
+      "contentChanges": 72,
+      "transformUpdates": 72,
+      "groundingChecks": 0,
+      "occurrenceCount": 36,
+      "cachedAssets": 3,
+      "pendingAssets": 0,
+      "failedAssets": 0,
+      "geometryCount": 27,
+      "textureCount": 25,
+      "carrierPresent": true,
+      "carrierTight": false,
+      "carrierSize": 6.6160336162387114,
+      "mode": "select",
+      "view": "perspective",
+      "fitRadius": 5.202853938531796,
+      "quality": "balanced",
+      "qualityChoice": "balanced",
+      "lighting": "terrace",
+      "presentation": {
+        "mode": "terrace",
+        "disposed": false,
+        "environment": "photographic",
+        "error": null,
+        "cachedEnvironmentCount": 3,
+        "environmentCaptures": 3,
+        "photographic": {
+          "active": true,
+          "admission": "eligible",
+          "interacting": false,
+          "status": "ready",
+          "error": null,
+          "notificationError": null,
+          "disposed": false,
+          "requests": 4,
+          "captures": 1,
+          "settlements": 1,
+          "retainedTextures": 4,
+          "retainedEstimatedBytes": 9502720,
+          "pmremCubeSize": 256
+        },
+        "reflection": "environment-only",
+        "floorMirror": false,
+        "reflectionState": null,
+        "reflectionError": null,
+        "groundContact": {
+          "enabled": true,
+          "disposed": false,
+          "rendering": false,
+          "dirty": false,
+          "validBounds": true,
+          "boundsReason": null,
+          "faulted": null,
+          "abiCompatible": true,
+          "ready": true,
+          "requestedSize": 256,
+          "allocatedSize": 256,
+          "captures": 2,
+          "blurPasses": 4,
+          "allocations": 2,
+          "disposals": 0,
+          "resizes": 1,
+          "skipped": 0,
+          "failures": 0,
+          "strength": 0.72,
+          "captureHeight": 0.32,
+          "falloff": 3,
+          "blurStep": 0.45,
+          "planeY": 0,
+          "estimatedRetainedBytes": 786432,
+          "projectionRect": [
+            -3.9775744925946572,
+            -3.8477208409286137,
+            0.12570474819035746,
+            0.12811089034256284
+          ]
+        },
+        "groundContactError": null,
+        "stageTriangles": 984,
+        "cachedCinematicStages": 1,
+        "stageTextures": 8,
+        "stageTextureBaseBytes": 2998304,
+        "softboxTextureBytes": 16384,
+        "backgroundPath": "working-linear-texture",
+        "architectureDepthBounds": {
+          "min": [
+            -21.328124217689037,
+            0,
+            -21.27297623409366
+          ],
+          "max": [
+            21.328124217689037,
+            3.6640346024533574,
+            15.136409640773778
+          ]
+        },
+        "ownsEnvironment": true,
+        "quality": "balanced",
+        "shadowSize": 512,
+        "shadow": {
+          "fit": "product",
+          "pcf": "five-sample-vogel-ign",
+          "key": {
+            "texel": 0.022493843950890758,
+            "radius": 2.094306982308726,
+            "size": 512
+          },
+          "contact": null,
+          "assumedDepthBytes": 1048576,
+          "castingStageMeshes": 0
+        },
+        "inspection": null,
+        "rig": {
+          "keyDirection": [
+            -0.7465190120595252,
+            0.4116734222164866,
+            0.5227182396609449
+          ],
+          "fillDirection": [
+            0.6983277086763391,
+            0.6691306063588582,
+            0.2541704997215075
+          ],
+          "keyIntensity": 0.68,
+          "fillIntensity": 0.04,
+          "hemisphereIntensity": 0.035,
+          "contactIntensity": 0,
+          "environmentIntensity": 0.78,
+          "exposure": 1.06,
+          "environmentRotation": [
+            0,
+            -1.8944,
+            0
+          ]
+        },
+        "support": {
+          "kind": "finite-photographic-cream-marble",
+          "width": 32.8125,
+          "depth": 32.8125,
+          "radius": 16.40625,
+          "thickness": 0,
+          "sourceWidthMeters": 0.328125,
+          "textureScale": 1,
+          "topWorldY": 3.642919299551295e-15
+        }
+      },
+      "depth": {
+        "choice": "auto",
+        "active": false,
+        "state": "sharp",
+        "reason": "auto-sharp",
+        "label": "Net · otomatik güvenli görünüm",
+        "focus": null,
+        "nearDepth": null,
+        "farDepth": null,
+        "aperture": 0,
+        "maxblur": 0,
+        "targetWidth": 0,
+        "targetHeight": 0,
+        "samples": 0,
+        "allocations": 0,
+        "disposals": 0,
+        "allocated": false,
+        "autoEnabled": false
+      },
+      "materialTextures": {
+        "presets": 5,
+        "variants": 5,
+        "textures": 6,
+        "textureSize": 256,
+        "cpuTextureBytes": 131092,
+        "gpuTextureBytesWithMipmaps": 131092,
+        "liveOpticalMaterials": 17,
+        "opticsEnabled": false,
+        "directionalCompatible": true,
+        "disposed": false,
+        "naturalV2": {
+          "species": 5,
+          "fieldTextures": 1,
+          "fallbackSwatches": 5,
+          "cpuTextureBytes": 131092,
+          "gpuTextureBytes": 131092
+        },
+        "bodyStrengthMultiplier": 1,
+        "bodyModels": [
+          "artistic-continuous-object-depth-natural-v2"
+        ]
+      },
+      "activeFrameIntervals": [],
+      "focusScope": "design",
+      "firstUsefulMs": 628.8000000007451,
+      "contextLost": false,
+      "destroyed": false,
+      "sampling": {
+        "phase": "active",
+        "reason": "balanced",
+        "pixelRatio": 1,
+        "width": 960,
+        "height": 720,
+        "pixels": 691200,
+        "available": true,
+        "canRefine": false,
+        "settleDelayMs": 180,
+        "maxPixels": 1500000,
+        "pending": false,
+        "canvasSamples": 4,
+        "capabilityLimitsVerified": true,
+        "lowPower": false
+      },
+      "inspection": null,
+      "inspectionCamera": {
+        "position": [
+          0.8301030661641307,
+          14.835400729713976,
+          10.61899703227774
+        ],
+        "target": [
+          -1.7763568394002505e-15,
+          0.40600000000000014,
+          0.07153752146988923
+        ],
+        "zoom": 1
+      },
+      "inspectionMeshes": [
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-0",
+          "componentId": "premium-tiger-eye",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -3.323506446927654e-15,
+            0,
+            0.12903226203402432,
+            0,
+            0.12903226203402432,
+            0,
+            3.3091809881046896e-15,
+            0,
+            0,
+            0.12903226203402432,
+            0,
+            0,
+            -8.480004986877125e-14,
+            0.40600000000000014,
+            3.3080168081193557,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "tiger-eye-banded",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "disabled"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-2",
+          "componentId": "realism-pearl-v1",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.03663819172673671,
+            0,
+            0.12372133022487272,
+            0,
+            0.12372133022487272,
+            0,
+            0.0366381917267367,
+            0,
+            0,
+            0.12903226203402432,
+            0,
+            0,
+            -0.9392980650000966,
+            0.40600000000000014,
+            3.1718597616993165,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "pearl-ivory",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "disabled"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-4",
+          "componentId": "realism-larvikite-v1",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.07026034800924932,
+            0,
+            0.10822572773253271,
+            0,
+            0.10822572773253271,
+            -2.8650917645928047e-17,
+            0.0702603480092493,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -1.8012736388177466,
+            0.40600000000000014,
+            2.7745969943219584,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "larvikite-matte",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "disabled"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-6",
+          "componentId": "premium-garnet",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.09809871175364608,
+            0,
+            0.08382104388452928,
+            0,
+            0.08382104388452928,
+            0,
+            0.09809871175364607,
+            0,
+            0,
+            0.12903226203402432,
+            0,
+            0,
+            -2.5149693744836217,
+            0.40600000000000014,
+            2.1489309547329887,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "garnet-wine",
+              "variant": 0,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "disabled"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-7",
+          "componentId": "premium-onyx",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.11596224251801102,
+            0,
+            0.056586950402112375,
+            0,
+            0.056586950402112375,
+            -2.8650917645928047e-17,
+            0.11596224251801099,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -2.9729390255565775,
+            0.40600000000000014,
+            1.4507269740109188,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "onyx-polished",
+              "variant": 0,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-9",
+          "componentId": "realism-pearl-v1",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.1272569059815571,
+            0,
+            0.02133083508956609,
+            0,
+            0.02133083508956609,
+            -2.8650917645928047e-17,
+            0.12725690598155706,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -3.2625017751393903,
+            0.40600000000000014,
+            0.5468613809847042,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "pearl-ivory",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "disabled"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-10",
+          "componentId": "premium-tiger-eye",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.12854407127517062,
+            0,
+            -0.011213669587650089,
+            0,
+            -0.011213669587650089,
+            -2.8650917645928047e-17,
+            0.1285440712751706,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -3.2955009984264976,
+            0.40600000000000014,
+            -0.28748629909984674,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "tiger-eye-banded",
+              "variant": 0,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "disabled"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-12",
+          "componentId": "realism-larvikite-v1",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.12006915689261749,
+            0,
+            -0.04725169000906883,
+            0,
+            -0.04725169000906883,
+            -2.8650917645928047e-17,
+            0.12006915689261746,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -3.07822852111795,
+            0.40600000000000014,
+            -1.2113976946387877,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "larvikite-matte",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "disabled"
+            }
+          ]
+        }
+      ]
+    },
+    "after": {
+      "rendererId": 1,
+      "assetLoads": 3,
+      "frames": 35,
+      "occurrenceCreates": 36,
+      "contentChanges": 72,
+      "transformUpdates": 72,
+      "groundingChecks": 0,
+      "occurrenceCount": 36,
+      "cachedAssets": 3,
+      "pendingAssets": 0,
+      "failedAssets": 0,
+      "geometryCount": 18,
+      "textureCount": 24,
+      "carrierPresent": true,
+      "carrierTight": false,
+      "carrierSize": 6.6160336162387114,
+      "mode": "select",
+      "view": "perspective",
+      "fitRadius": 5.202853938531796,
+      "quality": "balanced",
+      "qualityChoice": "balanced",
+      "lighting": "terrace",
+      "presentation": {
+        "mode": "terrace",
+        "disposed": false,
+        "environment": "photographic",
+        "error": null,
+        "cachedEnvironmentCount": 3,
+        "environmentCaptures": 3,
+        "photographic": {
+          "active": true,
+          "admission": "eligible",
+          "interacting": false,
+          "status": "ready",
+          "error": null,
+          "notificationError": null,
+          "disposed": false,
+          "requests": 4,
+          "captures": 1,
+          "settlements": 1,
+          "retainedTextures": 4,
+          "retainedEstimatedBytes": 9502720,
+          "pmremCubeSize": 256
+        },
+        "reflection": "environment-only",
+        "floorMirror": false,
+        "reflectionState": null,
+        "reflectionError": null,
+        "groundContact": {
+          "enabled": true,
+          "disposed": false,
+          "rendering": false,
+          "dirty": false,
+          "validBounds": true,
+          "boundsReason": null,
+          "faulted": null,
+          "abiCompatible": true,
+          "ready": true,
+          "requestedSize": 256,
+          "allocatedSize": 256,
+          "captures": 1,
+          "blurPasses": 2,
+          "allocations": 2,
+          "disposals": 0,
+          "resizes": 0,
+          "skipped": 0,
+          "failures": 0,
+          "strength": 0.72,
+          "captureHeight": 0.32,
+          "falloff": 3,
+          "blurStep": 0.45,
+          "planeY": 0,
+          "estimatedRetainedBytes": 786432,
+          "projectionRect": [
+            -3.9775744925946572,
+            -3.8477208409286137,
+            0.12570474819035746,
+            0.12811089034256284
+          ]
+        },
+        "groundContactError": null,
+        "stageTriangles": 984,
+        "cachedCinematicStages": 1,
+        "stageTextures": 8,
+        "stageTextureBaseBytes": 2998304,
+        "softboxTextureBytes": 16384,
+        "backgroundPath": "working-linear-texture",
+        "architectureDepthBounds": {
+          "min": [
+            -21.328124217689037,
+            0,
+            -21.27297623409366
+          ],
+          "max": [
+            21.328124217689037,
+            3.6640346024533574,
+            15.136409640773778
+          ]
+        },
+        "ownsEnvironment": true,
+        "quality": "balanced",
+        "shadowSize": 512,
+        "shadow": {
+          "fit": "product",
+          "pcf": "five-sample-vogel-ign",
+          "key": {
+            "texel": 0.022493843950890758,
+            "radius": 2.094306982308726,
+            "size": 512
+          },
+          "contact": null,
+          "assumedDepthBytes": 1048576,
+          "castingStageMeshes": 0
+        },
+        "inspection": null,
+        "rig": {
+          "keyDirection": [
+            -0.7465190120595252,
+            0.4116734222164866,
+            0.5227182396609449
+          ],
+          "fillDirection": [
+            0.6983277086763391,
+            0.6691306063588582,
+            0.2541704997215075
+          ],
+          "keyIntensity": 0.68,
+          "fillIntensity": 0.04,
+          "hemisphereIntensity": 0.035,
+          "contactIntensity": 0,
+          "environmentIntensity": 0.78,
+          "exposure": 1.06,
+          "environmentRotation": [
+            0,
+            -1.8944,
+            0
+          ]
+        },
+        "support": {
+          "kind": "finite-photographic-cream-marble",
+          "width": 32.8125,
+          "depth": 32.8125,
+          "radius": 16.40625,
+          "thickness": 0,
+          "sourceWidthMeters": 0.328125,
+          "textureScale": 1,
+          "topWorldY": 3.642919299551295e-15
+        }
+      },
+      "depth": {
+        "choice": "auto",
+        "active": false,
+        "state": "sharp",
+        "reason": "auto-sharp",
+        "label": "Net · otomatik güvenli görünüm",
+        "focus": null,
+        "nearDepth": null,
+        "farDepth": null,
+        "aperture": 0,
+        "maxblur": 0,
+        "targetWidth": 0,
+        "targetHeight": 0,
+        "samples": 0,
+        "allocations": 0,
+        "disposals": 0,
+        "allocated": false,
+        "autoEnabled": false
+      },
+      "materialTextures": {
+        "presets": 5,
+        "variants": 5,
+        "textures": 6,
+        "textureSize": 256,
+        "cpuTextureBytes": 131092,
+        "gpuTextureBytesWithMipmaps": 131092,
+        "liveOpticalMaterials": 17,
+        "opticsEnabled": false,
+        "directionalCompatible": true,
+        "disposed": false,
+        "naturalV2": {
+          "species": 5,
+          "fieldTextures": 1,
+          "fallbackSwatches": 5,
+          "cpuTextureBytes": 131092,
+          "gpuTextureBytes": 131092
+        },
+        "bodyStrengthMultiplier": 1,
+        "bodyModels": [
+          "artistic-continuous-object-depth-natural-v2"
+        ]
+      },
+      "activeFrameIntervals": [],
+      "focusScope": "design",
+      "firstUsefulMs": 628.8000000007451,
+      "contextLost": false,
+      "destroyed": false,
+      "sampling": {
+        "phase": "active",
+        "reason": "balanced",
+        "pixelRatio": 1,
+        "width": 960,
+        "height": 720,
+        "pixels": 691200,
+        "available": true,
+        "canRefine": false,
+        "settleDelayMs": 180,
+        "maxPixels": 1500000,
+        "pending": false,
+        "canvasSamples": 4,
+        "capabilityLimitsVerified": true,
+        "lowPower": false
+      },
+      "inspection": null,
+      "inspectionCamera": {
+        "position": [
+          0.8301030661641307,
+          14.835400729713976,
+          10.61899703227774
+        ],
+        "target": [
+          -1.7763568394002505e-15,
+          0.40600000000000014,
+          0.07153752146988923
+        ],
+        "zoom": 1
+      },
+      "inspectionMeshes": [
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-0",
+          "componentId": "premium-tiger-eye",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -3.323506446927654e-15,
+            0,
+            0.12903226203402432,
+            0,
+            0.12903226203402432,
+            0,
+            3.3091809881046896e-15,
+            0,
+            0,
+            0.12903226203402432,
+            0,
+            0,
+            -8.480004986877125e-14,
+            0.40600000000000014,
+            3.3080168081193557,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "tiger-eye-banded",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "disabled"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-2",
+          "componentId": "realism-pearl-v1",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.03663819172673671,
+            0,
+            0.12372133022487272,
+            0,
+            0.12372133022487272,
+            0,
+            0.0366381917267367,
+            0,
+            0,
+            0.12903226203402432,
+            0,
+            0,
+            -0.9392980650000966,
+            0.40600000000000014,
+            3.1718597616993165,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "pearl-ivory",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "disabled"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-4",
+          "componentId": "realism-larvikite-v1",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.07026034800924932,
+            0,
+            0.10822572773253271,
+            0,
+            0.10822572773253271,
+            -2.8650917645928047e-17,
+            0.0702603480092493,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -1.8012736388177466,
+            0.40600000000000014,
+            2.7745969943219584,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "larvikite-matte",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "disabled"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-6",
+          "componentId": "premium-garnet",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.09809871175364608,
+            0,
+            0.08382104388452928,
+            0,
+            0.08382104388452928,
+            0,
+            0.09809871175364607,
+            0,
+            0,
+            0.12903226203402432,
+            0,
+            0,
+            -2.5149693744836217,
+            0.40600000000000014,
+            2.1489309547329887,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "garnet-wine",
+              "variant": 0,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "disabled"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-7",
+          "componentId": "premium-onyx",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.11596224251801102,
+            0,
+            0.056586950402112375,
+            0,
+            0.056586950402112375,
+            -2.8650917645928047e-17,
+            0.11596224251801099,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -2.9729390255565775,
+            0.40600000000000014,
+            1.4507269740109188,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "onyx-polished",
+              "variant": 0,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-9",
+          "componentId": "realism-pearl-v1",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.1272569059815571,
+            0,
+            0.02133083508956609,
+            0,
+            0.02133083508956609,
+            -2.8650917645928047e-17,
+            0.12725690598155706,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -3.2625017751393903,
+            0.40600000000000014,
+            0.5468613809847042,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "pearl-ivory",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "disabled"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-10",
+          "componentId": "premium-tiger-eye",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.12854407127517062,
+            0,
+            -0.011213669587650089,
+            0,
+            -0.011213669587650089,
+            -2.8650917645928047e-17,
+            0.1285440712751706,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -3.2955009984264976,
+            0.40600000000000014,
+            -0.28748629909984674,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "tiger-eye-banded",
+              "variant": 0,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "disabled"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-12",
+          "componentId": "realism-larvikite-v1",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.12006915689261749,
+            0,
+            -0.04725169000906883,
+            0,
+            -0.04725169000906883,
+            -2.8650917645928047e-17,
+            0.12006915689261746,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -3.07822852111795,
+            0.40600000000000014,
+            -1.2113976946387877,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "larvikite-matte",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "disabled"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "capture": {
+    "bytes": 1680584,
+    "type": "image/png",
+    "before": {
+      "rendererId": 1,
+      "assetLoads": 3,
+      "frames": 38,
+      "occurrenceCreates": 36,
+      "contentChanges": 72,
+      "transformUpdates": 72,
+      "groundingChecks": 0,
+      "occurrenceCount": 36,
+      "cachedAssets": 3,
+      "pendingAssets": 0,
+      "failedAssets": 0,
+      "geometryCount": 18,
+      "textureCount": 25,
+      "carrierPresent": true,
+      "carrierTight": false,
+      "carrierSize": 6.6160336162387114,
+      "mode": "select",
+      "view": "perspective",
+      "fitRadius": 5.234334938368157,
+      "quality": "high",
+      "qualityChoice": "high",
+      "lighting": "terrace",
+      "presentation": {
+        "mode": "terrace",
+        "disposed": false,
+        "environment": "photographic",
+        "error": null,
+        "cachedEnvironmentCount": 3,
+        "environmentCaptures": 3,
+        "photographic": {
+          "active": true,
+          "admission": "eligible",
+          "interacting": false,
+          "status": "ready",
+          "error": null,
+          "notificationError": null,
+          "disposed": false,
+          "requests": 4,
+          "captures": 1,
+          "settlements": 1,
+          "retainedTextures": 4,
+          "retainedEstimatedBytes": 9502720,
+          "pmremCubeSize": 256
+        },
+        "reflection": "environment-only",
+        "floorMirror": false,
+        "reflectionState": null,
+        "reflectionError": null,
+        "groundContact": {
+          "enabled": true,
+          "disposed": false,
+          "rendering": false,
+          "dirty": false,
+          "validBounds": true,
+          "boundsReason": null,
+          "faulted": null,
+          "abiCompatible": true,
+          "ready": true,
+          "requestedSize": 512,
+          "allocatedSize": 512,
+          "captures": 2,
+          "blurPasses": 4,
+          "allocations": 2,
+          "disposals": 0,
+          "resizes": 1,
+          "skipped": 0,
+          "failures": 0,
+          "strength": 0.72,
+          "captureHeight": 0.32,
+          "falloff": 3,
+          "blurStep": 0.45,
+          "planeY": 0,
+          "estimatedRetainedBytes": 3145728,
+          "projectionRect": [
+            -3.9775744925946572,
+            -3.8477208409286137,
+            0.12570474819035746,
+            0.12811089034256284
+          ]
+        },
+        "groundContactError": null,
+        "stageTriangles": 984,
+        "cachedCinematicStages": 1,
+        "stageTextures": 8,
+        "stageTextureBaseBytes": 2998304,
+        "softboxTextureBytes": 16384,
+        "backgroundPath": "working-linear-texture",
+        "architectureDepthBounds": {
+          "min": [
+            -21.328124217689037,
+            0,
+            -21.27297623409366
+          ],
+          "max": [
+            21.328124217689037,
+            3.6640346024533574,
+            15.136409640773778
+          ]
+        },
+        "ownsEnvironment": true,
+        "quality": "high",
+        "shadowSize": 1024,
+        "shadow": {
+          "fit": "product",
+          "pcf": "five-sample-vogel-ign",
+          "key": {
+            "texel": 0.011246921975445379,
+            "radius": 4.188613964617452,
+            "size": 1024
+          },
+          "contact": null,
+          "assumedDepthBytes": 4194304,
+          "castingStageMeshes": 0
+        },
+        "inspection": null,
+        "rig": {
+          "keyDirection": [
+            -0.7465190120595252,
+            0.4116734222164866,
+            0.5227182396609449
+          ],
+          "fillDirection": [
+            0.6983277086763391,
+            0.6691306063588582,
+            0.2541704997215075
+          ],
+          "keyIntensity": 0.68,
+          "fillIntensity": 0.04,
+          "hemisphereIntensity": 0.035,
+          "contactIntensity": 0,
+          "environmentIntensity": 0.78,
+          "exposure": 1.06,
+          "environmentRotation": [
+            0,
+            -1.8944,
+            0
+          ]
+        },
+        "support": {
+          "kind": "finite-photographic-cream-marble",
+          "width": 32.8125,
+          "depth": 32.8125,
+          "radius": 16.40625,
+          "thickness": 0,
+          "sourceWidthMeters": 0.328125,
+          "textureScale": 1,
+          "topWorldY": 3.642919299551295e-15
+        }
+      },
+      "depth": {
+        "choice": "auto",
+        "active": false,
+        "state": "sharp",
+        "reason": "auto-sharp",
+        "label": "Net · otomatik güvenli görünüm",
+        "focus": null,
+        "nearDepth": null,
+        "farDepth": null,
+        "aperture": 0,
+        "maxblur": 0,
+        "targetWidth": 0,
+        "targetHeight": 0,
+        "samples": 0,
+        "allocations": 0,
+        "disposals": 0,
+        "allocated": false,
+        "autoEnabled": false
+      },
+      "materialTextures": {
+        "presets": 5,
+        "variants": 5,
+        "textures": 6,
+        "textureSize": 256,
+        "cpuTextureBytes": 131092,
+        "gpuTextureBytesWithMipmaps": 131092,
+        "liveOpticalMaterials": 17,
+        "opticsEnabled": true,
+        "directionalCompatible": true,
+        "disposed": false,
+        "naturalV2": {
+          "species": 5,
+          "fieldTextures": 1,
+          "fallbackSwatches": 5,
+          "cpuTextureBytes": 131092,
+          "gpuTextureBytes": 131092
+        },
+        "bodyStrengthMultiplier": 1,
+        "bodyModels": [
+          "artistic-continuous-object-depth-natural-v2"
+        ]
+      },
+      "activeFrameIntervals": [],
+      "focusScope": "design",
+      "firstUsefulMs": 628.8000000007451,
+      "contextLost": false,
+      "destroyed": false,
+      "sampling": {
+        "phase": "settled",
+        "reason": "settled",
+        "pixelRatio": 1.9018144357818267,
+        "width": 1825,
+        "height": 1369,
+        "pixels": 2498425,
+        "available": true,
+        "canRefine": true,
+        "settleDelayMs": 180,
+        "maxPixels": 2500000,
+        "pending": false,
+        "canvasSamples": 4,
+        "capabilityLimitsVerified": true,
+        "lowPower": false
+      },
+      "inspection": null,
+      "inspectionCamera": {
+        "position": [
+          4.141016239646989,
+          14.554867579666782,
+          10.304522838129028
+        ],
+        "target": [
+          -1.5543122344752194e-15,
+          0.40600000000000014,
+          0.0551479835953761
+        ],
+        "zoom": 1
+      },
+      "inspectionMeshes": [
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-0",
+          "componentId": "premium-tiger-eye",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -3.323506446927654e-15,
+            0,
+            0.12903226203402432,
+            0,
+            0.12903226203402432,
+            0,
+            3.3091809881046896e-15,
+            0,
+            0,
+            0.12903226203402432,
+            0,
+            0,
+            -8.480004986877125e-14,
+            0.40600000000000014,
+            3.3080168081193557,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "tiger-eye-banded",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "natural-v2/tiger-eye-banded"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-2",
+          "componentId": "realism-pearl-v1",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.03663819172673671,
+            0,
+            0.12372133022487272,
+            0,
+            0.12372133022487272,
+            0,
+            0.0366381917267367,
+            0,
+            0,
+            0.12903226203402432,
+            0,
+            0,
+            -0.9392980650000966,
+            0.40600000000000014,
+            3.1718597616993165,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "pearl-ivory",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "natural-v2/pearl-ivory"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-4",
+          "componentId": "realism-larvikite-v1",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.07026034800924932,
+            0,
+            0.10822572773253271,
+            0,
+            0.10822572773253271,
+            -2.8650917645928047e-17,
+            0.0702603480092493,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -1.8012736388177466,
+            0.40600000000000014,
+            2.7745969943219584,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "larvikite-matte",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "natural-v2/larvikite-matte"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-6",
+          "componentId": "premium-garnet",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.09809871175364608,
+            0,
+            0.08382104388452928,
+            0,
+            0.08382104388452928,
+            0,
+            0.09809871175364607,
+            0,
+            0,
+            0.12903226203402432,
+            0,
+            0,
+            -2.5149693744836217,
+            0.40600000000000014,
+            2.1489309547329887,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "garnet-wine",
+              "variant": 0,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "natural-v2/garnet-wine"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-7",
+          "componentId": "premium-onyx",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.11596224251801102,
+            0,
+            0.056586950402112375,
+            0,
+            0.056586950402112375,
+            -2.8650917645928047e-17,
+            0.11596224251801099,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -2.9729390255565775,
+            0.40600000000000014,
+            1.4507269740109188,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "onyx-polished",
+              "variant": 0,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-9",
+          "componentId": "realism-pearl-v1",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.1272569059815571,
+            0,
+            0.02133083508956609,
+            0,
+            0.02133083508956609,
+            -2.8650917645928047e-17,
+            0.12725690598155706,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -3.2625017751393903,
+            0.40600000000000014,
+            0.5468613809847042,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "pearl-ivory",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "natural-v2/pearl-ivory"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-10",
+          "componentId": "premium-tiger-eye",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.12854407127517062,
+            0,
+            -0.011213669587650089,
+            0,
+            -0.011213669587650089,
+            -2.8650917645928047e-17,
+            0.1285440712751706,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -3.2955009984264976,
+            0.40600000000000014,
+            -0.28748629909984674,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "tiger-eye-banded",
+              "variant": 0,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "natural-v2/tiger-eye-banded"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-12",
+          "componentId": "realism-larvikite-v1",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.12006915689261749,
+            0,
+            -0.04725169000906883,
+            0,
+            -0.04725169000906883,
+            -2.8650917645928047e-17,
+            0.12006915689261746,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -3.07822852111795,
+            0.40600000000000014,
+            -1.2113976946387877,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "larvikite-matte",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "natural-v2/larvikite-matte"
+            }
+          ]
+        }
+      ]
+    },
+    "after": {
+      "rendererId": 1,
+      "assetLoads": 3,
+      "frames": 39,
+      "occurrenceCreates": 36,
+      "contentChanges": 72,
+      "transformUpdates": 72,
+      "groundingChecks": 0,
+      "occurrenceCount": 36,
+      "cachedAssets": 3,
+      "pendingAssets": 0,
+      "failedAssets": 0,
+      "geometryCount": 18,
+      "textureCount": 25,
+      "carrierPresent": true,
+      "carrierTight": false,
+      "carrierSize": 6.6160336162387114,
+      "mode": "select",
+      "view": "perspective",
+      "fitRadius": 5.234334938368157,
+      "quality": "high",
+      "qualityChoice": "high",
+      "lighting": "terrace",
+      "presentation": {
+        "mode": "terrace",
+        "disposed": false,
+        "environment": "photographic",
+        "error": null,
+        "cachedEnvironmentCount": 3,
+        "environmentCaptures": 3,
+        "photographic": {
+          "active": true,
+          "admission": "eligible",
+          "interacting": false,
+          "status": "ready",
+          "error": null,
+          "notificationError": null,
+          "disposed": false,
+          "requests": 4,
+          "captures": 1,
+          "settlements": 1,
+          "retainedTextures": 4,
+          "retainedEstimatedBytes": 9502720,
+          "pmremCubeSize": 256
+        },
+        "reflection": "environment-only",
+        "floorMirror": false,
+        "reflectionState": null,
+        "reflectionError": null,
+        "groundContact": {
+          "enabled": true,
+          "disposed": false,
+          "rendering": false,
+          "dirty": false,
+          "validBounds": true,
+          "boundsReason": null,
+          "faulted": null,
+          "abiCompatible": true,
+          "ready": true,
+          "requestedSize": 512,
+          "allocatedSize": 512,
+          "captures": 2,
+          "blurPasses": 4,
+          "allocations": 2,
+          "disposals": 0,
+          "resizes": 1,
+          "skipped": 0,
+          "failures": 0,
+          "strength": 0.72,
+          "captureHeight": 0.32,
+          "falloff": 3,
+          "blurStep": 0.45,
+          "planeY": 0,
+          "estimatedRetainedBytes": 3145728,
+          "projectionRect": [
+            -3.9775744925946572,
+            -3.8477208409286137,
+            0.12570474819035746,
+            0.12811089034256284
+          ]
+        },
+        "groundContactError": null,
+        "stageTriangles": 984,
+        "cachedCinematicStages": 1,
+        "stageTextures": 8,
+        "stageTextureBaseBytes": 2998304,
+        "softboxTextureBytes": 16384,
+        "backgroundPath": "working-linear-texture",
+        "architectureDepthBounds": {
+          "min": [
+            -21.328124217689037,
+            0,
+            -21.27297623409366
+          ],
+          "max": [
+            21.328124217689037,
+            3.6640346024533574,
+            15.136409640773778
+          ]
+        },
+        "ownsEnvironment": true,
+        "quality": "high",
+        "shadowSize": 1024,
+        "shadow": {
+          "fit": "product",
+          "pcf": "five-sample-vogel-ign",
+          "key": {
+            "texel": 0.011246921975445379,
+            "radius": 4.188613964617452,
+            "size": 1024
+          },
+          "contact": null,
+          "assumedDepthBytes": 4194304,
+          "castingStageMeshes": 0
+        },
+        "inspection": null,
+        "rig": {
+          "keyDirection": [
+            -0.7465190120595252,
+            0.4116734222164866,
+            0.5227182396609449
+          ],
+          "fillDirection": [
+            0.6983277086763391,
+            0.6691306063588582,
+            0.2541704997215075
+          ],
+          "keyIntensity": 0.68,
+          "fillIntensity": 0.04,
+          "hemisphereIntensity": 0.035,
+          "contactIntensity": 0,
+          "environmentIntensity": 0.78,
+          "exposure": 1.06,
+          "environmentRotation": [
+            0,
+            -1.8944,
+            0
+          ]
+        },
+        "support": {
+          "kind": "finite-photographic-cream-marble",
+          "width": 32.8125,
+          "depth": 32.8125,
+          "radius": 16.40625,
+          "thickness": 0,
+          "sourceWidthMeters": 0.328125,
+          "textureScale": 1,
+          "topWorldY": 3.642919299551295e-15
+        }
+      },
+      "depth": {
+        "choice": "auto",
+        "active": false,
+        "state": "sharp",
+        "reason": "auto-sharp",
+        "label": "Net · otomatik güvenli görünüm",
+        "focus": null,
+        "nearDepth": null,
+        "farDepth": null,
+        "aperture": 0,
+        "maxblur": 0,
+        "targetWidth": 0,
+        "targetHeight": 0,
+        "samples": 0,
+        "allocations": 0,
+        "disposals": 0,
+        "allocated": false,
+        "autoEnabled": false
+      },
+      "materialTextures": {
+        "presets": 5,
+        "variants": 5,
+        "textures": 6,
+        "textureSize": 256,
+        "cpuTextureBytes": 131092,
+        "gpuTextureBytesWithMipmaps": 131092,
+        "liveOpticalMaterials": 17,
+        "opticsEnabled": true,
+        "directionalCompatible": true,
+        "disposed": false,
+        "naturalV2": {
+          "species": 5,
+          "fieldTextures": 1,
+          "fallbackSwatches": 5,
+          "cpuTextureBytes": 131092,
+          "gpuTextureBytes": 131092
+        },
+        "bodyStrengthMultiplier": 1,
+        "bodyModels": [
+          "artistic-continuous-object-depth-natural-v2"
+        ]
+      },
+      "activeFrameIntervals": [],
+      "focusScope": "design",
+      "firstUsefulMs": 628.8000000007451,
+      "contextLost": false,
+      "destroyed": false,
+      "sampling": {
+        "phase": "settled",
+        "reason": "settled",
+        "pixelRatio": 1.9018144357818267,
+        "width": 1825,
+        "height": 1369,
+        "pixels": 2498425,
+        "available": true,
+        "canRefine": true,
+        "settleDelayMs": 180,
+        "maxPixels": 2500000,
+        "pending": false,
+        "canvasSamples": 4,
+        "capabilityLimitsVerified": true,
+        "lowPower": false
+      },
+      "inspection": null,
+      "inspectionCamera": {
+        "position": [
+          4.141016239646989,
+          14.554867579666782,
+          10.304522838129028
+        ],
+        "target": [
+          -1.5543122344752194e-15,
+          0.40600000000000014,
+          0.0551479835953761
+        ],
+        "zoom": 1
+      },
+      "inspectionMeshes": [
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-0",
+          "componentId": "premium-tiger-eye",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -3.323506446927654e-15,
+            0,
+            0.12903226203402432,
+            0,
+            0.12903226203402432,
+            0,
+            3.3091809881046896e-15,
+            0,
+            0,
+            0.12903226203402432,
+            0,
+            0,
+            -8.480004986877125e-14,
+            0.40600000000000014,
+            3.3080168081193557,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "tiger-eye-banded",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "natural-v2/tiger-eye-banded"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-2",
+          "componentId": "realism-pearl-v1",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.03663819172673671,
+            0,
+            0.12372133022487272,
+            0,
+            0.12372133022487272,
+            0,
+            0.0366381917267367,
+            0,
+            0,
+            0.12903226203402432,
+            0,
+            0,
+            -0.9392980650000966,
+            0.40600000000000014,
+            3.1718597616993165,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "pearl-ivory",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "natural-v2/pearl-ivory"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-4",
+          "componentId": "realism-larvikite-v1",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.07026034800924932,
+            0,
+            0.10822572773253271,
+            0,
+            0.10822572773253271,
+            -2.8650917645928047e-17,
+            0.0702603480092493,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -1.8012736388177466,
+            0.40600000000000014,
+            2.7745969943219584,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "larvikite-matte",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "natural-v2/larvikite-matte"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-6",
+          "componentId": "premium-garnet",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.09809871175364608,
+            0,
+            0.08382104388452928,
+            0,
+            0.08382104388452928,
+            0,
+            0.09809871175364607,
+            0,
+            0,
+            0.12903226203402432,
+            0,
+            0,
+            -2.5149693744836217,
+            0.40600000000000014,
+            2.1489309547329887,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "garnet-wine",
+              "variant": 0,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "natural-v2/garnet-wine"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-7",
+          "componentId": "premium-onyx",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.11596224251801102,
+            0,
+            0.056586950402112375,
+            0,
+            0.056586950402112375,
+            -2.8650917645928047e-17,
+            0.11596224251801099,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -2.9729390255565775,
+            0.40600000000000014,
+            1.4507269740109188,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "onyx-polished",
+              "variant": 0,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-9",
+          "componentId": "realism-pearl-v1",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.1272569059815571,
+            0,
+            0.02133083508956609,
+            0,
+            0.02133083508956609,
+            -2.8650917645928047e-17,
+            0.12725690598155706,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -3.2625017751393903,
+            0.40600000000000014,
+            0.5468613809847042,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "pearl-ivory",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "natural-v2/pearl-ivory"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-10",
+          "componentId": "premium-tiger-eye",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.12854407127517062,
+            0,
+            -0.011213669587650089,
+            0,
+            -0.011213669587650089,
+            -2.8650917645928047e-17,
+            0.1285440712751706,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -3.2955009984264976,
+            0.40600000000000014,
+            -0.28748629909984674,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "tiger-eye-banded",
+              "variant": 0,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "natural-v2/tiger-eye-banded"
+            }
+          ]
+        },
+        {
+          "occurrenceId": "professional-capture-v1-bracelet-part-12",
+          "componentId": "realism-larvikite-v1",
+          "meshName": "round-bead_1",
+          "sourceDeclaredSha256": "56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce",
+          "matrixWorldColumnMajor": [
+            -0.12006915689261749,
+            0,
+            -0.04725169000906883,
+            0,
+            -0.04725169000906883,
+            -2.8650917645928047e-17,
+            0.12006915689261746,
+            0,
+            0,
+            0.12903226203402435,
+            -2.8650917645928047e-17,
+            0,
+            -3.07822852111795,
+            0.40600000000000014,
+            -1.2113976946387877,
+            1
+          ],
+          "materials": [
+            {
+              "appearance": "larvikite-matte",
+              "variant": 1,
+              "appearanceVersion": "natural-v2",
+              "naturalStatus": "active",
+              "variationStatus": "active",
+              "bodyModel": "artistic-continuous-object-depth-natural-v2",
+              "directional": "natural-v2/larvikite-matte"
+            }
+          ]
+        }
+      ]
+    },
+    "method": "public captureImage; one actual WebGL renderer"
+  }
+}

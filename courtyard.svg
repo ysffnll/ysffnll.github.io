@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180" preserveAspectRatio="xMidYMid slice">
+  <title>Daylight courtyard</title>
+  <rect width="720" height="180" fill="#0869b8"/>
+  <path fill="#14a8d1" d="M0 112H720V180H0z"/>
+  <path fill="#0755a1" d="M0 122H720V128H0z"/>
+  <path fill="#f9f6e9" d="M0 0H143V132H0zM143 0H345L293 87H143z"/>
+  <path fill="#b7d6e0" d="M143 87H293L345 0H365L310 102H143z"/>
+  <path fill="#fffdf3" d="M0 135H244L308 180H0z"/>
+  <path fill="#a3cbdf" d="M244 135H267L331 180H308z"/>
+  <path fill="#f9f6e9" d="M720 119H575L552 180H720z"/>
+  <path fill="#a3cbdf" d="M575 119H592L568 180H552z"/>
+  <path fill="none" stroke="#d8f6f3" stroke-width="2" opacity=".8" d="M360 143h41m18 10h54m-132 10h49m80-25h30m14 25h31"/>
+  <path fill="#ed7756" d="m599 136 25-7 14 24-26 3z"/>
+  <path fill="none" stroke="#063e68" stroke-width="3" d="m611 154-4 14m30-18 3 12"/>
+  <path fill="none" stroke="#063e68" stroke-width="6" d="M652 127C637 86 636 52 648 25"/>
+  <g fill="#063e68">
+    <path d="M648 28c-26-22-54-26-79-12 28-3 49 3 69 18z"/>
+    <path d="M648 28c-29-8-55 2-70 25 22-13 42-15 62-14z"/>
+    <path d="M648 28c-6-25-20-42-43-47 17 16 26 31 30 51z"/>
+    <path d="M648 28c16-23 39-32 63-29-22 8-38 22-54 36z"/>
+    <path d="M650 31c28-12 54-7 71 12-26-8-45-7-67 0z"/>
+    <path d="M649 34c15 5 25 20 27 41-9-17-18-26-31-32z"/>
+  </g>
+</svg>

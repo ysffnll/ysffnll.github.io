@@ -1,0 +1,2272 @@
+{
+  "schema": "jew-studio.professional-capture.v1",
+  "capturedAt": "2026-10-30T22:36:14.074Z",
+  "page": "http://127.0.0.1:5203/qa/frozen/V22-before-contact.html",
+  "settings": {
+    "sourceLabel": null,
+    "sourceLabelVerifiedByTool": false,
+    "design": "necklace",
+    "specimen": null,
+    "rotationDegrees": null,
+    "lighting": "terrace",
+    "quality": "high",
+    "depth": "auto",
+    "view": "perspective",
+    "requestedCssSize": "960x720",
+    "appearanceOverride": "stored",
+    "inspection": true,
+    "fibreStrength": 0.38,
+    "revision": 4,
+    "canonicalImportPolicy": "unknown-external; only missing appearanceVersion receives legacy-r27",
+    "starterIdentityPolicy": "professional-capture-v1 stable IDs before canonicalization; natural starter versions retained"
+  },
+  "recipe": {
+    "version": 2,
+    "id": "professional-capture-v1-necklace",
+    "name": "Atelier · Kaplan gözü damla",
+    "kind": "necklace",
+    "carrier": {
+      "shape": "ellipse",
+      "size": 33.15661802313381,
+      "aspect": 1.4,
+      "phase": 0,
+      "style": "cord"
+    },
+    "occurrences": [
+      {
+        "id": "professional-capture-v1-necklace-part-0",
+        "componentId": "realism-drop-fork-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-1",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-2",
+        "componentId": "realism-pearl-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-3",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-4",
+        "componentId": "realism-larvikite-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-5",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-6",
+        "componentId": "premium-onyx",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-7",
+        "componentId": "premium-garnet",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-8",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-9",
+        "componentId": "premium-tiger-eye",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-10",
+        "componentId": "realism-pearl-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-11",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-12",
+        "componentId": "realism-larvikite-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-13",
+        "componentId": "premium-garnet",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-14",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-15",
+        "componentId": "premium-onyx",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-16",
+        "componentId": "realism-pearl-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-17",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-18",
+        "componentId": "premium-tiger-eye",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-19",
+        "componentId": "realism-larvikite-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-20",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-21",
+        "componentId": "realism-pearl-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-22",
+        "componentId": "premium-onyx",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-23",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-24",
+        "componentId": "premium-garnet",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-25",
+        "componentId": "realism-pearl-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-26",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-27",
+        "componentId": "premium-tiger-eye",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-28",
+        "componentId": "realism-larvikite-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-29",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-30",
+        "componentId": "premium-onyx",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-31",
+        "componentId": "premium-garnet",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-32",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-33",
+        "componentId": "realism-pearl-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-34",
+        "componentId": "premium-tiger-eye",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-35",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-36",
+        "componentId": "realism-lobster-linked-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-37",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-38",
+        "componentId": "premium-tiger-eye",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-39",
+        "componentId": "realism-pearl-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-40",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-41",
+        "componentId": "premium-garnet",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-42",
+        "componentId": "premium-onyx",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-43",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-44",
+        "componentId": "realism-larvikite-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-45",
+        "componentId": "premium-tiger-eye",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-46",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-47",
+        "componentId": "realism-pearl-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-48",
+        "componentId": "premium-garnet",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-49",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-50",
+        "componentId": "premium-onyx",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-51",
+        "componentId": "realism-pearl-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-52",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-53",
+        "componentId": "realism-larvikite-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-54",
+        "componentId": "premium-tiger-eye",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-55",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-56",
+        "componentId": "realism-pearl-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-57",
+        "componentId": "premium-onyx",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-58",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-59",
+        "componentId": "premium-garnet",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-60",
+        "componentId": "realism-larvikite-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-61",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-62",
+        "componentId": "realism-pearl-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-63",
+        "componentId": "premium-tiger-eye",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-64",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-65",
+        "componentId": "premium-garnet",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-66",
+        "componentId": "premium-onyx",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-67",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-68",
+        "componentId": "realism-larvikite-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-69",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-70",
+        "componentId": "realism-pearl-v1",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.7692307692307692,
+            0.7692307692307692,
+            0.7692307692307692
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      },
+      {
+        "id": "professional-capture-v1-necklace-part-71",
+        "componentId": "premium-disc-gold",
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            0.64,
+            0.64,
+            0.64
+          ]
+        },
+        "appearanceVersion": "natural-v1"
+      }
+    ]
+  },
+  "scene": {
+    "rendererId": 1,
+    "assetLoads": 5,
+    "frames": 12,
+    "occurrenceCreates": 108,
+    "contentChanges": 216,
+    "transformUpdates": 216,
+    "groundingChecks": 0,
+    "occurrenceCount": 72,
+    "cachedAssets": 5,
+    "pendingAssets": 0,
+    "failedAssets": 0,
+    "geometryCount": 37,
+    "textureCount": 42,
+    "carrierPresent": true,
+    "carrierTight": false,
+    "carrierSize": 33.15661802313381,
+    "mode": "select",
+    "view": "perspective",
+    "fitRadius": 8.373087976045616,
+    "quality": "high",
+    "qualityChoice": "high",
+    "lighting": "terrace",
+    "presentation": {
+      "mode": "terrace",
+      "disposed": false,
+      "environment": "photographic",
+      "error": null,
+      "cachedEnvironmentCount": 3,
+      "environmentCaptures": 3,
+      "photographic": {
+        "active": true,
+        "admission": "eligible",
+        "interacting": false,
+        "status": "ready",
+        "error": null,
+        "notificationError": null,
+        "disposed": false,
+        "requests": 4,
+        "captures": 1,
+        "settlements": 1,
+        "retainedTextures": 4,
+        "retainedEstimatedBytes": 9502720,
+        "pmremCubeSize": 256
+      },
+      "reflection": "environment-only",
+      "floorMirror": false,
+      "reflectionState": null,
+      "reflectionError": null,
+      "stageTriangles": 552,
+      "cachedCinematicStages": 1,
+      "stageTextures": 8,
+      "stageTextureBaseBytes": 2998304,
+      "softboxTextureBytes": 16384,
+      "backgroundPath": "working-linear-texture",
+      "architectureDepthBounds": {
+        "min": [
+          -17.32034780933173,
+          0,
+          -23.848460457639536
+        ],
+        "max": [
+          17.32034780933173,
+          5.861161816133566,
+          -12.67713470106727
+        ]
+      },
+      "ownsEnvironment": true,
+      "quality": "high",
+      "shadowSize": 1024,
+      "shadow": {
+        "fit": "product",
+        "pcf": "five-sample-vogel-ign",
+        "key": {
+          "texel": 0.01830280754436068,
+          "radius": 4.11728045556755,
+          "size": 1024
+        },
+        "contact": null,
+        "assumedDepthBytes": 4194304,
+        "castingStageMeshes": 0
+      },
+      "inspection": null,
+      "rig": {
+        "keyDirection": [
+          -0.7465190120595252,
+          0.4116734222164866,
+          0.5227182396609449
+        ],
+        "fillDirection": [
+          0.6983277086763391,
+          0.6691306063588582,
+          0.2541704997215075
+        ],
+        "keyIntensity": 0.9,
+        "fillIntensity": 0.04,
+        "hemisphereIntensity": 0.035,
+        "contactIntensity": 0,
+        "environmentIntensity": 0.78,
+        "exposure": 1.06,
+        "environmentRotation": [
+          0,
+          -1.8944,
+          0
+        ]
+      },
+      "support": {
+        "kind": "finite-photographic-cream-marble",
+        "width": 37.68410928824285,
+        "depth": 37.68410928824285,
+        "radius": 18.842054644121426,
+        "thickness": 0,
+        "sourceWidthMeters": 0.328125,
+        "textureScale": 1.1484680925940678,
+        "topWorldY": 4.183776579429793e-15
+      }
+    },
+    "depth": {
+      "choice": "auto",
+      "active": false,
+      "state": "sharp",
+      "reason": "auto-sharp",
+      "label": "Net · otomatik güvenli görünüm",
+      "focus": null,
+      "nearDepth": null,
+      "farDepth": null,
+      "aperture": 0,
+      "maxblur": 0,
+      "targetWidth": 0,
+      "targetHeight": 0,
+      "samples": 0,
+      "allocations": 0,
+      "disposals": 0,
+      "allocated": false,
+      "autoEnabled": false
+    },
+    "materialTextures": {
+      "presets": 5,
+      "variants": 10,
+      "textures": 25,
+      "textureSize": 256,
+      "cpuTextureBytes": 6422528,
+      "gpuTextureBytesWithMipmaps": 8519648,
+      "liveOpticalMaterials": 29,
+      "opticsEnabled": true,
+      "directionalCompatible": true,
+      "disposed": false,
+      "bodyStrengthMultiplier": 1,
+      "bodyModels": [
+        "artistic-pearl-redistribution-pmrem-r27",
+        "artistic-object-depth-pmrem-r13",
+        "artistic-object-depth-pmrem-r15"
+      ]
+    },
+    "activeFrameIntervals": [],
+    "focusScope": "design",
+    "firstUsefulMs": 1018.5,
+    "contextLost": false,
+    "destroyed": false,
+    "sampling": {
+      "phase": "settled",
+      "reason": "settled",
+      "pixelRatio": 1.9018144357818267,
+      "width": 1825,
+      "height": 1369,
+      "pixels": 2498425,
+      "available": true,
+      "canRefine": true,
+      "settleDelayMs": 180,
+      "maxPixels": 2500000,
+      "pending": false,
+      "canvasSamples": 4,
+      "capabilityLimitsVerified": true,
+      "lowPower": false
+    },
+    "inspection": null,
+    "inspectionCamera": {
+      "position": [
+        6.437636416133533,
+        22.301872487976237,
+        16.579918941905245
+      ],
+      "target": [
+        0,
+        0.3060000000000001,
+        0.6462096812591382
+      ],
+      "zoom": 1
+    },
+    "inspectionMeshes": []
+  },
+  "lastStatus": {
+    "state": "ready",
+    "firstUsefulFrame": true,
+    "firstUsefulMs": 1018.5,
+    "failedAssets": 0,
+    "message": "3D sahne hazır"
+  },
+  "viewport": {
+    "innerWidth": 1280,
+    "innerHeight": 720,
+    "devicePixelRatio": 1,
+    "visibility": "visible"
+  },
+  "canvas": {
+    "width": 1825,
+    "height": 1369,
+    "cssWidth": 960,
+    "cssHeight": 720,
+    "frameWidth": 960,
+    "frameHeight": 720,
+    "data": {
+      "engine": "three.js r186",
+      "rendererId": "1",
+      "assetLoads": "5",
+      "occurrenceCreates": "108",
+      "contentChanges": "216",
+      "transformUpdates": "216",
+      "groundingChecks": "0",
+      "occurrenceCount": "72",
+      "frames": "12",
+      "pendingAssets": "0",
+      "failedAssets": "0",
+      "selectionCount": "0",
+      "carrierPresent": "true",
+      "carrierTight": "false",
+      "carrierSize": "33.15661802313381",
+      "focusScope": "design",
+      "firstUsefulMs": "1018.5",
+      "quality": "high",
+      "qualityChoice": "high",
+      "lighting": "terrace",
+      "samplingPhase": "settled",
+      "samplingReason": "settled",
+      "samplingRatio": "1.9018144357818267",
+      "samplingTarget": "1825x1369",
+      "samplingPixels": "2498425",
+      "samplingMaxPixels": "2500000",
+      "canvasSamples": "4",
+      "samplingLowPower": "false",
+      "depthChoice": "auto",
+      "depthActive": "false",
+      "depthState": "sharp",
+      "depthReason": "auto-sharp",
+      "depthFocus": "",
+      "depthAperture": "0",
+      "depthTarget": "0x0",
+      "depthSamples": "0",
+      "cameraFov": "30",
+      "cameraDistance": "27.91316",
+      "environmentCaptures": "3",
+      "cachedEnvironments": "3",
+      "environmentState": "photographic",
+      "drawCalls": "243",
+      "triangles": "1361356",
+      "geometries": "37",
+      "textures": "42",
+      "activeFrameSamples": "0",
+      "activeFrameP95": ""
+    }
+  },
+  "idleSample": null,
+  "recoverySample": null,
+  "capture": {
+    "bytes": 2758850,
+    "type": "image/png",
+    "before": {
+      "rendererId": 1,
+      "assetLoads": 5,
+      "frames": 11,
+      "occurrenceCreates": 108,
+      "contentChanges": 216,
+      "transformUpdates": 216,
+      "groundingChecks": 0,
+      "occurrenceCount": 72,
+      "cachedAssets": 5,
+      "pendingAssets": 0,
+      "failedAssets": 0,
+      "geometryCount": 37,
+      "textureCount": 42,
+      "carrierPresent": true,
+      "carrierTight": false,
+      "carrierSize": 33.15661802313381,
+      "mode": "select",
+      "view": "perspective",
+      "fitRadius": 8.373087976045616,
+      "quality": "high",
+      "qualityChoice": "high",
+      "lighting": "terrace",
+      "presentation": {
+        "mode": "terrace",
+        "disposed": false,
+        "environment": "photographic",
+        "error": null,
+        "cachedEnvironmentCount": 3,
+        "environmentCaptures": 3,
+        "photographic": {
+          "active": true,
+          "admission": "eligible",
+          "interacting": false,
+          "status": "ready",
+          "error": null,
+          "notificationError": null,
+          "disposed": false,
+          "requests": 4,
+          "captures": 1,
+          "settlements": 1,
+          "retainedTextures": 4,
+          "retainedEstimatedBytes": 9502720,
+          "pmremCubeSize": 256
+        },
+        "reflection": "environment-only",
+        "floorMirror": false,
+        "reflectionState": null,
+        "reflectionError": null,
+        "stageTriangles": 552,
+        "cachedCinematicStages": 1,
+        "stageTextures": 8,
+        "stageTextureBaseBytes": 2998304,
+        "softboxTextureBytes": 16384,
+        "backgroundPath": "working-linear-texture",
+        "architectureDepthBounds": {
+          "min": [
+            -17.32034780933173,
+            0,
+            -23.848460457639536
+          ],
+          "max": [
+            17.32034780933173,
+            5.861161816133566,
+            -12.67713470106727
+          ]
+        },
+        "ownsEnvironment": true,
+        "quality": "high",
+        "shadowSize": 1024,
+        "shadow": {
+          "fit": "product",
+          "pcf": "five-sample-vogel-ign",
+          "key": {
+            "texel": 0.01830280754436068,
+            "radius": 4.11728045556755,
+            "size": 1024
+          },
+          "contact": null,
+          "assumedDepthBytes": 4194304,
+          "castingStageMeshes": 0
+        },
+        "inspection": null,
+        "rig": {
+          "keyDirection": [
+            -0.7465190120595252,
+            0.4116734222164866,
+            0.5227182396609449
+          ],
+          "fillDirection": [
+            0.6983277086763391,
+            0.6691306063588582,
+            0.2541704997215075
+          ],
+          "keyIntensity": 0.9,
+          "fillIntensity": 0.04,
+          "hemisphereIntensity": 0.035,
+          "contactIntensity": 0,
+          "environmentIntensity": 0.78,
+          "exposure": 1.06,
+          "environmentRotation": [
+            0,
+            -1.8944,
+            0
+          ]
+        },
+        "support": {
+          "kind": "finite-photographic-cream-marble",
+          "width": 37.68410928824285,
+          "depth": 37.68410928824285,
+          "radius": 18.842054644121426,
+          "thickness": 0,
+          "sourceWidthMeters": 0.328125,
+          "textureScale": 1.1484680925940678,
+          "topWorldY": 4.183776579429793e-15
+        }
+      },
+      "depth": {
+        "choice": "auto",
+        "active": false,
+        "state": "sharp",
+        "reason": "auto-sharp",
+        "label": "Net · otomatik güvenli görünüm",
+        "focus": null,
+        "nearDepth": null,
+        "farDepth": null,
+        "aperture": 0,
+        "maxblur": 0,
+        "targetWidth": 0,
+        "targetHeight": 0,
+        "samples": 0,
+        "allocations": 0,
+        "disposals": 0,
+        "allocated": false,
+        "autoEnabled": false
+      },
+      "materialTextures": {
+        "presets": 5,
+        "variants": 10,
+        "textures": 25,
+        "textureSize": 256,
+        "cpuTextureBytes": 6422528,
+        "gpuTextureBytesWithMipmaps": 8519648,
+        "liveOpticalMaterials": 29,
+        "opticsEnabled": true,
+        "directionalCompatible": true,
+        "disposed": false,
+        "bodyStrengthMultiplier": 1,
+        "bodyModels": [
+          "artistic-pearl-redistribution-pmrem-r27",
+          "artistic-object-depth-pmrem-r13",
+          "artistic-object-depth-pmrem-r15"
+        ]
+      },
+      "activeFrameIntervals": [],
+      "focusScope": "design",
+      "firstUsefulMs": 1018.5,
+      "contextLost": false,
+      "destroyed": false,
+      "sampling": {
+        "phase": "settled",
+        "reason": "settled",
+        "pixelRatio": 1.9018144357818267,
+        "width": 1825,
+        "height": 1369,
+        "pixels": 2498425,
+        "available": true,
+        "canRefine": true,
+        "settleDelayMs": 180,
+        "maxPixels": 2500000,
+        "pending": false,
+        "canvasSamples": 4,
+        "capabilityLimitsVerified": true,
+        "lowPower": false
+      },
+      "inspection": null,
+      "inspectionCamera": {
+        "position": [
+          6.437636416133533,
+          22.301872487976237,
+          16.579918941905245
+        ],
+        "target": [
+          0,
+          0.3060000000000001,
+          0.6462096812591382
+        ],
+        "zoom": 1
+      },
+      "inspectionMeshes": []
+    },
+    "after": {
+      "rendererId": 1,
+      "assetLoads": 5,
+      "frames": 12,
+      "occurrenceCreates": 108,
+      "contentChanges": 216,
+      "transformUpdates": 216,
+      "groundingChecks": 0,
+      "occurrenceCount": 72,
+      "cachedAssets": 5,
+      "pendingAssets": 0,
+      "failedAssets": 0,
+      "geometryCount": 37,
+      "textureCount": 42,
+      "carrierPresent": true,
+      "carrierTight": false,
+      "carrierSize": 33.15661802313381,
+      "mode": "select",
+      "view": "perspective",
+      "fitRadius": 8.373087976045616,
+      "quality": "high",
+      "qualityChoice": "high",
+      "lighting": "terrace",
+      "presentation": {
+        "mode": "terrace",
+        "disposed": false,
+        "environment": "photographic",
+        "error": null,
+        "cachedEnvironmentCount": 3,
+        "environmentCaptures": 3,
+        "photographic": {
+          "active": true,
+          "admission": "eligible",
+          "interacting": false,
+          "status": "ready",
+          "error": null,
+          "notificationError": null,
+          "disposed": false,
+          "requests": 4,
+          "captures": 1,
+          "settlements": 1,
+          "retainedTextures": 4,
+          "retainedEstimatedBytes": 9502720,
+          "pmremCubeSize": 256
+        },
+        "reflection": "environment-only",
+        "floorMirror": false,
+        "reflectionState": null,
+        "reflectionError": null,
+        "stageTriangles": 552,
+        "cachedCinematicStages": 1,
+        "stageTextures": 8,
+        "stageTextureBaseBytes": 2998304,
+        "softboxTextureBytes": 16384,
+        "backgroundPath": "working-linear-texture",
+        "architectureDepthBounds": {
+          "min": [
+            -17.32034780933173,
+            0,
+            -23.848460457639536
+          ],
+          "max": [
+            17.32034780933173,
+            5.861161816133566,
+            -12.67713470106727
+          ]
+        },
+        "ownsEnvironment": true,
+        "quality": "high",
+        "shadowSize": 1024,
+        "shadow": {
+          "fit": "product",
+          "pcf": "five-sample-vogel-ign",
+          "key": {
+            "texel": 0.01830280754436068,
+            "radius": 4.11728045556755,
+            "size": 1024
+          },
+          "contact": null,
+          "assumedDepthBytes": 4194304,
+          "castingStageMeshes": 0
+        },
+        "inspection": null,
+        "rig": {
+          "keyDirection": [
+            -0.7465190120595252,
+            0.4116734222164866,
+            0.5227182396609449
+          ],
+          "fillDirection": [
+            0.6983277086763391,
+            0.6691306063588582,
+            0.2541704997215075
+          ],
+          "keyIntensity": 0.9,
+          "fillIntensity": 0.04,
+          "hemisphereIntensity": 0.035,
+          "contactIntensity": 0,
+          "environmentIntensity": 0.78,
+          "exposure": 1.06,
+          "environmentRotation": [
+            0,
+            -1.8944,
+            0
+          ]
+        },
+        "support": {
+          "kind": "finite-photographic-cream-marble",
+          "width": 37.68410928824285,
+          "depth": 37.68410928824285,
+          "radius": 18.842054644121426,
+          "thickness": 0,
+          "sourceWidthMeters": 0.328125,
+          "textureScale": 1.1484680925940678,
+          "topWorldY": 4.183776579429793e-15
+        }
+      },
+      "depth": {
+        "choice": "auto",
+        "active": false,
+        "state": "sharp",
+        "reason": "auto-sharp",
+        "label": "Net · otomatik güvenli görünüm",
+        "focus": null,
+        "nearDepth": null,
+        "farDepth": null,
+        "aperture": 0,
+        "maxblur": 0,
+        "targetWidth": 0,
+        "targetHeight": 0,
+        "samples": 0,
+        "allocations": 0,
+        "disposals": 0,
+        "allocated": false,
+        "autoEnabled": false
+      },
+      "materialTextures": {
+        "presets": 5,
+        "variants": 10,
+        "textures": 25,
+        "textureSize": 256,
+        "cpuTextureBytes": 6422528,
+        "gpuTextureBytesWithMipmaps": 8519648,
+        "liveOpticalMaterials": 29,
+        "opticsEnabled": true,
+        "directionalCompatible": true,
+        "disposed": false,
+        "bodyStrengthMultiplier": 1,
+        "bodyModels": [
+          "artistic-pearl-redistribution-pmrem-r27",
+          "artistic-object-depth-pmrem-r13",
+          "artistic-object-depth-pmrem-r15"
+        ]
+      },
+      "activeFrameIntervals": [],
+      "focusScope": "design",
+      "firstUsefulMs": 1018.5,
+      "contextLost": false,
+      "destroyed": false,
+      "sampling": {
+        "phase": "settled",
+        "reason": "settled",
+        "pixelRatio": 1.9018144357818267,
+        "width": 1825,
+        "height": 1369,
+        "pixels": 2498425,
+        "available": true,
+        "canRefine": true,
+        "settleDelayMs": 180,
+        "maxPixels": 2500000,
+        "pending": false,
+        "canvasSamples": 4,
+        "capabilityLimitsVerified": true,
+        "lowPower": false
+      },
+      "inspection": null,
+      "inspectionCamera": {
+        "position": [
+          6.437636416133533,
+          22.301872487976237,
+          16.579918941905245
+        ],
+        "target": [
+          0,
+          0.3060000000000001,
+          0.6462096812591382
+        ],
+        "zoom": 1
+      },
+      "inspectionMeshes": []
+    },
+    "method": "public captureImage; one actual WebGL renderer"
+  }
+}

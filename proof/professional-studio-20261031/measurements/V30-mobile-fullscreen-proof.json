@@ -1,0 +1,80 @@
+{
+  "pinState": {
+    "canvases": 1,
+    "focus": "library-panel",
+    "overflow": false,
+    "scene": {
+      "bottom": 385.90625,
+      "height": 352.90625,
+      "left": 8,
+      "right": 367,
+      "top": 33,
+      "width": 359,
+      "x": 8,
+      "y": 33
+    },
+    "scrollY": 71,
+    "stage": {
+      "bottom": 434.90625,
+      "height": 427.90625,
+      "left": 8,
+      "right": 367,
+      "top": 7,
+      "width": 359,
+      "x": 8,
+      "y": 7
+    }
+  },
+  "fullState": {
+    "canvases": 1,
+    "expanded": "true",
+    "focus": "scene-fullscreen",
+    "scene": {
+      "bottom": 763,
+      "height": 737,
+      "left": 0,
+      "right": 375,
+      "top": 26,
+      "width": 375,
+      "x": 0,
+      "y": 26
+    },
+    "scrollY": 0,
+    "stage": {
+      "bottom": 812,
+      "height": 812,
+      "left": 0,
+      "right": 375,
+      "top": 0,
+      "width": 375,
+      "x": 0,
+      "y": 0
+    }
+  },
+  "returnState": {
+    "canvases": 1,
+    "expanded": "false",
+    "focus": "scene-fullscreen",
+    "scene": {
+      "bottom": 385.90625,
+      "height": 352.90625,
+      "left": 8,
+      "right": 367,
+      "top": 33,
+      "width": 359,
+      "x": 8,
+      "y": 33
+    },
+    "scrollY": 76,
+    "stage": {
+      "bottom": 434.90625,
+      "height": 427.90625,
+      "left": 8,
+      "right": 367,
+      "top": 7,
+      "width": 359,
+      "x": 8,
+      "y": 7
+    }
+  }
+}

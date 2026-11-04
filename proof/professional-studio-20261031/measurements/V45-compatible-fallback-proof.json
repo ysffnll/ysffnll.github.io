@@ -1,0 +1,31 @@
+{
+  "schema": "jew-studio.compatible-fallback-proof.v1",
+  "revision": "8ef58f24efd07d11c93c803cbab60898207f1c30",
+  "checks": {
+    "mixedOpenExact": true,
+    "mixedColdReloadExact": true,
+    "newAddV2": true,
+    "newBraceletV2": true,
+    "newNecklaceV2": true,
+    "restoreInitialV3Exact": true
+  },
+  "allPass": true,
+  "normalUI": "http://localhost:5202/",
+  "rendererId": 1,
+  "logs": [],
+  "freshPolicy": "natural-v2",
+  "supportedSavedVersions": [
+    "legacy-r27",
+    "id-r43",
+    "natural-v1",
+    "natural-v2",
+    "natural-v3"
+  ],
+  "receiptSha256": "16791eefd39be03b904a02898ee59d0d6870cee2b567df4caa40bfa4eda6c392",
+  "filesVerified": 207,
+  "bytes": 59144417,
+  "providerUploaded": false,
+  "providerPublished": false,
+  "dryRun": "PASS; existing cf prebuilt path; no bindings",
+  "scope": "Prepared immutable redeployment artifact; NOT a provider-version rollback. Initial test Recipe restored exact."
+}

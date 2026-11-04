@@ -1,0 +1,47 @@
+{
+  "schema": "jew.public-gallery-summary.v1",
+  "integrationSourceLocal": "137b6c3a2eb0bd9424066b93f2bce4218977581b",
+  "images": {
+    "bileklik-once.png": {
+      "bytes": 1285716,
+      "sha256": "0a37d0e75188a782daabfc07ac1734b6c11c37dd3fcbc6832a931d47c518aac9",
+      "width": 1710,
+      "height": 842,
+      "sourceFile": "initial-bracelet.png"
+    },
+    "kolye-once.png": {
+      "bytes": 1208596,
+      "sha256": "f25c63ed922babad5668a9f498a42902932f3682ac65e2fed0069c5393a54722",
+      "width": 1710,
+      "height": 842,
+      "sourceFile": "initial-necklace.png"
+    },
+    "bileklik-yeni.png": {
+      "bytes": 1321889,
+      "sha256": "bda4d2c4dc2800f46c060bdaf83680553a17926f7111952ff48417f36b2dca5b",
+      "width": 1710,
+      "height": 842,
+      "sourceFile": "candidate-bracelet.png"
+    },
+    "kolye-yeni.png": {
+      "bytes": 1233091,
+      "sha256": "973ba27b50a314785ee6de310a260f92a54249543d6e3453e8b22862aa587da5",
+      "width": 1710,
+      "height": 842,
+      "sourceFile": "candidate-necklace.png"
+    }
+  },
+  "download": {
+    "file": "JEW-Studio-natural5-gercek-goruntuler-20261101.zip",
+    "bytes": 12060356,
+    "sha256": "02f9fa647640944a3b97fd2fab5bbf873e6425c5b92bbabb4b964747ecfec1eb",
+    "members": 40,
+    "safeCRCVerified": true
+  },
+  "imageTreatment": "Original PNG bytes; CSS display only",
+  "JSONTreatment": "Explicit allowlisted derivatives clearly labeled; original paths/account/provider/storage context excluded",
+  "independentReviewReuse": true,
+  "newIndependentReview": false,
+  "newPublicRuntimeAcceptance": false,
+  "sampleLimit": "Four visible materialthumbnails; hiddenJ only ZIPcompatibility evidence, never newcatalogactivation"
+}

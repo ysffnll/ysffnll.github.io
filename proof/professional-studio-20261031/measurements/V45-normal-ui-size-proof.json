@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "size4": true,
+    "size6": true,
+    "size8": true,
+    "freshId": true,
+    "duplicateNewId": true,
+    "restoredInitial": true
+  },
+  "allPass": true,
+  "freshId": "part-e43715ce-0e72-4d86-9607-03cfea5218e6",
+  "duplicateId": "part-24618881-3d78-4b27-8a05-c11c375a67d9",
+  "scope": "actual normal UI; nominal diameter checked from exported Recipe"
+}

@@ -1,0 +1,9 @@
+JEW Studio — 2 Kasım 2026 geliştirme görüntüleri
+
+Bu paketteki yedi PNG, çalışan 3D atölyeden alınan özgün görüntülerdir. Bileklik, kolye, makrome yakın planı, mobil ölçüde iki sahne ve Unakit doku karşılaştırması bulunur.
+
+Makrome geçişi tasarımdaki mevcut parçaları korur. Kolyedeki ayrı toka bu nedenle görünür kalır; otomatik silinmez. Yeni Unakit görünümü inceleme aşamasındadır ve eski tasarımları değiştirmez.
+
+Fiziksel telefon, üretim uygunluğu ve nihai fotoğraf gerçekçiliği kabulü bu teslimin kapsamı dışındadır. Bağımsız görsel inceleme, bu kareleri geliştirme önizlemesi olarak değerlendirdi.
+
+Dosya boyutları ve SHA-256 değerleri goruntu-kaydi.json içindedir. Goal devam ediyor.
