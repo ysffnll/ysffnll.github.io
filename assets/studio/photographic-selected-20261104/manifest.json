@@ -65,7 +65,7 @@
       "projection": "2:1 generated input; seamless360/equirectangular projection and runtime crop are not established by dimensions",
       "sourceOriginal": "outputs/background-selection-20261104/originals/T1-ege-kiyisi.png",
       "nineReadyReceiptEntry": "originals/T1-ege-kiyisi.png",
-      "facingU": 0.4,
+      "facingU": 0.16,
       "placementStatus": "unproven initial static longitude; Root actual runtime/crop acceptance pending"
     },
     {

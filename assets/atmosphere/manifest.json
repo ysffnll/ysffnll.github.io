@@ -65,32 +65,17 @@
   "assets": [
     {
       "id": "element.fire",
-      "version": 1,
+      "version": 2,
       "themeTags": [
         "elements"
       ],
       "sourceCell": [
         0,
         0,
-        627,
-        627
+        816,
+        724
       ],
       "runtimeCells": {
-        "1024": {
-          "rectPixels": [
-            0,
-            0,
-            512,
-            512
-          ],
-          "alphaBounds": [
-            151,
-            44,
-            358,
-            470
-          ],
-          "gutter": 16
-        },
         "512": {
           "rectPixels": [
             0,
@@ -99,12 +84,41 @@
             256
           ],
           "alphaBounds": [
-            75,
-            22,
-            179,
-            235
+            16,
+            54,
+            240,
+            202
           ],
-          "gutter": 8
+          "gutter": 16,
+          "uvRect": [
+            0.0,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "uvOrigin": "bottom-left"
+        },
+        "1024": {
+          "rectPixels": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "alphaBounds": [
+            16,
+            97,
+            496,
+            415
+          ],
+          "gutter": 16,
+          "uvRect": [
+            0.0,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "uvOrigin": "bottom-left"
         }
       },
       "pivot": [
@@ -128,36 +142,27 @@
         "medium": 1024,
         "low": 512
       },
-      "fallbackId": "procedural-elements-v1"
+      "fallbackId": "procedural-elements-v1",
+      "atlasId": "elements-b",
+      "sourceRef": "atlasGroups.elements-b.source.fireWater",
+      "sharedArtworkIds": [
+        "element.fire",
+        "element.fire.b"
+      ]
     },
     {
       "id": "element.water",
-      "version": 1,
+      "version": 2,
       "themeTags": [
         "elements"
       ],
       "sourceCell": [
-        627,
+        816,
         0,
-        627,
-        627
+        1356,
+        724
       ],
       "runtimeCells": {
-        "1024": {
-          "rectPixels": [
-            512,
-            0,
-            512,
-            512
-          ],
-          "alphaBounds": [
-            566,
-            77,
-            961,
-            440
-          ],
-          "gutter": 16
-        },
         "512": {
           "rectPixels": [
             256,
@@ -166,12 +171,41 @@
             256
           ],
           "alphaBounds": [
-            283,
-            39,
-            480,
-            219
+            272,
+            81,
+            496,
+            173
           ],
-          "gutter": 8
+          "gutter": 16,
+          "uvRect": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "uvOrigin": "bottom-left"
+        },
+        "1024": {
+          "rectPixels": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "alphaBounds": [
+            528,
+            156,
+            1008,
+            355
+          ],
+          "gutter": 16,
+          "uvRect": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "uvOrigin": "bottom-left"
         }
       },
       "pivot": [
@@ -195,7 +229,13 @@
         "medium": 1024,
         "low": 512
       },
-      "fallbackId": "procedural-elements-v1"
+      "fallbackId": "procedural-elements-v1",
+      "atlasId": "elements-b",
+      "sourceRef": "atlasGroups.elements-b.source.fireWater",
+      "sharedArtworkIds": [
+        "element.water",
+        "element.water.b"
+      ]
     },
     {
       "id": "element.air",
@@ -4629,7 +4669,7 @@
     },
     {
       "id": "element.fire.b",
-      "version": 1,
+      "version": 2,
       "atlasId": "elements-b",
       "themeTags": [
         "elements"
@@ -4643,10 +4683,10 @@
             256
           ],
           "alphaBounds": [
-            17,
-            55,
+            16,
+            54,
             240,
-            200
+            202
           ],
           "gutter": 16,
           "uvRect": [
@@ -4666,9 +4706,9 @@
           ],
           "alphaBounds": [
             16,
-            102,
-            494,
-            411
+            97,
+            496,
+            415
           ],
           "gutter": 16,
           "uvRect": [
@@ -4694,11 +4734,22 @@
         "localUvMargin": 0.02
       },
       "relations": "authored artistic associations; no health, universal tradition or scientific accuracy claim",
-      "fallbackId": "procedural-elements-v1"
+      "fallbackId": "procedural-elements-v1",
+      "sourceCell": [
+        0,
+        0,
+        816,
+        724
+      ],
+      "sourceRef": "atlasGroups.elements-b.source.fireWater",
+      "sharedArtworkIds": [
+        "element.fire",
+        "element.fire.b"
+      ]
     },
     {
       "id": "element.water.b",
-      "version": 1,
+      "version": 2,
       "atlasId": "elements-b",
       "themeTags": [
         "elements"
@@ -4712,10 +4763,10 @@
             256
           ],
           "alphaBounds": [
-            273,
-            44,
-            495,
-            211
+            272,
+            81,
+            496,
+            173
           ],
           "gutter": 16,
           "uvRect": [
@@ -4734,10 +4785,10 @@
             512
           ],
           "alphaBounds": [
-            531,
-            76,
-            1006,
-            434
+            528,
+            156,
+            1008,
+            355
           ],
           "gutter": 16,
           "uvRect": [
@@ -4763,7 +4814,18 @@
         "localUvMargin": 0.02
       },
       "relations": "authored artistic associations; no health, universal tradition or scientific accuracy claim",
-      "fallbackId": "procedural-elements-v1"
+      "fallbackId": "procedural-elements-v1",
+      "sourceCell": [
+        816,
+        0,
+        1356,
+        724
+      ],
+      "sourceRef": "atlasGroups.elements-b.source.fireWater",
+      "sharedArtworkIds": [
+        "element.water",
+        "element.water.b"
+      ]
     },
     {
       "id": "element.air.b",
@@ -6314,81 +6376,128 @@
     "elements-b": {
       "runtimeVariants": [
         {
-          "sha256": "90ccc7f2a64febf3b0989e58a8c5e5c7083e024d3c814dd73526e9f7c690fd89",
-          "bytes": 156360,
+          "sha256": "28f29591cd6756827a36f93552c4dc6e6aa8e3ba83f2a7231bb25c64cd2ed36b",
+          "bytes": 122742,
           "dimensions": [
             512,
             512
           ],
-          "id": "512",
-          "url": "/assets/atmosphere/v2/elements-b-512-90ccc7f2a64febf3.webp",
           "colorSpace": "srgb",
           "alphaMode": "straight",
-          "generateMipmaps": false
+          "generateMipmaps": false,
+          "id": "512",
+          "url": "/assets/atmosphere/v2/elements-b-512-28f29591cd675682.webp"
         },
         {
-          "sha256": "2221210cd02d9a69904af96df3f315f05c5a17b678713b2425337aab4e33ec00",
-          "bytes": 658154,
+          "sha256": "9bf058b51f9a770d6a5912e4b3e59de8297121b558ab4046a4f261271a263404",
+          "bytes": 504162,
           "dimensions": [
             1024,
             1024
           ],
-          "id": "1024",
-          "url": "/assets/atmosphere/v2/elements-b-1024-2221210cd02d9a69.webp",
           "colorSpace": "srgb",
           "alphaMode": "straight",
-          "generateMipmaps": false
+          "generateMipmaps": false,
+          "id": "1024",
+          "url": "/assets/atmosphere/v2/elements-b-1024-9bf058b51f9a770d.webp"
         }
       ],
       "source": {
-        "candidateRef": "outputs/atmosphere-studio-20261104/assets/elements-b-runtime-candidate/candidate-manifest.json",
-        "candidateSha256": "b9832948c35b33657bc140b12ee0e5fe35e06700b6c524b6075dd44faa023bd3",
-        "preparation": "retained pinned candidate bytes; independent cells; premultiplied downsampling; straight-alpha lossless WebP",
+        "kind": "mixed-generated-cells",
         "extraSpendUSD": 0,
-        "kind": "native-image-generation",
-        "provider": "OpenAI ChatGPT included Pro",
-        "date": "2026-11-04",
-        "conversationUrl": "https://chatgpt.com/g/g-p-6abd5eaf0b7c8191a20a50e09fde1256-jewelry-codex/c/6aeb8560-3a88-83eb-8a5f-9cecbe7c6011",
-        "model": null,
-        "seed": null,
-        "promptRef": "src/atmosphere/provenance/prompts/elements-b-prompt.txt",
-        "promptSha256": "90abc7c2cca18b1a0b80e8380a266b298ad51f7b750084743d70a1457adcb198"
-      },
-      "acceptance": "SOURCE_ADMITTED; compiled GPU/blending/motion/readability pending",
-      "displayLimits": {
-        "earth": "Dense granular mineral crescent, not a floating dust plume; independent Show master",
-        "correction": {
-          "rule": "a<=3 =>0;3<a<12 =>round(a*smoothstep((a-3)/9));a>=12 unchanged",
-          "reason": "Native air-loop opening has measured alpha1..5; ramp is limited to the low residue range",
-          "edgeRule": "none; all measured edge/seam values<=3 already become zero",
-          "originalAlphaMass": 76509586,
-          "correctedAlphaMass": 75209891,
-          "removedAlphaMassPercent": 1.6987348487286287,
-          "changedAlphaPixels": 802939,
-          "allRGBUnchanged": true,
-          "allOriginalAlpha12PlusUnchanged": true
+        "fireWater": {
+          "kind": "native-image-generation",
+          "provider": "OpenAI ChatGPT included Pro",
+          "conversationUrl": "https://chatgpt.com/g/g-p-6abd5eaf0b7c8191a20a50e09fde1256-jewelry-codex/c/6aec030c-11bc-83ed-bc03-d7a8f3291235",
+          "date": "2026-11-05",
+          "model": null,
+          "seed": null,
+          "extraSpendUSD": 0,
+          "masterPath": "public/assets/atmosphere/provenance/native02/elements-native02-master-301cc98c77432dba.png",
+          "masterSHA256": "301cc98c77432dba7568bd354dad589e0df6e59e27bf0968cdac4267c5f59a61",
+          "nativeDimensions": [
+            2172,
+            724
+          ],
+          "independentGeneratedImages": 1,
+          "preparationRef": "public/assets/atmosphere/provenance/native02/elements-native02-preparation-711badc8ff32fd71.json",
+          "preparationSHA256": "711badc8ff32fd71c55be93ae4ab659b467d62094487a31695d1c5cb9604c652",
+          "preparation": "safe unequal split x816; alpha<=3 cleared; native trim; down-only premultiplied Lanczos; postfilter alpha<=2 cleared; lossless straight-alpha WebP; no recolor/upscale",
+          "promptRef": "public/assets/atmosphere/provenance/native02/elements-native02-production-prompt-46236c4cfca2db7d.txt",
+          "promptSha256": "46236c4cfca2db7da3f0f41e6c8974b9f2576f6e1379e82f172078a14cb193ad",
+          "historicalEvidence": {
+            "masterPath": "outputs/atmosphere-coordinator-20261104/r9-element-master-study/native-correction-02.png",
+            "preparationRef": "outputs/atmosphere-coordinator-20261104/r10-native-master-assets/preparation.json",
+            "scope": "Historical output-only evidence; canonical repository-controlled references are the source fields above."
+          },
+          "generationContext": {
+            "selectedSeriesOutput": "native-correction-02",
+            "observedNativeSeriesOutputs": 2,
+            "providerReported": "One initial native generation plus one permitted native correction within the recorded production prompt.",
+            "separateCorrectionPromptAvailable": false,
+            "promptScope": "Exact original production prompt only; provider internal correction/tool prompt was not exposed and is not reconstructed.",
+            "sharedArtwork": "One selected two-cell output shared by water A/B and fire A/B; not four independently generated images."
+          }
         },
-        "nativeMargin": "Source 12 percent margins not met; complete forms were independently recentered into verified 16 pixel runtime guards"
+        "airEarth": {
+          "candidateRef": "outputs/atmosphere-studio-20261104/assets/elements-b-runtime-candidate/candidate-manifest.json",
+          "candidateSha256": "b9832948c35b33657bc140b12ee0e5fe35e06700b6c524b6075dd44faa023bd3",
+          "preparation": "retained pinned candidate bytes; independent cells; premultiplied downsampling; straight-alpha lossless WebP",
+          "extraSpendUSD": 0,
+          "kind": "native-image-generation",
+          "provider": "OpenAI ChatGPT included Pro",
+          "date": "2026-11-04",
+          "conversationUrl": "https://chatgpt.com/g/g-p-6abd5eaf0b7c8191a20a50e09fde1256-jewelry-codex/c/6aeb8560-3a88-83eb-8a5f-9cecbe7c6011",
+          "model": null,
+          "seed": null,
+          "promptRef": "src/atmosphere/provenance/prompts/elements-b-prompt.txt",
+          "promptSha256": "90abc7c2cca18b1a0b80e8380a266b298ad51f7b750084743d70a1457adcb198"
+        },
+        "note": "Fire/water A and B IDs intentionally share the same two native02 cells; they are not four distinct generated appearances. Existing group master documents retained air/earth only."
+      },
+      "acceptance": "R10_SOURCE_CANDIDATE; native GPU/blending/motion/readability NOT_RUN",
+      "displayLimits": {
+        "fireWater": "New long water-S and warm fire are source candidates, not runtime acceptance; A/B share sources honestly.",
+        "airEarth": {
+          "earth": "Dense granular mineral crescent, not a floating dust plume; independent Show master",
+          "correction": {
+            "rule": "a<=3 =>0;3<a<12 =>round(a*smoothstep((a-3)/9));a>=12 unchanged",
+            "reason": "Native air-loop opening has measured alpha1..5; ramp is limited to the low residue range",
+            "edgeRule": "none; all measured edge/seam values<=3 already become zero",
+            "originalAlphaMass": 76509586,
+            "correctedAlphaMass": 75209891,
+            "removedAlphaMassPercent": 1.6987348487286287,
+            "changedAlphaPixels": 802939,
+            "allRGBUnchanged": true,
+            "allOriginalAlpha12PlusUnchanged": true
+          },
+          "nativeMargin": "Source 12 percent margins not met; complete forms were independently recentered into verified 16 pixel runtime guards"
+        }
       },
       "derivation": {
-        "correction": {
-          "rule": "a<=3 =>0;3<a<12 =>round(a*smoothstep((a-3)/9));a>=12 unchanged",
-          "reason": "Native air-loop opening has measured alpha1..5; ramp is limited to the low residue range",
-          "edgeRule": "none; all measured edge/seam values<=3 already become zero",
-          "originalAlphaMass": 76509586,
-          "correctedAlphaMass": 75209891,
-          "removedAlphaMassPercent": 1.6987348487286287,
-          "changedAlphaPixels": 802939,
-          "allRGBUnchanged": true,
-          "allOriginalAlpha12PlusUnchanged": true
+        "originalsUnchanged": true,
+        "fireWater": "safe unequal split x816; alpha<=3 cleared; native trim; down-only premultiplied Lanczos; postfilter alpha<=2 cleared; lossless straight-alpha WebP; no recolor/upscale",
+        "airEarth": {
+          "correction": {
+            "rule": "a<=3 =>0;3<a<12 =>round(a*smoothstep((a-3)/9));a>=12 unchanged",
+            "reason": "Native air-loop opening has measured alpha1..5; ramp is limited to the low residue range",
+            "edgeRule": "none; all measured edge/seam values<=3 already become zero",
+            "originalAlphaMass": 76509586,
+            "correctedAlphaMass": 75209891,
+            "removedAlphaMassPercent": 1.6987348487286287,
+            "changedAlphaPixels": 802939,
+            "allRGBUnchanged": true,
+            "allOriginalAlpha12PlusUnchanged": true
+          },
+          "resize": "down-only premultiplied-alpha Lanczos; straight-alpha lossless WebP; alpha<=2 cleared after filtering",
+          "noNativeUpscale": true,
+          "correctedMaster": {
+            "file": "corrected-native-candidate.png",
+            "sha256": "8a18d20289bee82da9e5e4bd8497e2b9f8954422e25f2b2e40009bce28989fa7"
+          },
+          "originalUnchanged": true
         },
-        "resize": "down-only premultiplied-alpha Lanczos; straight-alpha lossless WebP; alpha<=2 cleared after filtering",
-        "noNativeUpscale": true,
-        "correctedMaster": {
-          "file": "corrected-native-candidate.png",
-          "sha256": "8a18d20289bee82da9e5e4bd8497e2b9f8954422e25f2b2e40009bce28989fa7"
-        },
-        "originalUnchanged": true
+        "oldMasterScope": "Only the unchanged air/earth runtime cells derive from group.master; fire/water derive from source.fireWater."
       },
       "master": {
         "path": "public/assets/atmosphere/v2/elements-b-master-9c87476d4a657551.png",

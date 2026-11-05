@@ -9,10 +9,11 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Keep the cascade explicit and the semantic fallback styled without JS. -->
     <!-- Retain Sedef surfaces; the final layer owns workshop layout. -->
-    <script type="module" crossorigin src="/assets/workshop-D_hNuhJD.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/model-E1uWGFMg.js">
-    <link rel="modulepreload" crossorigin href="/assets/shared-assembly-starter-v1-ByhXnBt0.js">
-    <link rel="stylesheet" crossorigin href="/assets/workshop-CnjIepzb.css">
+    <script type="module" crossorigin src="/assets/workshop-Docxl2D5.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/three.core-Dp-eO7LC.js">
+    <link rel="modulepreload" crossorigin href="/assets/model-CLpAzc1S.js">
+    <link rel="modulepreload" crossorigin href="/assets/shared-assembly-starter-v1-C-zjhWtD.js">
+    <link rel="stylesheet" crossorigin href="/assets/workshop-CS0OregW.css">
   </head>
   <body>
     <a class="skip-link" href="#studio">Atölyeye geç</a>
@@ -61,6 +62,11 @@
                 <button id="multi-mode" class="text-button" type="button" aria-label="Çoklu seçim" aria-pressed="false"><span class="mobile-tool-icon" aria-hidden="true">⊞</span><span class="stage-tool-label">Çoklu seç</span></button>
                 <button id="multi-done" class="text-button" type="button" aria-label="Çoklu seçimi bitir" hidden><span class="mobile-tool-icon" aria-hidden="true">✓</span><span class="stage-tool-label">Bitti</span></button>
                 <button id="clear-selection" class="text-button" type="button" aria-label="Seçimi temizle" disabled><span class="mobile-tool-icon" aria-hidden="true">×</span><span class="stage-tool-label">Seçimi bırak</span></button>
+              </div>
+              <div id="main-atmosphere-bar" class="main-atmosphere-bar" role="group" aria-label="Atmosfer hareketi" data-studio-camera-obstacle="top" hidden>
+                <button id="main-atmosphere-play" type="button" aria-pressed="false" aria-describedby="main-atmosphere-status" disabled>Oynat</button>
+                <span id="main-atmosphere-status" role="status" aria-live="polite" aria-atomic="true">Atmosfer hazırlanıyor…</span>
+                <button id="main-atmosphere-settings-open" type="button" aria-controls="workshop-tools" aria-haspopup="dialog">Ayarlar</button>
               </div>
               </div>
               <button id="retry-assets" class="asset-retry" type="button" hidden>Modeli yeniden yükle ↻</button>
@@ -119,7 +125,7 @@
             <dialog id="workshop-tools" class="workshop-dialog" aria-labelledby="workshop-tools-title">
               <div class="workshop-dialog-header"><button id="workshop-sheet-handle" type="button" aria-label="Menüyü aşağı kaydırarak kapat" title="Menüyü aşağı kaydırarak kapat"><span aria-hidden="true"></span></button><h2 id="workshop-tools-title">Atölye menüsü <small>Parçaların, ölçülerin, görünümün.</small></h2><button id="workshop-size-toggle" type="button" aria-controls="workshop-tools" aria-expanded="false" aria-label="Menüyü büyüt">Büyüt</button><button id="workshop-tools-close" class="text-button" type="button" aria-label="Menüyü kapat" autofocus>×</button></div>
               <div class="quick-design-actions" role="group" aria-label="Tasarım işlemleri"><button id="shuffle-design" class="text-button" type="button">⤨ Karıştır</button><button id="restore-design" class="text-button" type="button">Başlangıca dön…</button></div>
-              <a id="atmosphere-studio-link" class="text-button" href="/atmosphere-studio.html">Atmosfer Stüdyosu</a>
+              <a id="atmosphere-studio-link" class="text-button" href="#main-atmosphere-settings">Atmosfer · bu tasarımda aç</a>
               <button id="tools-clear-selection" class="text-button" type="button" disabled hidden>Seçimi bırak</button>
               <a id="parts-nav" href="#parts-details" data-workspace-target hidden>Seçim araçları / Liste</a>
             <details class="design-start" id="design-start">
@@ -211,8 +217,27 @@
                   <button class="scene-choice" type="button" data-lighting="gallery" aria-pressed="true" aria-controls="scene" disabled><span class="scene-choice-swatch" aria-hidden="true"></span><span>Gece Galerisi</span></button>
                   <button class="scene-choice" type="button" data-lighting="acrylic" aria-pressed="false" aria-controls="scene" disabled><span class="scene-choice-swatch" aria-hidden="true"></span><span>Akrilik Işık Odası</span></button>
                   <button class="scene-choice" type="button" data-lighting="terrace" aria-pressed="false" aria-controls="scene" disabled><span class="scene-choice-swatch" aria-hidden="true"></span><span>Taş Teras</span></button>
+                  <button class="scene-choice" type="button" data-lighting="atmosphere" aria-pressed="false" aria-controls="scene" disabled><span class="scene-choice-swatch" aria-hidden="true"></span><span>Atmosfer</span></button>
                 </div>
-                <label class="setting-field" for="scene-lighting">Sahne<select id="scene-lighting" disabled><option value="neutral">Nötr</option><option value="studio">Kireçtaşı</option><option value="dark">Kobalt</option><option value="editorial">Kehribar</option><option value="gallery" selected>Gece Galerisi</option><option value="acrylic">Akrilik Işık Odası</option><option value="terrace">Taş Teras</option></select></label>
+                <label class="setting-field" for="scene-lighting">Sahne<select id="scene-lighting" disabled><option value="neutral">Nötr</option><option value="studio">Kireçtaşı</option><option value="dark">Kobalt</option><option value="editorial">Kehribar</option><option value="gallery" selected>Gece Galerisi</option><option value="acrylic">Akrilik Işık Odası</option><option value="terrace">Taş Teras</option><option value="atmosphere">Atmosfer</option></select></label>
+                <fieldset id="main-atmosphere-settings" class="main-atmosphere-settings" tabindex="-1" aria-describedby="main-atmosphere-help" hidden>
+                  <legend>Atmosfer</legend>
+                  <p id="main-atmosphere-help">Ayarlar bu oturumda korunur. Tasarımın ve Geri al geçmişin değişmez. Kamerayı kendin döndürebilirsin.</p>
+                  <fieldset class="main-atmosphere-themes"><legend>Temalar</legend>
+                    <label><input type="checkbox" value="astrology" data-atmosphere-theme />Gökyüzü</label>
+                    <label><input type="checkbox" value="chakra" data-atmosphere-theme />Çakra</label>
+                    <label><input type="checkbox" value="elements" data-atmosphere-theme />Elementler</label>
+                    <label><input type="checkbox" value="energy" data-atmosphere-theme />Enerji</label>
+                    <label><input type="checkbox" value="spectrum" data-atmosphere-theme />Işık</label>
+                    <label><input type="checkbox" value="geometry" data-atmosphere-theme />Geometri</label>
+                  </fieldset>
+                  <label class="setting-field" for="main-atmosphere-presentation">Karakter<select id="main-atmosphere-presentation" data-atmosphere-field="presentation"><option value="calm">Sakin</option><option value="balanced">Dengeli</option><option value="show">Canlı</option></select></label>
+                  <label class="setting-field" for="main-atmosphere-art-direction">Görsel yön<select id="main-atmosphere-art-direction" data-atmosphere-field="artDirection"><option value="celestial">Göksel</option><option value="organic">Organik</option><option value="fusion">Birleşim</option></select></label>
+                  <label class="setting-field" for="main-atmosphere-intensity">Yoğunluk<input id="main-atmosphere-intensity" data-atmosphere-field="intensity" type="range" min="0" max="1" step="0.05" value="0.5" /></label>
+                  <label class="setting-field" for="main-atmosphere-speed">Hareket hızı<input id="main-atmosphere-speed" data-atmosphere-field="motionSpeed" type="range" min="0" max="2" step="0.1" value="1" /></label>
+                  <p id="main-atmosphere-detail" role="status" aria-live="polite"></p>
+                  <button id="main-atmosphere-gallery" type="button" hidden>Galeriye dön</button>
+                </fieldset>
                 <label class="setting-field" for="scene-quality">Görüntü kalitesi<select id="scene-quality" disabled><option value="auto">Otomatik</option><option value="balanced">Dengeli</option><option value="high" selected>Yüksek</option></select></label>
                 <label class="setting-field" for="scene-depth">Alan derinliği<select id="scene-depth" aria-describedby="scene-depth-status" disabled><option value="auto">Otomatik</option><option value="off">Net</option><option value="on">Sinematik</option></select></label>
                 <p id="scene-depth-status" class="scene-depth-status" role="status" aria-live="polite" aria-atomic="true">Net görünüm · 3D hazırlanıyor.</p>

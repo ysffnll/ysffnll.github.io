@@ -1,0 +1,1 @@
+export{t as CONFIGURATION_VERSION,n as DEFAULT_CONFIGURATION,r as MAX_PRESET_LENGTH,i as MOTIF_IDS,a as PRESET_FORMAT,o as THEME_IDS,s as normalizeConfiguration,c as parsePresetJson,l as patchConfiguration,u as stringifyPresetJson}from"./configuration-D4TzTEe1.js";
