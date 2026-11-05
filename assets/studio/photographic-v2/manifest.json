@@ -1,0 +1,57 @@
+{
+  "schema": "jew-studio.photographic-assets.v2",
+  "runtimeAPIRequests": false,
+  "incrementalCostUSD": 0,
+  "applicationSourceBeforeCandidate": "947df9c7ab8b08cb71276bded0a3c1f87b73a651",
+  "assets": [
+    {
+      "mode": "gallery",
+      "file": "gallery-night-atelier.png",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1772522,
+      "sha256": "2c8120f9a61a2d170d29cea2b7a9a909d9ac5358d7e81e519e9b5c834965283f",
+      "colorSpace": "sRGB",
+      "sourceSoftness": "source-defocused",
+      "sourceDefocusMeasured": false,
+      "provenance": "https://chatgpt.com/g/g-p-6abd5eaf0b7c8191a20a50e09fde1256/c/6aeb6162-6c1c-83ed-afa9-00ba7a2e368b",
+      "generation": "included normal Pro native image output, delivered1774x887; no Rootresize/upscale/retouch",
+      "license": "AI-generated output for user JEW Studio; not CC0 stock",
+      "projection": "2:1generatedpanorama, runtime seam/poles unverified",
+      "facingU": 0.25
+    },
+    {
+      "mode": "terrace",
+      "file": "terrace-summer-pergola.png",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2331988,
+      "sha256": "78ddf2ce8a71812855ed9a4276e259e4203d35be421a560c9956bd3b08304fef",
+      "colorSpace": "sRGB",
+      "sourceSoftness": "source-defocused",
+      "sourceDefocusMeasured": false,
+      "provenance": "https://chatgpt.com/g/g-p-6abd5eaf0b7c8191a20a50e09fde1256/c/6aeb61b1-cbd8-83eb-b54b-32bc1619fe66",
+      "generation": "included normal Pro native image output, delivered1774x887; no Rootresize/upscale/retouch",
+      "license": "AI-generated output for user JEW Studio; not CC0 stock",
+      "projection": "2:1generatedpanorama, runtime seam/poles unverified",
+      "facingU": 0.7
+    },
+    {
+      "mode": "acrylic",
+      "file": "acrylic-spring-atelier.png",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2600493,
+      "sha256": "c4801e28c4a798169ce25565d922ce61d50e4d9c4401a720a9f1ae28a9f0386e",
+      "colorSpace": "sRGB",
+      "sourceSoftness": "source-defocused",
+      "sourceDefocusMeasured": false,
+      "provenance": "https://chatgpt.com/g/g-p-6abd5eaf0b7c8191a20a50e09fde1256/c/6aeb61c2-928c-83ed-a38c-18c0f85959ea",
+      "generation": "included normal Pro native image output, delivered1774x887; no Rootresize/upscale/retouch",
+      "license": "AI-generated output for user JEW Studio; not CC0 stock",
+      "projection": "2:1generatedpanorama, runtime seam/poles unverified",
+      "facingU": 0.78
+    }
+  ],
+  "acceptance": "actual native source inputs opened; bounded working-frame source placement reviewed; artistic A/B/C choice and final public/motion/device acceptance remain separate"
+}

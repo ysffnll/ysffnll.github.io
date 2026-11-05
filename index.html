@@ -9,9 +9,10 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Keep the cascade explicit and the semantic fallback styled without JS. -->
     <!-- Retain Sedef surfaces; the final layer owns workshop layout. -->
-    <script type="module" crossorigin src="/assets/index-Cd-XLKlm.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/model-DQzr7zAi.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-CnjIepzb.css">
+    <script type="module" crossorigin src="/assets/workshop-D_hNuhJD.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/model-E1uWGFMg.js">
+    <link rel="modulepreload" crossorigin href="/assets/shared-assembly-starter-v1-ByhXnBt0.js">
+    <link rel="stylesheet" crossorigin href="/assets/workshop-CnjIepzb.css">
   </head>
   <body>
     <a class="skip-link" href="#studio">Atölyeye geç</a>
@@ -118,6 +119,7 @@
             <dialog id="workshop-tools" class="workshop-dialog" aria-labelledby="workshop-tools-title">
               <div class="workshop-dialog-header"><button id="workshop-sheet-handle" type="button" aria-label="Menüyü aşağı kaydırarak kapat" title="Menüyü aşağı kaydırarak kapat"><span aria-hidden="true"></span></button><h2 id="workshop-tools-title">Atölye menüsü <small>Parçaların, ölçülerin, görünümün.</small></h2><button id="workshop-size-toggle" type="button" aria-controls="workshop-tools" aria-expanded="false" aria-label="Menüyü büyüt">Büyüt</button><button id="workshop-tools-close" class="text-button" type="button" aria-label="Menüyü kapat" autofocus>×</button></div>
               <div class="quick-design-actions" role="group" aria-label="Tasarım işlemleri"><button id="shuffle-design" class="text-button" type="button">⤨ Karıştır</button><button id="restore-design" class="text-button" type="button">Başlangıca dön…</button></div>
+              <a id="atmosphere-studio-link" class="text-button" href="/atmosphere-studio.html">Atmosfer Stüdyosu</a>
               <button id="tools-clear-selection" class="text-button" type="button" disabled hidden>Seçimi bırak</button>
               <a id="parts-nav" href="#parts-details" data-workspace-target hidden>Seçim araçları / Liste</a>
             <details class="design-start" id="design-start">
@@ -206,11 +208,11 @@
                 </div>
                 <p class="scene-choices-caption" id="cinematic-scenes-label">Sinematik sahneler</p>
                 <div class="scene-choices cinematic-scene-choices" role="group" aria-labelledby="cinematic-scenes-label">
-                  <button class="scene-choice" type="button" data-lighting="gallery" aria-pressed="false" aria-controls="scene" disabled><span class="scene-choice-swatch" aria-hidden="true"></span><span>Gece Galerisi</span></button>
+                  <button class="scene-choice" type="button" data-lighting="gallery" aria-pressed="true" aria-controls="scene" disabled><span class="scene-choice-swatch" aria-hidden="true"></span><span>Gece Galerisi</span></button>
                   <button class="scene-choice" type="button" data-lighting="acrylic" aria-pressed="false" aria-controls="scene" disabled><span class="scene-choice-swatch" aria-hidden="true"></span><span>Akrilik Işık Odası</span></button>
-                  <button class="scene-choice" type="button" data-lighting="terrace" aria-pressed="true" aria-controls="scene" disabled><span class="scene-choice-swatch" aria-hidden="true"></span><span>Taş Teras</span></button>
+                  <button class="scene-choice" type="button" data-lighting="terrace" aria-pressed="false" aria-controls="scene" disabled><span class="scene-choice-swatch" aria-hidden="true"></span><span>Taş Teras</span></button>
                 </div>
-                <label class="setting-field" for="scene-lighting">Sahne<select id="scene-lighting" disabled><option value="neutral">Nötr</option><option value="studio">Kireçtaşı</option><option value="dark">Kobalt</option><option value="editorial">Kehribar</option><option value="gallery">Gece Galerisi</option><option value="acrylic">Akrilik Işık Odası</option><option value="terrace" selected>Taş Teras</option></select></label>
+                <label class="setting-field" for="scene-lighting">Sahne<select id="scene-lighting" disabled><option value="neutral">Nötr</option><option value="studio">Kireçtaşı</option><option value="dark">Kobalt</option><option value="editorial">Kehribar</option><option value="gallery" selected>Gece Galerisi</option><option value="acrylic">Akrilik Işık Odası</option><option value="terrace">Taş Teras</option></select></label>
                 <label class="setting-field" for="scene-quality">Görüntü kalitesi<select id="scene-quality" disabled><option value="auto">Otomatik</option><option value="balanced">Dengeli</option><option value="high" selected>Yüksek</option></select></label>
                 <label class="setting-field" for="scene-depth">Alan derinliği<select id="scene-depth" aria-describedby="scene-depth-status" disabled><option value="auto">Otomatik</option><option value="off">Net</option><option value="on">Sinematik</option></select></label>
                 <p id="scene-depth-status" class="scene-depth-status" role="status" aria-live="polite" aria-atomic="true">Net görünüm · 3D hazırlanıyor.</p>

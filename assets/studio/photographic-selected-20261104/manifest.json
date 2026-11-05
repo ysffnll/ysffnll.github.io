@@ -1,0 +1,108 @@
+{
+  "schema": "jew-studio.photographic-assets.v2",
+  "assetSet": "photographic-selected-20261104",
+  "runtimeAPIRequests": false,
+  "incrementalCostUSD": 0,
+  "selection": {
+    "status": "human-selected-via-authorized-parent",
+    "choices": {
+      "gallery": "N2",
+      "terrace": "T1",
+      "acrylic": "A2"
+    },
+    "defaultMode": "gallery",
+    "defaultSelectionId": "N2",
+    "policyOwner": "Root Main/HTML default policy; this manifest does not alter camera or Recipe"
+  },
+  "sourceReceipts": {
+    "nineReady": {
+      "path": "outputs/background-selection-20261104/nine-ready-receipt.json",
+      "sha256": "46f2bbe7fa1d61e73c6b76b41c9e5a31391d32f0247432dbd6f692934903809c"
+    },
+    "alternatives": {
+      "path": "outputs/background-selection-20261104/alternatives.json",
+      "sha256": "ed5320916036451eef5e640b4b3b372dc8061a3d61ca6f9de867ab53d7e75a8e"
+    }
+  },
+  "sourceBytePolicy": "Three selected original PNGs copied unchanged; previous photographic-v2 asset bytes retained",
+  "assets": [
+    {
+      "mode": "gallery",
+      "selectionId": "N2",
+      "selectionName": "Su Kemerleri",
+      "file": "N2-su-kemerleri.png",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2039489,
+      "sha256": "b4611ad69cc9c74bf49910f569cad41bfcc5e7c7ab4c3f2cbe5d5afb4c567995",
+      "colorSpace": "sRGB",
+      "sourceSoftness": "source-defocused",
+      "sourceDefocusMeasured": false,
+      "provenance": "https://chatgpt.com/g/g-p-6abd5eaf0b7c8191a20a50e09fde1256-jewelry-codex/c/6aeb6162-6c1c-83ed-afa9-00ba7a2e368b",
+      "generation": "Included normal ChatGPT Pro native1774x887 PNG; copied byte-for-byte; no resize/upscale/retouch/additional blur",
+      "license": "AI-generated output for user JEW Studio; not CC0 stock",
+      "projection": "2:1 generated input; seamless360/equirectangular projection and runtime crop are not established by dimensions",
+      "sourceOriginal": "outputs/background-selection-20261104/originals/N2-su-kemerleri.png",
+      "nineReadyReceiptEntry": "originals/N2-su-kemerleri.png",
+      "facingU": 0.16,
+      "placementStatus": "unproven initial static longitude; Root actual runtime/crop acceptance pending"
+    },
+    {
+      "mode": "terrace",
+      "selectionId": "T1",
+      "selectionName": "Ege KÄ±yÄ±sÄ±",
+      "file": "T1-ege-kiyisi.png",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1778338,
+      "sha256": "61fda701c9c08fe1a628c3a4799d9da4b4a4256bd401e47dd6c44454ccf5778d",
+      "colorSpace": "sRGB",
+      "sourceSoftness": "source-defocused",
+      "sourceDefocusMeasured": false,
+      "provenance": "https://chatgpt.com/g/g-p-6abd5eaf0b7c8191a20a50e09fde1256-jewelry-codex/c/6aeb61b1-cbd8-83eb-b54b-32bc1619fe66",
+      "generation": "Included normal ChatGPT Pro native1774x887 PNG; copied byte-for-byte; no resize/upscale/retouch/additional blur",
+      "license": "AI-generated output for user JEW Studio; not CC0 stock",
+      "projection": "2:1 generated input; seamless360/equirectangular projection and runtime crop are not established by dimensions",
+      "sourceOriginal": "outputs/background-selection-20261104/originals/T1-ege-kiyisi.png",
+      "nineReadyReceiptEntry": "originals/T1-ege-kiyisi.png",
+      "facingU": 0.4,
+      "placementStatus": "unproven initial static longitude; Root actual runtime/crop acceptance pending"
+    },
+    {
+      "mode": "acrylic",
+      "selectionId": "A2",
+      "selectionName": "Beyaz BahÃ§e AtÃ¶lyesi",
+      "file": "A2-beyaz-bahce-atolyesi.png",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2207298,
+      "sha256": "072c5901f6cfbe6991bf90e2f025517387ca228fd5a8352b0e53bd125cfc3acb",
+      "colorSpace": "sRGB",
+      "sourceSoftness": "source-defocused",
+      "sourceDefocusMeasured": false,
+      "provenance": "https://chatgpt.com/g/g-p-6abd5eaf0b7c8191a20a50e09fde1256-jewelry-codex/c/6aeb61c2-928c-83ed-a38c-18c0f85959ea",
+      "generation": "Included normal ChatGPT Pro native1774x887 PNG; copied byte-for-byte; no resize/upscale/retouch/additional blur",
+      "license": "AI-generated output for user JEW Studio; not CC0 stock",
+      "projection": "2:1 generated input; seamless360/equirectangular projection and runtime crop are not established by dimensions",
+      "sourceOriginal": "outputs/background-selection-20261104/originals/A2-beyaz-bahce-atolyesi.png",
+      "nineReadyReceiptEntry": "originals/A2-beyaz-bahce-atolyesi.png",
+      "facingU": 0.5,
+      "placementStatus": "unproven initial static longitude; Root actual runtime/crop acceptance pending"
+    }
+  ],
+  "acceptance": "Human-selected raw N2/T1/A2. Initial actual placements preserved; final static facing .16/.4/.5/pitch0 requires actual selected-scene review. No public art acceptance yet.",
+  "initialPlacementTrial": {
+    "gallery": 0.65,
+    "terrace": 0.5,
+    "acrylic": 0.5,
+    "disposition": "GallerytooDarkGardenandTerraceEmptyBlueAtNormalDesktopCrop; preserved actualfirstposecaptures; one staticyawcorrection only, no camera/geometry/raw-image/lighting changes"
+  },
+  "staticFacingCorrection": {
+    "gallery": 0.16,
+    "terrace": 0.4,
+    "acrylic": 0.5,
+    "pitch": 0,
+    "terraceReason": "Actual .5 sea-only and .25 column/olive-only crops failed chosen-character legibility. Native Three SphereGeometry UV ray math recommends .4 coastal/sea footprint, without pitch/camera/floor/raw changes. GPU review pending.",
+    "evidence": "outputs/atmosphere-refinement-20261104/selected-art-actual/T1-projection-diagnosis.md"
+  }
+}
