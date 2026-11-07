@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" class="zodiac-art zodiac-glyph" role="img" aria-labelledby="zodiac-sagittarius-title zodiac-sagittarius-desc">
+  <title id="zodiac-sagittarius-title">Sagittarius zodiac contour</title>
+  <desc id="zodiac-sagittarius-desc">An ascending arrow crossed by a short diagonal bow mark. Original path geometry, transparent background, no glow or animation.</desc>
+  <g class="zodiac-contour" fill="none" stroke="#E9D6AA" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M25 103L103 25"/>
+    <path d="M76 25H103V52"/>
+    <path d="M37 56L72 91"/>
+  </g>
+  <g class="zodiac-glints" fill="#FFF0CC" opacity="0.72">
+    <path d="M55 70.1Q55.7 72.3 57.9 73Q55.7 73.7 55 75.9Q54.3 73.7 52.1 73Q54.3 72.3 55 70.1Z"/>
+  </g>
+</svg>

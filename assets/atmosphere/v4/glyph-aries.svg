@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" class="zodiac-art zodiac-glyph" role="img" aria-labelledby="zodiac-aries-title zodiac-aries-desc">
+  <title id="zodiac-aries-title">Aries zodiac contour</title>
+  <desc id="zodiac-aries-desc">A central stem opening into two rounded ram horns. Original path geometry, transparent background, no glow or animation.</desc>
+  <g class="zodiac-contour" fill="none" stroke="#E9D6AA" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M64 107V59C64 40 55 23 42 23C29 23 23 33 25 45C27 55 34 60 41 60"/>
+    <path d="M64 59C64 40 73 23 86 23C99 23 105 33 103 45C101 55 94 60 87 60"/>
+  </g>
+  <g class="zodiac-glints" fill="#FFF0CC" opacity="0.72">
+    <path d="M64 56.1Q64.7 58.3 66.9 59Q64.7 59.7 64 61.9Q63.3 59.7 61.1 59Q63.3 58.3 64 56.1Z"/>
+  </g>
+</svg>

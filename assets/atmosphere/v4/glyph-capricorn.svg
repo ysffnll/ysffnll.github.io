@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" class="zodiac-art zodiac-glyph" role="img" aria-labelledby="zodiac-capricorn-title zodiac-capricorn-desc">
+  <title id="zodiac-capricorn-title">Capricorn zodiac contour</title>
+  <desc id="zodiac-capricorn-desc">An angular horn form flows into a rounded descending sea-goat tail loop. Original path geometry, transparent background, no glow or animation.</desc>
+  <g class="zodiac-contour" fill="none" stroke="#E9D6AA" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 32L43 91L60 43C64 30 68 24 76 24C88 24 91 37 88 51L76 92C72 106 87 112 101 105C114 99 110 80 98 79C86 78 80 87 71 99L61 109"/>
+  </g>
+  <g class="zodiac-glints" fill="#FFF0CC" opacity="0.72">
+    <path d="M76 21.1Q76.7 23.3 78.9 24Q76.7 24.7 76 26.9Q75.3 24.7 73.1 24Q75.3 23.3 76 21.1Z"/>
+    <path d="M98 76.1Q98.7 78.3 100.9 79Q98.7 79.7 98 81.9Q97.3 79.7 95.1 79Q97.3 78.3 98 76.1Z"/>
+  </g>
+</svg>

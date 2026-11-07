@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" class="zodiac-art zodiac-glyph" role="img" aria-labelledby="zodiac-aquarius-title zodiac-aquarius-desc">
+  <title id="zodiac-aquarius-title">Aquarius zodiac contour</title>
+  <desc id="zodiac-aquarius-desc">Two open parallel zigzag water contours with rounded joins. Original path geometry, transparent background, no glow or animation.</desc>
+  <g class="zodiac-contour" fill="none" stroke="#E9D6AA" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 52L34 38L49 52L64 38L79 52L94 38L109 52"/>
+    <path d="M19 84L34 70L49 84L64 70L79 84L94 70L109 84"/>
+  </g>
+  <g class="zodiac-glints" fill="#FFF0CC" opacity="0.72">
+    <path d="M64 35.1Q64.7 37.3 66.9 38Q64.7 38.7 64 40.9Q63.3 38.7 61.1 38Q63.3 37.3 64 35.1Z"/>
+    <path d="M34 67.1Q34.7 69.3 36.9 70Q34.7 70.7 34 72.9Q33.3 70.7 31.1 70Q33.3 69.3 34 67.1Z"/>
+  </g>
+</svg>

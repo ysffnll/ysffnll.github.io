@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" class="zodiac-art zodiac-glyph" role="img" aria-labelledby="zodiac-gemini-title zodiac-gemini-desc">
+  <title id="zodiac-gemini-title">Gemini zodiac contour</title>
+  <desc id="zodiac-gemini-desc">Paired upright stems held by gently bowed upper and lower bars. Original path geometry, transparent background, no glow or animation.</desc>
+  <g class="zodiac-contour" fill="none" stroke="#E9D6AA" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M28 24Q64 36 100 24"/>
+    <path d="M28 104Q64 92 100 104"/>
+    <path d="M43 28V100"/>
+    <path d="M85 28V100"/>
+  </g>
+  <g class="zodiac-glints" fill="#FFF0CC" opacity="0.72">
+    <path d="M43 25.1Q43.7 27.3 45.9 28Q43.7 28.7 43 30.9Q42.3 28.7 40.1 28Q42.3 27.3 43 25.1Z"/>
+    <path d="M85 97.1Q85.7 99.3 87.9 100Q85.7 100.7 85 102.9Q84.3 100.7 82.1 100Q84.3 99.3 85 97.1Z"/>
+  </g>
+</svg>

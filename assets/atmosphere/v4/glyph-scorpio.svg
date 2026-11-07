@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" class="zodiac-art zodiac-glyph" role="img" aria-labelledby="zodiac-scorpio-title zodiac-scorpio-desc">
+  <title id="zodiac-scorpio-title">Scorpio zodiac contour</title>
+  <desc id="zodiac-scorpio-desc">Two arches and an outward rising arrow tail; no inward Virgo loop. Original path geometry, transparent background, no glow or animation.</desc>
+  <g class="zodiac-contour" fill="none" stroke="#E9D6AA" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 100V42C22 25 44 25 44 42V100"/>
+    <path d="M44 43C44 26 66 26 66 43V86C66 104 82 108 95 95L108 82"/>
+    <path d="M94 82H108V96"/>
+  </g>
+  <g class="zodiac-glints" fill="#FFF0CC" opacity="0.72">
+    <path d="M66 40.1Q66.7 42.3 68.9 43Q66.7 43.7 66 45.9Q65.3 43.7 63.1 43Q65.3 42.3 66 40.1Z"/>
+  </g>
+</svg>

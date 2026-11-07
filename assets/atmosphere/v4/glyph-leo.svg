@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" class="zodiac-art zodiac-glyph" role="img" aria-labelledby="zodiac-leo-title zodiac-leo-desc">
+  <title id="zodiac-leo-title">Leo zodiac contour</title>
+  <desc id="zodiac-leo-desc">A small lower loop rises into an arched mane and flowing hooked tail. Original path geometry, transparent background, no glow or animation.</desc>
+  <g class="zodiac-contour" fill="none" stroke="#E9D6AA" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M51 88C51 98 44 105 34 105C24 105 17 98 17 88C17 78 24 71 34 71C44 71 51 78 51 88Z"/>
+    <path d="M49 80C56 70 62 61 60 49C58 36 60 23 73 21C87 18 99 28 99 42C99 58 86 72 84 88C82 102 99 108 109 98"/>
+  </g>
+  <g class="zodiac-glints" fill="#FFF0CC" opacity="0.72">
+    <path d="M74 18.1Q74.7 20.3 76.9 21Q74.7 21.7 74 23.9Q73.3 21.7 71.1 21Q73.3 20.3 74 18.1Z"/>
+  </g>
+</svg>

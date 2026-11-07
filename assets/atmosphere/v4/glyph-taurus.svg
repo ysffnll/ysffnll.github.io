@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" class="zodiac-art zodiac-glyph" role="img" aria-labelledby="zodiac-taurus-title zodiac-taurus-desc">
+  <title id="zodiac-taurus-title">Taurus zodiac contour</title>
+  <desc id="zodiac-taurus-desc">Bull horns joined to a clear circular head contour. Original path geometry, transparent background, no glow or animation.</desc>
+  <g class="zodiac-contour" fill="none" stroke="#E9D6AA" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M41 57C30 50 24 37 24 23"/>
+    <path d="M87 57C98 50 104 37 104 23"/>
+    <path d="M92 79C92 95 80 107 64 107C48 107 36 95 36 79C36 63 48 51 64 51C80 51 92 63 92 79Z"/>
+  </g>
+  <g class="zodiac-glints" fill="#FFF0CC" opacity="0.72">
+    <path d="M64 48.1Q64.7 50.3 66.9 51Q64.7 51.7 64 53.9Q63.3 51.7 61.1 51Q63.3 50.3 64 48.1Z"/>
+  </g>
+</svg>
