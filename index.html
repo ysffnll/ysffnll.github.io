@@ -9,7 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Keep the cascade explicit and the semantic fallback styled without JS. -->
     <!-- Retain Sedef surfaces; the final layer owns workshop layout. -->
-    <script type="module" crossorigin src="/assets/workshop-BciMQt6d.js"></script>
+    <script type="module" crossorigin src="/assets/workshop-BSSb4nSs.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/three.core-Dp-eO7LC.js">
     <link rel="modulepreload" crossorigin href="/assets/model-JDC2q0Hy.js">
     <link rel="modulepreload" crossorigin href="/assets/shared-assembly-starter-v1-0vnr9iY0.js">
@@ -17,7 +17,7 @@
     <link rel="modulepreload" crossorigin href="/assets/configuration-CDU8_iNs.js">
     <link rel="modulepreload" crossorigin href="/assets/recipe-snapshot-DHduGNTE.js">
     <link rel="modulepreload" crossorigin href="/assets/asset-manifest-tnmDQGn5.js">
-    <link rel="stylesheet" crossorigin href="/assets/workshop-DZ6WxtUY.css">
+    <link rel="stylesheet" crossorigin href="/assets/workshop-D2qO3GRk.css">
   </head>
   <body>
     <a class="skip-link" href="#studio">Atölyeye geç</a>
@@ -60,7 +60,13 @@
                 <button id="full-design" class="view-button" type="button" aria-label="Tümünü gör" aria-pressed="true" aria-controls="scene" disabled><span aria-hidden="true">⤢</span><span class="view-label">Tümünü gör</span></button>
                 <button id="focus-selection" class="view-button" type="button" aria-label="Seçiliyi incele" aria-pressed="false" aria-controls="scene" disabled><span aria-hidden="true">⌕</span><span class="view-label">Seçiliyi incele</span></button>
                 <button id="reset-camera" class="view-button" type="button" title="Kamerayı sıfırla" aria-label="Sıfırla: kamerayı başlangıç görünümüne döndür" aria-controls="scene" data-scene-control disabled><span aria-hidden="true">⌂</span><span class="view-label">Sıfırla</span></button>
-                <button id="scene-fullscreen" class="view-button" type="button" title="Sahneyi tam ekran aç" aria-expanded="false" aria-controls="scene-stage" disabled><span aria-hidden="true">⛶</span><span id="scene-fullscreen-label" class="view-label">Tam ekran</span></button>
+                <button id="scene-fullscreen" class="view-button" type="button" title="Sahneyi tam ekran aç" aria-expanded="false" aria-controls="scene-stage" disabled>
+                  <svg class="stage-size-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path class="stage-size-icon__open" d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/>
+                    <path class="stage-size-icon__close" d="m6 6 12 12M18 6 6 18"/>
+                  </svg>
+                  <span id="scene-fullscreen-label" class="view-label">Tam ekran</span>
+                </button>
               </div>
               <div class="stage-selection-tools" data-studio-camera-obstacle="bottom" role="group" aria-label="Tasarımda parça seçimi">
                 <button id="multi-mode" class="text-button" type="button" aria-label="Çoklu seçim" aria-pressed="false"><span class="mobile-tool-icon" aria-hidden="true">⊞</span><span class="stage-tool-label">Çoklu seç</span></button>
