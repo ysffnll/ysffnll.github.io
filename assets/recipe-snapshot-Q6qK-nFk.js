@@ -1,0 +1,1 @@
+export{t as SNAPSHOT_VERSION,n as createAtmosphereSnapshot}from"./recipe-snapshot-FwYu4AWu.js";
