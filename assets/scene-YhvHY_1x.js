@@ -1,0 +1,1 @@
+export{t as createStudioScene}from"./scene-DivHL3U5.js";
