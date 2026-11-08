@@ -9,15 +9,15 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Keep the cascade explicit and the semantic fallback styled without JS. -->
     <!-- Retain Sedef surfaces; the final layer owns workshop layout. -->
-    <script type="module" crossorigin src="/assets/workshop-Eo6mQrPS.js"></script>
+    <script type="module" crossorigin src="/assets/workshop-BhxcDLXZ.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/three.core-Dp-eO7LC.js">
-    <link rel="modulepreload" crossorigin href="/assets/model-COLDDC2v.js">
-    <link rel="modulepreload" crossorigin href="/assets/shared-assembly-starter-v1-wWRsR-Sp.js">
+    <link rel="modulepreload" crossorigin href="/assets/model-CgxbDGMc.js">
+    <link rel="modulepreload" crossorigin href="/assets/shared-assembly-starter-v1-q4C5X6Zk.js">
     <link rel="modulepreload" crossorigin href="/assets/fixed-photograph-Cq_GuZlB.js">
     <link rel="modulepreload" crossorigin href="/assets/configuration-CDU8_iNs.js">
-    <link rel="modulepreload" crossorigin href="/assets/recipe-snapshot-FwYu4AWu.js">
+    <link rel="modulepreload" crossorigin href="/assets/recipe-snapshot-BJFtx_wi.js">
     <link rel="modulepreload" crossorigin href="/assets/asset-manifest-tnmDQGn5.js">
-    <link rel="stylesheet" crossorigin href="/assets/workshop-DwIrC1j2.css">
+    <link rel="stylesheet" crossorigin href="/assets/workshop-DhM0794s.css">
   </head>
   <body>
     <a class="skip-link" href="#studio">Atölyeye geç</a>
@@ -144,22 +144,22 @@
               <div class="design-bar">
                 <div class="starter-actions" role="group" aria-label="Yeni tasarım başlat">
                   <button id="bracelet-plan-open" type="button" aria-expanded="false" aria-controls="bracelet-plan">Bileklik ile başla</button>
-                  <button data-starter="necklace" type="button" aria-describedby="design-start-help">Kolye ile başla</button>
+                  <button id="necklace-plan-open" type="button" aria-expanded="false" aria-controls="bracelet-plan">Kolye ile başla</button>
                 </div>
                 <button id="blank" class="text-button" type="button" aria-describedby="design-start-help">Boş tasarım</button>
               </div>
               <p class="design-start-help">Mevcut tasarım: <strong id="current-design-name"></strong></p>
               <section id="bracelet-plan" class="bracelet-plan" aria-label="Bileklik başlangıcı" hidden>
                 <p class="plan-heading" id="plan-heading" tabindex="-1">Bilekliğini oluştur</p>
-                <label id="plan-cm-label">Bilek hedefi (cm) <input id="plan-cm" type="number" min="10" max="25" step="any" value="17" inputmode="decimal" /></label>
-                <label>Başlangıç <select id="plan-mode"><option value="simple">Sade</option><option value="mixed">Karma</option><option value="free">Serbest</option></select></label>
+                <label id="plan-mode-label">Başlangıç düzeni <select id="plan-mode"><option value="simple">Sade</option><option value="mixed">Karma</option><option value="free">Serbest</option><option value="ready">Hazır örnek</option></select></label>
+                <label id="plan-cm-label"><span id="plan-cm-text">Bilek hedefi (cm)</span><input id="plan-cm" type="number" min="10" max="25" step="any" value="17" inputmode="decimal" /></label>
+                <label id="plan-mm-label">Nominal çap <select id="plan-mm"><option value="4">4 mm</option><option value="6">6 mm</option><option value="8" selected>8 mm</option></select></label>
                 <label id="plan-stone-label">Taş <select id="plan-stone"><option value="realism-pearl-v1">İnci</option><option value="premium-tiger-eye">Kaplan gözü</option><option value="premium-onyx">Oniks</option></select></label>
-                <label id="plan-mm-label">Nominal taş boyutu <select id="plan-mm"><option value="4">4 mm</option><option value="6">6 mm</option><option value="8" selected>8 mm</option></select></label>
                 <p id="plan-estimate" role="status" aria-live="polite"></p>
-                <p>İlk dizilim tahminidir; sonrasında parçaları özgürce düzenleyebilirsin. Kapama ve ara parçalar dahil değildir. Ölçü ve stok doğrulanmadı.</p>
                 <button id="plan-create" type="button">Oluştur</button>
+                <p id="plan-sizing-help">Tahmin boncuk çaplarına dayanır. Kapama ve ara parçalar ayrı eklenir.</p>
               </section>
-              <p id="design-start-help" class="design-start-help">Her seçim yeni bir tasarım başlatır. Boş tasarım mevcut türü kullanır. Öncekine <strong>Geri al</strong> ile dön.</p>
+              <p id="design-start-help" class="design-start-help">Oluşturmayı onaylayınca yeni tasarım açılır. Boş tasarım mevcut türü kullanır. Öncekine <strong>Geri al</strong> ile dön.</p>
             </details>
 
             <details class="parts-details" id="parts-details">
