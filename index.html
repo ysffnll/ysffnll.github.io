@@ -9,7 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Keep the cascade explicit and the semantic fallback styled without JS. -->
     <!-- Retain Sedef surfaces; the final layer owns workshop layout. -->
-    <script type="module" crossorigin src="/assets/workshop-BITRhUPb.js"></script>
+    <script type="module" crossorigin src="/assets/workshop-BFM62gh5.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/three.core-Dp-eO7LC.js">
     <link rel="modulepreload" crossorigin href="/assets/model-xKBg3oGr.js">
     <link rel="modulepreload" crossorigin href="/assets/shared-assembly-starter-v1-D6bF_3p4.js">
@@ -17,7 +17,7 @@
     <link rel="modulepreload" crossorigin href="/assets/configuration-CDU8_iNs.js">
     <link rel="modulepreload" crossorigin href="/assets/recipe-snapshot-DoSracc9.js">
     <link rel="modulepreload" crossorigin href="/assets/asset-manifest-tnmDQGn5.js">
-    <link rel="stylesheet" crossorigin href="/assets/workshop-DhM0794s.css">
+    <link rel="stylesheet" crossorigin href="/assets/workshop-DFXJxaVs.css">
   </head>
   <body>
     <a class="skip-link" href="#studio">Atölyeye geç</a>
@@ -77,15 +77,17 @@
               <div id="scene" class="scene" tabindex="0" aria-busy="true" aria-label="3D takı sahnesi. Dokunmatikte basılı tutarak seç ve ip üzerinde sırala; fareyle tıkla veya sürükle. Klavye ile seçim için parça listesini kullan.">
                 <div id="scene-fallback" class="scene-fallback"><img id="scene-poster" src="/premium-poster.png" alt="Örnek takı tasarımı; canlı sahne yüklenene kadar gösterilir" width="1440" height="1080" /><div class="scene-fallback-message"><span class="loading-ring" aria-hidden="true"></span><p>Örnek tasarım · 3D hazırlanıyor</p></div></div>
               </div>
-              <div id="stage-swap" class="stage-swap" role="group" aria-label="Parçaların yerini değiştir" hidden>
-                <p class="stage-swap-copy" role="status" aria-live="polite" aria-atomic="true"><strong>İkinci parçayı seç</strong><span id="stage-swap-source"></span></p>
+              <div id="stage-swap" class="stage-swap" role="group" aria-label="Parçaları sırala" hidden>
+                <p class="stage-swap-copy" role="status" aria-live="polite" aria-atomic="true"><strong id="stage-order-title">İkinci parçayı seç</strong><span id="stage-swap-source"></span></p>
                 <div class="stage-swap-actions">
                   <button id="stage-swap-list" type="button" aria-controls="workshop-tools" aria-haspopup="dialog" aria-describedby="stage-swap-source">Parça listesi</button>
+                  <button id="stage-order-end" type="button" hidden>Sona al</button>
                   <button id="stage-swap-cancel" type="button">Vazgeç</button>
                 </div>
               </div>
               <div id="stage-nudge" class="stage-nudge" role="group" aria-label="Seçili parçayı taşıyıcı üzerinde kaydır" hidden>
                 <button type="button" data-nudge="-1" aria-label="Seçili parçayı sırada önceye taşı" title="Sırada önceye taşı">‹</button>
+                <button id="stage-move" type="button" aria-controls="stage-swap">Sıraya taşı</button>
                 <button type="button" data-nudge="1" aria-label="Seçili parçayı sırada sonraya taşı" title="Sırada sonraya taşı">›</button>
               </div>
               <p id="scene-expansion-status" class="sr-only" role="status" aria-live="polite"></p>
