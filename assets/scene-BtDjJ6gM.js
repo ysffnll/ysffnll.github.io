@@ -1,0 +1,1 @@
+export{t as createStudioScene}from"./scene-B-mE9o7R.js";
