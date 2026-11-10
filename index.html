@@ -9,7 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Keep the cascade explicit and the semantic fallback styled without JS. -->
     <!-- Retain Sedef surfaces; the final layer owns workshop layout. -->
-    <script type="module" crossorigin src="/assets/workshop-CBzlZebx.js"></script>
+    <script type="module" crossorigin src="/assets/workshop-BWQs0sYh.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/mine-labradorite-photo-v1-Cr4yRX7E.js">
     <link rel="modulepreload" crossorigin href="/assets/bead-sizing-l55YQmQ6.js">
     <link rel="modulepreload" crossorigin href="/assets/source-presets-D_YOnyLv.js">
@@ -28,7 +28,7 @@
     <link rel="modulepreload" crossorigin href="/assets/configuration-DF4SVTOe.js">
     <link rel="modulepreload" crossorigin href="/assets/recipe-snapshot-dhWzPRCd.js">
     <link rel="modulepreload" crossorigin href="/assets/asset-manifest-C5A3YVZR.js">
-    <link rel="stylesheet" crossorigin href="/assets/workshop-8D0cg92e.css">
+    <link rel="stylesheet" crossorigin href="/assets/workshop-BRaLynuG.css">
   </head>
   <body>
     <a class="skip-link" href="#studio">Atölyeye geç</a>
@@ -595,6 +595,18 @@
               <p id="production-demo-order-status" role="status"></p>
               <dl id="production-demo-order-record" class="production-offer-facts" hidden></dl>
               <button id="production-order-worksheet-open" type="button" aria-haspopup="dialog" aria-controls="production-order-worksheet-dialog" hidden>Operatör prova föyünü aç</button>
+              <button id="production-order-inbox-toggle" type="button" aria-expanded="false" aria-controls="production-order-inbox" hidden>Operatör bildirimleri</button>
+              <section id="production-order-inbox" aria-label="Operatör bildirimleri" hidden>
+                <p class="help-text" id="production-order-inbox-help">Yalnız bu teklifin demo mağazasından gelen bildirimler gösterilir. Bir bildirimi seçtiğinde sağlayıcı kaydı yeniden okunur.</p>
+                <form id="production-order-inbox-form" aria-describedby="production-order-inbox-help">
+                  <label for="production-order-inbox-key">Yerel stok operatörü anahtarı</label>
+                  <input id="production-order-inbox-key" type="password" maxlength="43" pattern="[A-Za-z0-9_\-]{43}" autocomplete="off" spellcheck="false" autocapitalize="off" required />
+                  <button id="production-order-inbox-load" type="submit">Bildirimleri getir</button>
+                </form>
+                <p id="production-order-inbox-status" role="status" tabindex="-1"></p>
+                <ul id="production-order-inbox-deliveries" role="list" aria-label="Demo sipariş bildirimleri" hidden></ul>
+                <button id="production-order-inbox-next" type="button" hidden>Daha eski bildirimler</button>
+              </section>
             </section>
           </section>
         </article>
