@@ -9,7 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Keep the cascade explicit and the semantic fallback styled without JS. -->
     <!-- Retain Sedef surfaces; the final layer owns workshop layout. -->
-    <script type="module" crossorigin src="/assets/workshop-DUAhvigX.js"></script>
+    <script type="module" crossorigin src="/assets/workshop-C9_TmTVn.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/mine-labradorite-photo-v1-Cr4yRX7E.js">
     <link rel="modulepreload" crossorigin href="/assets/bead-sizing-l55YQmQ6.js">
     <link rel="modulepreload" crossorigin href="/assets/source-presets-D_YOnyLv.js">
@@ -783,6 +783,10 @@
             <label>Delik merkezi Y (mm) <input id="material-admission-bore-y" type="number" step="any" min="-20" max="20" aria-describedby="material-admission-bore-help" autocomplete="off" required disabled /></label>
           </div>
           <p id="material-admission-geometry" role="status"></p>
+          <div id="material-admission-preparation" class="intake-inputs" hidden>
+            <p id="material-admission-preparation-help">Yayın kopyası, GLB’nin ek JSON bilgilerini ve sıfır hizalama kaydını düzenler. Özgün GLB’yi sakla. Özel 3B efektler varsa kopyanın gömülü görünümünü özgün görsel hedefle karşılaştır.</p>
+            <button id="material-admission-prepare" type="button" aria-describedby="material-admission-preparation-help">GLB yayın kopyasını hazırla</button>
+          </div>
           <div class="intake-model-review">
             <button id="material-admission-model-preview" type="button" aria-controls="material-admission-model-views" disabled>GLB’yi üç açıdan göster</button>
             <p id="material-admission-model-status" role="status"></p>
@@ -812,7 +816,7 @@
             <label>Malzeme türü kanıt referansı <input id="material-admission-class-evidence" maxlength="200" autocomplete="off" /></label>
             <label class="intake-admission-confirm"><input id="material-admission-class-confirm" type="checkbox" autocomplete="off" disabled /> <span id="material-admission-class-confirm-label">Seçtiğim türü bu malzeme kaydına dayanarak onaylıyorum.</span></label>
           </div>
-          <label class="intake-admission-confirm"><input id="material-admission-confirm" type="checkbox" autocomplete="off" aria-describedby="material-admission-instructions" disabled /> Bu GLB’nin görünümünü ve yönünü inceledim, görsel katalog için onaylıyorum.</label>
+          <label class="intake-admission-confirm"><input id="material-admission-confirm" type="checkbox" autocomplete="off" aria-describedby="material-admission-instructions" disabled /> <span id="material-admission-confirm-label">Bu GLB’nin görünümünü ve yönünü inceledim, görsel katalog için onaylıyorum.</span></label>
           <button id="material-admission-export" type="button" disabled>Özel katalog onay dosyasını indir</button>
           <p id="material-admission-status" role="status"></p>
         </fieldset>
