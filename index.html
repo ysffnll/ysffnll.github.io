@@ -9,7 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Keep the cascade explicit and the semantic fallback styled without JS. -->
     <!-- Retain Sedef surfaces; the final layer owns workshop layout. -->
-    <script type="module" crossorigin src="/assets/workshop-DZW_W_x4.js"></script>
+    <script type="module" crossorigin src="/assets/workshop-CEuDnGsf.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/mine-labradorite-photo-v1-Cr4yRX7E.js">
     <link rel="modulepreload" crossorigin href="/assets/bead-sizing-l55YQmQ6.js">
     <link rel="modulepreload" crossorigin href="/assets/source-presets-D_YOnyLv.js">
@@ -28,7 +28,7 @@
     <link rel="modulepreload" crossorigin href="/assets/configuration-DF4SVTOe.js">
     <link rel="modulepreload" crossorigin href="/assets/recipe-snapshot-DKNUI7FP.js">
     <link rel="modulepreload" crossorigin href="/assets/asset-manifest-C5A3YVZR.js">
-    <link rel="stylesheet" crossorigin href="/assets/workshop-COCOWGdJ.css">
+    <link rel="stylesheet" crossorigin href="/assets/workshop-CxZ_WzOt.css">
   </head>
   <body>
     <a class="skip-link" href="#studio">Atölyeye geç</a>
@@ -84,10 +84,10 @@
                 </button>
               </div>
               <div class="stage-selection-tools" data-studio-camera-obstacle="bottom" role="group" aria-label="Tasarımda parça seçimi">
-                <a id="parts-quick-link" href="#part-list" data-workspace-target data-workshop-task="parts" aria-label="Tasarımın parça listesini aç"><span class="parts-quick-prefix">Parça&nbsp;</span>Liste</a>
-                <button id="multi-mode" class="text-button" type="button" aria-label="Çoklu seçim" aria-pressed="false"><span class="mobile-tool-icon" aria-hidden="true">⊞</span><span class="stage-tool-label">Çoklu seç</span></button>
+                <a id="parts-quick-link" href="#part-list" data-workspace-target data-workshop-task="parts" aria-label="Tasarımın parça listesini aç"><span class="parts-quick-label">Parça listesi</span><span class="parts-quick-short" aria-hidden="true">Liste</span></a>
+                <button id="multi-mode" class="text-button" type="button" aria-label="Çoklu seçim" aria-pressed="false"><span class="mobile-tool-icon" aria-hidden="true">☑</span><span class="stage-tool-label">Çoklu</span></button>
                 <button id="multi-done" class="text-button" type="button" aria-label="Çoklu seçimi bitir" hidden><span class="mobile-tool-icon" aria-hidden="true">✓</span><span class="stage-tool-label">Bitti</span></button>
-                <button id="clear-selection" class="text-button" type="button" aria-label="Seçimi temizle" disabled><span class="mobile-tool-icon" aria-hidden="true">×</span><span class="stage-tool-label">Seçimi bırak</span></button>
+                <button id="clear-selection" class="text-button" type="button" aria-label="Seçimi bırak" disabled><span class="stage-tool-label">Bırak</span></button>
               </div>
               <div id="main-atmosphere-bar" class="main-atmosphere-bar" role="group" aria-label="Atmosfer hareketi" data-studio-camera-obstacle="top" hidden>
                 <button id="main-atmosphere-play" type="button" aria-pressed="false" aria-describedby="main-atmosphere-status" disabled>Oynat</button>
@@ -107,11 +107,6 @@
                   <button id="stage-swap-cancel" type="button">Vazgeç</button>
                 </div>
               </div>
-              <div id="stage-nudge" class="stage-nudge" role="group" aria-label="Seçili parçaları sırala" hidden>
-                <button type="button" data-nudge="-1" aria-label="Seçili parçayı sırada önceye taşı" title="Sırada önceye taşı">‹</button>
-                <button id="stage-move" type="button" aria-controls="stage-swap">Sıraya taşı</button>
-                <button type="button" data-nudge="1" aria-label="Seçili parçayı sırada sonraya taşı" title="Sırada sonraya taşı">›</button>
-              </div>
               <p id="scene-expansion-status" class="sr-only" role="status" aria-live="polite"></p>
             </div>
           </section>
@@ -122,17 +117,16 @@
               <span id="selection-preview" aria-hidden="true" title="Katalog örneği; tasarımdaki renk ve doğal desen değişebilir."></span>
               <div class="selection-copy" role="status" aria-live="polite" aria-atomic="true"><strong id="selection-title">Parça seçili değil</strong><span id="selection-detail">Sahneden bir parça seç veya açıkça parça ekle.</span><small class="selection-sample-label">Katalog örneği</small><span id="selected-hardware-finish-field" class="hardware-finish" aria-live="off" hidden><label for="selected-hardware-finish" class="sr-only">Yüzey</label><select id="selected-hardware-finish" aria-label="Seçili ara parçanın yüzeyi" aria-describedby="selected-hardware-finish-help selection-detail" disabled></select><span id="selected-hardware-finish-help" class="sr-only">Yalnız seçili aynı biçimdeki ara parçaların yüzeyini değiştirir. Boyutları korunur; Geri al ile dönebilirsin.</span></span></div>
               <div class="selection-operation segmented" role="group" aria-label="Hedef parça işlemi">
-                <button id="select-matching-part" type="button" aria-label="Aynı parçaları seç" hidden><span id="same-part-count" class="selection-action-icon" aria-hidden="true"></span><span id="same-part-label" class="selection-action-label">Aynılarını seç</span><span class="selection-action-short-label" aria-hidden="true">Aynıları</span></button>
-                <button id="replace-intent" type="button" aria-label="Seçili parçayı değiştir" title="Seçili parçayı değiştir" aria-pressed="false" disabled><span class="intent-check" aria-hidden="true">✓ </span><span class="selection-action-icon" aria-hidden="true">↻</span><span class="selection-action-label">Değiştir</span><span class="selection-action-short-label" aria-hidden="true">Değiştir</span></button>
+                <a id="selection-edit" class="selection-edit" href="#edit-controls" data-workspace-target data-workshop-task="edit" aria-label="Seçili parçayı düzenle" hidden><span class="selection-action-icon" aria-hidden="true">✎</span><span class="selection-action-label">Düzenle</span><span class="selection-action-short-label" aria-hidden="true">Düzenle</span></a>
+                <button id="replace-intent" type="button" aria-label="Seçili parçayı değiştir" title="Seçili parçayı değiştir" aria-controls="library-panel" aria-pressed="false" disabled><span class="selection-action-label">Değiştir</span><span class="selection-action-short-label" aria-hidden="true">Değiştir</span></button>
                 <button id="add-intent" type="button" aria-label="Parça ekle" aria-pressed="false"><span class="selection-action-icon" aria-hidden="true">＋</span><span class="selection-action-label">Parça ekle</span><span class="selection-action-short-label" aria-hidden="true">Ekle</span></button>
                 <button id="remove" class="danger" type="button" aria-label="Seçili parçayı çıkart" disabled><span class="selection-action-icon" aria-hidden="true">−</span><span class="selection-action-label">Çıkart</span><span class="selection-action-short-label" aria-hidden="true">Çıkar</span></button>
               </div>
-              <a id="selection-edit" class="selection-edit" href="#parts-details" data-workspace-target hidden>Düzenle</a>
             </section>
             <aside class="library" id="library-panel" aria-labelledby="library-heading" tabindex="-1">
-              <div class="library-heading"><h2 id="library-heading">Parçalar</h2><button id="catalog-return" class="text-button" type="button" hidden>← Atölyeye dön</button></div>
+              <div class="library-heading"><h2 id="library-heading" tabindex="-1">Parçalar</h2><button id="catalog-return" class="text-button" type="button" hidden>← Atölyeye dön</button></div>
               <div class="catalog-search-row" id="catalog-search-row" data-search-open="false">
-                <label class="library-search"><span aria-hidden="true">⌕</span><span class="sr-only">Tüm parçalarda ara</span><input id="search" type="search" placeholder="Tüm parçalarda ara…" aria-label="Tüm parçalarda ara" autocomplete="off" enterkeyhint="search" /></label>
+                <label class="library-search"><span aria-hidden="true">⌕</span><span class="sr-only">Tüm parçalarda ara</span><input id="search" type="search" placeholder="Tüm parçalarda ara…" aria-label="Tüm parçalarda ara" aria-describedby="library-instruction" autocomplete="off" enterkeyhint="search" /></label>
                 <button id="catalog-search-close" class="mobile-search-close" type="button" aria-label="Aramayı kapat">×</button>
               </div>
               <div id="catalog-filters" class="catalog-filters" role="group" aria-labelledby="filter-heading" hidden>
@@ -208,6 +202,10 @@
                 <button id="filter-toggle" class="text-button catalog-icon-button" type="button" aria-label="Filtreler, etkin filtre yok" aria-expanded="false" aria-controls="catalog-filters" title="Parçaları filtrele"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2"/><circle cx="15" cy="12" r="2"/><circle cx="8" cy="18" r="2"/></svg><span id="filter-toggle-label">Filtreler</span></button>
                 <button id="catalog-full" class="text-button" type="button" aria-label="Tam katalog" aria-expanded="false" aria-controls="catalog">Tam katalog ↗</button>
               </div>
+              <div id="catalog-add-placement" class="segmented" role="group" aria-label="Ekleme yeri" hidden>
+                <button id="catalog-add-before" type="button" aria-pressed="false">Önce</button>
+                <button id="catalog-add-after" type="button" aria-pressed="true">Sonra</button>
+              </div>
               <div class="library-context"><p id="catalog-count" class="catalog-count" role="status" aria-live="polite"></p><p id="library-instruction" class="library-instruction">Bir hedef seç veya Parça ekle ile başla.</p></div>
               <div id="catalog-active-filters" role="group" aria-label="Etkin arama ve filtreler" hidden></div>
               <div id="catalog" class="catalog" aria-label="Takı parça kataloğu" aria-describedby="library-instruction" tabindex="0"></div>
@@ -215,64 +213,72 @@
               <p class="library-disclaimer">Görsel tasarım · Üretim uygunluğu doğrulanmamıştır.</p>
             </aside>
             <dialog id="workshop-tools" class="workshop-dialog" aria-labelledby="workshop-tools-title">
-              <div class="workshop-dialog-header"><button id="workshop-sheet-handle" type="button" aria-label="Menüyü aşağı kaydırarak kapat" title="Menüyü aşağı kaydırarak kapat"><span aria-hidden="true"></span></button><h2 id="workshop-tools-title"><span class="workshop-menu-heading">Atölye menüsü <small>Parçaların, ölçülerin, görünümün.</small></span><span class="workshop-task-heading" data-task-heading="new">Yeni tasarım</span><span class="workshop-task-heading" data-task-heading="parts">Tasarımın parçaları</span><span class="workshop-order-heading">Hedef parçayı seç <small><span id="workshop-order-source"></span> Soluk satırlar seçili parçaları gösterir.</small></span></h2><button id="workshop-size-toggle" type="button" aria-controls="workshop-tools" aria-expanded="false" aria-label="Menüyü büyüt">Büyüt</button><button id="workshop-tools-close" class="text-button" type="button" aria-label="Menüyü kapat" autofocus>×</button></div>
+              <div class="workshop-dialog-header"><button id="workshop-sheet-handle" type="button" aria-label="Menüyü aşağı kaydırarak kapat" title="Menüyü aşağı kaydırarak kapat"><span aria-hidden="true"></span></button><h2 id="workshop-tools-title"><span class="workshop-menu-heading">Atölye menüsü <small>Parçaların, ölçülerin, görünümün.</small></span><span class="workshop-task-heading" data-task-heading="new">Yeni tasarım</span><span class="workshop-task-heading" data-task-heading="parts">Tasarımın parçaları</span><span class="workshop-task-heading" data-task-heading="edit">Parçaları düzenle</span><span class="workshop-order-heading">Hedef parçayı seç <small><span id="workshop-order-source"></span> Soluk satırlar seçili parçaları gösterir.</small></span></h2><button id="workshop-size-toggle" type="button" aria-controls="workshop-tools" aria-expanded="false" aria-label="Menüyü büyüt">Büyüt</button><button id="workshop-tools-close" class="text-button" type="button" aria-label="Menüyü kapat" autofocus>×</button></div>
               <div class="quick-design-actions" role="group" aria-label="Tasarım işlemleri"><button id="shuffle-design" class="text-button" type="button">⤨ Karıştır</button><button id="restore-design" class="text-button" type="button">Başlangıca dön…</button></div>
               <a id="atmosphere-studio-link" class="text-button" href="#main-atmosphere-settings">Atmosfer · bu tasarımda aç</a>
               <button id="tools-clear-selection" class="text-button" type="button" disabled hidden>Seçimi bırak</button>
               <a id="parts-nav" href="#parts-details" data-workspace-target hidden>Seçim araçları / Liste</a>
             <details class="design-start" id="design-start">
-              <summary id="design-start-title"><span class="workshop-group-heading">Yeni tasarım<small>Bileklik, kolye veya boş sayfa</small></span><span class="design-current">Şimdi: <strong id="current-design-kind">Bileklik</strong></span></summary>
-              <div class="design-bar">
-                <div class="starter-actions" role="group" aria-label="Yeni tasarım başlat">
-                  <button id="bracelet-plan-open" type="button" aria-expanded="false" aria-controls="bracelet-plan">Bileklik ile başla</button>
-                  <button id="necklace-plan-open" type="button" aria-expanded="false" aria-controls="bracelet-plan">Kolye ile başla</button>
-                </div>
-                <button id="blank" class="text-button" type="button" aria-describedby="design-start-help">Boş tasarım</button>
+              <summary id="design-start-title"><span class="workshop-group-heading">Yeni tasarım<small>Bileklik ve kolye modelleri</small></span><span class="design-current">Şimdi: <strong id="current-design-kind">Bileklik</strong></span></summary>
+              <div class="starter-actions" role="group" aria-label="Takı türü">
+                <button id="bracelet-plan-open" type="button" aria-expanded="false" aria-controls="bracelet-plan">Bileklik</button>
+                <button id="necklace-plan-open" type="button" aria-expanded="false" aria-controls="bracelet-plan">Kolye</button>
               </div>
-              <p class="design-start-help">Mevcut tasarım: <strong id="current-design-name"></strong></p>
               <section id="bracelet-plan" class="bracelet-plan" aria-label="Bileklik başlangıcı" hidden>
-                <p class="plan-heading" id="plan-heading" tabindex="-1">Bilekliğini oluştur</p>
-                <label id="plan-mode-label">Başlangıç düzeni <select id="plan-mode"><option value="simple">Sade</option><option value="mixed">Karma</option><option value="symmetric">Simetrik motif</option><option value="free">Serbest</option><option value="ready">Hazır örnek</option></select></label>
-                <label id="plan-cm-label"><span id="plan-cm-text">Bilek hedefi (cm)</span><input id="plan-cm" type="number" min="10" max="25" step="any" value="17" inputmode="decimal" /></label>
-                <label id="plan-mm-label">Nominal çap <select id="plan-mm"><option value="4">4 mm</option><option value="6">6 mm</option><option value="8" selected>8 mm</option></select></label>
-                <label id="plan-stone-label">Taş <select id="plan-stone"><option value="realism-pearl-v1">İnci</option><option value="premium-tiger-eye">Kaplan gözü</option><option value="premium-onyx">Oniks</option></select></label>
-                <fieldset id="plan-motif-palette" hidden>
-                  <legend>Zorunlu palet</legend>
-                  <label>Görsel tema <select id="plan-design-theme"><option value="">Serbest</option></select></label>
-                  <p id="plan-theme-note" class="help-text" role="status" hidden></p>
-                  <button id="plan-preference-open" class="text-button" type="button" aria-haspopup="dialog" aria-controls="design-preferences-dialog" aria-describedby="plan-preference-summary">Burç ve renk tercihleri</button>
-                  <p id="plan-preference-summary" class="help-text" hidden></p>
-                  <p id="plan-motif-selected">Her adayda yer alacak en az üç malzeme seç.</p>
-                  <div class="plan-motif-choices">
-                    <div>
-                      <label>Ön merkez <select id="plan-motif-center" aria-describedby="plan-motif-center-help" disabled><option value="">Otomatik</option></select></label>
-                      <small id="plan-motif-center-help" class="help-text">Sabit merkez için zorunlu paletten bir taş seç.</small>
+                <div class="plan-fields">
+                  <fieldset id="plan-mode">
+                    <legend id="plan-heading" tabindex="-1">Bileklik modeli</legend>
+                    <div class="plan-mode-options">
+                      <label class="plan-mode-choice"><input type="radio" name="plan-mode" value="ready" checked /><span><strong>Hazır örnek</strong><small>Düzenlemeye hazır</small></span></label>
+                      <label class="plan-mode-choice"><input type="radio" name="plan-mode" value="simple" /><span><strong>Sade</strong><small>Tek taş türü</small></span></label>
+                      <label class="plan-mode-choice"><input type="radio" name="plan-mode" value="mixed" /><span><strong>Karma</strong><small>Üç taş dönüşümlü</small></span></label>
+                      <label class="plan-mode-choice"><input type="radio" name="plan-mode" value="free" /><span><strong>Boş tasarım</strong><small>Parçaları sen ekle</small></span></label>
+                      <label class="plan-mode-choice"><input id="plan-mode-symmetric" type="radio" name="plan-mode" value="symmetric" /><span><strong>Simetrik motif</strong><small>En az 3 malzeme</small></span></label>
                     </div>
-                    <div>
-                      <label>Eşlikçi (isteğe bağlı) <select id="plan-motif-support" aria-describedby="plan-motif-support-help"><option value="">Yok</option></select></label>
-                      <small id="plan-motif-support-help" class="help-text">Zorunlu taşlara ek olarak aynı çapta bir boncuk seçebilirsin.</small>
+                  </fieldset>
+                  <label id="plan-cm-label"><span id="plan-cm-text">Bilek hedefi (cm)</span><input id="plan-cm" type="number" min="10" max="25" step="any" value="17" inputmode="decimal" /></label>
+                  <label id="plan-mm-label">Nominal çap <select id="plan-mm"><option value="4">4 mm</option><option value="6">6 mm</option><option value="8" selected>8 mm</option></select></label>
+                  <label id="plan-stone-label">Taş <select id="plan-stone"><option value="realism-pearl-v1">İnci</option><option value="premium-tiger-eye">Kaplan gözü</option><option value="premium-onyx">Oniks</option></select></label>
+                  <fieldset id="plan-motif-palette" hidden>
+                    <legend>Zorunlu palet</legend>
+                    <label>Görsel tema <select id="plan-design-theme"><option value="">Serbest</option></select></label>
+                    <p id="plan-theme-note" class="help-text" role="status" hidden></p>
+                    <button id="plan-preference-open" class="text-button" type="button" aria-haspopup="dialog" aria-controls="design-preferences-dialog" aria-describedby="plan-preference-summary">Burç ve renk tercihleri</button>
+                    <p id="plan-preference-summary" class="help-text" hidden></p>
+                    <p id="plan-motif-selected">Her adayda yer alacak en az üç malzeme seç.</p>
+                    <div class="plan-motif-choices">
+                      <div>
+                        <label>Ön merkez <select id="plan-motif-center" aria-describedby="plan-motif-center-help" disabled><option value="">Otomatik</option></select></label>
+                        <small id="plan-motif-center-help" class="help-text">Sabit merkez için zorunlu paletten bir taş seç.</small>
+                      </div>
+                      <div>
+                        <label>Eşlikçi (isteğe bağlı) <select id="plan-motif-support" aria-describedby="plan-motif-support-help"><option value="">Yok</option></select></label>
+                        <small id="plan-motif-support-help" class="help-text">Zorunlu taşlara ek olarak aynı çapta bir boncuk seçebilirsin.</small>
+                      </div>
+                      <div>
+                        <label>Eşlikçi sıklığı <select id="plan-motif-support-cadence" aria-describedby="plan-motif-support-cadence-help" disabled><option value="rear">Arka çift</option><option value="every-four">4 sırada bir</option><option value="every-three">3 sırada bir</option></select></label>
+                        <small id="plan-motif-support-cadence-help" class="help-text">Ön merkezden sonraki ilk boncuk 1. sıradır. Zorunlu taşlara ayrılan ilk sıralar korunur. Yer yoksa yalnız eşlikçisiz adaylar gösterilir.</small>
+                      </div>
                     </div>
-                    <div>
-                      <label>Eşlikçi sıklığı <select id="plan-motif-support-cadence" aria-describedby="plan-motif-support-cadence-help" disabled><option value="rear">Arka çift</option><option value="every-four">4 sırada bir</option><option value="every-three">3 sırada bir</option></select></label>
-                      <small id="plan-motif-support-cadence-help" class="help-text">Ön merkezden sonraki ilk boncuk 1. sıradır. Zorunlu taşlara ayrılan ilk sıralar korunur. Yer yoksa yalnız eşlikçisiz adaylar gösterilir.</small>
-                    </div>
-                  </div>
-                  <label>Zorunlu malzeme ara <input id="plan-motif-search" type="search" /></label>
-                  <div id="plan-motif-materials"></div>
-                  <p id="plan-motif-empty" hidden>Aramaya uyan malzeme yok.</p>
-                </fieldset>
-                <p id="plan-estimate" role="status" aria-live="polite"></p>
-                <button id="plan-create" type="button">Oluştur</button>
-                <p id="plan-sizing-help">Tahmin boncuk çaplarına dayanır. Kapama ve ara parçalar ayrı eklenir.</p>
+                    <label>Zorunlu malzeme ara <input id="plan-motif-search" type="search" /></label>
+                    <div id="plan-motif-materials"></div>
+                    <p id="plan-motif-empty" hidden>Aramaya uyan malzeme yok.</p>
+                  </fieldset>
+                  <p id="plan-sizing-help">Tahmin boncuk çaplarına dayanır. Kapama ve ara parçalar ayrı eklenir.</p>
+                </div>
+                <div class="plan-actions">
+                  <p id="plan-estimate" role="status"></p>
+                  <button id="plan-create" type="button">Sahnede önizle</button>
+                </div>
               </section>
-              <p id="design-start-help" class="design-start-help">Oluşturmayı onaylayınca yeni tasarım açılır. Boş tasarım mevcut türü kullanır. Öncekine <strong>Geri al</strong> ile dön.</p>
+              <p class="design-start-help">Mevcut tasarım · <strong id="current-design-name"></strong></p>
             </details>
 
             <details class="parts-details" id="parts-details">
               <summary><span class="workshop-group-heading">Parçaları düzenle<small>Seçim, sıra, renk ve parça listesi</small></span><span id="part-count">0 parça</span></summary>
               <div class="part-selection-tools"><label class="multi-select"><input type="checkbox" id="multi-select" /> Çoklu seçim</label><button id="select-all" class="text-button" type="button" aria-label="Tümünü seç">Tümünü seç</button></div>
               <div class="selection-helpers" role="group" aria-label="Seçimi genişlet">
-                <button id="select-material" class="text-button" type="button">Aynı parça</button>
+                <button id="select-material" class="text-button" type="button">Aynı parçaları seç</button>
                 <button id="select-size" class="text-button" type="button">Aynı nominal boyut</button>
                 <button id="range-start" class="text-button" type="button" aria-pressed="false">Aralık başlangıcı</button>
                 <button id="range-end" class="text-button" type="button" disabled>Buraya kadar seç</button>
@@ -286,10 +292,10 @@
                 </select>
                 <p id="selected-bead-help">Boyutunu değiştirmek için bir yuvarlak boncuk seç.</p>
               </div>
-              <div class="edit-controls" id="edit-controls" role="group" aria-label="Seçili parça işlemleri" hidden>
-                <button id="nudge-toggle" class="tool-button" type="button" aria-label="Sıra seçenekleri" aria-expanded="false" aria-controls="nudge-controls"><span aria-hidden="true">⇄</span><span>Sıra</span></button>
-                <div id="nudge-controls" class="move-pad" role="group" aria-label="Taşıyıcı üzerindeki sıra" hidden><button data-nudge="-1" class="nudge-button" type="button">← Önceki sıraya</button><button data-nudge="1" class="nudge-button" type="button">Sonraki sıraya →</button></div>
-                <span class="control-divider" aria-hidden="true"></span><button id="rotate" class="tool-button" type="button" aria-label="Döndür"><span aria-hidden="true">↻</span><span>Döndür</span></button><button id="duplicate" class="tool-button" type="button" aria-label="Çoğalt"><span aria-hidden="true">⧉</span><span>Çoğalt</span></button><button id="swap" class="tool-button" type="button" aria-label="Yer değiştir" aria-pressed="false"><span aria-hidden="true">⇄</span><span>Yer değiştir</span></button>
+              <div class="edit-controls" id="edit-controls" role="group" aria-label="Seçili parça işlemleri" tabindex="-1" hidden>
+                <button id="nudge-toggle" class="tool-button" type="button" aria-expanded="false" aria-controls="nudge-controls">Sıra</button>
+                <div id="nudge-controls" class="move-pad" role="group" aria-label="Taşıyıcı üzerindeki sıra" hidden><button data-nudge="-1" class="nudge-button" type="button" aria-label="Seçili parçayı bir sıra önceye al">← Önceye al</button><button data-nudge="1" class="nudge-button" type="button" aria-label="Seçili parçayı bir sıra sonraya al">Sonraya al →</button><button id="stage-move" class="nudge-button" type="button" aria-controls="stage-swap" aria-label="Seçili parçaları bir hedefin önüne taşı">Hedefin önüne taşı</button><button id="swap" class="nudge-button" type="button" aria-pressed="false" aria-label="Seçili parçanın yerini başka bir parçayla değiştir">Yer değiştir</button></div>
+                <button id="rotate" class="tool-button" type="button">Döndür</button><button id="duplicate" class="tool-button" type="button">Çoğalt</button>
               </div>
               <div class="precise-controls"><label>Görsel renk <input id="part-color" type="color" value="#b78a66" /></label><button id="reset-color" class="text-button" type="button">Özgün renk</button></div>
               <button id="refresh-selected-stone-appearance" class="button" type="button" hidden>Seçili taşların görünümünü yenile</button>
@@ -360,20 +366,6 @@
               <p id="carrier-tight" role="status" hidden>Dizi sıkışık; ölçüyü büyütebilirsin.</p>
               <fieldset class="view-settings" id="view-controls" tabindex="-1">
                 <legend>Sahne ve görünüm</legend>
-                <!-- Existing public scene API enables every choice after scene creation. -->
-                <div class="scene-choices" role="group" aria-label="Sahne atmosferi">
-                  <button class="scene-choice" type="button" data-lighting="studio" aria-pressed="false" aria-controls="scene" disabled><span class="scene-choice-swatch" aria-hidden="true"></span><span>Kireçtaşı</span></button>
-                  <button class="scene-choice" type="button" data-lighting="dark" aria-pressed="false" aria-controls="scene" disabled><span class="scene-choice-swatch" aria-hidden="true"></span><span>Kobalt</span></button>
-                  <button class="scene-choice" type="button" data-lighting="editorial" aria-pressed="false" aria-controls="scene" disabled><span class="scene-choice-swatch" aria-hidden="true"></span><span>Kehribar</span></button>
-                  <button class="scene-choice" type="button" data-lighting="neutral" aria-pressed="false" aria-controls="scene" disabled><span class="scene-choice-swatch" aria-hidden="true"></span><span>Nötr</span></button>
-                </div>
-                <p class="scene-choices-caption" id="cinematic-scenes-label">Sinematik sahneler</p>
-                <div class="scene-choices cinematic-scene-choices" role="group" aria-labelledby="cinematic-scenes-label">
-                  <button class="scene-choice" type="button" data-lighting="gallery" aria-pressed="false" aria-controls="scene" disabled><span class="scene-choice-swatch" aria-hidden="true"></span><span>Gece Galerisi</span></button>
-                  <button class="scene-choice" type="button" data-lighting="acrylic" aria-pressed="false" aria-controls="scene" disabled><span class="scene-choice-swatch" aria-hidden="true"></span><span>Akrilik Işık Odası</span></button>
-                  <button class="scene-choice" type="button" data-lighting="terrace" aria-pressed="false" aria-controls="scene" disabled><span class="scene-choice-swatch" aria-hidden="true"></span><span>Taş Teras</span></button>
-                  <button class="scene-choice" type="button" data-lighting="atmosphere" aria-pressed="false" aria-controls="scene" disabled><span class="scene-choice-swatch" aria-hidden="true"></span><span>Atmosfer</span></button>
-                </div>
                 <label class="setting-field" for="scene-lighting">Sahne<select id="scene-lighting" disabled><option value="photo-c1" selected>Atmosfer · Opal Pavyon</option><option value="neutral">Nötr</option><option value="studio">Kireçtaşı</option><option value="dark">Kobalt</option><option value="editorial">Kehribar</option><option value="gallery">Gece Galerisi</option><option value="acrylic">Akrilik Işık Odası</option><option value="terrace">Taş Teras</option></select></label>
                 <fieldset id="main-atmosphere-settings" class="main-atmosphere-settings" tabindex="-1" aria-describedby="main-atmosphere-help" hidden>
                   <legend>Atmosfer</legend>
@@ -538,9 +530,9 @@
       <div class="dialog-actions"><button id="restore-cancel" class="button" type="button" autofocus>Vazgeç</button><button id="restore-confirm" class="button button-dark" type="button">Dizilimi değiştir</button></div>
     </dialog>
     <dialog id="bracelet-plan-confirm-dialog" class="workshop-dialog restore-dialog" aria-labelledby="bracelet-plan-confirm-title" aria-describedby="bracelet-plan-confirm-description">
-      <h2 id="bracelet-plan-confirm-title" tabindex="-1">Yeni bileklik oluşturulsun mu?</h2>
-      <p id="bracelet-plan-confirm-description">Mevcut tasarımın yerine yeni bileklik gelir. Önceki tasarımına Geri al ile dönebilirsin.</p>
-      <section id="plan-candidate-preview" aria-label="Aday karşılaştırması" hidden>
+      <h2 id="bracelet-plan-confirm-title" tabindex="-1">Tasarım önizlemesi</h2>
+      <p id="bracelet-plan-confirm-description">Önceki tasarıma Geri al ile dönebilirsin.</p>
+      <section id="plan-candidate-preview" aria-label="Aday karşılaştırması">
         <div class="candidate-controls">
           <div class="candidate-views" role="group" aria-label="Sahnede göster">
             <button id="plan-compare-original" type="button" aria-label="Mevcut tasarım" aria-pressed="false" disabled>Mevcut</button>
@@ -561,7 +553,7 @@
         <details id="plan-preference-matches" hidden><summary>Tercihle eşleşen malzemeler</summary><ul id="plan-preference-match-list"></ul></details>
         <details id="controlled-arm-preview" hidden><summary>Ön merkezden arkaya tam sıra</summary><p id="controlled-arm-order"></p></details>
       </section>
-      <div class="dialog-actions"><button id="bracelet-plan-cancel" class="button" type="button" autofocus>Vazgeç</button><button id="bracelet-plan-confirm" class="button button-dark" type="button">Bilekliği oluştur</button></div>
+      <div class="dialog-actions"><button id="bracelet-plan-cancel" class="button" type="button" autofocus>Vazgeç</button><button id="bracelet-plan-confirm" class="button button-dark" type="button">Tasarımı kullan</button></div>
     </dialog>
     <dialog id="production-dialog" class="workshop-dialog" aria-labelledby="production-title">
       <div class="dialog-actions">
@@ -606,8 +598,23 @@
             <h5 id="production-checkout-title">Demo ödeme hazırlığı</h5>
             <p id="production-checkout-help" class="help-text">Demo mağaza bağlantısı, teklifin adedi ve ürün bedeli doğrulanır.</p>
             <button id="production-checkout-start" type="button" aria-describedby="production-checkout-help" hidden disabled>Demo ödeme taslağını hazırla</button>
-            <p id="production-checkout-status" role="status"></p>
+            <p id="production-checkout-status" role="status" tabindex="-1"></p>
             <dl id="production-checkout-record" class="production-offer-facts" tabindex="-1" hidden></dl>
+            <form id="production-checkout-recovery" aria-labelledby="production-checkout-recovery-title" aria-describedby="production-checkout-recovery-help" hidden>
+              <h6 id="production-checkout-recovery-title">Mevcut demo taslağını doğrula</h6>
+              <p id="production-checkout-recovery-help" class="help-text">Özgün demo mağazasının okuma kaydındaki tam taslak kimliğini gir. Eşleşen taslak bu hazırlığa bağlanır ve inceleme sürer.</p>
+              <div id="production-checkout-recovery-delivery" hidden>
+                <p class="help-text">Seçilen demo siparişi <strong id="production-checkout-recovery-order"></strong></p>
+                <button id="production-checkout-recovery-clear" type="button">Sipariş seçimini kaldır</button>
+              </div>
+              <label class="setting-field" for="production-checkout-recovery-draft">Shopify taslak kimliği (GID)
+                <input id="production-checkout-recovery-draft" maxlength="1024" pattern="gid:\/\/shopify\/DraftOrder\/[1-9][0-9]*" placeholder="gid://shopify/DraftOrder/123" autocomplete="off" spellcheck="false" autocapitalize="off" required />
+              </label>
+              <label class="setting-field" for="production-checkout-recovery-key">Yerel stok operatörü anahtarı
+                <input id="production-checkout-recovery-key" type="password" maxlength="43" pattern="[A-Za-z0-9_\-]{43}" autocomplete="off" spellcheck="false" autocapitalize="off" required />
+              </label>
+              <button id="production-checkout-recovery-submit" type="submit">Taslağı doğrula ve bağla</button>
+            </form>
             <section id="production-demo-order" aria-labelledby="production-demo-order-title" hidden>
               <h6 id="production-demo-order-title">Demo sipariş kaydı</h6>
               <p id="production-demo-order-status" role="status"></p>
