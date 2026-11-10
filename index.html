@@ -9,7 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Keep the cascade explicit and the semantic fallback styled without JS. -->
     <!-- Retain Sedef surfaces; the final layer owns workshop layout. -->
-    <script type="module" crossorigin src="/assets/workshop-No_renye.js"></script>
+    <script type="module" crossorigin src="/assets/workshop-6ePS15zC.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/mine-labradorite-photo-v1-Cr4yRX7E.js">
     <link rel="modulepreload" crossorigin href="/assets/bead-sizing-l55YQmQ6.js">
     <link rel="modulepreload" crossorigin href="/assets/source-presets-D_YOnyLv.js">
@@ -28,7 +28,7 @@
     <link rel="modulepreload" crossorigin href="/assets/configuration-DF4SVTOe.js">
     <link rel="modulepreload" crossorigin href="/assets/recipe-snapshot-DKNUI7FP.js">
     <link rel="modulepreload" crossorigin href="/assets/asset-manifest-C5A3YVZR.js">
-    <link rel="stylesheet" crossorigin href="/assets/workshop-bfRV8i3s.css">
+    <link rel="stylesheet" crossorigin href="/assets/workshop-Dz5_f_81.css">
   </head>
   <body>
     <a class="skip-link" href="#studio">Atölyeye geç</a>
@@ -37,7 +37,7 @@
       <div class="header-note header-save"><span class="save-dot" aria-hidden="true"></span><span id="save-status" role="status">Bu cihazda otomatik kayıt</span></div>
       <div class="header-actions">
         <div class="history"><button id="undo" class="icon-button" type="button" title="Geri al (Ctrl+Z)" aria-label="Geri al" disabled>↶</button><button id="redo" class="icon-button" type="button" title="Yinele (Ctrl+Shift+Z)" aria-label="Yinele" disabled>↷</button></div>
-        <a class="header-new text-button" href="#design-start" data-workspace-target>＋ Yeni</a>
+        <a class="header-new text-button" href="#design-start" data-workspace-target data-workshop-task="new" aria-label="Yeni tasarım"><span aria-hidden="true">＋</span> Yeni</a>
         <button id="workshop-tools-trigger" class="text-button header-tools" type="button" aria-haspopup="dialog" aria-controls="workshop-tools" title="Atölye menüsü">Menü</button>
         <details id="download-menu" class="download-menu">
           <summary id="download-trigger" class="button button-dark">İndir <span class="download-chevron" aria-hidden="true">▾</span></summary>
@@ -84,6 +84,7 @@
                 </button>
               </div>
               <div class="stage-selection-tools" data-studio-camera-obstacle="bottom" role="group" aria-label="Tasarımda parça seçimi">
+                <a id="parts-quick-link" href="#part-list" data-workspace-target data-workshop-task="parts" aria-label="Tasarımın parça listesini aç"><span class="parts-quick-prefix">Parça&nbsp;</span>Liste</a>
                 <button id="multi-mode" class="text-button" type="button" aria-label="Çoklu seçim" aria-pressed="false"><span class="mobile-tool-icon" aria-hidden="true">⊞</span><span class="stage-tool-label">Çoklu seç</span></button>
                 <button id="multi-done" class="text-button" type="button" aria-label="Çoklu seçimi bitir" hidden><span class="mobile-tool-icon" aria-hidden="true">✓</span><span class="stage-tool-label">Bitti</span></button>
                 <button id="clear-selection" class="text-button" type="button" aria-label="Seçimi temizle" disabled><span class="mobile-tool-icon" aria-hidden="true">×</span><span class="stage-tool-label">Seçimi bırak</span></button>
@@ -213,7 +214,7 @@
               <p class="library-disclaimer">Görsel tasarım · Üretim uygunluğu doğrulanmamıştır.</p>
             </aside>
             <dialog id="workshop-tools" class="workshop-dialog" aria-labelledby="workshop-tools-title">
-              <div class="workshop-dialog-header"><button id="workshop-sheet-handle" type="button" aria-label="Menüyü aşağı kaydırarak kapat" title="Menüyü aşağı kaydırarak kapat"><span aria-hidden="true"></span></button><h2 id="workshop-tools-title"><span class="workshop-menu-heading">Atölye menüsü <small>Parçaların, ölçülerin, görünümün.</small></span><span class="workshop-order-heading">Hedef parçayı seç <small><span id="workshop-order-source"></span> Soluk satırlar seçili parçaları gösterir.</small></span></h2><button id="workshop-size-toggle" type="button" aria-controls="workshop-tools" aria-expanded="false" aria-label="Menüyü büyüt">Büyüt</button><button id="workshop-tools-close" class="text-button" type="button" aria-label="Menüyü kapat" autofocus>×</button></div>
+              <div class="workshop-dialog-header"><button id="workshop-sheet-handle" type="button" aria-label="Menüyü aşağı kaydırarak kapat" title="Menüyü aşağı kaydırarak kapat"><span aria-hidden="true"></span></button><h2 id="workshop-tools-title"><span class="workshop-menu-heading">Atölye menüsü <small>Parçaların, ölçülerin, görünümün.</small></span><span class="workshop-task-heading" data-task-heading="new">Yeni tasarım</span><span class="workshop-task-heading" data-task-heading="parts">Tasarımın parçaları</span><span class="workshop-order-heading">Hedef parçayı seç <small><span id="workshop-order-source"></span> Soluk satırlar seçili parçaları gösterir.</small></span></h2><button id="workshop-size-toggle" type="button" aria-controls="workshop-tools" aria-expanded="false" aria-label="Menüyü büyüt">Büyüt</button><button id="workshop-tools-close" class="text-button" type="button" aria-label="Menüyü kapat" autofocus>×</button></div>
               <div class="quick-design-actions" role="group" aria-label="Tasarım işlemleri"><button id="shuffle-design" class="text-button" type="button">⤨ Karıştır</button><button id="restore-design" class="text-button" type="button">Başlangıca dön…</button></div>
               <a id="atmosphere-studio-link" class="text-button" href="#main-atmosphere-settings">Atmosfer · bu tasarımda aç</a>
               <button id="tools-clear-selection" class="text-button" type="button" disabled hidden>Seçimi bırak</button>
@@ -330,7 +331,7 @@
                   <p id="controlled-stock-status" class="help-text" role="status"></p>
                 </details>
               </details>
-              <div id="part-list" class="part-list" aria-label="Taşıyıcı üzerindeki parçalar"></div>
+              <div id="part-list" class="part-list" role="group" aria-label="Taşıyıcı üzerindeki parçalar" tabindex="-1"></div>
             </details>
 
             <details class="workshop-group" id="workshop-settings"><summary><span class="workshop-group-heading">Ölçü ve görünüm<small>Taşıyıcı, sahne ve kamera</small></span></summary>
