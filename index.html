@@ -9,7 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Keep the cascade explicit and the semantic fallback styled without JS. -->
     <!-- Retain Sedef surfaces; the final layer owns workshop layout. -->
-    <script type="module" crossorigin src="/assets/workshop-CEuDnGsf.js"></script>
+    <script type="module" crossorigin src="/assets/workshop-BI5mppFP.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/mine-labradorite-photo-v1-Cr4yRX7E.js">
     <link rel="modulepreload" crossorigin href="/assets/bead-sizing-l55YQmQ6.js">
     <link rel="modulepreload" crossorigin href="/assets/source-presets-D_YOnyLv.js">
@@ -18,17 +18,17 @@
     <link rel="modulepreload" crossorigin href="/assets/appearance-versions-D9VIIKTt.js">
     <link rel="modulepreload" crossorigin href="/assets/stone-profiles-07Sxyu1e.js">
     <link rel="modulepreload" crossorigin href="/assets/focus-symbols-DbUH7FhK.js">
-    <link rel="modulepreload" crossorigin href="/assets/model-D344tQYh.js">
-    <link rel="modulepreload" crossorigin href="/assets/shared-assembly-starter-v1-DxoADq4W.js">
+    <link rel="modulepreload" crossorigin href="/assets/model-Cu-cLPyz.js">
+    <link rel="modulepreload" crossorigin href="/assets/shared-assembly-starter-v1-C5q9aHCH.js">
     <link rel="modulepreload" crossorigin href="/assets/material-measurement-DoOVQVW5.js">
     <link rel="modulepreload" crossorigin href="/assets/material-catalog-binding-BJtnRKKP.js">
-    <link rel="modulepreload" crossorigin href="/assets/production-blueprint-BTWvUPBL.js">
+    <link rel="modulepreload" crossorigin href="/assets/production-blueprint-CF8F19N8.js">
     <link rel="modulepreload" crossorigin href="/assets/fixed-photograph-DKyzG8fv.js">
     <link rel="modulepreload" crossorigin href="/assets/component-registry-B2kW7Ofm.js">
     <link rel="modulepreload" crossorigin href="/assets/configuration-DF4SVTOe.js">
-    <link rel="modulepreload" crossorigin href="/assets/recipe-snapshot-DKNUI7FP.js">
+    <link rel="modulepreload" crossorigin href="/assets/recipe-snapshot-DWLn3Wtl.js">
     <link rel="modulepreload" crossorigin href="/assets/asset-manifest-C5A3YVZR.js">
-    <link rel="stylesheet" crossorigin href="/assets/workshop-CxZ_WzOt.css">
+    <link rel="stylesheet" crossorigin href="/assets/workshop-BkeXNw01.css">
   </head>
   <body>
     <a class="skip-link" href="#studio">Atölyeye geç</a>
@@ -213,13 +213,23 @@
               <p class="library-disclaimer">Görsel tasarım · Üretim uygunluğu doğrulanmamıştır.</p>
             </aside>
             <dialog id="workshop-tools" class="workshop-dialog" aria-labelledby="workshop-tools-title">
-              <div class="workshop-dialog-header"><button id="workshop-sheet-handle" type="button" aria-label="Menüyü aşağı kaydırarak kapat" title="Menüyü aşağı kaydırarak kapat"><span aria-hidden="true"></span></button><h2 id="workshop-tools-title"><span class="workshop-menu-heading">Atölye menüsü <small>Parçaların, ölçülerin, görünümün.</small></span><span class="workshop-task-heading" data-task-heading="new">Yeni tasarım</span><span class="workshop-task-heading" data-task-heading="parts">Tasarımın parçaları</span><span class="workshop-task-heading" data-task-heading="edit">Parçaları düzenle</span><span class="workshop-order-heading">Hedef parçayı seç <small><span id="workshop-order-source"></span> Soluk satırlar seçili parçaları gösterir.</small></span></h2><button id="workshop-size-toggle" type="button" aria-controls="workshop-tools" aria-expanded="false" aria-label="Menüyü büyüt">Büyüt</button><button id="workshop-tools-close" class="text-button" type="button" aria-label="Menüyü kapat" autofocus>×</button></div>
+              <div class="workshop-dialog-header">
+                <button id="workshop-sheet-handle" type="button" aria-label="Menüyü aşağı kaydırarak kapat" title="Menüyü aşağı kaydırarak kapat"><span aria-hidden="true"></span></button>
+                <h2 id="workshop-tools-title"><span class="workshop-menu-heading">Atölye menüsü <small>Parçaların, ölçülerin, görünümün.</small></span><span class="workshop-task-heading" data-task-heading="new">Yeni tasarım</span><span class="workshop-task-heading" data-task-heading="parts">Tasarımın parçaları</span><span class="workshop-task-heading" data-task-heading="edit">Parçaları düzenle</span><span class="workshop-order-heading">Hedef parçayı seç <small><span id="workshop-order-source"></span> Soluk satırlar seçili parçaları gösterir.</small></span></h2>
+                <div id="selected-motif-tools" hidden>
+                  <button id="selected-motif-open" class="text-button" type="button">Seçilenlerle yeni motif</button>
+                  <p id="selected-motif-help" class="help-text" role="status" hidden></p>
+                </div>
+                <button id="workshop-size-toggle" type="button" aria-controls="workshop-tools" aria-expanded="false" aria-label="Menüyü büyüt">Büyüt</button>
+                <button id="workshop-tools-close" class="text-button" type="button" aria-label="Menüyü kapat" autofocus>×</button>
+              </div>
               <div class="quick-design-actions" role="group" aria-label="Tasarım işlemleri"><button id="shuffle-design" class="text-button" type="button">⤨ Karıştır</button><button id="restore-design" class="text-button" type="button">Başlangıca dön…</button></div>
               <a id="atmosphere-studio-link" class="text-button" href="#main-atmosphere-settings">Atmosfer · bu tasarımda aç</a>
               <button id="tools-clear-selection" class="text-button" type="button" disabled hidden>Seçimi bırak</button>
               <a id="parts-nav" href="#parts-details" data-workspace-target hidden>Seçim araçları / Liste</a>
             <details class="design-start" id="design-start">
               <summary id="design-start-title"><span class="workshop-group-heading">Yeni tasarım<small>Bileklik ve kolye modelleri</small></span><span class="design-current">Şimdi: <strong id="current-design-kind">Bileklik</strong></span></summary>
+              <button id="selected-motif-back" class="text-button" type="button" hidden>Parçalara dön</button>
               <div class="starter-actions" role="group" aria-label="Takı türü">
                 <button id="bracelet-plan-open" type="button" aria-expanded="false" aria-controls="bracelet-plan">Bileklik</button>
                 <button id="necklace-plan-open" type="button" aria-expanded="false" aria-controls="bracelet-plan">Kolye</button>
@@ -237,7 +247,8 @@
                     </div>
                   </fieldset>
                   <label id="plan-cm-label"><span id="plan-cm-text">Bilek hedefi (cm)</span><input id="plan-cm" type="number" min="10" max="25" step="any" value="17" inputmode="decimal" /></label>
-                  <label id="plan-mm-label">Nominal çap <select id="plan-mm"><option value="4">4 mm</option><option value="6">6 mm</option><option value="8" selected>8 mm</option></select></label>
+                  <label id="plan-mm-label">Nominal çap <select id="plan-mm"><option value="" disabled hidden>Çap seç</option><option value="4">4 mm</option><option value="6">6 mm</option><option value="8" selected>8 mm</option></select></label>
+                  <p id="selected-motif-size-note" class="help-text" hidden>Yeni motif için tek nominal çap seç.</p>
                   <label id="plan-stone-label">Taş <select id="plan-stone"><option value="realism-pearl-v1">İnci</option><option value="premium-tiger-eye">Kaplan gözü</option><option value="premium-onyx">Oniks</option></select></label>
                   <fieldset id="plan-motif-palette" hidden>
                     <legend>Zorunlu palet</legend>
