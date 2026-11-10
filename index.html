@@ -9,24 +9,24 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Keep the cascade explicit and the semantic fallback styled without JS. -->
     <!-- Retain Sedef surfaces; the final layer owns workshop layout. -->
-    <script type="module" crossorigin src="/assets/workshop-VyV7ZtvG.js"></script>
+    <script type="module" crossorigin src="/assets/workshop-DDnY-ZjN.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/mine-labradorite-photo-v1-Cr4yRX7E.js">
-    <link rel="modulepreload" crossorigin href="/assets/bead-sizing-BDOVXsd0.js">
+    <link rel="modulepreload" crossorigin href="/assets/bead-sizing-D7kPumvZ.js">
     <link rel="modulepreload" crossorigin href="/assets/source-presets-D_YOnyLv.js">
     <link rel="modulepreload" crossorigin href="/assets/three.core-Dp-eO7LC.js">
     <link rel="modulepreload" crossorigin href="/assets/BufferGeometryUtils-BxDIlM1A.js">
     <link rel="modulepreload" crossorigin href="/assets/appearance-versions-D9VIIKTt.js">
     <link rel="modulepreload" crossorigin href="/assets/stone-profiles-07Sxyu1e.js">
     <link rel="modulepreload" crossorigin href="/assets/focus-symbols-DbUH7FhK.js">
-    <link rel="modulepreload" crossorigin href="/assets/model-5fOIfydd.js">
-    <link rel="modulepreload" crossorigin href="/assets/shared-assembly-starter-v1-BIISOXVb.js">
+    <link rel="modulepreload" crossorigin href="/assets/model-BaN2r5gj.js">
+    <link rel="modulepreload" crossorigin href="/assets/shared-assembly-starter-v1-C2NZUOAX.js">
     <link rel="modulepreload" crossorigin href="/assets/material-measurement-DoOVQVW5.js">
-    <link rel="modulepreload" crossorigin href="/assets/material-catalog-binding-CCjjglHW.js">
-    <link rel="modulepreload" crossorigin href="/assets/production-blueprint-BDPQS0MP.js">
+    <link rel="modulepreload" crossorigin href="/assets/material-catalog-binding-ROulRYju.js">
+    <link rel="modulepreload" crossorigin href="/assets/production-blueprint-Bm3SmNVl.js">
     <link rel="modulepreload" crossorigin href="/assets/fixed-photograph-DKyzG8fv.js">
-    <link rel="modulepreload" crossorigin href="/assets/component-registry-DHzacw11.js">
+    <link rel="modulepreload" crossorigin href="/assets/component-registry-B5qFk5jF.js">
     <link rel="modulepreload" crossorigin href="/assets/configuration-DF4SVTOe.js">
-    <link rel="modulepreload" crossorigin href="/assets/recipe-snapshot-xyFuMaUn.js">
+    <link rel="modulepreload" crossorigin href="/assets/recipe-snapshot-6Tb8rQns.js">
     <link rel="modulepreload" crossorigin href="/assets/asset-manifest-C5A3YVZR.js">
     <link rel="stylesheet" crossorigin href="/assets/workshop-BHhoBhWN.css">
   </head>
@@ -758,11 +758,19 @@
           <p id="material-binding-status" role="status"></p>
         </fieldset>
         <fieldset id="material-admission" class="intake-inputs" hidden>
-          <legend>Yeni yuvarlak parça için görsel katalog onayı</legend>
+          <legend>Yeni parça için görsel katalog onayı</legend>
           <p>Her kaynak fotoğrafı aç. Dijital kontrol, GLB’nin +Y delik eksenini ve model ölçülerini gösterir. Fiziksel ölçüm ayrı kayıttadır.</p>
           <label>Kaynak fotoğrafı <select id="material-admission-photo" aria-describedby="material-admission-photo-status"></select></label>
           <img id="material-admission-photo-preview" alt="" hidden />
           <p id="material-admission-photo-status" role="status"></p>
+          <label>Görsel form
+            <select id="material-admission-form" aria-describedby="material-admission-form-help">
+              <option value="" disabled selected>Formu seç</option>
+              <option value="round">Yuvarlak · 4/6/8 mm</option>
+              <option value="irregular-threaded">Düzensiz delikli · kaynak boyutu</option>
+            </select>
+          </label>
+          <p id="material-admission-form-help">Düzensiz delikli parçalar kaynak GLB’nin biçimi ve ölçüsüyle dizilir.</p>
           <p id="material-admission-geometry" role="status"></p>
           <div class="intake-model-review">
             <button id="material-admission-model-preview" type="button" aria-controls="material-admission-model-views" disabled>GLB’yi üç açıdan göster</button>
