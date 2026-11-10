@@ -9,7 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Keep the cascade explicit and the semantic fallback styled without JS. -->
     <!-- Retain Sedef surfaces; the final layer owns workshop layout. -->
-    <script type="module" crossorigin src="/assets/workshop-BWQs0sYh.js"></script>
+    <script type="module" crossorigin src="/assets/workshop-C3_3ai1S.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/mine-labradorite-photo-v1-Cr4yRX7E.js">
     <link rel="modulepreload" crossorigin href="/assets/bead-sizing-l55YQmQ6.js">
     <link rel="modulepreload" crossorigin href="/assets/source-presets-D_YOnyLv.js">
@@ -28,7 +28,7 @@
     <link rel="modulepreload" crossorigin href="/assets/configuration-DF4SVTOe.js">
     <link rel="modulepreload" crossorigin href="/assets/recipe-snapshot-dhWzPRCd.js">
     <link rel="modulepreload" crossorigin href="/assets/asset-manifest-C5A3YVZR.js">
-    <link rel="stylesheet" crossorigin href="/assets/workshop-BRaLynuG.css">
+    <link rel="stylesheet" crossorigin href="/assets/workshop-gfnGT2xN.css">
   </head>
   <body>
     <a class="skip-link" href="#studio">Atölyeye geç</a>
@@ -235,13 +235,23 @@
                 <label id="plan-mm-label">Nominal çap <select id="plan-mm"><option value="4">4 mm</option><option value="6">6 mm</option><option value="8" selected>8 mm</option></select></label>
                 <label id="plan-stone-label">Taş <select id="plan-stone"><option value="realism-pearl-v1">İnci</option><option value="premium-tiger-eye">Kaplan gözü</option><option value="premium-onyx">Oniks</option></select></label>
                 <fieldset id="plan-motif-palette" hidden>
-                  <legend>En az üç malzeme seç</legend>
+                  <legend>Zorunlu palet</legend>
                   <label>Görsel tema <select id="plan-design-theme"><option value="">Serbest</option></select></label>
                   <p id="plan-theme-note" class="help-text" role="status" hidden></p>
                   <button id="plan-preference-open" class="text-button" type="button" aria-haspopup="dialog" aria-controls="design-preferences-dialog" aria-describedby="plan-preference-summary">Burç ve renk tercihleri</button>
                   <p id="plan-preference-summary" class="help-text" hidden></p>
-                  <label>Aday malzemesi ara <input id="plan-motif-search" type="search" /></label>
-                  <p id="plan-motif-selected">Henüz malzeme seçilmedi.</p>
+                  <p id="plan-motif-selected">Her adayda yer alacak en az üç malzeme seç.</p>
+                  <div class="plan-motif-choices">
+                    <div>
+                      <label>Ön merkez <select id="plan-motif-center" aria-describedby="plan-motif-center-help" disabled><option value="">Otomatik</option></select></label>
+                      <small id="plan-motif-center-help" class="help-text">Sabit merkez için zorunlu paletten bir taş seç.</small>
+                    </div>
+                    <div>
+                      <label>Eşlikçi (isteğe bağlı) <select id="plan-motif-support" aria-describedby="plan-motif-support-help"><option value="">Yok</option></select></label>
+                      <small id="plan-motif-support-help" class="help-text">Yer varsa aynı çapta bir ayna çifti kullanılır. Eşlikçisiz adaylar da gösterilir.</small>
+                    </div>
+                  </div>
+                  <label>Zorunlu malzeme ara <input id="plan-motif-search" type="search" /></label>
                   <div id="plan-motif-materials"></div>
                   <p id="plan-motif-empty" hidden>Aramaya uyan malzeme yok.</p>
                 </fieldset>
