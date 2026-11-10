@@ -9,23 +9,26 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Keep the cascade explicit and the semantic fallback styled without JS. -->
     <!-- Retain Sedef surfaces; the final layer owns workshop layout. -->
-    <script type="module" crossorigin src="/assets/workshop-B07I44kw.js"></script>
+    <script type="module" crossorigin src="/assets/workshop-VyV7ZtvG.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/mine-labradorite-photo-v1-Cr4yRX7E.js">
     <link rel="modulepreload" crossorigin href="/assets/bead-sizing-BDOVXsd0.js">
-    <link rel="modulepreload" crossorigin href="/assets/appearance-versions-DRfJbtfr.js">
-    <link rel="modulepreload" crossorigin href="/assets/stone-profiles-C7-kkvF9.js">
+    <link rel="modulepreload" crossorigin href="/assets/source-presets-D_YOnyLv.js">
+    <link rel="modulepreload" crossorigin href="/assets/three.core-Dp-eO7LC.js">
+    <link rel="modulepreload" crossorigin href="/assets/BufferGeometryUtils-BxDIlM1A.js">
+    <link rel="modulepreload" crossorigin href="/assets/appearance-versions-D9VIIKTt.js">
+    <link rel="modulepreload" crossorigin href="/assets/stone-profiles-07Sxyu1e.js">
     <link rel="modulepreload" crossorigin href="/assets/focus-symbols-DbUH7FhK.js">
-    <link rel="modulepreload" crossorigin href="/assets/model-wmZXjXph.js">
-    <link rel="modulepreload" crossorigin href="/assets/shared-assembly-starter-v1-DBkDmCiP.js">
+    <link rel="modulepreload" crossorigin href="/assets/model-5fOIfydd.js">
+    <link rel="modulepreload" crossorigin href="/assets/shared-assembly-starter-v1-BIISOXVb.js">
     <link rel="modulepreload" crossorigin href="/assets/material-measurement-DoOVQVW5.js">
     <link rel="modulepreload" crossorigin href="/assets/material-catalog-binding-CCjjglHW.js">
-    <link rel="modulepreload" crossorigin href="/assets/production-blueprint-DdQpZmvj.js">
-    <link rel="modulepreload" crossorigin href="/assets/component-registry-D82vH4yq.js">
-    <link rel="modulepreload" crossorigin href="/assets/fixed-photograph-DGL78EXq.js">
+    <link rel="modulepreload" crossorigin href="/assets/production-blueprint-BDPQS0MP.js">
+    <link rel="modulepreload" crossorigin href="/assets/fixed-photograph-DKyzG8fv.js">
+    <link rel="modulepreload" crossorigin href="/assets/component-registry-DHzacw11.js">
     <link rel="modulepreload" crossorigin href="/assets/configuration-DF4SVTOe.js">
-    <link rel="modulepreload" crossorigin href="/assets/recipe-snapshot-CbpjYP4n.js">
-    <link rel="modulepreload" crossorigin href="/assets/asset-manifest-CnZuZqFe.js">
-    <link rel="stylesheet" crossorigin href="/assets/workshop-CfwilsEe.css">
+    <link rel="modulepreload" crossorigin href="/assets/recipe-snapshot-xyFuMaUn.js">
+    <link rel="modulepreload" crossorigin href="/assets/asset-manifest-C5A3YVZR.js">
+    <link rel="stylesheet" crossorigin href="/assets/workshop-BHhoBhWN.css">
   </head>
   <body>
     <a class="skip-link" href="#studio">Atölyeye geç</a>
@@ -761,7 +764,20 @@
           <img id="material-admission-photo-preview" alt="" hidden />
           <p id="material-admission-photo-status" role="status"></p>
           <p id="material-admission-geometry" role="status"></p>
-          <p id="material-admission-instructions">Bu bölümde fotoğrafları ve dijital ölçüleri görürsün. Aynı GLB’nin görünümünü ve yönünü yerel bir 3B görüntüleyicide veya özel katalog adayında incele. Kullanım hakkı, GLB’nin gömülü dokularını da kapsamalı.</p>
+          <div class="intake-model-review">
+            <button id="material-admission-model-preview" type="button" aria-controls="material-admission-model-views" disabled>GLB’yi üç açıdan göster</button>
+            <p id="material-admission-model-status" role="status"></p>
+            <div id="material-admission-model-views" hidden>
+              <div class="intake-model-angles" role="group" aria-label="GLB inceleme açısı">
+                <button type="button" data-material-review-view="oblique" aria-pressed="true">Çapraz</button>
+                <button type="button" data-material-review-view="side" aria-pressed="false">Yandan</button>
+                <button type="button" data-material-review-view="bore" aria-pressed="false">Delik (+Y)</button>
+              </div>
+              <img id="material-admission-model-image" alt="" width="288" height="288" />
+              <p id="material-admission-model-source"></p>
+            </div>
+          </div>
+          <p id="material-admission-instructions">Aynı GLB’nin görünümünü ve yönünü buradaki açılardan veya yerel bir 3B görüntüleyiciden incele. Kullanım hakkı, GLB’nin gömülü dokularını da kapsamalı.</p>
           <label>Katalogda görünen ad <input id="material-admission-name" maxlength="160" required /></label>
           <label>Operatör referansı <input id="material-admission-operator" maxlength="200" required /></label>
           <label>Kullanım hakkı kaydı <input id="material-admission-rights" maxlength="200" required /></label>
