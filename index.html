@@ -9,7 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Keep the cascade explicit and the semantic fallback styled without JS. -->
     <!-- Retain Sedef surfaces; the final layer owns workshop layout. -->
-    <script type="module" crossorigin src="/assets/workshop-DLXqhq81.js"></script>
+    <script type="module" crossorigin src="/assets/workshop-FEpTl-QS.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/mine-labradorite-photo-v1-Cr4yRX7E.js">
     <link rel="modulepreload" crossorigin href="/assets/bead-sizing-l55YQmQ6.js">
     <link rel="modulepreload" crossorigin href="/assets/source-presets-D_YOnyLv.js">
@@ -18,17 +18,17 @@
     <link rel="modulepreload" crossorigin href="/assets/appearance-versions-D9VIIKTt.js">
     <link rel="modulepreload" crossorigin href="/assets/stone-profiles-07Sxyu1e.js">
     <link rel="modulepreload" crossorigin href="/assets/focus-symbols-DbUH7FhK.js">
-    <link rel="modulepreload" crossorigin href="/assets/model-BjGMNvTT.js">
-    <link rel="modulepreload" crossorigin href="/assets/shared-assembly-starter-v1-BnNzGOmH.js">
+    <link rel="modulepreload" crossorigin href="/assets/model-DHhPRlHj.js">
+    <link rel="modulepreload" crossorigin href="/assets/shared-assembly-starter-v1-CgOzHGv6.js">
     <link rel="modulepreload" crossorigin href="/assets/material-measurement-DoOVQVW5.js">
     <link rel="modulepreload" crossorigin href="/assets/material-catalog-binding-BJtnRKKP.js">
-    <link rel="modulepreload" crossorigin href="/assets/production-blueprint-pJcSsxrC.js">
+    <link rel="modulepreload" crossorigin href="/assets/production-blueprint-BEUimhBZ.js">
     <link rel="modulepreload" crossorigin href="/assets/fixed-photograph-DKyzG8fv.js">
     <link rel="modulepreload" crossorigin href="/assets/component-registry-B2kW7Ofm.js">
     <link rel="modulepreload" crossorigin href="/assets/configuration-DF4SVTOe.js">
-    <link rel="modulepreload" crossorigin href="/assets/recipe-snapshot-BIEoNPmJ.js">
+    <link rel="modulepreload" crossorigin href="/assets/recipe-snapshot-BVNWmFdV.js">
     <link rel="modulepreload" crossorigin href="/assets/asset-manifest-C5A3YVZR.js">
-    <link rel="stylesheet" crossorigin href="/assets/workshop-DdvY9YiP.css">
+    <link rel="stylesheet" crossorigin href="/assets/workshop-CbzCYCwq.css">
   </head>
   <body>
     <a class="skip-link" href="#studio">Atölyeye geç</a>
@@ -38,6 +38,7 @@
       <div class="header-actions">
         <div class="history"><button id="undo" class="icon-button" type="button" title="Geri al (Ctrl+Z)" aria-label="Geri al" disabled>↶</button><button id="redo" class="icon-button" type="button" title="Yinele (Ctrl+Shift+Z)" aria-label="Yinele" disabled>↷</button></div>
         <a class="header-new text-button" href="#design-start" role="button" aria-haspopup="dialog" aria-controls="workshop-tools" data-workspace-target data-workshop-task="new" aria-label="Yeni tasarım"><span aria-hidden="true">＋</span> Yeni</a>
+        <button id="kesfet-open" class="text-button header-kesfet" type="button" aria-controls="kesfet-bar" title="Temaya göre hazır modellere göz at">Keşfet</button>
         <button id="workshop-tools-trigger" class="text-button header-tools" type="button" aria-haspopup="dialog" aria-controls="workshop-tools" title="Atölye menüsü">Menü</button>
         <details id="download-menu" class="download-menu">
           <summary id="download-trigger" class="button button-dark">İndir <span class="download-chevron" aria-hidden="true">▾</span></summary>
@@ -67,7 +68,7 @@
           <section class="workspace" aria-label="Tasarım sahnesi">
             <div class="stage-shell" id="scene-stage" role="group" aria-label="3D sahne ve görünüm kontrolleri" tabindex="-1">
               <div class="stage-heading">
-                <span class="eyebrow" id="design-kind">BİLEKLİK / 01</span>
+                <span class="eyebrow" id="design-kind">Bileklik · 1 parça</span>
                 <span id="focus-caption" class="focus-caption" role="status" aria-live="polite">Tüm tasarım</span>
               </div>
               <div class="stage-toolbar" role="toolbar" aria-label="Sahne ve seçim araçları">
@@ -87,6 +88,7 @@
                 <a id="parts-quick-link" href="#part-list" role="button" aria-haspopup="dialog" aria-controls="workshop-tools" data-workspace-target data-workshop-task="parts" aria-label="Tasarımın parça listesini aç"><span class="parts-quick-label">Parça listesi</span><span class="parts-quick-short" aria-hidden="true">Liste</span></a>
                 <button id="multi-mode" class="text-button" type="button" aria-label="Çoklu seçim" aria-pressed="false"><span class="mobile-tool-icon" aria-hidden="true"><svg class="multi-mode-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" focusable="false"><rect x="8" y="3.5" width="12.5" height="12.5" rx="3"/><path d="M16 19.5a1 1 0 0 1-1 1H6.5a3 3 0 0 1-3-3V9a1 1 0 0 1 1-1"/></svg></span><span class="stage-tool-label">Çoklu</span></button>
                 <button id="multi-done" class="text-button" type="button" aria-label="Çoklu seçimi bitir" hidden><span class="mobile-tool-icon" aria-hidden="true">✓</span><span class="stage-tool-label">Bitti</span></button>
+                <button id="kesfet-open-stage" class="text-button" type="button" aria-label="Keşfet: temaya göre modeller" aria-controls="kesfet-bar"><span class="mobile-tool-icon" aria-hidden="true"><svg class="kesfet-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" focusable="false"><path d="M12 3.5 14 10l6.5 2-6.5 2-2 6.5-2-6.5-6.5-2 6.5-2Z"/></svg></span><span class="stage-tool-label">Keşfet</span></button>
               </div>
               <div id="main-atmosphere-bar" class="main-atmosphere-bar" role="group" aria-label="Atmosfer hareketi" data-studio-camera-obstacle="top" hidden>
                 <button id="main-atmosphere-play" type="button" aria-pressed="false" aria-describedby="main-atmosphere-status" disabled>Oynat</button>
@@ -143,11 +145,11 @@
               <div id="catalog-filters" class="catalog-filters" role="group" aria-labelledby="filter-heading" hidden>
                 <button id="filter-sheet-handle" class="catalog-sheet-handle" type="button" aria-label="Filtreleri kapat" title="Filtreleri kapat"><span aria-hidden="true"></span></button>
                 <div class="catalog-filter-controls">
-                  <div class="filter-heading"><strong id="filter-heading">Birlikte filtrele</strong><button id="filter-close" class="text-button" type="button">Bitti</button></div>
-                  <p id="filter-summary" role="status">Etkin filtre yok</p>
+                  <div class="filter-heading"><strong id="filter-heading">Filtrele</strong><button id="filter-close" class="text-button" type="button">Bitti</button></div>
+                  <p id="filter-summary" role="status">Filtre yok</p>
                   <div class="catalog-filter-results">
                     <p id="filter-result-count" role="status" aria-live="polite"></p>
-                    <button id="clear-filters" class="text-button" type="button">Filtreleri temizle</button>
+                    <button id="clear-filters" class="text-button" type="button" hidden>Filtreleri temizle</button>
                   </div>
                 </div>
                 <details id="catalog-evidence-options" hidden>
@@ -236,7 +238,7 @@
                 <button id="workshop-size-toggle" type="button" aria-controls="workshop-tools" aria-expanded="false" aria-label="Menüyü büyüt">Büyüt</button>
                 <button id="workshop-tools-close" class="text-button" type="button" aria-label="Menüyü kapat" autofocus>×</button>
               </div>
-              <div class="quick-design-actions workshop-quick-actions" role="group" aria-label="Tasarım işlemleri"><button id="shuffle-design" class="text-button" type="button"><span aria-hidden="true">⤨</span> Karıştır</button><button id="restore-design" class="text-button" type="button" aria-haspopup="dialog"><span aria-hidden="true">↺</span> Başlangıca dön…</button></div>
+              <div class="quick-design-actions workshop-quick-actions" role="group" aria-label="Tasarım işlemleri"><button id="shuffle-design" class="text-button" type="button"><span aria-hidden="true">⤨</span> Karıştır</button><button id="restore-design" class="text-button" type="button" aria-haspopup="dialog"><span aria-hidden="true">↺</span> Sıfırla…</button></div>
               <button id="scene-settings-open" class="text-button" type="button" aria-controls="workshop-settings">Sahne ve ortam</button>
               <button id="tools-clear-selection" class="text-button" type="button" disabled hidden>Seçimi bırak</button>
               <a id="parts-nav" href="#parts-details" data-workspace-target hidden>Seçim araçları / Liste</a>
@@ -500,6 +502,23 @@
       <footer class="page-footer"><span>Bir parça doğa. Bir parça sen.</span><a href="/gorseller/20261102-makrome/">Stüdyo görselleri</a><p>Görsel bir tasarım alanı. Ölçü, delik ve üretim uygunluğu doğrulanmamıştır.</p><span class="footer-brand">JEW STUDIO · 2026</span></footer>
             </dialog>
           </div>
+          <section id="kesfet-bar" class="kesfet-bar" aria-labelledby="kesfet-bar-title" data-empty="false" hidden>
+            <h2 id="kesfet-bar-title" class="sr-only">Keşfet: temaya göre modeller</h2>
+            <div class="kesfet-row kesfet-row-theme">
+              <button id="kesfet-exit" class="kesfet-icon-button" type="button" aria-label="Keşfetten çık" title="Keşfetten çık (Esc)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+              <button id="kesfet-category" class="kesfet-chip" type="button" aria-haspopup="dialog" aria-controls="kesfet-picker"><span id="kesfet-category-label" class="kesfet-chip-label">Su · Bileklik</span><span class="kesfet-chip-caret" aria-hidden="true">▾</span></button>
+            </div>
+            <p id="kesfet-caption" class="kesfet-caption"></p>
+            <p id="kesfet-empty" class="kesfet-empty" hidden>Bu seçimden model çıkmadı. Başka bir tema seç.</p>
+            <div class="kesfet-row kesfet-row-nav" role="group" aria-label="Modeller arasında gez">
+              <button id="kesfet-prev" class="kesfet-icon-button kesfet-step" type="button" aria-label="Önceki model" title="Önceki model (←)"><span aria-hidden="true">‹</span></button>
+              <button id="kesfet-apply" class="kesfet-primary" type="button" aria-describedby="kesfet-apply-help"><span class="kesfet-primary-label">Bunu düzenle</span><span id="kesfet-counter" class="kesfet-counter" aria-hidden="true"></span></button>
+              <button id="kesfet-next" class="kesfet-icon-button kesfet-step" type="button" aria-label="Sonraki model" title="Sonraki model (→)" data-series="false"><span id="kesfet-next-icon" aria-hidden="true">›</span><span id="kesfet-next-label" class="kesfet-next-label" aria-hidden="true" hidden>Yeni seri</span></button>
+            </div>
+            <p id="kesfet-apply-help" class="kesfet-help">Mevcut tasarımın yerine geçer · Geri al ile dönülür</p>
+            <p id="kesfet-status" class="kesfet-status" aria-live="off"></p>
+            <section id="kesfet-details" class="kesfet-details" aria-labelledby="kesfet-details-title" hidden><h3 id="kesfet-details-title">Bu modelde</h3><ul id="kesfet-materials" class="kesfet-materials"></ul><p id="kesfet-meta" class="kesfet-meta"></p></section>
+          </section>
         </div>
       </section>
     </main>
@@ -594,7 +613,7 @@
     <dialog id="order-summary-dialog" class="workshop-dialog operator-dialog order-summary-dialog" aria-labelledby="order-summary-title" aria-describedby="order-summary-status">
       <header class="operator-dialog-header">
         <h2 id="order-summary-title">Sipariş özeti</h2>
-        <div class="dialog-actions"><button id="order-summary-close" class="button" type="button" autofocus>Kapat</button></div>
+        <button id="order-summary-close" class="dialog-close" type="button" aria-label="Sipariş özetini kapat" autofocus><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
       </header>
       <p id="order-summary-design" class="order-summary-design"></p>
       <p id="order-summary-count" class="order-summary-count"></p>
@@ -819,6 +838,15 @@
       </div>
     </dialog>
     <div id="physical-pilot-print-root" hidden></div>
+    <dialog id="kesfet-picker" class="kesfet-picker" aria-labelledby="kesfet-picker-title" aria-describedby="kesfet-picker-hint kesfet-picker-note">
+      <div class="kesfet-picker-header"><h2 id="kesfet-picker-title">Tema seç</h2><p id="kesfet-picker-hint" class="sr-only">Tek seçim: bir temaya basınca Keşfet o temaya geçer; seçili tema basılı görünür.</p><button id="kesfet-picker-close" class="kesfet-icon-button" type="button" aria-label="Tema seçimini kapat" title="Kapat (Esc)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+      <div class="kesfet-kind" role="group" aria-label="Takı türü"><button id="kesfet-kind-bracelet" type="button" aria-pressed="true">Bileklik</button><button id="kesfet-kind-necklace" type="button" aria-pressed="false">Kolye</button></div>
+      <section id="kesfet-group-element" class="kesfet-group" aria-labelledby="kesfet-group-element-title"><h3 id="kesfet-group-element-title">Elementler</h3><div id="kesfet-options-element" role="group" aria-labelledby="kesfet-group-element-title" class="kesfet-options kesfet-options-2"></div></section>
+      <section id="kesfet-group-elements" class="kesfet-group" aria-labelledby="kesfet-group-elements-title"><h3 id="kesfet-group-elements-title">Element karışımları</h3><div id="kesfet-options-elements" role="group" aria-labelledby="kesfet-group-elements-title" class="kesfet-options kesfet-options-2"></div></section>
+      <section id="kesfet-group-zodiac" class="kesfet-group" aria-labelledby="kesfet-group-zodiac-title"><h3 id="kesfet-group-zodiac-title">Burçlar</h3><div id="kesfet-options-zodiac" role="group" aria-labelledby="kesfet-group-zodiac-title" class="kesfet-options kesfet-options-3"></div></section>
+      <section id="kesfet-group-selection" class="kesfet-group" aria-labelledby="kesfet-group-selection-title" hidden><h3 id="kesfet-group-selection-title" aria-hidden="true">Seçtiklerin</h3><div id="kesfet-options-selection" role="group" aria-labelledby="kesfet-group-selection-title" class="kesfet-options"></div></section>
+      <p id="kesfet-picker-note" class="kesfet-picker-note">Temalar yalnız görsel etikettir; fiziksel, bilimsel ya da sağlık etkisi iddiası yoktur.</p>
+    </dialog>
     <div id="toast" class="toast" aria-hidden="true" hidden></div>
     <p id="toast-live" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
     <dialog id="material-intake-dialog" class="workshop-dialog operator-dialog" aria-labelledby="material-intake-title">
