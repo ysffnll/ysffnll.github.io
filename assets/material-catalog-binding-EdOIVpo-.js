@@ -1,0 +1,1 @@
+export{r as parseMaterialCatalogBinding}from"./material-catalog-binding-C4Z7y-DT.js";
