@@ -7,28 +7,37 @@
     <meta name="description" content="JEW Studio: kendi bilekliğini ve kolyeni 3D sahnede tasarla. Doğal taşları ve takı parçalarını ekle, sırala ve kişiselleştir." />
     <title>JEW Studio — Senin elinden, sana özel.</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- No image preloads: the default stage is "Stüdyo" (photo-s1), a procedural sweep with no fetch.
+         Preload only what a fresh session shows in the first seconds (guarded by src/startup-assets.test.js). -->
     <!-- Keep the cascade explicit and the semantic fallback styled without JS. -->
-    <!-- Retain Sedef surfaces; the final layer owns workshop layout. -->
-    <script type="module" crossorigin src="/assets/workshop-FEpTl-QS.js"></script>
+    <!-- Retain Sedef surfaces; the final layer owns workshop layout. -->
+    <!-- R1b Modeller front door: bar, picker and doors. Before the shell layer. -->
+    <!-- R1c: strand ribbon, three calm editor bands, compact selection row. -->
+    <!-- R2 menu: short menu, sub-views, Ortam, Tasarımlarım, one sheet/dialog style. Before the shell layer. -->
+    <!-- R1a shell: tokens, header, finish dialog. Loaded last on purpose. -->
+    <script type="module" crossorigin src="/assets/workshop-CxR2nwo9.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/mine-labradorite-photo-v1-Cr4yRX7E.js">
     <link rel="modulepreload" crossorigin href="/assets/bead-sizing-l55YQmQ6.js">
     <link rel="modulepreload" crossorigin href="/assets/source-presets-D_YOnyLv.js">
     <link rel="modulepreload" crossorigin href="/assets/three.core-Dp-eO7LC.js">
-    <link rel="modulepreload" crossorigin href="/assets/BufferGeometryUtils-BxDIlM1A.js">
-    <link rel="modulepreload" crossorigin href="/assets/appearance-versions-D9VIIKTt.js">
+    <link rel="modulepreload" crossorigin href="/assets/BufferGeometryUtils-BQUZb3zE.js">
+    <link rel="modulepreload" crossorigin href="/assets/appearance-versions-DFOFXl5E.js">
     <link rel="modulepreload" crossorigin href="/assets/stone-profiles-07Sxyu1e.js">
     <link rel="modulepreload" crossorigin href="/assets/focus-symbols-DbUH7FhK.js">
-    <link rel="modulepreload" crossorigin href="/assets/model-DHhPRlHj.js">
-    <link rel="modulepreload" crossorigin href="/assets/shared-assembly-starter-v1-CgOzHGv6.js">
+    <link rel="modulepreload" crossorigin href="/assets/model-DrhIEEYS.js">
+    <link rel="modulepreload" crossorigin href="/assets/shared-assembly-starter-v1-DvJ0HpnT.js">
     <link rel="modulepreload" crossorigin href="/assets/material-measurement-DoOVQVW5.js">
     <link rel="modulepreload" crossorigin href="/assets/material-catalog-binding-BJtnRKKP.js">
-    <link rel="modulepreload" crossorigin href="/assets/production-blueprint-BEUimhBZ.js">
-    <link rel="modulepreload" crossorigin href="/assets/fixed-photograph-DKyzG8fv.js">
-    <link rel="modulepreload" crossorigin href="/assets/component-registry-B2kW7Ofm.js">
+    <link rel="modulepreload" crossorigin href="/assets/production-blueprint-iCM2RW5M.js">
+    <link rel="modulepreload" crossorigin href="/assets/fixed-photograph-CZwKTBvY.js">
+    <link rel="modulepreload" crossorigin href="/assets/component-registry-Ciiz62Ab.js">
     <link rel="modulepreload" crossorigin href="/assets/configuration-DF4SVTOe.js">
-    <link rel="modulepreload" crossorigin href="/assets/recipe-snapshot-BVNWmFdV.js">
+    <link rel="modulepreload" crossorigin href="/assets/recipe-snapshot-CTNoMqmg.js">
     <link rel="modulepreload" crossorigin href="/assets/asset-manifest-C5A3YVZR.js">
-    <link rel="stylesheet" crossorigin href="/assets/workshop-CbzCYCwq.css">
+    <link rel="stylesheet" crossorigin href="/assets/workshop-BLEWNKWc.css">
+    <link rel="modulepreload" crossorigin="" href="/assets/scene-BNMnw0b_.js">
+    <link rel="modulepreload" crossorigin="" href="/assets/asset-proof-C06N9feY.js">
+    <link rel="modulepreload" crossorigin="" href="/assets/scene-DpVr-ipu.js">
   </head>
   <body>
     <a class="skip-link" href="#studio">Atölyeye geç</a>
@@ -36,9 +45,9 @@
       <a class="brand" href="/" aria-label="JEW Studio ana sayfa"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4 36 20 20 36 4 20Z M20 4v32M4 20h32M9 9l22 22M9 31 31 9" /></svg><span>JEW<span class="brand-light"> Studio</span></span></a>
       <div class="header-note header-save"><span class="save-dot" aria-hidden="true"></span><span id="save-status" role="status">Bu cihazda otomatik kayıt</span></div>
       <div class="header-actions">
-        <div class="history"><button id="undo" class="icon-button" type="button" title="Geri al (Ctrl+Z)" aria-label="Geri al" disabled>↶</button><button id="redo" class="icon-button" type="button" title="Yinele (Ctrl+Shift+Z)" aria-label="Yinele" disabled>↷</button></div>
-        <a class="header-new text-button" href="#design-start" role="button" aria-haspopup="dialog" aria-controls="workshop-tools" data-workspace-target data-workshop-task="new" aria-label="Yeni tasarım"><span aria-hidden="true">＋</span> Yeni</a>
-        <button id="kesfet-open" class="text-button header-kesfet" type="button" aria-controls="kesfet-bar" title="Temaya göre hazır modellere göz at">Keşfet</button>
+        <div class="history"><button id="undo" class="icon-button" type="button" title="Geri al (Ctrl+Z)" aria-label="Geri al" disabled><svg class="ui-icon history-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></svg></button><button id="redo" class="icon-button" type="button" title="Yinele (Ctrl+Shift+Z)" aria-label="Yinele" disabled><svg class="ui-icon history-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 14 5-5-5-5"/><path d="M20 9H9.5a5.5 5.5 0 0 0 0 11H13"/></svg></button></div>
+        <a class="header-new text-button" href="#design-start" role="button" aria-haspopup="dialog" aria-controls="workshop-tools" data-workspace-target data-workshop-task="new" hidden aria-label="Yeni tasarım"><span aria-hidden="true">＋</span> Yeni</a>
+        <button id="kesfet-open" class="text-button header-kesfet" type="button" aria-controls="kesfet-bar" title="Temaya göre hazır modellere göz at">Modeller</button>
         <button id="workshop-tools-trigger" class="text-button header-tools" type="button" aria-haspopup="dialog" aria-controls="workshop-tools" title="Atölye menüsü">Menü</button>
         <details id="download-menu" class="download-menu">
           <summary id="download-trigger" class="button button-dark">İndir <span class="download-chevron" aria-hidden="true">▾</span></summary>
@@ -58,6 +67,7 @@
             </button>
           </div>
         </details>
+        <button id="finish-open" class="button header-finish" type="button" aria-haspopup="dialog" aria-controls="order-summary-dialog">Bitir</button>
       </div>
     </header>
     <main>
@@ -85,10 +95,10 @@
                 </button>
               </div>
               <div class="stage-selection-tools" data-studio-camera-obstacle="bottom" role="group" aria-label="Tasarımda parça seçimi">
-                <a id="parts-quick-link" href="#part-list" role="button" aria-haspopup="dialog" aria-controls="workshop-tools" data-workspace-target data-workshop-task="parts" aria-label="Tasarımın parça listesini aç"><span class="parts-quick-label">Parça listesi</span><span class="parts-quick-short" aria-hidden="true">Liste</span></a>
+                <a id="parts-quick-link" href="#part-list" role="button" aria-haspopup="dialog" aria-controls="workshop-tools" data-workspace-target data-workshop-task="parts" aria-label="Tasarımın parça listesini aç" hidden><span class="parts-quick-label">Parça listesi</span><span class="parts-quick-short" aria-hidden="true">Liste</span></a>
                 <button id="multi-mode" class="text-button" type="button" aria-label="Çoklu seçim" aria-pressed="false"><span class="mobile-tool-icon" aria-hidden="true"><svg class="multi-mode-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" focusable="false"><rect x="8" y="3.5" width="12.5" height="12.5" rx="3"/><path d="M16 19.5a1 1 0 0 1-1 1H6.5a3 3 0 0 1-3-3V9a1 1 0 0 1 1-1"/></svg></span><span class="stage-tool-label">Çoklu</span></button>
                 <button id="multi-done" class="text-button" type="button" aria-label="Çoklu seçimi bitir" hidden><span class="mobile-tool-icon" aria-hidden="true">✓</span><span class="stage-tool-label">Bitti</span></button>
-                <button id="kesfet-open-stage" class="text-button" type="button" aria-label="Keşfet: temaya göre modeller" aria-controls="kesfet-bar"><span class="mobile-tool-icon" aria-hidden="true"><svg class="kesfet-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" focusable="false"><path d="M12 3.5 14 10l6.5 2-6.5 2-2 6.5-2-6.5-6.5-2 6.5-2Z"/></svg></span><span class="stage-tool-label">Keşfet</span></button>
+                <button id="kesfet-open-stage" class="text-button" type="button" aria-label="Modeller: hazır modellere göz at" aria-controls="kesfet-bar"><span class="mobile-tool-icon" aria-hidden="true"><svg class="kesfet-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" focusable="false"><path d="M12 3.5 14 10l6.5 2-6.5 2-2 6.5-2-6.5-6.5-2 6.5-2Z"/></svg></span><span class="stage-tool-label">Modeller</span></button>
               </div>
               <div id="main-atmosphere-bar" class="main-atmosphere-bar" role="group" aria-label="Atmosfer hareketi" data-studio-camera-obstacle="top" hidden>
                 <button id="main-atmosphere-play" type="button" aria-pressed="false" aria-describedby="main-atmosphere-status" disabled>Oynat</button>
@@ -97,7 +107,7 @@
               </div>
               </div>
               <button id="retry-assets" class="asset-retry" type="button" hidden>Modeli yeniden yükle ↻</button>
-              <div id="scene" class="scene" tabindex="0" role="group" aria-roledescription="3B sahne" aria-busy="true" aria-describedby="scene-keyboard-help" aria-label="3D takı sahnesi. Dokunmatikte basılı tutarak seç ve ip üzerinde sırala; fareyle tıkla veya sürükle. Klavye ile seçim için parça listesini kullan.">                <div id="scene-fallback" class="scene-fallback"><img id="scene-poster" src="/premium-poster.png" alt="Örnek takı tasarımı; canlı sahne yüklenene kadar gösterilir" width="1440" height="1080" /><div class="scene-fallback-message"><span class="loading-ring" aria-hidden="true"></span><p>Örnek tasarım · 3D hazırlanıyor</p></div></div>
+              <div id="scene" class="scene" tabindex="0" role="group" aria-roledescription="3B sahne" aria-busy="true" aria-describedby="scene-keyboard-help" aria-label="3D takı sahnesi. Dokunmatikte basılı tutarak seç ve ip üzerinde sırala; fareyle tıkla veya sürükle. Klavye ile seçim için parça listesini kullan.">                <div id="scene-fallback" class="scene-fallback"><img id="scene-poster" src="/premium-poster.webp" fetchpriority="high" decoding="async" alt="Örnek takı tasarımı; canlı sahne yüklenene kadar gösterilir" width="1440" height="1080" /><div class="scene-fallback-message"><span class="loading-ring" aria-hidden="true"></span><p>Örnek tasarım · 3D hazırlanıyor</p></div></div>
               </div>
               <p id="scene-keyboard-help" class="sr-only">Sahne tek sekme durağıdır. Seçili parçayı sol ve sağ oklarla sırada taşı, Delete ile çıkar. Ürün sahnesinde sol ve sağ oklar takıyı döndürür, Home başlangıca döndürür.</p>
               <div id="stage-swap" class="stage-swap" role="group" aria-label="Parçaları sırala" hidden>
@@ -109,26 +119,35 @@
                 </div>
               </div>
               <p id="scene-expansion-status" class="sr-only" role="status" aria-live="polite"></p>
+              <span id="edit-pulse" class="edit-pulse" aria-hidden="true"></span><button id="stage-zoom" class="stage-zoom" type="button" aria-label="Yakından bak" title="Yakından bak: 1,3×"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/><path d="M10.5 8v5M8 10.5h5"/></svg></button><button id="stage-view-reset" class="stage-view-reset" type="button" aria-label="Görünümü sıfırla" title="Görünümü sıfırla" hidden><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3"/><path d="M4.5 4.5v4h4"/></svg></button><button id="stage-fullscreen" class="stage-more stage-fullscreen" type="button" aria-label="Tam ekran" title="Tam ekran"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></button><button id="stage-backdrop" class="stage-more stage-backdrop" type="button" aria-label="Akşam ışığı" title="Akşam ışığı" aria-pressed="false" hidden><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="stage-backdrop-moon" d="M19 14.5A7.5 7.5 0 0 1 9.5 5a7.5 7.5 0 1 0 9.5 9.5Z"/><g class="stage-backdrop-sun"><circle cx="12" cy="12" r="3.6"/><path d="M12 3.5v2M12 18.5v2M3.5 12h2M18.5 12h2M6 6l1.4 1.4M16.6 16.6 18 18M6 18l1.4-1.4M16.6 7.4 18 6"/></g></svg></button>
+            </div>
+            <!-- R1c: info line and strand ribbon, directly under the stage (phone and desktop). -->
+            <div id="editor-strand" class="editor-strand" role="group" aria-label="Tasarımın dizisi">
+              <p class="design-info-line"><span id="design-info-kind">Bileklik</span><span class="design-info-sep" aria-hidden="true">·</span><button id="design-info-size" class="design-info-size" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="design-size-chooser">Ölçü</button><span class="design-info-sep" aria-hidden="true">·</span><span id="design-info-stones"></span></p>
+              <div id="design-size-chooser" class="design-size-chooser" role="group" aria-label="Ölçü seç" hidden></div><p id="design-fit" class="design-fit" role="status" hidden><span id="design-fit-text"></span><button id="design-fit-apply" class="design-fit-apply" type="button">Uzunluğu tamamla</button></p>
+              <div id="strand-ribbon"></div>
             </div>
           </section>
           <button id="catalog-splitter" type="button" role="separator" aria-label="Katalog genişliği" aria-orientation="vertical" aria-valuemin="300" aria-valuemax="560" aria-valuenow="360" aria-controls="controls-panel" title="Katalog genişliği: sürükle veya sol/sağ okları kullan"><span aria-hidden="true">⋮</span></button>
           <div class="controls-panel" id="controls-panel">
-            <button id="catalog-sheet-handle" class="catalog-sheet-handle" type="button" aria-label="Tam kataloğu kapat" title="Tam kataloğu kapat"><span aria-hidden="true"></span></button>
+            <button id="catalog-sheet-handle" class="catalog-sheet-handle" type="button" aria-expanded="false" aria-label="Tam kataloğu kapat" title="Tam kataloğu kapat"><span aria-hidden="true"></span></button>
             <section class="selection-bar" id="selection-bar" aria-label="Seçili parça ve işlem">
               <span id="selection-preview" aria-hidden="true" title="Katalog örneği; tasarımdaki renk ve doğal desen değişebilir."></span>
-              <div class="selection-copy" role="status" aria-live="polite" aria-atomic="true"><strong id="selection-title">Parça seçili değil</strong><span id="selection-detail">Sahneden bir parça seç veya açıkça parça ekle.</span><small class="selection-sample-label">Katalog örneği</small><span id="selected-hardware-finish-field" class="hardware-finish" aria-live="off" hidden><label for="selected-hardware-finish" class="sr-only">Yüzey</label><select id="selected-hardware-finish" aria-label="Seçili ara parçanın yüzeyi" aria-describedby="selected-hardware-finish-help selection-detail" disabled></select><span id="selected-hardware-finish-help" class="sr-only">Yalnız seçili aynı biçimdeki ara parçaların yüzeyini değiştirir. Boyutları korunur; Geri al ile dönebilirsin.</span></span></div>
+              <div class="selection-copy" role="status" aria-live="polite" aria-atomic="true"><strong id="selection-title">Parça seçili değil</strong><span id="selection-detail">Sahneden bir parça seç veya açıkça parça ekle.</span><small class="selection-sample-label">Katalog örneği</small><span id="selected-hardware-finish-field" class="hardware-finish" aria-live="off" hidden><label for="selected-hardware-finish" class="hardware-finish-label">Kaplama</label><select id="selected-hardware-finish" aria-label="Kaplama, seçili ara parça" aria-describedby="selected-hardware-finish-help selection-detail" disabled></select><span id="selected-hardware-finish-help" class="sr-only">Yalnız seçili aynı biçimdeki ara parçaların yüzeyini değiştirir. Boyutları korunur; Geri al ile dönebilirsin.</span></span></div>
+              <div class="selection-context-actions" role="group" aria-label="Seçim kısayolları"><button id="selection-revert" class="selection-context-button" type="button" title="Bu parçanın ilk taşına dön" hidden>Öncekine dön</button><button id="add-disarm" class="selection-context-button" type="button" title="Eklemeyi bırak (Esc)" hidden>Vazgeç</button><button id="multi-finish" class="selection-context-button" type="button" hidden>Bitti</button><button id="add-start" class="selection-context-button selection-context-primary" type="button"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg>Parça ekle</button></div>
               <button id="clear-selection" class="selection-clear" type="button" aria-label="Seçimi bırak" title="Seçimi bırak" hidden disabled><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
-              <div id="selection-size" class="selection-size" role="group" aria-labelledby="selection-size-label" hidden><span id="selection-size-label" class="selection-size-label">Boy</span><button id="selection-size-4" type="button" data-selection-size="4" aria-pressed="false" aria-label="4 mm">4</button><button id="selection-size-6" type="button" data-selection-size="6" aria-pressed="false" aria-label="6 mm">6</button><button id="selection-size-8" type="button" data-selection-size="8" aria-pressed="false" aria-label="8 mm">8</button><span class="selection-size-unit" aria-hidden="true">mm</span></div>
+              <button id="selection-size-toggle" class="selection-size-toggle" type="button" aria-expanded="false" aria-controls="selection-size" aria-label="Boy" disabled><span class="selection-size-value">Boy</span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m7 10 5 5 5-5"/></svg></button><div id="selection-size" class="selection-size" role="group" aria-labelledby="selection-size-label" hidden><span id="selection-size-label" class="selection-size-label">Boy</span><button id="selection-size-4" type="button" data-selection-size="4" aria-pressed="false" aria-label="4 mm">4</button><button id="selection-size-6" type="button" data-selection-size="6" aria-pressed="false" aria-label="6 mm">6</button><button id="selection-size-8" type="button" data-selection-size="8" aria-pressed="false" aria-label="8 mm">8</button><span class="selection-size-unit" aria-hidden="true">mm</span></div>
               <div class="selection-operation" role="group" aria-label="Hedef parça işlemi">
                 <div class="selection-modes" role="group" aria-label="Katalog kipi">
                   <button id="replace-intent" type="button" aria-label="Seçili parçayı değiştir" title="Seçili parçayı değiştir" aria-controls="library-panel" aria-pressed="false" disabled><svg class="ui-icon selection-action-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h13l-3.5-3.5M19 16H6l3.5 3.5"/></svg><span class="selection-action-label">Değiştir</span></button>
                   <button id="add-intent" type="button" aria-label="Parça ekle" aria-pressed="false"><svg class="ui-icon selection-action-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg><span class="selection-action-label">Ekle</span></button>
                 </div>
-                <button id="move-start" class="selection-secondary" type="button" aria-label="Seçili parçayı taşı" title="Sırada taşı" aria-expanded="false" aria-controls="move-stepper" disabled><svg class="ui-icon selection-action-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 7.5 3.5 12 8 16.5M16 7.5l4.5 4.5-4.5 4.5M4 12h16"/></svg><span class="selection-action-label">Taşı</span></button>
+                <button id="select-similar" class="selection-secondary" type="button" hidden><svg class="ui-icon selection-action-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="7" cy="12" r="3"/><circle cx="17" cy="12" r="3"/><path d="M10 12h4"/></svg><span class="selection-action-label"><span class="label-long">Aynılarını seç</span><span class="label-short">Aynıları</span></span><span class="selection-similar-count" aria-hidden="true"></span></button>
+                <button id="move-start" class="selection-secondary" type="button" aria-label="Seçili parçanın yerini değiştir" title="Yer değiştir: sürükle ya da ‹ › ile taşı" aria-expanded="false" aria-controls="move-stepper" disabled><svg class="ui-icon selection-action-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 8.5 3.5 12 7 15.5M17 8.5l3.5 3.5-3.5 3.5M3.5 12h17"/></svg><span class="selection-action-label">Yer değiştir</span></button>
                 <a id="selection-edit" class="selection-edit selection-secondary" href="#edit-controls" role="button" aria-haspopup="dialog" aria-controls="workshop-tools" data-workspace-target data-workshop-task="edit" aria-label="Seçili parçayı düzenle" hidden><svg class="ui-icon selection-action-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16v4zM13 7l4 4"/></svg><span class="selection-action-label">Düzenle</span></a>
-                <button id="remove" class="danger" type="button" aria-label="Seçili parçayı çıkar" disabled><svg class="ui-icon selection-action-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8"/><path d="M8.5 12h7"/></svg><span class="selection-action-label">Çıkar</span></button>
+                <button id="remove" class="danger" type="button" aria-label="Seçili parçayı sil" title="Sil" disabled><svg class="ui-icon selection-action-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 7h15M9.5 7V4.5h5V7M6.5 7l1 12.5h9l1-12.5M10 11v5.5M14 11v5.5"/></svg><span class="selection-action-label">Sil</span></button>
               </div>
-              <div id="move-stepper" class="move-stepper" role="group" aria-label="Sırada taşı" hidden>
+              <div id="add-options" class="add-options" role="group" aria-label="Yeni parçanın yeri ve boyu" hidden><div class="add-side" role="group" aria-label="Yeri"><button id="add-side-before" type="button" aria-pressed="false">Önce</button><button id="add-side-after" type="button" aria-pressed="true">Sonra</button></div><div class="add-size" role="group" aria-label="Yeni parçanın boyu"><button id="add-size-4" type="button" aria-pressed="false" aria-label="4 mm">4</button><button id="add-size-6" type="button" aria-pressed="true" aria-label="6 mm">6</button><button id="add-size-8" type="button" aria-pressed="false" aria-label="8 mm">8</button><span class="add-size-unit" aria-hidden="true">mm</span></div></div><div id="move-stepper" class="move-stepper" role="group" aria-label="Yerini değiştir" hidden>
                 <button id="move-earlier" type="button" aria-label="Önceye al" title="Önceye al"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m14.5 6-6 6 6 6"/></svg><span class="move-step-label">Önceye</span></button>
                 <span class="move-position"><span id="move-position" aria-hidden="true"></span><span id="move-position-label" class="sr-only"></span></span>
                 <button id="move-later" type="button" aria-label="Sonraya al" title="Sonraya al"><span class="move-step-label">Sonraya</span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9.5 6 6 6-6 6"/></svg></button>
@@ -137,22 +156,22 @@
               <p id="move-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
             </section>
             <aside class="library" id="library-panel" aria-labelledby="library-heading" tabindex="-1">
-              <div class="library-heading"><h2 id="library-heading" tabindex="-1">Parçalar</h2><button id="catalog-return" class="catalog-close" type="button" aria-label="Kataloğu kapat" title="Kataloğu kapat" hidden><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+              <button id="catalog-raise" class="catalog-raise-handle" type="button" aria-label="Kataloğu büyüt" title="Kataloğu büyüt (yukarı sürükle)" aria-controls="library-panel"><span aria-hidden="true"></span></button><div class="library-heading"><h2 id="library-heading" tabindex="-1">Parçalar</h2><button id="catalog-return" class="catalog-close" type="button" aria-label="Kataloğu kapat" title="Kataloğu kapat" hidden><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
               <div class="catalog-search-row" id="catalog-search-row" data-search-open="false">
-                <label class="library-search"><span aria-hidden="true">⌕</span><span class="sr-only">Tüm parçalarda ara</span><input id="search" type="search" placeholder="Tüm parçalarda ara…" aria-label="Tüm parçalarda ara" aria-describedby="library-instruction" autocomplete="off" enterkeyhint="search" /></label>
+                <label class="library-search"><span aria-hidden="true">⌕</span><span class="sr-only">Tüm parçalarda ara</span><input id="search" type="search" placeholder="Parça ara…" aria-label="Tüm parçalarda ara" aria-describedby="library-instruction" autocomplete="off" enterkeyhint="search" /><output id="catalog-result-count" class="catalog-result-count" for="search" aria-live="polite"></output></label><button id="search-clear" class="search-clear" type="button" aria-label="Aramayı temizle" title="Aramayı temizle" hidden><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 7l10 10M17 7 7 17"/></svg></button>
                 <button id="catalog-search-close" class="mobile-search-close" type="button" aria-label="Aramayı kapat">×</button>
               </div>
               <div id="catalog-filters" class="catalog-filters" role="group" aria-labelledby="filter-heading" hidden>
                 <button id="filter-sheet-handle" class="catalog-sheet-handle" type="button" aria-label="Filtreleri kapat" title="Filtreleri kapat"><span aria-hidden="true"></span></button>
                 <div class="catalog-filter-controls">
-                  <div class="filter-heading"><strong id="filter-heading">Filtrele</strong><button id="filter-close" class="text-button" type="button">Bitti</button></div>
+                  <div class="filter-heading"><strong id="filter-heading">Filtrele</strong><button id="filter-close" class="text-button sheet-close" type="button" aria-label="Filtreleri kapat" title="Kapat"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
                   <p id="filter-summary" role="status">Filtre yok</p>
                   <div class="catalog-filter-results">
                     <p id="filter-result-count" role="status" aria-live="polite"></p>
-                    <button id="clear-filters" class="text-button" type="button" hidden>Filtreleri temizle</button>
+                    <button id="clear-filters" class="text-button" type="button" aria-label="Filtreleri temizle" hidden>Temizle</button>
                   </div>
                 </div>
-                <details id="catalog-evidence-options" hidden>
+                <details id="catalog-evidence-options" class="owner-only" hidden>
                   <summary>Lot stoku ve birim tarife</summary>
                   <p class="help-text">Bir lot grubu ve yuvarlak boncuk çapı seç. Bu okuma planlama içindir. Stok sipariş öncesi yeniden doğrulanır.</p>
                   <form id="catalog-evidence-form">
@@ -191,28 +210,27 @@
                     <button id="catalog-evidence-clear" class="text-button" type="button">Lot okumasını kaldır</button>
                   </div>
                 </details>
-                <fieldset><legend>Parça türü</legend><div id="filters" class="filters"></div></fieldset>
-                <fieldset><legend>Biçim</legend><div id="shape-filters" class="filters"></div></fieldset>
-                <fieldset><legend>Tasarım boyutu</legend><div id="sizing-filters" class="filters"></div><p>Bu ölçüler tasarım içindir; stok durumunu göstermez.</p></fieldset>
-                <fieldset><legend>Malzeme görünümü</legend><div id="appearance-filters" class="filters"></div></fieldset>
-                <fieldset><legend>Malzeme türü</legend><div id="material-class-filters" class="filters"></div><p>Operatörün kaydettiği tür. Görünüm ve stok bilgisi ayrı gösterilir.</p></fieldset>
-                <fieldset><legend>Katalog rengi</legend><div id="color-filters" class="filters"></div></fieldset>
-                <fieldset><legend>Sembolik element</legend><div id="element-filters" class="filters"></div></fieldset>
-                <fieldset><legend>Sembolik burç</legend><div id="zodiac-filters" class="filters"></div></fieldset>
-                <fieldset>
+                <fieldset><legend>Tür</legend><div id="filters" class="filters"></div></fieldset>
+                <fieldset class="owner-only"><legend>Biçim</legend><div id="shape-filters" class="filters"></div></fieldset>
+                <fieldset class="owner-only"><legend>Tasarım boyutu</legend><div id="sizing-filters" class="filters"></div><p>Bu ölçüler tasarım içindir; stok durumunu göstermez.</p></fieldset>
+                <fieldset class="owner-only"><legend>Malzeme görünümü</legend><div id="appearance-filters" class="filters"></div></fieldset>
+                <fieldset class="owner-only"><legend>Malzeme türü</legend><div id="material-class-filters" class="filters"></div><p>Operatörün kaydettiği tür. Görünüm ve stok bilgisi ayrı gösterilir.</p></fieldset>
+                <fieldset class="owner-only"><legend>Katalog rengi</legend><div id="color-filters" class="filters"></div></fieldset>
+                <fieldset><legend>Element</legend><div id="element-filters" class="filters"></div></fieldset>
+                <fieldset><legend>Burç</legend><div id="zodiac-filters" class="filters"></div></fieldset>
+                <fieldset class="owner-only">
                   <legend>Görsel tema</legend>
                   <div id="theme-filters" class="filters"></div>
                   <p id="catalog-theme-help" class="help-text">Güçlü görsel eşleşmeler katalog profillerinden gelir.</p>
                   <button id="catalog-theme-plan" class="text-button" type="button" aria-describedby="catalog-theme-help" hidden>Bu temayla motif öner</button>
                 </fieldset>
-                <div class="catalog-group-actions"><button id="expand-categories" class="text-button" type="button">Kategorileri aç</button><button id="collapse-categories" class="text-button" type="button">Kategorileri kapat</button></div>
-                <p class="help-text">Aynı gruptaki seçimlerden biri eşleşir. Farklı gruplar ve arama birlikte uygulanır.</p>
+                <div class="catalog-group-actions owner-only"><button id="expand-categories" class="text-button" type="button">Kategorileri aç</button><button id="collapse-categories" class="text-button" type="button">Kategorileri kapat</button></div>
+                <p class="help-text owner-only">Aynı gruptaki seçimlerden biri eşleşir. Farklı gruplar ve arama birlikte uygulanır.</p>
               </div>
-              <div class="catalog-toolbar">
-                <div class="catalog-density" role="group" aria-label="Mobil katalog satır sayısı" data-mobile-only><button id="catalog-density-drum" type="button" aria-label="Katalog, 1 satır. Dokun veya ok tuşuyla değiştir." aria-describedby="catalog-density-help"><span class="density-wheel-value" aria-hidden="true">1</span><span class="density-wheel-unit" aria-hidden="true">satır</span></button><span id="catalog-density-help" class="sr-only">Dokununca 1, 2 veya 4 satır arasında geçer. Ekrana sığmayan seçenekler kullanılmaz.</span><span class="density-source-buttons" hidden><button type="button" data-catalog-rows="1" aria-label="1 satır" aria-pressed="true" tabindex="-1">1</button><button type="button" data-catalog-rows="2" aria-label="2 satır" aria-pressed="false" tabindex="-1">2</button><button type="button" data-catalog-rows="4" aria-label="4 satır" aria-pressed="false" tabindex="-1">4</button></span></div>
-                <div class="bead-sizing library-bead-sizing"><label id="library-bead-size-label" for="library-bead-size">Eklenecek boy</label><select id="library-bead-size" aria-describedby="library-bead-help"><option id="library-bead-default" value="">Özgün</option><option value="4">4 mm</option><option value="6">6 mm</option><option value="8">8 mm</option></select><details class="size-information"><summary aria-label="Nominal ölçü bilgisi">ⓘ</summary><p id="library-bead-help">Yalnız uygun yuvarlak delikli boncuklarda. Nominal tasarım ölçüsü; stok, delik ölçüsü veya fiziksel tolerans değildir. Diğer parçaların özgün biçimi korunur.</p></details></div>
-                <button id="catalog-search-trigger" class="catalog-icon-button" type="button" aria-expanded="false" aria-controls="catalog-search-row" aria-label="Parça ara" title="Parça ara"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.2"></circle><path d="m15.2 15.2 5 5"></path></svg></button>
-                <button id="filter-toggle" class="text-button catalog-icon-button" type="button" aria-label="Filtreler, etkin filtre yok" aria-expanded="false" aria-controls="catalog-filters" title="Parçaları filtrele"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2"/><circle cx="15" cy="12" r="2"/><circle cx="8" cy="18" r="2"/></svg><span id="filter-toggle-label">Filtreler</span></button>
+              <div class="catalog-toolbar"><div id="catalog-role-chips" class="catalog-role-chips" role="group" aria-label="Parça grubu"></div>
+                <div class="catalog-density" role="group" aria-label="Mobil katalog satır sayısı" data-mobile-only hidden><button id="catalog-density-drum" type="button" aria-label="Katalog, 1 satır. Dokun veya ok tuşuyla değiştir." aria-describedby="catalog-density-help"><span class="density-wheel-value" aria-hidden="true">1</span><span class="density-wheel-unit" aria-hidden="true">satır</span></button><span id="catalog-density-help" class="sr-only">Dokununca 1, 2 veya 4 satır arasında geçer. Ekrana sığmayan seçenekler kullanılmaz.</span><span class="density-source-buttons" hidden><button type="button" data-catalog-rows="1" aria-label="1 satır" aria-pressed="true" tabindex="-1">1</button><button type="button" data-catalog-rows="2" aria-label="2 satır" aria-pressed="false" tabindex="-1">2</button><button type="button" data-catalog-rows="4" aria-label="4 satır" aria-pressed="false" tabindex="-1">4</button></span></div>
+                <div class="bead-sizing library-bead-sizing owner-only"><label id="library-bead-size-label" for="library-bead-size">Eklenecek boy</label><select id="library-bead-size" aria-describedby="library-bead-help"><option id="library-bead-default" value="">Özgün</option><option value="4">4 mm</option><option value="6">6 mm</option><option value="8">8 mm</option></select><details class="size-information" hidden><summary aria-label="Nominal ölçü bilgisi">ⓘ</summary><p id="library-bead-help">Yalnız uygun yuvarlak delikli boncuklarda. Nominal tasarım ölçüsü; stok, delik ölçüsü veya fiziksel tolerans değildir. Diğer parçaların özgün biçimi korunur.</p></details></div>
+                <button id="catalog-search-trigger" class="catalog-icon-button" type="button" aria-expanded="false" aria-controls="catalog-search-row" aria-label="Parça ara" title="Parça ara"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.2"></circle><path d="m15.2 15.2 5 5"></path></svg><span class="catalog-search-label" aria-hidden="true">Ara</span></button>
                 <button id="catalog-full" class="text-button" type="button" aria-label="Tam katalog" aria-expanded="false" aria-controls="catalog"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg><span class="catalog-full-label">Tam katalog</span><span class="catalog-full-short" aria-hidden="true">Katalog</span></button>
               </div>
               <div id="catalog-add-placement" class="segmented" role="group" aria-label="Ekleme yeri" hidden>
@@ -220,30 +238,32 @@
                 <button id="catalog-add-after" type="button" aria-pressed="true">Sonra</button>
               </div>
               <div class="library-context"><p id="catalog-count" class="catalog-count" role="status" aria-live="polite"></p><p id="library-instruction" class="library-instruction">Bir hedef seç veya Parça ekle ile başla.</p></div>
+              <div class="catalog-refine"><div id="catalog-color-swatches" class="catalog-swatches" role="group" aria-label="Renk"></div><button id="filter-toggle" class="text-button catalog-icon-button" type="button" aria-label="Filtreler, etkin filtre yok" aria-expanded="false" aria-controls="catalog-filters" title="Parçaları filtrele"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2"/><circle cx="15" cy="12" r="2"/><circle cx="8" cy="18" r="2"/></svg><span id="filter-toggle-label">Filtre</span></button></div>
               <div id="catalog-active-filters" role="group" aria-label="Etkin arama ve filtreler" hidden></div>
+              <div id="catalog-inspect" class="catalog-inspect" role="group" aria-labelledby="catalog-inspect-name" hidden><span id="catalog-inspect-art" class="catalog-inspect-art" aria-hidden="true"></span><strong id="catalog-inspect-name"></strong><button id="catalog-inspect-add" class="catalog-inspect-add" type="button">Tasarıma ekle</button><button id="catalog-inspect-close" class="catalog-inspect-close" type="button" aria-label="Önizlemeyi kapat"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
               <button id="catalog-skip" class="catalog-skip" type="button" aria-controls="catalog-end">Kataloğu atla</button>
               <div id="catalog" class="catalog" aria-label="Takı parça kataloğu" aria-describedby="library-instruction" tabindex="0"></div>
-              <div class="catalog-width-control"><label for="catalog-width">Panel genişliği <output id="catalog-width-value" for="catalog-width">360 px</output></label><input id="catalog-width" type="range" min="300" max="560" step="10" value="360" /></div>
+              <div class="catalog-width-control" hidden><label for="catalog-width">Panel genişliği <output id="catalog-width-value" for="catalog-width">360 px</output></label><input id="catalog-width" type="range" min="300" max="560" step="10" value="360" /></div>
               <p id="catalog-end" class="library-disclaimer" tabindex="-1">Görsel tasarım · Üretim uygunluğu doğrulanmamıştır.</p>
             </aside>
             <dialog id="workshop-tools" class="workshop-dialog" aria-labelledby="workshop-tools-title">
               <div class="workshop-dialog-header">
                 <button id="workshop-sheet-handle" type="button" aria-label="Menüyü aşağı kaydırarak kapat" title="Menüyü aşağı kaydırarak kapat"><span aria-hidden="true"></span></button>
                 <button id="workshop-hub-link" class="workshop-hub-link" type="button" aria-controls="workshop-tools"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m14.5 6-6 6 6 6"/></svg>Tüm menü</button>
-                <h2 id="workshop-tools-title"><span class="workshop-menu-heading">Atölye menüsü <small>Tasarım, parçalar, sahne, kayıt ve sipariş.</small></span><span class="workshop-task-heading" data-task-heading="new">Yeni tasarım</span><span class="workshop-task-heading" data-task-heading="parts">Tasarımın parçaları</span><span class="workshop-task-heading" data-task-heading="edit">Parçaları düzenle</span><span class="workshop-order-heading">Hedef parçayı seç <small><span id="workshop-order-source"></span> Soluk satırlar seçili parçaları gösterir.</small></span></h2>
+                <h2 id="workshop-tools-title"><span class="workshop-menu-heading">Menü <small>Tasarım, parçalar, sahne ve kayıtlar.</small></span><span class="workshop-task-heading" data-task-heading="new">Yeni tasarım</span><span class="workshop-task-heading" data-task-heading="parts">Tasarımın parçaları</span><span class="workshop-task-heading" data-task-heading="edit">Parçaları düzenle</span><span class="workshop-order-heading">Hedef parçayı seç <small><span id="workshop-order-source"></span> Soluk satırlar seçili parçaları gösterir.</small></span></h2>
                 <div id="selected-motif-tools" hidden>
                   <button id="selected-motif-open" class="text-button" type="button">Seçilenlerle motif öner</button>
                   <p id="selected-motif-help" class="help-text" role="status" hidden></p>
                 </div>
                 <button id="workshop-size-toggle" type="button" aria-controls="workshop-tools" aria-expanded="false" aria-label="Menüyü büyüt">Büyüt</button>
-                <button id="workshop-tools-close" class="text-button" type="button" aria-label="Menüyü kapat" autofocus>×</button>
+                <button id="workshop-tools-close" class="text-button" type="button" aria-label="Menüyü kapat" autofocus><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
               </div>
-              <div class="quick-design-actions workshop-quick-actions" role="group" aria-label="Tasarım işlemleri"><button id="shuffle-design" class="text-button" type="button"><span aria-hidden="true">⤨</span> Karıştır</button><button id="restore-design" class="text-button" type="button" aria-haspopup="dialog"><span aria-hidden="true">↺</span> Sıfırla…</button></div>
+              <div class="quick-design-actions workshop-quick-actions" role="group" aria-label="Tasarım işlemleri"><button id="shuffle-design" class="text-button" type="button"><span aria-hidden="true">⤨</span> Karıştır</button><button id="restore-design" class="text-button" type="button" aria-haspopup="dialog">Baştan başla…</button></div>
               <button id="scene-settings-open" class="text-button" type="button" aria-controls="workshop-settings">Sahne ve ortam</button>
               <button id="tools-clear-selection" class="text-button" type="button" disabled hidden>Seçimi bırak</button>
               <a id="parts-nav" href="#parts-details" data-workspace-target hidden>Seçim araçları / Liste</a>
             <details class="design-start" id="design-start">
-              <summary id="design-start-title"><span class="workshop-group-heading">Yeni tasarım<small>Bileklik, kolye ve motif öner</small></span><span class="design-current">Şimdi: <strong id="current-design-kind">Bileklik</strong></span></summary>
+              <summary id="design-start-title"><span class="workshop-group-heading">Yeni tasarım<small>Bileklik veya kolyeyle baştan başla</small></span><span class="design-current">Şimdi: <strong id="current-design-kind">Bileklik</strong></span></summary>
               <button id="selected-motif-back" class="text-button" type="button" hidden>Parçalara dön</button>
               <div class="starter-actions" role="group" aria-label="Takı türü">
                 <button id="bracelet-plan-open" type="button" aria-expanded="false" aria-controls="bracelet-plan">Bileklik</button>
@@ -301,7 +321,7 @@
             </details>
 
             <details class="parts-details" id="parts-details">
-              <summary><span class="workshop-group-heading">Parçalar<small>Liste, seçim, sıra, renk ve benzer motif</small></span><span id="part-count">0 parça</span></summary>
+              <summary><span class="workshop-group-heading">Parçalar<small>Sıra, seçim, renk ve benzer motif</small></span><span id="part-count">0 parça</span></summary>
               <div class="part-selection-tools"><label class="multi-select"><input type="checkbox" id="multi-select" /> Çoklu seçim</label><button id="select-all" class="text-button" type="button" aria-label="Tümünü seç">Tümünü seç</button></div>
               <div class="selection-helpers" role="group" aria-label="Seçimi genişlet">
                 <button id="select-material" class="text-button" type="button">Aynı parçaları seç</button>
@@ -351,7 +371,7 @@
                 <p id="controlled-preference-summary" class="help-text" hidden></p>
                 <button id="controlled-motif" class="text-button" type="button">Benzer motif öner</button>
                 <p class="help-text">Tema, element, burç ve renk aday sırasını etkiler. Palet, ölçü, seçili parçalar ve ayna eşleri korunur.</p>
-                <details id="controlled-stock-options" class="info-disclosure" hidden>
+                <details id="controlled-stock-options" class="info-disclosure" data-owner-gate hidden>
                   <summary>Lot ve ölçü ile aday ara</summary>
                   <p class="help-text">Aynı uyumluluk grubundaki kullanılabilir lotlar okunur. İsteğe bağlı aralık yalnızca boncukların kayıtlı Y ölçülerinin toplamı içindir. Ayırma üretim föyünde yapılır.</p>
                   <label class="setting-field">Uyumluluk grubu <input id="controlled-stock-group" maxlength="100" autocomplete="off" /></label>
@@ -367,7 +387,7 @@
               <div id="part-list" class="part-list" role="group" aria-label="Taşıyıcı üzerindeki parçalar" aria-describedby="part-list-help" tabindex="-1"></div>
             </details>
 
-            <details class="workshop-group" id="workshop-settings"><summary><span class="workshop-group-heading">Sahne ve ortam<small>Ölçü, taşıyıcı, sahne ve kamera</small></span></summary>
+            <details class="workshop-group" id="workshop-settings"><summary><span class="workshop-group-heading">Sahne ve ortam<small>Uzunluk, ip, arka plan ve kamera</small></span></summary>
             <section class="carrier-bar" id="carrier-settings" aria-label="Ölçü, taşıyıcı ve sahne" tabindex="-1">
               <div id="legacy-notice" class="legacy-notice" role="status" hidden><p>Önceki tasarımın ip üzerine aktarıldı. Özgün konumlar JSON arşivinde korunuyor.</p><button id="export-legacy" class="text-button" type="button">Özgün tasarımı indir ↗</button></div>
               <p class="help-text"><strong id="nominal-length-heading">Dizilim uzunluğu · nominal parça toplamı</strong><br />
@@ -391,7 +411,7 @@
               <p id="carrier-tight" role="status" hidden>Dizi sıkışık; ölçüyü büyütebilirsin.</p>
               <fieldset class="view-settings" id="view-controls" tabindex="-1">
                 <legend>Sahne ve görünüm</legend>
-                <label class="setting-field" for="scene-lighting">Sahne<select id="scene-lighting" disabled><option value="photo-c1" selected>Atmosfer · Opal Pavyon</option><option value="neutral">Nötr</option><option value="studio">Kireçtaşı</option><option value="dark">Kobalt</option><option value="editorial">Kehribar</option><option value="gallery">Gece Galerisi</option><option value="acrylic">Akrilik Işık Odası</option><option value="terrace">Taş Teras</option></select></label>
+                <label class="setting-field" for="scene-lighting">Sahne<select id="scene-lighting" disabled><option value="photo-c1" selected>Atmosfer · Opal Pavyon</option><option value="photo-s1">Stüdyo</option><option value="photo-s2">Akşam</option><option value="neutral">Nötr</option><option value="studio">Kireçtaşı</option><option value="dark">Kobalt</option><option value="editorial">Kehribar</option><option value="gallery">Gece Galerisi</option><option value="acrylic">Akrilik Işık Odası</option><option value="terrace">Taş Teras</option></select></label>
                 <fieldset id="main-atmosphere-settings" class="main-atmosphere-settings" tabindex="-1" aria-describedby="main-atmosphere-help" hidden>
                   <legend>Atmosfer</legend>
                   <p id="main-atmosphere-help">Ayarlar bu oturumda korunur. Tasarımın ve Geri al geçmişin değişmez. Kamerayı kendin döndürebilirsin.</p>
@@ -421,10 +441,11 @@
               </fieldset>
             </section></details>
             <details class="workshop-group" id="workshop-files">
-              <summary><span class="workshop-group-heading">Kaydet ve dosyalar<small>Kitaplık ve JSON dosyaları · bu cihazda</small></span></summary>
+              <summary><span class="workshop-group-heading">Tasarımlarım<small>Bu cihazdaki kayıtların ve dosyaların</small></span></summary>
               <div class="quick-design-actions">
-                <button id="library-save" class="text-button" type="button">Kitaplığa kaydet</button>
-                <button id="import" class="text-button" type="button">Dosya aç · JSON</button>
+                <button id="library-save" class="text-button" type="button">Bu tasarımı kaydet</button>
+                <button id="import" class="text-button" type="button">Dosya aç</button>
+                <button id="files-export" class="text-button" type="button">Dosyaya kaydet</button>
               </div>
               <div class="library-filters">
                 <label class="setting-field" for="library-collection">Koleksiyon
@@ -435,7 +456,7 @@
               </div>
               <p id="library-status" class="help-text" role="status"></p>
               <ul id="design-library-list" class="design-library-list"></ul>
-              <details id="owner-library" hidden>
+              <details id="owner-library" data-owner-gate hidden>
                 <summary>Yerel hesap kitaplığı</summary>
                 <p class="help-text">Bu sunucuda, oturumuna bağlı kitaplık. Cihaz kitaplığındaki kayıtlar ayrı saklanır.</p>
                 <p id="owner-library-status" class="help-text" role="status"></p>
@@ -481,13 +502,13 @@
                 </fieldset>
               </details>
             </details>
-            <details class="workshop-group" id="workshop-production">
-              <summary><span class="workshop-group-heading">Üretim ve sipariş<small>Sipariş özeti ve atölye araçları</small></span></summary>
+            <details class="workshop-group" id="workshop-production" data-owner-gate="hidden" hidden>
+              <summary><span class="workshop-group-heading">Üretim ve sipariş<small>Atölye modu · özet ve üretim araçları</small></span></summary>
               <div class="quick-design-actions">
                 <button id="order-summary-open" class="text-button" type="button" aria-haspopup="dialog" aria-controls="order-summary-dialog">Sipariş özeti</button>
               </div>
               <p class="help-text">Tasarımının parça ve malzeme özetini gör. Çevrim içi sipariş ve ödeme henüz açık değil.</p>
-              <details id="workshop-operator-tools" class="info-disclosure workshop-operator-tools">
+              <details id="workshop-operator-tools" class="info-disclosure workshop-operator-tools" data-owner-gate>
                 <summary>Atölye araçları</summary>
                 <p class="help-text">Atölye ekibi için üretim föyü, föy revizyonu ve malzeme girişi.</p>
                 <div class="quick-design-actions">
@@ -503,21 +524,27 @@
             </dialog>
           </div>
           <section id="kesfet-bar" class="kesfet-bar" aria-labelledby="kesfet-bar-title" data-empty="false" hidden>
-            <h2 id="kesfet-bar-title" class="sr-only">Keşfet: temaya göre modeller</h2>
+            <h2 id="kesfet-bar-title" class="sr-only">Modeller: hazır modellere göz at</h2>
+            <div class="kesfet-row kesfet-row-top"><p id="kesfet-headline" class="kesfet-headline" hidden>Bir modeli seç, kendine göre değiştir, atölyeye gönder.</p><button id="kesfet-exit" class="kesfet-back" type="button" title="Modellerden çık (Esc)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7"/></svg><span>Tasarımına dön</span></button></div>
             <div class="kesfet-row kesfet-row-theme">
-              <button id="kesfet-exit" class="kesfet-icon-button" type="button" aria-label="Keşfetten çık" title="Keşfetten çık (Esc)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
-              <button id="kesfet-category" class="kesfet-chip" type="button" aria-haspopup="dialog" aria-controls="kesfet-picker"><span id="kesfet-category-label" class="kesfet-chip-label">Su · Bileklik</span><span class="kesfet-chip-caret" aria-hidden="true">▾</span></button>
+              <div class="kesfet-kind" role="group" aria-label="Takı türü"><button id="kesfet-kind-bracelet" type="button" aria-pressed="true">Bileklik</button><button id="kesfet-kind-necklace" type="button" aria-pressed="false">Kolye</button></div>
             </div>
+            <div id="kesfet-stage-arrows" class="kesfet-stage-arrows" role="group" aria-label="Modeller arasında gez" hidden><button id="kesfet-stage-prev" class="kesfet-stage-arrow" type="button" aria-label="Önceki model" title="Önceki model (←)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7"/></svg></button><button id="kesfet-stage-next" class="kesfet-stage-arrow" type="button" aria-label="Sonraki model" title="Sonraki model (→)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7"/></svg></button></div>
+            <p class="kesfet-showing"><span class="sr-only">Gösterilen: </span><span id="kesfet-category-label" class="kesfet-showing-label">Öne çıkanlar</span></p>
+            <p class="kesfet-title"><span id="kesfet-name" class="kesfet-name"></span></p>
             <p id="kesfet-caption" class="kesfet-caption"></p>
             <p id="kesfet-empty" class="kesfet-empty" hidden>Bu seçimden model çıkmadı. Başka bir tema seç.</p>
+            <div class="kesfet-dots-row"><div id="kesfet-dots" class="kesfet-dots" role="group" aria-label="Hazır modeller"></div><span id="kesfet-counter" class="kesfet-counter" aria-hidden="true"></span><button id="kesfet-more-models" class="kesfet-more-models" type="button" hidden>Başka modeller göster</button></div>
             <div class="kesfet-row kesfet-row-nav" role="group" aria-label="Modeller arasında gez">
               <button id="kesfet-prev" class="kesfet-icon-button kesfet-step" type="button" aria-label="Önceki model" title="Önceki model (←)"><span aria-hidden="true">‹</span></button>
-              <button id="kesfet-apply" class="kesfet-primary" type="button" aria-describedby="kesfet-apply-help"><span class="kesfet-primary-label">Bunu düzenle</span><span id="kesfet-counter" class="kesfet-counter" aria-hidden="true"></span></button>
-              <button id="kesfet-next" class="kesfet-icon-button kesfet-step" type="button" aria-label="Sonraki model" title="Sonraki model (→)" data-series="false"><span id="kesfet-next-icon" aria-hidden="true">›</span><span id="kesfet-next-label" class="kesfet-next-label" aria-hidden="true" hidden>Yeni seri</span></button>
+              <button id="kesfet-apply" class="kesfet-primary" type="button" aria-describedby="kesfet-apply-help"><span class="kesfet-primary-label">Bunu düzenle</span></button>
+              <button id="kesfet-next" class="kesfet-icon-button kesfet-step" type="button" aria-label="Sonraki model" title="Sonraki model (→)"><span aria-hidden="true">›</span></button>
             </div>
             <p id="kesfet-apply-help" class="kesfet-help">Mevcut tasarımın yerine geçer · Geri al ile dönülür</p>
+            <div id="kesfet-start" class="kesfet-start"><button id="kesfet-category" class="kesfet-start-door" type="button" aria-haspopup="dialog" aria-controls="kesfet-picker">Burca, renge ya da taşa göre seç</button></div>
+            <p id="kesfet-price" class="kesfet-price">Fiyatı atölye sana yazar.</p>
             <p id="kesfet-status" class="kesfet-status" aria-live="off"></p>
-            <section id="kesfet-details" class="kesfet-details" aria-labelledby="kesfet-details-title" hidden><h3 id="kesfet-details-title">Bu modelde</h3><ul id="kesfet-materials" class="kesfet-materials"></ul><p id="kesfet-meta" class="kesfet-meta"></p></section>
+            <section id="kesfet-series" class="kesfet-series" aria-labelledby="kesfet-series-title" hidden><h3 id="kesfet-series-title">Öne çıkanlar</h3><ol id="kesfet-series-list" class="kesfet-series-list"></ol><button id="kesfet-series-more" class="kesfet-series-more" type="button">Başka modeller göster</button></section><section id="kesfet-details" class="kesfet-details" aria-labelledby="kesfet-details-title" hidden><h3 id="kesfet-details-title">Bu modelde</h3><ul id="kesfet-materials" class="kesfet-materials"></ul><p id="kesfet-meta" class="kesfet-meta"></p></section>
           </section>
         </div>
       </section>
@@ -558,7 +585,7 @@
       </form>
     </dialog>
     <dialog id="library-organization-dialog" class="workshop-dialog" aria-labelledby="library-organization-title" aria-describedby="library-organization-scope library-organization-help">
-      <h2 id="library-organization-title">Ad ve koleksiyon</h2>
+      <h2 id="library-organization-title">Yeniden adlandır</h2>
       <p id="library-organization-scope" class="help-text"></p>
       <p id="library-organization-help" class="help-text">Adı boş bırakırsan tasarımın kayıtlı adı kullanılır. Koleksiyonu boş bırakabilirsin.</p>
       <form id="library-organization-form">
@@ -574,15 +601,15 @@
           <button id="library-organization-reload" class="button" type="button" hidden>Güncel kaydı yükle</button>
           <div class="dialog-actions">
             <button id="library-organization-cancel" class="button" type="button">Vazgeç</button>
-            <button id="library-organization-save" class="button button-dark" type="submit">Adı ve koleksiyonu kaydet</button>
+            <button id="library-organization-save" class="button button-dark" type="submit">Kaydet</button>
           </div>
         </fieldset>
       </form>
     </dialog>
     <dialog id="restore-design-dialog" class="workshop-dialog restore-dialog" aria-labelledby="restore-design-title" aria-describedby="restore-design-description">
-      <h2 id="restore-design-title">Başlangıç dizilimine dönülsün mü?</h2>
-      <p id="restore-design-description">Mevcut parçaların yerine bu takı türünün başlangıç dizilimi gelir. Onayladığında otomatik kayıt güncellenir. Geri al ile önceki tasarımına dönebilirsin.</p>
-      <div class="dialog-actions"><button id="restore-cancel" class="button" type="button" autofocus>Vazgeç</button><button id="restore-confirm" class="button button-dark" type="button">Dizilimi değiştir</button></div>
+      <h2 id="restore-design-title">Baştan başlansın mı?</h2>
+      <p id="restore-design-description">Mevcut parçaların yerine bu takı türünün başlangıç tasarımı gelir. Geri al ile önceki tasarımına dönebilirsin.</p>
+      <div class="dialog-actions"><button id="restore-cancel" class="button" type="button" autofocus>Vazgeç</button><button id="restore-confirm" class="button button-dark" type="button">Baştan başla</button></div>
     </dialog>
     <dialog id="bracelet-plan-confirm-dialog" class="workshop-dialog restore-dialog" aria-labelledby="bracelet-plan-confirm-title" aria-describedby="bracelet-plan-confirm-description">
       <h2 id="bracelet-plan-confirm-title" tabindex="-1">Tasarım önizlemesi</h2>
@@ -610,22 +637,64 @@
       </section>
       <div class="dialog-actions"><button id="bracelet-plan-cancel" class="button" type="button" autofocus>Vazgeç</button><button id="bracelet-plan-confirm" class="button button-dark" type="button">Tasarımı kullan</button></div>
     </dialog>
-    <dialog id="order-summary-dialog" class="workshop-dialog operator-dialog order-summary-dialog" aria-labelledby="order-summary-title" aria-describedby="order-summary-status">
+    <dialog id="order-summary-dialog" class="workshop-dialog operator-dialog order-summary-dialog finish-dialog" aria-labelledby="order-summary-title" aria-describedby="finish-lede order-summary-status">
       <header class="operator-dialog-header">
-        <h2 id="order-summary-title">Sipariş özeti</h2>
-        <button id="order-summary-close" class="dialog-close" type="button" aria-label="Sipariş özetini kapat" autofocus><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+        <div class="finish-title"><h2 id="order-summary-title">Tasarımın hazır</h2><p id="finish-lede" class="finish-lede">Fiyatı ve teslim süresini atölye sana yazar.</p></div>
+        <button id="order-summary-close" class="dialog-close" type="button" aria-label="Kapat" autofocus><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
       </header>
-      <p id="order-summary-design" class="order-summary-design"></p>
-      <p id="order-summary-count" class="order-summary-count"></p>
-      <table class="order-summary-table">
-        <caption>Malzeme listesi</caption>
-        <thead><tr><th scope="col">Malzeme</th><th scope="col">Adet</th><th scope="col">Nominal boy</th></tr></thead>
-        <tbody id="order-summary-materials"></tbody>
-      </table>
-      <p id="order-summary-status" class="order-summary-status" role="note"></p>
-      <p id="order-summary-next" class="help-text"></p>
-      <div class="dialog-actions order-summary-actions"><button id="order-summary-save" class="button" type="button">Kitaplığa kaydet</button><button id="order-summary-json" class="button" type="button">JSON indir</button></div>
-      <p id="order-summary-action-status" class="help-text" role="status" aria-live="polite"></p>
+      <div class="finish-body">
+        <!-- R3: two columns on desktop (image and name | parts and quiet actions); one column on the phone. -->
+        <div class="finish-media">
+        <figure class="finish-still">
+          <img id="finish-image" alt="Tasarımının şu anki görünümü" hidden />
+          <div id="finish-image-placeholder" class="finish-still-placeholder"><p>Görsel, 3D sahne hazır olduğunda burada görünür.</p></div>
+          <span class="finish-still-tag" aria-hidden="true">Hazırlanıyor</span>
+        </figure>
+        <div class="finish-still-actions"><p id="finish-look" class="finish-look" role="group" aria-label="Görselin arka planı" hidden><span class="finish-look-label" aria-hidden="true">Görsel:</span> <button type="button" class="finish-look-option" data-look="studyo" aria-pressed="false">Stüdyo</button><span class="finish-look-sep" aria-hidden="true">|</span><button type="button" class="finish-look-option" data-look="aksam" aria-pressed="false">Akşam</button></p><div class="finish-secondary" role="group" aria-label="Görsel">
+          <button id="finish-image-download" class="button" type="button">Görseli indir</button>
+        </div></div>
+        <p id="order-summary-design" class="order-summary-design" hidden></p><div class="finish-name-row"><label class="finish-name" for="finish-name"><span class="finish-name-label">Tasarımın adı</span><textarea id="finish-name" rows="1" maxlength="80" autocomplete="off" enterkeyhint="done" spellcheck="false"></textarea></label><button id="order-summary-save" class="button finish-save" type="button" aria-describedby="finish-save-state">Kaydet</button></div><p id="finish-save-state" class="finish-save-state" role="status" aria-live="polite"></p>
+        </div>
+        <div class="finish-details">
+        <p class="finish-facts"><span id="finish-meta" class="finish-meta"></span> <span id="order-summary-count" class="order-summary-count"></span></p><p id="finish-fit" class="finish-fit" hidden></p>
+        <table class="order-summary-table">
+          <caption>Parçalar</caption>
+          <thead><tr><th scope="col">Parça</th><th scope="col">Boy</th><th scope="col">Adet</th></tr></thead>
+          <tbody id="order-summary-materials"></tbody>
+        </table>
+        <p id="order-summary-next" class="help-text" hidden></p>
+        <label class="finish-note-field" for="finish-note"><span class="finish-name-label">Atölyeye notun (isteğe bağlı)</span><textarea id="finish-note" rows="2" maxlength="300" placeholder="Örn. hediye, ne zamana lazım, bilek ölçün"></textarea></label>
+        <details id="finish-send-preview" class="finish-send-preview"><summary>Gönderilecek mesaj</summary><p id="finish-send-text" class="finish-send-text"></p><p class="finish-send-reply">Atölye sana gönderdiğin uygulamadan yanıt yazar.</p></details>
+        <p id="order-summary-status" class="order-summary-status finish-note" role="note"></p>
+        <details id="finish-more" class="finish-more">
+          <summary>Yedek</summary>
+          <div class="finish-more-actions">
+            <button id="order-summary-json" class="button" type="button">Dosya olarak indir</button>
+            <button id="finish-recovered-draft" class="button" type="button" hidden>Yedek taslağı indir</button>
+          </div>
+        </details>
+        <p id="order-summary-action-status" class="help-text finish-file-status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+      <div class="finish-footer">
+        <div class="finish-actions">
+          <button id="finish-share" class="button button-primary finish-share" type="button" aria-controls="finish-share-choices" aria-expanded="false">Atölyeye gönder</button>
+          <div id="finish-share-choices" class="finish-share-choices" role="group" aria-label="Atölyeye nasıl gönderilsin" hidden>
+            <a id="finish-share-whatsapp" class="button finish-share-whatsapp" href="https://wa.me/" target="_blank" rel="noopener noreferrer">WhatsApp ile gönder</a>
+            <a id="finish-share-email" class="button" href="mailto:">E-posta</a>
+            <button id="finish-share-copy" class="button" type="button">Bağlantıyı kopyala</button><button id="finish-share-system" class="button" type="button" aria-label="Diğer uygulamalarla gönder" hidden>Diğer</button><label id="finish-share-field" class="finish-share-field" hidden><span class="sr-only">Tasarım bağlantısı</span><input id="finish-share-link" type="text" readonly /></label>
+          </div>
+          <p id="finish-sent" class="finish-sent" hidden><span id="finish-sent-text" role="status">Mesajın hazır. Atölye fiyatı ve süreyi yazar.</span></p>
+          <p class="finish-atelier-more"><a id="finish-shop" class="finish-shop" href="https://example.invalid/" target="_blank" rel="noopener noreferrer" hidden>Mağazaya git</a></p>
+        </div>
+        <p id="finish-send-status" class="finish-send-status" role="status" aria-live="polite"></p>
+      </div>
+    </dialog>
+    <dialog id="share-open-dialog" class="workshop-dialog share-open-dialog" aria-labelledby="share-open-title" aria-describedby="share-open-detail">
+      <h2 id="share-open-title">Paylaşılan tasarımı aç?</h2>
+      <span id="share-open-strand" class="share-open-strand" aria-hidden="true"></span><p id="share-open-detail" class="share-open-detail"></p>
+      <p class="help-text">Şu anki tasarımının yerine geçer. Geri al ile dönebilirsin.</p>
+      <div class="dialog-actions"><button id="share-open-cancel" class="button" type="button">Vazgeç</button><button id="share-open-accept" class="button button-primary" type="button" autofocus>Aç</button></div>
     </dialog>
     <dialog id="production-dialog" class="workshop-dialog operator-dialog" aria-labelledby="production-title">
       <header class="operator-dialog-header">
@@ -839,12 +908,17 @@
     </dialog>
     <div id="physical-pilot-print-root" hidden></div>
     <dialog id="kesfet-picker" class="kesfet-picker" aria-labelledby="kesfet-picker-title" aria-describedby="kesfet-picker-hint kesfet-picker-note">
-      <div class="kesfet-picker-header"><h2 id="kesfet-picker-title">Tema seç</h2><p id="kesfet-picker-hint" class="sr-only">Tek seçim: bir temaya basınca Keşfet o temaya geçer; seçili tema basılı görünür.</p><button id="kesfet-picker-close" class="kesfet-icon-button" type="button" aria-label="Tema seçimini kapat" title="Kapat (Esc)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
-      <div class="kesfet-kind" role="group" aria-label="Takı türü"><button id="kesfet-kind-bracelet" type="button" aria-pressed="true">Bileklik</button><button id="kesfet-kind-necklace" type="button" aria-pressed="false">Kolye</button></div>
-      <section id="kesfet-group-element" class="kesfet-group" aria-labelledby="kesfet-group-element-title"><h3 id="kesfet-group-element-title">Elementler</h3><div id="kesfet-options-element" role="group" aria-labelledby="kesfet-group-element-title" class="kesfet-options kesfet-options-2"></div></section>
-      <section id="kesfet-group-elements" class="kesfet-group" aria-labelledby="kesfet-group-elements-title"><h3 id="kesfet-group-elements-title">Element karışımları</h3><div id="kesfet-options-elements" role="group" aria-labelledby="kesfet-group-elements-title" class="kesfet-options kesfet-options-2"></div></section>
-      <section id="kesfet-group-zodiac" class="kesfet-group" aria-labelledby="kesfet-group-zodiac-title"><h3 id="kesfet-group-zodiac-title">Burçlar</h3><div id="kesfet-options-zodiac" role="group" aria-labelledby="kesfet-group-zodiac-title" class="kesfet-options kesfet-options-3"></div></section>
-      <section id="kesfet-group-selection" class="kesfet-group" aria-labelledby="kesfet-group-selection-title" hidden><h3 id="kesfet-group-selection-title" aria-hidden="true">Seçtiklerin</h3><div id="kesfet-options-selection" role="group" aria-labelledby="kesfet-group-selection-title" class="kesfet-options"></div></section>
+      <div class="kesfet-picker-header"><h2 id="kesfet-picker-title">Nasıl başlayalım?</h2><p id="kesfet-picker-hint" class="sr-only">Tek seçim: bir seçkiye basınca Modeller ona geçer; seçili seçki basılı görünür.</p><button id="kesfet-picker-close" class="kesfet-icon-button" type="button" aria-label="Seçimi kapat" title="Kapat (Esc)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+      <div class="kesfet-kind kesfet-picker-kind" role="group" aria-label="Takı türü"><button id="kesfet-picker-kind-bracelet" type="button" aria-pressed="true">Bileklik</button><button id="kesfet-picker-kind-necklace" type="button" aria-pressed="false">Kolye</button></div>
+      <div class="kesfet-picker-top">
+      <section id="kesfet-group-featured" class="kesfet-group" aria-labelledby="kesfet-group-featured-title"><h3 id="kesfet-group-featured-title" class="sr-only">Öne çıkanlar</h3><div id="kesfet-options-featured" role="group" aria-labelledby="kesfet-group-featured-title" class="kesfet-options"></div></section>
+      <section id="kesfet-group-selection" class="kesfet-group" aria-labelledby="kesfet-group-selection-title" hidden><h3 id="kesfet-group-selection-title" aria-hidden="true">Seçtiklerin</h3><div id="kesfet-options-selection" role="group" aria-labelledby="kesfet-group-selection-title" class="kesfet-options"></div></section><button id="kesfet-door-planner" class="kesfet-door kesfet-door-top" type="button"><span class="kesfet-door-title">Taşlarımı seçeyim</span><span class="kesfet-door-note">2–4 taş seç, model önerelim</span></button>
+      </div>
+      <section id="kesfet-group-color" class="kesfet-group" aria-labelledby="kesfet-group-color-title"><h3 id="kesfet-group-color-title">Renge göre</h3><div id="kesfet-options-color" role="group" aria-labelledby="kesfet-group-color-title" class="kesfet-swatches"></div></section>
+      <section id="kesfet-group-zodiac" class="kesfet-group kesfet-group-more" aria-labelledby="kesfet-group-zodiac-title"><details id="kesfet-zodiac-more" class="kesfet-more"><summary><h3 id="kesfet-group-zodiac-title">Burçlar</h3></summary><div id="kesfet-options-zodiac" role="group" aria-labelledby="kesfet-group-zodiac-title" class="kesfet-options kesfet-options-3"></div></details></section>
+      <section id="kesfet-group-element" class="kesfet-group kesfet-group-more" aria-labelledby="kesfet-group-element-title"><details id="kesfet-element-more" class="kesfet-more"><summary><h3 id="kesfet-group-element-title">Elementler</h3></summary><div id="kesfet-options-element" role="group" aria-labelledby="kesfet-group-element-title" class="kesfet-options kesfet-options-2"></div></details></section>
+      <section id="kesfet-group-elements" class="kesfet-group kesfet-group-more" aria-labelledby="kesfet-group-elements-title"><details id="kesfet-more" class="kesfet-more"><summary><h3 id="kesfet-group-elements-title">İkili elementler</h3></summary><div id="kesfet-options-elements" role="group" aria-labelledby="kesfet-group-elements-title" class="kesfet-options kesfet-options-2"></div></details></section>
+      <section id="kesfet-group-doors" class="kesfet-group kesfet-doors" aria-labelledby="kesfet-group-doors-title" hidden><h3 id="kesfet-group-doors-title">Ya da kendin seç</h3><div class="kesfet-door-list"><button id="kesfet-door-blank" class="kesfet-door" type="button"><span class="kesfet-door-title">Boş iple başla</span><span class="kesfet-door-note">Parçaları kendin ekle</span></button></div></section>
       <p id="kesfet-picker-note" class="kesfet-picker-note">Temalar yalnız görsel etikettir; fiziksel, bilimsel ya da sağlık etkisi iddiası yoktur.</p>
     </dialog>
     <div id="toast" class="toast" aria-hidden="true" hidden></div>
