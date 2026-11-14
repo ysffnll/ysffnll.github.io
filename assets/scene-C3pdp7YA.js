@@ -1,0 +1,1 @@
+import{d as e}from"./asset-proof-CsWfPUhk.js";import{t}from"./scene-B5hJZJNb.js";export{t as createStudioScene,e as prefetchFirstModelTextures};
