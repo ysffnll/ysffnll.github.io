@@ -39,7 +39,9 @@
     <!-- R1b Modeller front door: bar, picker and doors. Before the shell layer. -->
     <!-- R2 menu: short menu, sub-views, Ortam, Tasarımlarım, one sheet/dialog style. Before the shell layer. -->
     <!-- R1a shell: tokens, header, finish dialog. Loaded last on purpose. -->
-    <script type="module" crossorigin src="/assets/workshop-B1_eozZw.js"></script>
+    <!-- Fit and finish: the one place focus rings are placed, and hidden for touch (src/input-modality.js). Loaded last. -->
+    <!-- Fit and finish round 2: the shared rules (stage control row, sheet header, one primary, text fields). Loaded after the rings. -->
+    <script type="module" crossorigin src="/assets/workshop-CX8XbpjP.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/part-manifest-CNkrKrEe.js">
     <link rel="modulepreload" crossorigin href="/assets/bead-sizing-OEd-dt6o.js">
     <link rel="modulepreload" crossorigin href="/assets/three.core-Dp-eO7LC.js">
@@ -59,7 +61,7 @@
     <link rel="modulepreload" crossorigin href="/assets/figure-COvfH8Ay.js">
     <link rel="modulepreload" crossorigin href="/assets/mood-BEEQqy8E.js">
     <link rel="stylesheet" crossorigin href="/assets/asset-manifest-ClQOCUaS.css">
-    <link rel="stylesheet" crossorigin href="/assets/workshop-VQtfMujM.css">
+    <link rel="stylesheet" crossorigin href="/assets/workshop-CxDxG1Kr.css">
     <link rel="modulepreload" crossorigin="" href="/assets/scene-C5jjq8K3.js">
     <link rel="modulepreload" crossorigin="" href="/assets/asset-proof-CxZXDd2k.js">
     <link rel="modulepreload" crossorigin="" href="/assets/scene-DVMQFFLd.js">
@@ -421,11 +423,11 @@
           </div>
           <section id="kesfet-bar" class="kesfet-bar" aria-labelledby="kesfet-bar-title" data-empty="false" hidden>
             <h2 id="kesfet-bar-title" class="sr-only">Modeller: hazır modellere göz at</h2>
-            <div class="kesfet-row kesfet-row-top"><p id="kesfet-headline" class="kesfet-headline" hidden>Bir model seç, değiştir, atölyeye gönder.</p><button id="kesfet-exit" class="kesfet-back" type="button" title="Modellerden çık (Esc)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7"/></svg><span>Tasarımına dön</span></button></div>
+            <div class="kesfet-row kesfet-row-top"><p id="kesfet-headline" class="kesfet-headline" hidden>Bir model seç, değiştir, atölyeye gönder.</p><button id="kesfet-exit" class="kesfet-back" type="button" title="Modellerden çık (Esc)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 6l-6 6 6 6"/></svg><span>Tasarımına dön</span></button></div>
             <div class="kesfet-row kesfet-row-theme">
               <div class="kesfet-kind" role="group" aria-label="Takı türü"><button id="kesfet-kind-bracelet" type="button" aria-pressed="true">Bileklik</button><button id="kesfet-kind-necklace" type="button" aria-pressed="false">Kolye</button></div>
             </div>
-            <div id="kesfet-stage-arrows" class="kesfet-stage-arrows" role="group" aria-label="Modeller arasında gez" hidden><button id="kesfet-stage-prev" class="kesfet-stage-arrow" type="button" aria-label="Önceki model" title="Önceki model (←)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7"/></svg></button><button id="kesfet-stage-next" class="kesfet-stage-arrow" type="button" aria-label="Sonraki model" title="Sonraki model (→)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7"/></svg></button></div>
+            <div id="kesfet-stage-arrows" class="kesfet-stage-arrows" role="group" aria-label="Modeller arasında gez" hidden><button id="kesfet-stage-prev" class="kesfet-stage-arrow" type="button" aria-label="Önceki model" title="Önceki model (←)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 6l-6 6 6 6"/></svg></button><button id="kesfet-stage-next" class="kesfet-stage-arrow" type="button" aria-label="Sonraki model" title="Sonraki model (→)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7"/></svg></button></div>
             <p class="kesfet-showing"><span class="sr-only">Gösterilen: </span><span id="kesfet-category-label" class="kesfet-showing-label">Öne çıkanlar</span></p>
             <p class="kesfet-title"><span id="kesfet-name" class="kesfet-name"></span></p>
             <p id="kesfet-caption" class="kesfet-caption"></p>
@@ -808,7 +810,7 @@
     </dialog>
     <div id="physical-pilot-print-root" hidden></div>
     <dialog id="kesfet-picker" class="kesfet-picker" data-view="home" aria-labelledby="kesfet-picker-title" aria-describedby="kesfet-picker-hint kesfet-picker-note">
-      <div class="kesfet-picker-header"><button id="kesfet-picker-back" class="kesfet-icon-button kesfet-picker-back" type="button" aria-label="Geri" title="Geri" hidden><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7"/></svg></button><h2 id="kesfet-picker-title">Nasıl başlayalım?</h2><p id="kesfet-picker-hint" class="sr-only">Tek seçim: bir seçkiye basınca Modeller ona geçer; seçili seçki basılı görünür.</p><button id="kesfet-picker-close" class="kesfet-icon-button" type="button" aria-label="Seçimi kapat" title="Kapat (Esc)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+      <div class="kesfet-picker-header"><button id="kesfet-picker-back" class="kesfet-icon-button kesfet-picker-back" type="button" aria-label="Geri" title="Geri" hidden><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 6l-6 6 6 6"/></svg></button><h2 id="kesfet-picker-title">Nasıl başlayalım?</h2><p id="kesfet-picker-hint" class="sr-only">Tek seçim: bir seçkiye basınca Modeller ona geçer; seçili seçki basılı görünür.</p><button id="kesfet-picker-close" class="kesfet-icon-button" type="button" aria-label="Seçimi kapat" title="Kapat (Esc)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
       <div class="kesfet-kind kesfet-picker-kind" role="group" aria-label="Takı türü"><button id="kesfet-picker-kind-bracelet" type="button" aria-pressed="true">Bileklik</button><button id="kesfet-picker-kind-necklace" type="button" aria-pressed="false">Kolye</button></div>
       <nav id="kesfet-picker-home" class="kesfet-picker-home" aria-label="Başlama yolları">
         <button id="kesfet-row-featured" class="kesfet-door kesfet-row" type="button"><span class="kesfet-door-title">Hazır modeller</span><span class="kesfet-door-note">Öne çıkan, hazır tasarımlar</span></button>
