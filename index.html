@@ -2,6 +2,22 @@
 <html lang="tr" class="atelier">
   <head>
     <meta charset="UTF-8" />
+    <!-- Content-Security-Policy (decision D24). GitHub Pages cannot send headers, so the policy is a meta tag; it must stay the
+         first element after charset. The strictest policy the production build really runs under (tools/qa/storage-check.mjs walks
+         the build on a phone and a laptop profile and fails on any securitypolicyviolation). The hashes are filled by the build
+         (tools/privacy-plugin.mjs). Why each relaxation exists:
+           script-src 'self' + hashes   no 'unsafe-inline', no 'unsafe-eval'. Two inline boot scripts ship in this file (the stage
+                                        poster decision and the first-screen switch); the build hashes their exact bytes.
+           style-src-elem 'self' + hash a stylesheet only from our own files; the one extra hash is the single <style> that the
+                                        opt-in ?olcum=1 measurement strip (src/olcum.js) creates; the build derives it from the source.
+           style-src-attr 'unsafe-inline' the editing surface (src/a2-surface.js) renders strand positions and widths as style="..."
+                                        attributes in its markup. Attributes only: never a <style> element, never a stylesheet.
+           img-src data: blob:          the finish sheet's picture and 3D stills are blob: URLs (dropping blob: makes the walk report img-src violations); the atmosphere art and thumbnails are data: URLs.
+           connect-src blob:            blob: pictures are read back through fetch (measured: the walk needs no data: here); 'self' covers every asset and the local owner API.
+           everything else              default-src 'none': no frames, workers, media, plugins or foreign hosts; base-uri and form-action 'self'.
+         What a meta policy cannot do: frame-ancestors, sandbox and report-uri/report-to are ignored in a meta tag (clickjacking
+         protection and violation reports need a real response header, for example a Cloudflare Response Header Transform Rule). -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-BuNaOjCGhjVJp2YWJpzPVf37EuXxGbcwdVNreeccF70=' 'sha256-np+8y9s0JqrgLzgc5LikPxhJF5ZWTOg1iA6q1d2+wlM=' 'sha256-gtR1paeajTwpxoCMO9k7Qr8tS3/OwACleqQXROaD1yA='; style-src 'self'; style-src-elem 'self' 'sha256-6vB4R6CuONrVxxt/MoHNhbZDQpKPJSN6Fr3hCE+PHRo='; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' blob:; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#F5F0E8" />
     <meta name="description" content="MORYUNA: kendi bilekliğini ve kolyeni 3D sahnede tasarla. Doğal taşları ve takı parçalarını ekle, sırala ve kişiselleştir." />
@@ -41,30 +57,34 @@
     <!-- R1a shell: tokens, header, finish dialog. Loaded last on purpose. -->
     <!-- Fit and finish: the one place focus rings are placed, and hidden for touch (src/input-modality.js). Loaded last. -->
     <!-- Fit and finish round 2: the shared rules (stage control row, sheet header, one primary, text fields). Loaded after the rings. -->
-    <script type="module" crossorigin src="/assets/workshop-hrQ9AFlW.js"></script>
+    <script type="module" crossorigin src="/assets/workshop-Dn5lYX7f.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-P2Xu9kJm.js">
     <link rel="modulepreload" crossorigin href="/assets/part-manifest-CNkrKrEe.js">
     <link rel="modulepreload" crossorigin href="/assets/bead-sizing-OEd-dt6o.js">
-    <link rel="modulepreload" crossorigin href="/assets/three.core-Dp-eO7LC.js">
     <link rel="modulepreload" crossorigin href="/assets/source-presets-D_YOnyLv.js">
+    <link rel="modulepreload" crossorigin href="/assets/three.core-Dp-eO7LC.js">
     <link rel="modulepreload" crossorigin href="/assets/BufferGeometryUtils-BQUZb3zE.js">
     <link rel="modulepreload" crossorigin href="/assets/appearance-versions-D_4jCH7U.js">
     <link rel="modulepreload" crossorigin href="/assets/stone-profiles-AOQbGCL-.js">
-    <link rel="modulepreload" crossorigin href="/assets/model-B_oyK08e.js">
-    <link rel="modulepreload" crossorigin href="/assets/asset-manifest-mEPNjziW.js">
+    <link rel="modulepreload" crossorigin href="/assets/model-DZ6AHtK7.js">
     <link rel="modulepreload" crossorigin href="/assets/material-measurement-DoOVQVW5.js">
     <link rel="modulepreload" crossorigin href="/assets/material-catalog-binding-C9RnRhnA.js">
-    <link rel="modulepreload" crossorigin href="/assets/production-blueprint-C34J1-pp.js">
+    <link rel="modulepreload" crossorigin href="/assets/production-blueprint-C0er9EHf.js">
     <link rel="modulepreload" crossorigin href="/assets/preload-helper-BLdHbfdN.js">
     <link rel="modulepreload" crossorigin href="/assets/component-registry-D8ixFBTZ.js">
-    <link rel="modulepreload" crossorigin href="/assets/fixed-photograph-DRmAqcrs.js">
+    <link rel="modulepreload" crossorigin href="/assets/asset-manifest-DKwm1cJI.js">
+    <link rel="modulepreload" crossorigin href="/assets/strand-fit-b-OYzu7a.js">
+    <link rel="modulepreload" crossorigin href="/assets/share-link-D7Pbjlj1.js">
+    <link rel="modulepreload" crossorigin href="/assets/fixed-photograph-C9Hnvumb.js">
+    <link rel="modulepreload" crossorigin href="/assets/entry-notice-BnUx0W2x.js">
     <link rel="modulepreload" crossorigin href="/assets/motifs-PB8xVykP.js">
     <link rel="modulepreload" crossorigin href="/assets/figure-COvfH8Ay.js">
     <link rel="modulepreload" crossorigin href="/assets/mood-BEEQqy8E.js">
-    <link rel="stylesheet" crossorigin href="/assets/asset-manifest-ClQOCUaS.css">
-    <link rel="stylesheet" crossorigin href="/assets/workshop-B_Y6yQh2.css">
-    <link rel="modulepreload" crossorigin="" href="/assets/scene-CRrTSz1w.js">
+    <link rel="stylesheet" crossorigin href="/assets/workshop-C-6czccL.css">
+    <link rel="stylesheet" crossorigin href="/assets/brand-font-ClQOCUaS.css">
+    <link rel="modulepreload" crossorigin="" href="/assets/scene-s2VjHfT5.js">
     <link rel="modulepreload" crossorigin="" href="/assets/asset-proof-CxZXDd2k.js">
-    <link rel="modulepreload" crossorigin="" href="/assets/scene-DlwiELcN.js">
+    <link rel="modulepreload" crossorigin="" href="/assets/scene-Cz4kkFAY.js">
   </head>
   <body>
     <a class="skip-link" href="#studio">Atölyeye geç</a>
@@ -587,7 +607,7 @@
             <button id="finish-share-copy" class="button" type="button">Bağlantıyı kopyala</button><button id="finish-share-system" class="button" type="button" aria-label="Diğer uygulamalarla gönder" hidden>Diğer</button><label id="finish-share-field" class="finish-share-field" hidden><span class="sr-only">Tasarım bağlantısı</span><input id="finish-share-link" type="text" readonly /></label>
           </div>
           <p id="finish-sent" class="finish-sent" hidden><span id="finish-sent-text" role="status">Mesajın hazır. Atölye fiyatı ve süreyi yazar.</span></p>
-          <p class="finish-atelier-more"><a id="finish-shop" class="finish-shop" href="https://example.invalid/" target="_blank" rel="noopener noreferrer" hidden>Mağazaya git</a></p>
+          <p class="finish-atelier-more"><a id="finish-shop" class="finish-shop" href="https://example.invalid/" target="_blank" rel="noopener noreferrer" hidden>Mağazaya git</a><button id="finish-uretim" class="button" type="button" data-owner-gate="hidden" hidden>Üretim şeması</button></p>
         </div>
         <p id="finish-send-status" class="finish-send-status" role="status" aria-live="polite"></p>
       </div>
