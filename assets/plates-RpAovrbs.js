@@ -1,0 +1,1 @@
+export{t as FIXED_SCENES}from"./plates-4snShn1q.js";
