@@ -2,27 +2,32 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
+    <!-- Content-Security-Policy (decision D24), same plugin as index.html. style-src-elem lists two kinds of hash: this page's own
+         <style> below (hashed from the built HTML) and the sheet's stylesheet, which src/uretim/sheet.mjs creates by script from
+         SHEET_CSS (hashed from that module). style-src-attr 'unsafe-inline' is the same single relaxation as the studio: the sheet
+         places drawn parts with style="..." attributes. No 'unsafe-inline' for script-src or style-src. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ; style-src 'self'; style-src-elem 'self' 'sha256-8n4gK7/9dy4hAcPlHkQNuh0Yq41y3iEQNbJ1NAVpjWY=' 'sha256-1ImlgrRIZ8MKVMwLcRsXGDJtoGl/VL9iMpXa//6IzM8='; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>MORYUNA üretim şeması</title>
 <style>html,body{margin:0;padding:0}body{color:#111;background:#e9e6e1;font:14px/1.4 Arial,Liberation Sans,Helvetica,sans-serif}.chrome{max-width:210mm;margin:0 auto;padding:12px 16px}.chrome h1{letter-spacing:.14em;margin:0 0 2px;font-size:18px}.chrome p{margin:4px 0}.chrome form{flex-wrap:wrap;gap:8px;margin:10px 0;display:flex}.chrome label{flex:100%;font-weight:700}.chrome textarea{border:1px solid #555;flex:280px;min-height:54px;padding:6px;font:12px/1.3 Consolas,monospace}.chrome button{font:inherit;color:#fff;cursor:pointer;background:#111;border:1px solid #111;padding:8px 16px}.chrome button:focus-visible,.chrome textarea:focus-visible{outline-offset:2px;outline:3px solid #1a5fd0}.box{background:#fff;border:1px solid #111;margin:8px 0;padding:8px 12px}#error,#warn{border-width:3px;font-weight:700}#warn{color:#fff;background:#111}.small{color:#333;font-size:12px}#print-row{flex-wrap:wrap;align-items:center;gap:12px;display:flex}@media screen{.msheet .page{margin:6mm auto;box-shadow:0 1px 6px #00000059}#sheet{padding:0 0 10mm;overflow-x:auto}}@media screen and (width<=230mm){#sheet{zoom:.45}}@media print{html,body{background:#fff}.chrome{display:none!important}.msheet .page{box-shadow:none;margin:0}}</style>
-  <script type="module" crossorigin src="/assets/uretim-Bx_-tsi2.js"></script>
+  <script type="module" crossorigin src="/assets/uretim-V_FrH9sd.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-P2Xu9kJm.js">
   <link rel="modulepreload" crossorigin href="/assets/part-manifest-CNkrKrEe.js">
   <link rel="modulepreload" crossorigin href="/assets/bead-sizing-OEd-dt6o.js">
+  <link rel="modulepreload" crossorigin href="/assets/source-presets-D_YOnyLv.js">
   <link rel="modulepreload" crossorigin href="/assets/three.core-Dp-eO7LC.js">
   <link rel="modulepreload" crossorigin href="/assets/BufferGeometryUtils-BQUZb3zE.js">
-  <link rel="modulepreload" crossorigin href="/assets/taxonomy-lk9CMmoP.js">
-  <link rel="modulepreload" crossorigin href="/assets/source-presets-D_YOnyLv.js">
   <link rel="modulepreload" crossorigin href="/assets/appearance-versions-D_4jCH7U.js">
   <link rel="modulepreload" crossorigin href="/assets/stone-profiles-AOQbGCL-.js">
-  <link rel="modulepreload" crossorigin href="/assets/model-Do_5KZ13.js">
+  <link rel="modulepreload" crossorigin href="/assets/model-DZ6AHtK7.js">
   <link rel="modulepreload" crossorigin href="/assets/material-measurement-DoOVQVW5.js">
   <link rel="modulepreload" crossorigin href="/assets/material-catalog-binding-C9RnRhnA.js">
-  <link rel="modulepreload" crossorigin href="/assets/production-blueprint-9mrySXQ7.js">
+  <link rel="modulepreload" crossorigin href="/assets/production-blueprint-C0er9EHf.js">
   <link rel="modulepreload" crossorigin href="/assets/component-registry-D8ixFBTZ.js">
-  <link rel="modulepreload" crossorigin href="/assets/strand-fit-3lpkEPEc.js">
-  <link rel="modulepreload" crossorigin href="/assets/share-link-Po9I9Qvy.js">
+  <link rel="modulepreload" crossorigin href="/assets/share-link-SsHXGgYh.js">
+  <link rel="modulepreload" crossorigin href="/assets/strand-fit-b-OYzu7a.js">
+  <link rel="modulepreload" crossorigin href="/assets/length-gap-B2ooJt_g.js">
 </head>
 <body>
 <div class="chrome">
@@ -41,6 +46,6 @@
     <div class="small"><b>Yazdırma kutusunda:</b> kâğıt A4 · ölçek %100 ("Gerçek boyut") · "Sayfaya sığdır" KAPALI · yalnız TEK YÜZ · kenar boşluğu "yok" veya "varsayılan". Sayfa 1'deki ölçek çubuğunu cetvelle kontrol et. <span id="check"></span></div>
   </div>
 </div>
-<div id="sheet"></div>
+<div id="sheet"></div>
 </body>
 </html>
