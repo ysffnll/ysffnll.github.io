@@ -1,0 +1,1 @@
+import{d as e}from"./asset-proof-CxZXDd2k.js";import{n as t,t as n}from"./scene-BUynzlok.js";export{n as createStudioScene,e as prefetchFirstModelTextures,t as studioTaniHook};
