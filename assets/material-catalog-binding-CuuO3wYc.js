@@ -1,0 +1,1 @@
+export{r as parseMaterialCatalogBinding}from"./material-catalog-binding-DPM7nv44.js";

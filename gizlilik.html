@@ -4,23 +4,28 @@
     <meta charset="UTF-8" />
     <!-- Content-Security-Policy (decision D24): same reasoning as index.html, stricter because this page has no inline script, no
          inline style and no blob or data image. Meta tags cannot carry frame-ancestors or report-uri. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-5s2Olcyf45Ot99LFUqY2Cj2Meiejx8tzfxXPeU0NL20='; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#F5F0E8" />
+    <!-- Görünüm (src/theme.js, docs/guides/gorunum.md): sets <html data-theme="light|dark"> before the first paint from the stored choice (Sistem | Gündüz | Gece) and the system's colour scheme, so the page never flashes the other theme. Same rules as resolveTheme() in src/theme.js (a test runs this script against it); the build hashes its exact bytes into the policy above. -->
+    <meta name="color-scheme" content="light" />
+    <script id="theme-boot">(function(){var d=document.documentElement,c='system',q=/[?&]qaSession=([a-z0-9-]{8,64})(?:[&#]|$)/.exec(location.search),m=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)');try{var v=localStorage.getItem((q?'jew-studio.qa.'+q[1]+'.':'')+'moryuna.gorunum.v1');if(v==='light'||v==='dark')c=v}catch(e){}var t=c==='system'?(m&&m.matches?'dark':'light'):c;d.setAttribute('data-theme',t);d.setAttribute('data-theme-choice',c);d.style.colorScheme=t;var s=document.querySelector('meta[name="color-scheme"]');if(s)s.setAttribute('content',t);if(t==='dark'){var b=document.querySelector('meta[name="theme-color"]');if(b)b.setAttribute('content','#241F1B')}})();</script>
     <title>Gizlilik — MORYUNA</title>
     <meta name="description" content="MORYUNA tasarım stüdyosu bu cihazda neleri saklar, nelerin cihazdan çıktığı ve hepsini nasıl silebileceğin." />
     <link rel="canonical" href="https://tasarla.moryuna.com/gizlilik.html" />
     <link rel="icon" href="/icons/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/moryuna-32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/moryuna-180.png" />
-    <script type="module" crossorigin src="/assets/gizlilik-C9yczVue.js"></script>
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <script type="module" crossorigin src="/assets/gizlilik-DKLbjQ1z.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-P2Xu9kJm.js">
-    <link rel="modulepreload" crossorigin href="/assets/entry-notice-BnywpDkT.js">
-    <link rel="stylesheet" crossorigin href="/assets/entry-notice-ClQOCUaS.css">
-    <link rel="stylesheet" crossorigin href="/assets/gizlilik-D3DaInxC.css">
+    <link rel="modulepreload" crossorigin href="/assets/entry-notice-DuAepwck.js">
+    <link rel="stylesheet" crossorigin href="/assets/entry-notice-Ar0n1M01.css">
+    <link rel="stylesheet" crossorigin href="/assets/gizlilik-gBL4W85w.css">
   </head>
   <body>
     <main class="page">
+<p class="back"><a href="/">← Tasarıma dön</a></p>
 <p class="draft" role="note">TASLAK: hukuki inceleme bekliyor</p>
 <p class="brand"><a href="/">MORYUNA</a></p>
 <h1>Gizlilik: bu cihazda ne saklıyoruz?</h1>
@@ -93,6 +98,16 @@
 <dt>Neden</dt><dd>Satır seni bir daha karşılamasın.</dd>
 <dt>Ne kadar</dt><dd>Sen silene kadar.</dd>
 <dt>Ne zaman yazılır</dt><dd>Satırı kapattığında ya da ilk tasarımını kaydettiğinde.</dd>
+<dt>Gerekli mi</dt><dd>Hayır: yalnız bir kolaylık.</dd></dl></article><article class="item" id="kayit-home-screen"><h3>Ana ekran önerisi</h3><dl>
+<dt>Ne tutuyor</dt><dd>Ziyaret sayın (en çok 2), son ziyaret zamanı, bir tasarım kaydettiğin bilgisi ve ana ekran önerisini en son ne zaman kapattığın ya da uygulamayı eklediğin.</dd>
+<dt>Neden</dt><dd>Öneri ilk ekranda çıkmasın, kapattıktan sonra yedi gün sessiz kalsın.</dd>
+<dt>Ne kadar</dt><dd>Sen silene kadar.</dd>
+<dt>Ne zaman yazılır</dt><dd>Siteyi her yeni açışında, bir tasarım kaydettiğinde ve öneriyi kapattığında.</dd>
+<dt>Gerekli mi</dt><dd>Hayır: yalnız bir kolaylık.</dd></dl></article><article class="item" id="kayit-theme"><h3>Görünüm seçimin</h3><dl>
+<dt>Ne tutuyor</dt><dd>Menü’deki Görünüm seçimin: sistem, gündüz ya da gece (tek bir sözcük).</dd>
+<dt>Neden</dt><dd>Sayfa her açılışta seçtiğin görünümle başlasın; seçmediysen cihazının görünümünü izler.</dd>
+<dt>Ne kadar</dt><dd>Sen değiştirene ya da silene kadar.</dd>
+<dt>Ne zaman yazılır</dt><dd>Menü’de Görünüm’ü değiştirdiğinde.</dd>
 <dt>Gerekli mi</dt><dd>Hayır: yalnız bir kolaylık.</dd></dl></article><article class="item" id="kayit-modeller-position-session"><h3>Modeller konumu, bu sekme</h3><dl>
 <dt>Ne tutuyor</dt><dd>Modeller ekranında baktığın tema, takı türü, önündeki modelin sırası ve yüklenen model sayısı.</dd>
 <dt>Neden</dt><dd>Sayfa yenilenince ya da Modeller yeniden açılınca aynı yerden devam edesin.</dd>
@@ -103,6 +118,11 @@
 <dt>Neden</dt><dd>Aynı sekmede ipucu birden çok oturum sayılmasın.</dd>
 <dt>Ne kadar</dt><dd>Sekmeyi kapatınca silinir.</dd>
 <dt>Ne zaman yazılır</dt><dd>Düzenleme ekranı ilk açıldığında.</dd>
+<dt>Gerekli mi</dt><dd>Hayır: yalnız bir kolaylık.</dd></dl></article><article class="item" id="kayit-privacy-notice-seen-session"><h3>Gizlilik notu görüldü, bu sekme</h3><dl>
+<dt>Ne tutuyor</dt><dd>Gizlilik notunun bu sekmede bir kez görüldüğünü gösteren işaret (1).</dd>
+<dt>Neden</dt><dd>Gizlilik sayfasından tasarıma dönünce not aynı ziyarette yeniden çıkmasın.</dd>
+<dt>Ne kadar</dt><dd>Sekmeyi kapatınca silinir.</dd>
+<dt>Ne zaman yazılır</dt><dd>Not göründükten sonra başka bir yere dokunulunca.</dd>
 <dt>Gerekli mi</dt><dd>Hayır: yalnız bir kolaylık.</dd></dl></article><article class="item" id="kayit-save-base-session"><h3>Kayıt tabanı, bu sekme</h3><dl>
 <dt>Ne tutuyor</dt><dd>Bu sekmenin açtığı veya kaydettiği tasarımların Tasarımlarım’daki sürüm numarası.</dd>
 <dt>Neden</dt><dd>Aynı tasarım iki sekmede açıkken bir sekmenin kaydı ötekinin kaydını ezmesin; çakışınca ikisi de saklansın.</dd>
@@ -135,7 +155,7 @@
 <button type="button" class="btn btn-danger" data-clear-yes>Evet, hepsini sil</button> <button type="button" class="btn" data-clear-no>Vazgeç</button></div>
 <p class="result" data-clear-result role="status" aria-live="polite"></p>
 <noscript><p class="note">Silme düğmesi için JavaScript gerekir. Tarayıcının site verilerini silme ayarını da kullanabilirsin.</p></noscript></div>
-<details class="tech"><summary>Teknik ayrıntı: kayıt adları</summary><p class="note">Kayıt adları iç tanımlardır; hepsi bu sayfanın kaynağı olan listeden üretilir.</p><ul><li><code>jew-studio.recipe.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>jew-studio.recipe.v1.original</code> · Tarayıcının yerel kayıt alanı</li><li><code>jew-studio.started.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>jew-studio.design-preferences.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>moryuna.surukle-ipucu.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>moryuna.tasi-sec-ipucu.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>moryuna.kisa-gosterim.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>jew-studio.atmosphere.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>jew-studio.gravur-tier.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>jew-studio.gravur-ladder.v1 ve jew-studio.gravur-ladder.v1.…</code> · Tarayıcının yerel kayıt alanı</li><li><code>jew-studio.atmosfer-ayar.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>moryuna.gizlilik-notu.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>jew-studio.owner-mode.v1</code> · Tarayıcının yerel kayıt alanı · yalnız atölye görünümü</li><li><code>jew-studio.drag-hint.v1</code> · Tarayıcının yerel kayıt alanı · ayrılmış, yazılmıyor · yalnız test</li><li><code>jew-studio.qa.</code> · Tarayıcının yerel kayıt alanı · yalnız test</li><li><code>jew-studio.modeller.position.v1</code> · Sekme belleği (sekme kapanınca silinir)</li><li><code>moryuna.surukle-ipucu.oturum</code> · Sekme belleği (sekme kapanınca silinir)</li><li><code>moryuna.kayit-tabani.oturum</code> · Sekme belleği (sekme kapanınca silinir)</li><li><code>jew.stock-trial:</code> · Sekme belleği (sekme kapanınca silinir) · yalnız atölye görünümü</li><li><code>jew-studio.design-library (designs, revisions)</code> · Tarayıcı veritabanı</li><li><code>jew-studio.draft-fallback (drafts)</code> · Tarayıcı veritabanı</li><li><code>tarayıcı geçmişi girdileri</code> · Tarayıcı geçmişi</li></ul></details>
+<details class="tech"><summary>Teknik ayrıntı: kayıt adları</summary><p class="note">Kayıt adları iç tanımlardır; hepsi bu sayfanın kaynağı olan listeden üretilir.</p><ul><li><code>jew-studio.recipe.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>jew-studio.recipe.v1.original</code> · Tarayıcının yerel kayıt alanı</li><li><code>jew-studio.started.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>jew-studio.design-preferences.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>moryuna.surukle-ipucu.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>moryuna.tasi-sec-ipucu.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>moryuna.kisa-gosterim.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>jew-studio.atmosphere.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>jew-studio.gravur-tier.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>jew-studio.gravur-ladder.v1 ve jew-studio.gravur-ladder.v1.…</code> · Tarayıcının yerel kayıt alanı</li><li><code>jew-studio.atmosfer-ayar.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>moryuna.gizlilik-notu.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>moryuna.ana-ekran.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>moryuna.gorunum.v1</code> · Tarayıcının yerel kayıt alanı</li><li><code>jew-studio.owner-mode.v1</code> · Tarayıcının yerel kayıt alanı · yalnız atölye görünümü</li><li><code>jew-studio.drag-hint.v1</code> · Tarayıcının yerel kayıt alanı · ayrılmış, yazılmıyor · yalnız test</li><li><code>jew-studio.qa.</code> · Tarayıcının yerel kayıt alanı · yalnız test</li><li><code>jew-studio.modeller.position.v1</code> · Sekme belleği (sekme kapanınca silinir)</li><li><code>moryuna.surukle-ipucu.oturum</code> · Sekme belleği (sekme kapanınca silinir)</li><li><code>moryuna.gizlilik-notu.v1.seen</code> · Sekme belleği (sekme kapanınca silinir)</li><li><code>moryuna.kayit-tabani.oturum</code> · Sekme belleği (sekme kapanınca silinir)</li><li><code>jew.stock-trial:</code> · Sekme belleği (sekme kapanınca silinir) · yalnız atölye görünümü</li><li><code>jew-studio.design-library (designs, revisions)</code> · Tarayıcı veritabanı</li><li><code>jew-studio.draft-fallback (drafts)</code> · Tarayıcı veritabanı</li><li><code>tarayıcı geçmişi girdileri</code> · Tarayıcı geçmişi</li></ul></details>
 <p class="back"><a href="/">Stüdyoya dön</a></p>
 <p class="note small">Bu sayfa, stüdyonun kodundaki kayıt listesinden otomatik üretilir.</p>
     </main>

@@ -1,0 +1,17 @@
+{
+  "id": "/",
+  "name": "MORYUNA Studio",
+  "short_name": "MORYUNA",
+  "description": "Kendi bilekliğini ve kolyeni 3D sahnede tasarla.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "lang": "tr",
+  "background_color": "#F5F0E8",
+  "theme_color": "#F5F0E8",
+  "icons": [
+    { "src": "/icons/moryuna-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/moryuna-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/moryuna-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
