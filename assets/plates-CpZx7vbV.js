@@ -1,0 +1,1 @@
+export{t as FIXED_SCENES}from"./plates-_aektx47.js";
