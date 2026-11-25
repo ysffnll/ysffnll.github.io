@@ -1,0 +1,15 @@
+:root { color-scheme: light; --bg: #f5f0e8; --ink: #362d29; --muted: #6f625a; --accent: #985345; }
+@media (prefers-color-scheme: dark) { :root { color-scheme: dark; --bg: #241f1b; --ink: #f3ece3; --muted: #bdb1a6; --accent: #e0a090; } }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100dvh; display: grid; place-items: center; padding: 24px 16px; background: var(--bg); color: var(--ink); font: 16px/1.5 "Segoe UI", Arial, sans-serif; }
+main { width: min(100%, 440px); }
+.brand { margin: 0 0 24px; font: 600 13px/1 Georgia, "Times New Roman", serif; letter-spacing: .22em; color: var(--accent); }
+section { margin-bottom: 28px; }
+h1 { margin: 0 0 8px; font: 400 28px/1.2 Georgia, "Times New Roman", serif; letter-spacing: -.02em; }
+p { margin: 0 0 12px; color: var(--muted); }
+.links { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:first-child { font-weight: 600; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+/* with the script only the visitor's language shows; without it the three stay (crawlers and script-less visitors) */
+html[data-pick="tr"] section:not([data-lang="tr"]), html[data-pick="en"] section:not([data-lang="en"]), html[data-pick="es"] section:not([data-lang="es"]) { display: none; }

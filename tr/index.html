@@ -1,0 +1,1081 @@
+<!doctype html>
+<html lang="tr" class="atelier">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Content-Security-Policy (decision D24). GitHub Pages cannot send headers, so the policy is a meta tag; it must stay the
+         first element after charset. The strictest policy the production build really runs under (tools/qa/storage-check.mjs walks
+         the build on a phone and a laptop profile and fails on any securitypolicyviolation). The hashes are filled by the build
+         (tools/privacy-plugin.mjs). Why each relaxation exists:
+           script-src 'self' + hashes   no 'unsafe-inline', no 'unsafe-eval'. Inline boot scripts ship in this file (the stage
+                                        poster, first screen and workshop recovery); the build hashes their exact bytes.
+           style-src-elem 'self' + hash a stylesheet only from our own files; the one extra hash is the single <style> that the
+                                        opt-in ?olcum=1 measurement strip (src/olcum.js) creates; the build derives it from the source.
+           style-src-attr 'unsafe-inline' the editing surface (src/a2-surface.js) renders strand positions and widths as style="..."
+                                        attributes in its markup. Attributes only: never a <style> element, never a stylesheet.
+           img-src data: blob:          the finish sheet's picture and 3D stills are blob: URLs (dropping blob: makes the walk report img-src violations); the atmosphere art and thumbnails are data: URLs.
+           connect-src blob:            blob: pictures are read back through fetch (measured: the walk needs no data: here); 'self' covers every asset and the local owner API.
+           everything else              default-src 'none': no frames, workers, media, plugins or foreign hosts; base-uri and form-action 'self'.
+         What a meta policy cannot do: frame-ancestors, sandbox and report-uri/report-to are ignored in a meta tag (clickjacking
+         protection and violation reports need a real response header, for example a Cloudflare Response Header Transform Rule). -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-5s2Olcyf45Ot99LFUqY2Cj2Meiejx8tzfxXPeU0NL20=' 'sha256-Fc2sGyqNjGWbOiBpUELoyv88YGGd8p2S3IhCmAkJYLs=' 'sha256-PIWL15uktoCbqzHTT7z+TLYFIf9RYYCRFVwE/fphQ00=' 'sha256-4ag1F0f0Z+y1mVGkvKCHVs0CYWC2ifbDKd1yuMkVsR0=' 'sha256-np+8y9s0JqrgLzgc5LikPxhJF5ZWTOg1iA6q1d2+wlM=' 'sha256-gtR1paeajTwpxoCMO9k7Qr8tS3/OwACleqQXROaD1yA='; style-src 'self'; style-src-elem 'self' 'sha256-6vB4R6CuONrVxxt/MoHNhbZDQpKPJSN6Fr3hCE+PHRo='; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' blob:; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#F5F0E8" />
+    <!-- Görünüm (src/theme.js, docs/guides/gorunum.md): sets <html data-theme="light|dark"> before the first paint from the stored choice (Sistem | Gündüz | Gece) and the system's colour scheme, so the page never flashes the other theme. Same rules as resolveTheme() in src/theme.js (a test runs this script against it); the build hashes its exact bytes into the policy above. -->
+    <meta name="color-scheme" content="light" />
+    <script id="theme-boot">(function(){var d=document.documentElement,c='system',q=/[?&]qaSession=([a-z0-9-]{8,64})(?:[&#]|$)/.exec(location.search),m=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)');try{var v=localStorage.getItem((q?'jew-studio.qa.'+q[1]+'.':'')+'moryuna.gorunum.v1');if(v==='light'||v==='dark')c=v}catch(e){}var t=c==='system'?(m&&m.matches?'dark':'light'):c;d.setAttribute('data-theme',t);d.setAttribute('data-theme-choice',c);d.style.colorScheme=t;var s=document.querySelector('meta[name="color-scheme"]');if(s)s.setAttribute('content',t);if(t==='dark'){var b=document.querySelector('meta[name="theme-color"]');if(b)b.setAttribute('content','#241F1B')}})();</script>
+    <link rel="icon" href="/icons/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/moryuna-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/moryuna-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/moryuna-180.png" />
+    <!-- Home Screen web app (docs/guides/ana-ekran.md): opened from the Home Screen icon the site has no browser bars. No service worker (the
+         privacy page says so); the manifest only names the app, its icons and colours. -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="MORYUNA" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <!--seo:head-->
+    <title>Doğal Taş Bileklik ve Kolye Tasarla | MORYUNA</title>
+    <meta name="description" content="MORYUNA Studio ile kendi doğal taş bilekliğini veya kolyeni 3D tasarla. Taşları, boncuk dizilimini ve ölçüyü seç. Gösterilen fiyatlar örnektir." />
+    <link rel="canonical" href="https://tasarla.moryuna.com/tr/" />
+    <link rel="alternate" hreflang="tr" href="https://tasarla.moryuna.com/tr/" />
+    <link rel="alternate" hreflang="en" href="https://tasarla.moryuna.com/en/" />
+    <link rel="alternate" hreflang="es" href="https://tasarla.moryuna.com/es/" />
+    <link rel="alternate" hreflang="x-default" href="https://tasarla.moryuna.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MORYUNA" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta property="og:url" content="https://tasarla.moryuna.com/tr/" />
+    <meta property="og:title" content="MORYUNA Studio | Kendi doğal taş takını tasarla" />
+    <meta property="og:description" content="Doğal taş bileklik ve kolyeleri 3D olarak kişiselleştir. Taşlarını, boncuk dizilimini ve ölçünü belirle. Gösterilen fiyatlar örnektir." />
+    <meta property="og:image" content="https://tasarla.moryuna.com/share/moryuna-share.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="MORYUNA — taş bileklik, Kendi hikâyeni taşı." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MORYUNA Studio | Kendi doğal taş takını tasarla" />
+    <meta name="twitter:description" content="Doğal taş bileklik ve kolyeleri 3D olarak kişiselleştir. Taşlarını, boncuk dizilimini ve ölçünü belirle. Gösterilen fiyatlar örnektir." />
+    <meta name="twitter:image" content="https://tasarla.moryuna.com/share/moryuna-share.jpg" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://tasarla.moryuna.com/#marka","name":"MORYUNA","url":"https://tasarla.moryuna.com/","logo":"https://tasarla.moryuna.com/icons/moryuna-192.png","description":"MORYUNA, Türkiye merkezli, el yapımı doğal taş bileklik ve kolye tasarımlarına odaklanan bir takı markasıdır.","sameAs":["https://www.instagram.com/moryuna.co/","https://www.tiktok.com/@moryuna.com","https://tr.pinterest.com/moryunajewelry/","https://www.facebook.com/people/Moryuna/61596409244888/"]},{"@type":"WebSite","@id":"https://tasarla.moryuna.com/#site","name":"MORYUNA","alternateName":["MORYUNA Studio","Moryuna"],"url":"https://tasarla.moryuna.com/","description":"MORYUNA Studio, doğal taş bileklik ve kolye tasarlamaya yönelik çevrimiçi 3D tasarım stüdyosudur.","inLanguage":["tr","en","es"],"publisher":{"@id":"https://tasarla.moryuna.com/#marka"}},{"@type":"WebApplication","@id":"https://tasarla.moryuna.com/tr/#studio","name":"MORYUNA Studio","url":"https://tasarla.moryuna.com/tr/","description":"Doğal taş boncukları, dizilimi ve ölçüyü kişiselleştirerek bileklik ve kolye tasarlamaya yarayan tarayıcı tabanlı 3D araç. Gösterilen fiyatlar örnektir.","applicationCategory":"DesignApplication","operatingSystem":"Web","inLanguage":"tr","publisher":{"@id":"https://tasarla.moryuna.com/#marka"},"isPartOf":{"@id":"https://tasarla.moryuna.com/#site"}}]}</script>
+    <!--/seo:head-->
+    <!-- Brand serif (Gelasio, src/brand-font.css): the wordmark and the first heading; both unicode subsets, because the first screen requests latin-ext too (measured: it arrives 1-2 s after first paint when not preloaded; Turkish ğ ş İ are in latin-ext). -->
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/ba5b902e472cfe3456eba6b2d8fcf2d237988ff181d8da3cb5cf839de989ab15.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/2f3f0cd292326e19687d727f87400d91632ab2ab3a0020a187ce22db6f358961.woff2" />
+    <!-- L6 stage loading: decides before any stylesheet or module whether the stage shows the captured first frame of the default model ("photo", one poster preloaded for this aspect) or only its backdrop until stage-loading.js draws the piece ("piece"). Generated by tools/stage-poster/capture.mjs from src/stage-poster.json. -->
+    <script id="stage-poster-boot">(function(){var manifest={"recipeKey":"94e68a2e:4839","stageVersion":"76daee8dcad8f79f","aspects":{"phone":{"url":"/stage-poster/phone-04e0c0c2e4de.webp","width":390,"height":486,"centroid":[193.86,219.26],"backdrop":["#d0c5b8","#d6ccc0","#dbd2c6","#e0d8cd","#dcd3c7"],"braceletBox":[27,119,335,185],"necklaceBox":[23,36,343,355],"samples":[[320,226,0.59208,159.33,90.46,"h",320,568],[320,298,0.75106,158.84,126.97,"w",320,640],[320,382,0.80433,159.01,167.16,"w",320,740],[360,382,0.86296,178.99,167.96,"w",360,740],[375,309,0.8795,186.22,134.38,"w",375,667],[375,454,0.95707,186.53,203.46,"w",375,812],[390,486,0.99989,193.83,219.24,"w",390,844],[393,494,1.00864,195.47,223.22,"w",393,852],[412,575,1.06557,204.8,263.27,"w",412,915],[430,592,1.11255,213.87,271.94,"w",430,932],[360,442,0.91609,178.91,197.19,"w",360,800],[414,396,0.99728,205.67,176.5,"w",414,736],[414,972,1.09104,206.36,467.88,"w",768,1024],[414,1128,1.0939,206.5,544,"w",768,1180],[320,302,0.753,158.85,128.89,"w",320,660],[320,322,0.75613,158.8,138.07,"w",320,680],[320,342,0.75921,158.9,147.63,"w",320,700],[320,362,0.80223,159.01,157.57,"w",320,720],[320,332,0.75729,158.93,142.93,"w",320,690],[340,342,0.80825,168.94,148.5,"w",340,700],[360,298,0.83919,178.92,128.58,"w",360,640],[360,332,0.85605,178.86,144.48,"w",360,690],[375,382,0.90094,186.27,168.24,"w",375,740],[390,402,0.93994,193.76,178.36,"w",390,760],[412,440,0.99863,204.71,196.99,"w",412,780],[421,308,0.91963,209.29,155.31,"w",780,360],[442,328,0.97201,220.36,164.92,"w",820,380],[480,348,1.05184,238.77,175.34,"w",880,400],[500,352,1.09408,248.75,177.85,"w",900,412],[432,308,0.94465,214.79,155.68,"w",800,360],[455,338,1.00002,226.71,169.99,"w",844,390],[532,370,1.1634,264.58,187.07,"w",932,430]]},"desktop":{"url":"/stage-poster/desktop-2f9179d261ea.webp","width":1040,"height":840,"centroid":[518,418.04],"backdrop":["#cfc5b8","#d5cbbe","#dbd2c6","#dfd7cb","#dad1c5"],"braceletBox":[127,189,784,419],"necklaceBox":[85,63,869,651],"samples":[[780,700,0.75352,388.51,346,"w",1180,760],[880,660,0.84361,438.18,330.39,"w",1280,720],[880,740,0.84802,438.46,367.21,"w",1280,800],[966,708,0.92505,481.01,355.23,"w",1366,768],[1040,840,1.00069,518.04,417.98,"w",1440,900],[1136,804,1.08663,565.78,404.87,"w",1536,864],[1280,990,1.22959,637.45,494.35,"w",1680,1050],[1520,1020,1.44943,756.99,516.84,"w",1920,1080],[880,964,0.85774,438.62,473.09,"w",1280,1024]]},"landscape":{"url":"/stage-poster/landscape-f4f78a8166db.webp","width":740,"height":308,"centroid":[234.5,137.44],"backdrop":["#cfc5b8","#d2c8bb","#d7cdc1","#dbd2c6","#dad1c5"],"braceletBox":[84,51,305,154],"necklaceBox":[85,22,301,215],"samples":[[568,268,0.74283,168.64,114.72,"w",568,320],[600,308,0.79583,178.07,134.37,"w",600,360],[640,308,0.85028,190.35,135.24,"h",640,360],[667,323,0.89085,198.74,142.86,"h",667,375],[700,308,0.95815,213.06,136.76,"w",700,360],[700,348,0.96651,212.53,155.78,"w",700,400],[720,348,1.0205,223.57,156.36,"w",720,400],[740,308,0.99992,234.52,137.46,"h",740,360],[740,338,1.07004,234.1,152.6,"w",740,390],[760,308,0.99936,245.21,137.52,"h",760,360]]}}};function stagePosterRecipeKey(recipe) { if (!recipe || typeof recipe !== 'object' || !Array.isArray(recipe.occurrences)) return null; var ids = {}; for (var i = 0; i < recipe.occurrences.length; i++) { var id = recipe.occurrences[i] && recipe.occurrences[i].id; if (typeof id === 'string' && !Object.prototype.hasOwnProperty.call(ids, id)) ids[id] = '#' + i; } var copy = {}; for (var key in recipe) if (Object.prototype.hasOwnProperty.call(recipe, key)) copy[key] = recipe[key]; copy.id = null; copy.name = null; var text = JSON.stringify(copy, function (k, value) { return typeof value === 'string' && Object.prototype.hasOwnProperty.call(ids, value) ? ids[value] : value; }); var hash = 0x811c9dc5; for (var j = 0; j < text.length; j++) { hash ^= text.charCodeAt(j); hash = Math.imul(hash, 0x01000193) >>> 0; } return ('0000000' + hash.toString(16)).slice(-8) + ':' + text.length; } function stagePosterMode(env, recipeKey, keyOf) { try { if (env.dark === true) return 'piece'; var search = String(env.search || ''), hash = String(env.hash || ''); if (/(?:^#|&)([dj])=([A-Za-z0-9_-]*)/.test(hash)) return 'piece'; var qa = /[?&]qaSession=([^&#]*)/.exec(search); var prefix = ''; if (qa) { var session = decodeURIComponent(qa[1]); if (!/^[a-z0-9-]{8,64}$/.test(session)) return 'piece'; prefix = 'jew-studio.qa.' + session + '.'; } var storage = env.storage; if (!storage) return 'piece'; if (storage.getItem(prefix + 'jew-studio.started.v1') === '1') return 'piece'; var saved = storage.getItem(prefix + 'jew-studio.recipe.v1'); if (!saved) return recipeKey ? 'photo' : 'piece'; return recipeKey && keyOf(JSON.parse(saved)) === recipeKey ? 'photo' : 'piece'; } catch (error) { return 'piece'; } } function stagePosterAspect(width, height) { if (!(width > 0) || !(height > 0)) return null; if (width > 760) return 'desktop'; return width / height >= 1.6 ? 'landscape' : 'phone'; } function stagePosterPlacement(entry, width, height, win) { if (!entry || !(width > 0) || !(height > 0) || !entry.samples || !entry.samples.length) return null; var lw = Math.log(width), lh = Math.log(height), rows = [], tall = Math.round(height) > Math.round(width) * 1.1, same = 0, orient = 0, sameO = 0; if (win && win[0] > 0 && win[1] > 0) orient = win[0] > win[1] ? 1 : -1; for (var t = 0; t < entry.samples.length; t++) { var q = entry.samples[t]; if ((q[1] > q[0] * 1.1) !== tall) continue; same++; if (orient && q[6] > 0 && q[7] > 0 && (q[6] > q[7] ? 1 : -1) === orient) sameO++; } for (var i = 0; i < entry.samples.length; i++) { var s = entry.samples[i], dw = Math.log(s[0]) - lw, dh = Math.log(s[1]) - lh; if (same && (s[1] > s[0] * 1.1) !== tall) continue; if (sameO && !(s[6] > 0 && s[7] > 0 && (s[6] > s[7] ? 1 : -1) === orient)) continue; rows.push({ d: dw * dw + dh * dh, scale: s[2] * (s[5] === 'h' ? height / s[1] : width / s[0]), u: s[3] / s[0], v: s[4] / s[1] }); } rows.sort(function (a, b) { return a.d - b.d; }); var near = rows.slice(0, 4), total = 0, scale = 0, u = 0, v = 0; if (near[0].d < 1e-10) near = [near[0]]; for (var j = 0; j < near.length; j++) { var w = near.length === 1 ? 1 : 1 / near[j].d; total += w; scale += w * near[j].scale; u += w * near[j].u; v += w * near[j].v; } scale /= total; u /= total; v /= total; return { scale: scale, width: entry.width * scale, height: entry.height * scale, left: u * width - entry.centroid[0] * scale, top: v * height - entry.centroid[1] * scale }; } function stagePosterCovers(entry, width, height) { if (!entry || !(width > 0) || !(height > 0) || !entry.samples || !entry.samples.length) return false; var tall = Math.round(height) > Math.round(width) * 1.1, minW = Infinity, minH = Infinity, any = false; for (var i = 0; i < entry.samples.length; i++) { var s = entry.samples[i]; if ((s[1] > s[0] * 1.1) !== tall) continue; any = true; if (s[0] < minW) minW = s[0]; if (s[1] < minH) minH = s[1]; } if (!any) for (var j = 0; j < entry.samples.length; j++) { minW = Math.min(minW, entry.samples[j][0]); minH = Math.min(minH, entry.samples[j][1]); } return width >= minW * 0.96 && height >= minH * 0.96; } function stagePosterSweep(entry, place) { if (!entry || !entry.backdrop || !entry.backdrop.length || !place) return ''; var stops = []; for (var i = 0; i < entry.backdrop.length; i++) stops.push(entry.backdrop[i] + ' ' + (place.top + place.height * i / (entry.backdrop.length - 1)).toFixed(1) + 'px'); return 'linear-gradient(180deg, ' + stops.join(', ') + ')'; } function stagePosterExpectedBox(manifest, viewWidth, viewHeight) { var best = null, bestD = Infinity; for (var name in manifest.aspects) { var rows = manifest.aspects[name].samples || []; for (var i = 0; i < rows.length; i++) { var r = rows[i]; if (!(r[6] > 0 && r[7] > 0)) continue; var dw = Math.log(r[6] / viewWidth), dh = Math.log(r[7] / viewHeight), d = dw * dw + dh * dh; if (d < bestD) { bestD = d; best = r; } } } if (!best) return null; return [Math.max(1, viewWidth - (best[6] - best[0])), Math.max(1, viewHeight - (best[7] - best[1]))]; } function stagePosterMount(doc, poster) { var root = doc.documentElement, scene = doc.getElementById('scene'), img = doc.getElementById('scene-poster'); if (!scene || !img || !poster) return null; if (root.getAttribute('data-stage-poster') !== 'photo') { img.hidden = true; return null; } var box = scene.getBoundingClientRect(), size = [box.width, box.height], studio = doc.getElementById('studio'); var view = doc.defaultView; if (studio && studio.getAttribute('data-mode') !== 'kesfet' && !root.hasAttribute('data-stage-modeller') && view) size = poster.expected(poster.manifest, view.innerWidth, view.innerHeight) || size; var aspect = poster.aspect(size[0], size[1]), entry = aspect && poster.manifest.aspects[aspect]; var place = entry && poster.covers(entry, size[0], size[1]) && poster.place(entry, size[0], size[1], view ? [view.innerWidth, view.innerHeight] : null); if (!place) { img.hidden = true; return null; } if (img.getAttribute('src') !== entry.url) img.setAttribute('src', entry.url); img.style.left = place.left.toFixed(2) + 'px'; img.style.top = place.top.toFixed(2) + 'px'; img.style.width = place.width.toFixed(2) + 'px'; img.style.height = place.height.toFixed(2) + 'px'; var sweep = scene.querySelector('.stage-loading-backdrop'); if (sweep) sweep.style.setProperty('--stage-loading-sweep', poster.sweep(entry, place)); img.hidden = false; img.setAttribute('data-aspect', aspect); return { aspect: aspect, place: place, box: [box.width, box.height], laidOutFor: size }; } function stagePosterBootModeller(doc) { var root = doc.documentElement, studio = doc.getElementById('studio'), bar = doc.getElementById('kesfet-bar'); if (studio && !studio.hasAttribute('data-edit-state')) studio.setAttribute('data-edit-state', 'idle'); if (root.getAttribute('data-stage-poster') !== 'photo' || !studio || !bar || studio.hasAttribute('data-mode')) return false; root.setAttribute('data-boot-modeller', 'true'); studio.setAttribute('data-mode', 'kesfet'); bar.setAttribute('data-first', 'true'); bar.setAttribute('data-featured', 'true'); var show = { 'kesfet-headline': true, 'kesfet-exit': false, 'kesfet-apply-help': false }; for (var id in show) { var el = doc.getElementById(id); if (el) el.hidden = !show[id]; } var name = doc.getElementById('kesfet-name'); if (name && !name.textContent) name.textContent = '\u00a0'; bar.hidden = false; var height = Math.ceil(bar.getBoundingClientRect().height); if (height > 0) studio.style.setProperty('--kesfet-bar-height', height + 'px'); return true; } var mode='piece';try{mode=stagePosterMode({search:location.search,hash:location.hash,storage:window.localStorage,dark:document.documentElement.getAttribute('data-theme')==='dark'},manifest.recipeKey,stagePosterRecipeKey);}catch(e){}document.documentElement.setAttribute('data-stage-poster',mode);window.__jewStagePoster={manifest:manifest,mode:mode,key:stagePosterRecipeKey,aspect:stagePosterAspect,place:stagePosterPlacement,covers:stagePosterCovers,sweep:stagePosterSweep,expected:stagePosterExpectedBox,mount:function(){try{return stagePosterMount(document,window.__jewStagePoster);}catch(e){return null;}},modeller:function(){try{var on=stagePosterBootModeller(document);if(on)window.__jewStagePoster.mount();return on;}catch(e){return false;}}};if(mode==='photo'){try{var x=document.createElement('link');x.rel='expect';x.href='#kesfet-boot';x.setAttribute('blocking','render');document.head.appendChild(x);}catch(e){}}if(mode==='photo'){try{var box=stagePosterExpectedBox(manifest,window.innerWidth,window.innerHeight),name=box&&stagePosterAspect(box[0],box[1]),a=name&&stagePosterCovers(manifest.aspects[name],box[0],box[1])&&manifest.aspects[name];if(a){var l=document.createElement('link');l.rel='preload';l.as='image';l.href=a.url;l.setAttribute('fetchpriority','high');document.head.appendChild(l);}}catch(e){}}})();</script><!-- /stage-poster-boot -->
+    <!-- No image preloads in markup: the default stage is "Stüdyo" (photo-s1), a procedural sweep with no fetch.
+         Preload only what a fresh session shows in the first seconds (guarded by src/startup-assets.test.js). -->
+    <!-- Keep the cascade explicit and the semantic fallback styled without JS. -->
+    <script id="workshop-boot-recovery">
+      // The module did not load, so no dictionary is there: the two lines of this screen are written in the three languages here
+      // (?lang=, the saved choice, the browser's language: the same order src/i18n/locale.js uses).
+      var bootWords = (function () {
+        var words = { tr: ['Atölye yüklenemedi.', 'Yeniden dene'], en: ['The studio could not be loaded.', 'Try again'], es: ['No se pudo cargar el taller.', 'Inténtalo de nuevo'] };
+        try {
+          var chosen = /^\/(tr|en|es)(?:\/|$)/.exec(location.pathname) || /[?&]lang=(tr|en|es)(?:&|#|$)/.exec(location.search), saved = null;
+          try { saved = localStorage.getItem('moryuna.locale.v1'); } catch (storageError) { saved = null; }
+          var guess = String((navigator.languages && navigator.languages[0]) || navigator.language || '').slice(0, 2).toLowerCase();
+          var code = chosen ? chosen[1] : (words[saved] ? saved : (words[guess] ? guess : 'tr'));
+          return words[code];
+        } catch (error) { return words.tr; }
+      })();
+      document.addEventListener('error', event => {
+        if (event.target !== document.querySelector('script[type="module"][src]')) return;
+        const showRetry = () => {
+          const scene = document.getElementById('scene');
+          const message = document.querySelector('#scene-fallback .scene-fallback-message');
+          scene.setAttribute('aria-busy', 'false');
+          message.setAttribute('role', 'status');
+          message.querySelector('.stage-loading-mark').hidden = true;
+          message.querySelector('p').textContent = bootWords[0];
+          document.getElementById('kesfet-apply').disabled = true;
+          const retry = document.getElementById('retry-assets');
+          retry.textContent = bootWords[1];
+          retry.hidden = false;
+          retry.addEventListener('click', () => location.reload());
+        };
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', showRetry, { once: true });
+        else showRetry();
+      }, true);
+    </script>
+    <!-- Retain Sedef surfaces; the final layer owns workshop layout. -->
+    <!-- L6: the stage while 3D loads (poster, drawing of the piece, loading mark, fade). -->
+    <!-- R1b Modeller front door: bar, picker and doors. Before the shell layer. -->
+    <!-- R2 menu: short menu, sub-views, Ortam, Tasarımlarım, one sheet/dialog style. Before the shell layer. -->
+    <!-- R1a shell: tokens, header, finish dialog. Loaded last on purpose. -->
+    <!-- Tur 2b navigation shell: the bar exists only in a build with two sections or more (src/shell-nav.js). -->
+    <!-- Portre: only the finish dialog's quiet button; the layer's own styles load with its chunk (src/portre/layer.js). -->
+    <!-- Fit and finish: the one place focus rings are placed, and hidden for touch (src/input-modality.js). Loaded last. -->
+    <!-- Fit and finish round 2: the shared rules (stage control row, sheet header, one primary, text fields). Loaded after the rings. -->
+    <!-- Görünüm: the night palette (html[data-theme="dark"]) over the tokens above, and the Menü's Görünüm row. Loaded after every sheet that declares a token (src/theme.js, docs/guides/gorunum.md). -->
+    <script type="module" crossorigin src="/assets/workshop-0VYghKzF.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-P2Xu9kJm.js">
+    <link rel="modulepreload" crossorigin href="/assets/i18n-B1v6BbyA.js">
+    <link rel="modulepreload" crossorigin href="/assets/entry-notice-CHGBfo_b.js">
+    <link rel="modulepreload" crossorigin href="/assets/part-manifest-CCCCK0kv.js">
+    <link rel="modulepreload" crossorigin href="/assets/bead-sizing-FZSvu6DC.js">
+    <link rel="modulepreload" crossorigin href="/assets/source-presets-D_YOnyLv.js">
+    <link rel="modulepreload" crossorigin href="/assets/three.core-Dp-eO7LC.js">
+    <link rel="modulepreload" crossorigin href="/assets/BufferGeometryUtils-BQUZb3zE.js">
+    <link rel="modulepreload" crossorigin href="/assets/appearance-versions-D_4jCH7U.js">
+    <link rel="modulepreload" crossorigin href="/assets/stone-profiles-Bktu7vLJ.js">
+    <link rel="modulepreload" crossorigin href="/assets/model-BKWDAcSR.js">
+    <link rel="modulepreload" crossorigin href="/assets/layer-history-D5g3unTN.js">
+    <link rel="modulepreload" crossorigin href="/assets/material-measurement-DoOVQVW5.js">
+    <link rel="modulepreload" crossorigin href="/assets/material-catalog-binding-DzpgCoif.js">
+    <link rel="modulepreload" crossorigin href="/assets/production-blueprint-BaA6qMSe.js">
+    <link rel="modulepreload" crossorigin href="/assets/preload-helper-BLdHbfdN.js">
+    <link rel="modulepreload" crossorigin href="/assets/component-registry-DSPB8Qog.js">
+    <link rel="modulepreload" crossorigin href="/assets/strand-fit-CgRuA_bf.js">
+    <link rel="modulepreload" crossorigin href="/assets/tr-Z40tVKwR.js">
+    <link rel="modulepreload" crossorigin href="/assets/shelf-code-CXaYiUIL.js">
+    <link rel="modulepreload" crossorigin href="/assets/a2-items-zxT5lIx5.js">
+    <link rel="modulepreload" crossorigin href="/assets/stage-angles-B_5JJigS.js">
+    <link rel="modulepreload" crossorigin href="/assets/motifs-PB8xVykP.js">
+    <link rel="modulepreload" crossorigin href="/assets/figure-370721CT.js">
+    <link rel="modulepreload" crossorigin href="/assets/mood-D5lGIzzc.js">
+    <link rel="stylesheet" crossorigin href="/assets/entry-notice-DDCH8Aw7.css">
+    <link rel="stylesheet" crossorigin href="/assets/workshop-B-Hi4UzU.css">
+    <link rel="modulepreload" crossorigin="" href="/assets/scene-ClPiVb3s.js">
+    <link rel="modulepreload" crossorigin="" href="/assets/scene-materials-B5E_76s6.js">
+    <link rel="modulepreload" crossorigin="" href="/assets/stage-tuner-BCNLKv7g.js">
+    <link rel="preload" as="fetch" crossorigin="" href="/assets/56a9274a4476bcbabd529c55883fcd2b71bc6000bc4c49a21edda76342a81dce.glb">
+    <link rel="preload" as="fetch" crossorigin="" href="/assets/bd4edb047fc5bde5e5069b2b390848293a8f87bfec354bd9633a584be5743253.glb">
+    <link rel="preload" as="fetch" crossorigin="" href="/assets/0e110fe72acc744ddf53a154077e0274233c4c1af063630e9d93908f7b5b63c3.glb">
+    <link rel="preload" as="fetch" crossorigin="" href="/assets/mineral/tiger-eye-structural-q90-22b32440.webp" fetchpriority="low">
+  </head>
+  <body>
+    <a class="skip-link" href="#studio" data-i18n="shell.header.skip">Atölyeye geç</a>
+    <header class="site-header">
+      <a class="brand" href="/tr/" aria-label="MORYUNA ana sayfa" data-i18n-attr="aria-label:shell.header.homeLabel"><svg class="brand-monogram" viewBox="40 50 176 160" aria-hidden="true"><g transform="translate(18 18)"><path d="m 193.60257,178.397 h -19.809 V 44.846 h 19.809 v -6.603 h -40.683 l -44.73,110.76 -39.191995,-110.76 h -41.961 v 6.603 h 11.928 c 3.834,0 5.964,1.704 6.39,4.899 v 110.334 c 0,7.455 -1.917,12.993 -5.964,16.401 -1.491,1.278 -6.177,1.917 -14.058,1.917 V 185 h 46.86 v -6.603 c -8.307,0 -12.993,-0.639 -14.484,-2.13 -3.621,-3.621 -5.325,-8.946 -5.325,-16.188 v -106.5 l 47.073,129.291 3.194995,-0.213 51.546,-129.717 v 125.457 h -19.809 V 185 h 59.214 z" fill="currentColor" stroke="none" /><circle cx="110" cy="102" r="7.6" fill="#AF8264" stroke="none" /></g></svg><span>MORYUNA</span></a>
+      <div class="header-note header-save"><span class="save-dot" aria-hidden="true"></span><span id="save-status" role="status" data-i18n="shell.save.idle">Bu cihazda otomatik kayıt</span></div>
+      <div class="header-actions">
+        <div class="history"><button id="undo" class="icon-button" type="button" title="Geri al (Ctrl+Z)" aria-label="Geri al" data-i18n-attr="title:shell.header.undoTitle;aria-label:common.action.undo" disabled><svg class="ui-icon history-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></svg></button><button id="redo" class="icon-button" type="button" title="Yinele (Ctrl+Shift+Z)" aria-label="Yinele" data-i18n-attr="title:shell.header.redoTitle;aria-label:common.action.redo" disabled><svg class="ui-icon history-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 14 5-5-5-5"/><path d="M20 9H9.5a5.5 5.5 0 0 0 0 11H13"/></svg></button></div>
+        <a class="header-new text-button" href="#design-start" role="button" aria-haspopup="dialog" aria-controls="workshop-tools" data-workspace-target data-workshop-task="new" data-i18n-attr="aria-label:shell.header.newLabel" hidden aria-label="Yeni tasarım"><span aria-hidden="true">＋</span> <span data-i18n="shell.header.newShort">Yeni</span></a>
+        <button id="kesfet-open" class="text-button header-kesfet" type="button" aria-controls="kesfet-bar" title="Temaya göre hazır modellere göz at" data-i18n="shell.header.models" data-i18n-attr="title:shell.header.modelsTitle">Modeller</button>
+        <button id="workshop-tools-trigger" class="text-button header-tools" type="button" aria-haspopup="dialog" aria-controls="workshop-tools" title="Atölye menüsü" data-i18n="shell.header.menu" data-i18n-attr="title:shell.header.menuTitle">Menü</button>
+        <details id="download-menu" class="download-menu">
+          <summary id="download-trigger" class="button button-dark"><span data-i18n="shell.header.download">İndir</span> <span class="download-chevron" aria-hidden="true">▾</span></summary>
+          <div class="download-options">
+            <button id="export" class="download-option" type="button" aria-labelledby="export-label" aria-describedby="export-note">
+              <span id="export-label" class="download-label">Tasarım yedeği <span class="download-format">JSON</span></span>
+              <span id="export-note" class="download-note">Yeniden açıp düzenlemek için.</span>
+            </button>
+            <button id="export-recovered-draft" class="download-option" type="button" aria-labelledby="export-recovered-draft-label" aria-describedby="export-recovered-draft-note" hidden>
+              <span id="export-recovered-draft-label" class="download-label">Yedek taslak <span class="download-format">JSON</span></span>
+              <span id="export-recovered-draft-note" class="download-note">Ayrı cihaz kaydının özgün kopyası.</span>
+            </button>
+            <!-- Root enables capture only after a useful live frame; never export the poster. -->
+            <button id="export-image" class="download-option" type="button" aria-labelledby="export-image-label" aria-describedby="export-image-note" disabled>
+              <span id="export-image-label" class="download-label">Sahne görseli <span class="download-format">PNG</span></span>
+              <span id="export-image-note" class="download-note">3D sahne hazır olduğunda.</span>
+            </button>
+          </div>
+        </details>
+        <button id="finish-open" class="button header-finish" type="button" aria-haspopup="dialog" aria-controls="order-summary-dialog" data-i18n="common.word.finish">Bitir</button>
+      </div>
+    </header>
+    <main>
+      <div class="intro"><div><p class="eyebrow">KİŞİSEL TAKI ATÖLYEN</p><h2 class="intro-title">Biraz hayal, <em>biraz sen.</em></h2></div><p class="intro-copy">Bir tasarımla başla, parçalarını seç.</p></div>
+      <noscript><p class="noscript">3D atölyeyi ve tasarım kaydını kullanmak için JavaScript'i aç. Görsel bir örnektir; takı ve görünüm seçeneklerini aşağıda inceleyebilirsin.</p></noscript>
+      <!--seo:body--><section class="seo-intro" id="seo-intro" lang="tr" aria-labelledby="seo-h1"><h1 id="seo-h1">Kendi doğal taş bilekliğini ve kolyeni tasarla</h1><p>MORYUNA, Türkiye merkezli, el yapımı doğal taş bileklik ve kolye tasarımlarına odaklanan bir takı markasıdır. MORYUNA Studio ise kendi takını tarayıcı üzerinden üç boyutlu (3D) olarak oluşturabileceğin bir tasarım aracıdır. İster günlük tarzına uygun bir bileklik düşün, ister sevdiğin birine hediye olarak anlamlı bir kolye hayal et; taşların renklerini, boyutlarını ve dizilişini bir arada değerlendirebilirsin.</p><p>Tasarım üç adımdan oluşur. Önce bir bileklik ya da kolye modeli seçersin. Renk, burç veya dört element temalı hazır modeller başlangıç noktası olabilir. Ardından doğal taş boncukları tek tek seçer, çaplarını ve sıralarını değiştirirsin. Son olarak bilekliğinin ölçüsünü bileğine, kolyenin uzunluğunu tercihine göre ayarlar ve tasarımını farklı açılardan incelersin. Büyük ve küçük boncukların birlikte nasıl göründüğünü karşılaştırabilir, renk uyumunu kendi zevkine göre değerlendirebilirsin.</p><p>Doğal taşlarla ilgili sembolik anlamlar yalnızca kültürel gelenekler çerçevesinde ele alınır. Stüdyoda gösterilen tutarlar örnek fiyattır.</p><h2>Nasıl çalışır</h2><ol><li>Bileklik veya kolye modelini seç.</li><li>Doğal taşları, boncuk çaplarını ve dizilimini belirle.</li><li>Ölçüyü ayarla ve tasarımını 3D olarak incele.</li></ol><h2>Sık sorulan sorular</h2><h3>MORYUNA Studio nedir, kendi takımı nasıl tasarlarım?</h3><p>MORYUNA Studio, doğal taş bileklik ve kolye tasarlayabileceğin tarayıcı tabanlı bir 3D araçtır. Bir model seçerek başlayabilir, boncukları tek tek değiştirebilir ve tasarımının farklı açılardan nasıl göründüğünü inceleyebilirsin.</p><h3>Bileklik ölçüsü nasıl alınır?</h3><p>Esnek bir mezurayı bileğine, bilekliği takacağın noktadan, sıkmadan sar ve çevresini santimetre olarak ölç. Stüdyoda bu ölçüyü temel alarak bileklik boyunu ayarlayabilirsin; boncuk çapı ve istediğin bolluk, takının bilekteki duruşunu etkileyebilir.</p><h3>Hangi doğal taşları seçebilirim?</h3><p>Stüdyonun taş kataloğunda tasarımına ekleyebileceğin doğal taş boncuklar bulunur. Seçenekleri renk ve görünüm açısından karşılaştırabilirsin; kullanılabilir taşların güncel listesi stüdyodaki katalogda yer alır.</p><h3>Boncuk çapı bileklik ve kolyenin görünümünü nasıl değiştirir?</h3><p>Küçük çaplı boncuklar daha ince, büyük çaplı boncuklar ise daha belirgin bir görünüm oluşturur. Farklı çapları 3D tasarım üzerinde karşılaştırabilirsin; aynı uzunlukta gereken boncuk sayısı da çapa göre değişebilir.</p><h3>Burç taşı, doğum taşı veya element temalı takı tasarlayabilir miyim?</h3><p>Burç, dört element ve renk temalı hazır modelleri kendi tasarımın için başlangıç olarak kullanabilirsin. Doğum taşları da seçimlerine ilham verebilir; taşlarla burçlar veya doğum ayları arasındaki ilişkiler geleneksel sembolik eşleştirmelerdir.</p><h3>Stüdyoda gösterilen fiyat gerçek satış fiyatı mı?</h3><p>Hayır, gösterilen tutar örnek fiyattır ve kesin satış fiyatı değildir. Gerçek satış fiyatları siparişler açıldığında geçerli ürün bilgileriyle birlikte açıklanacak.</p><h3>Tasarladığım bileklik veya kolyeyi ne zaman sipariş edebilirim?</h3><p>MORYUNA Studio şu anda tasarım deneyimine açıktır, ancak sipariş alınmamaktadır. Sipariş açılışı için bir tarih henüz açıklanmadı.</p><nav aria-label="Diller"><a href="/tr/" hreflang="tr" lang="tr" aria-current="true">Türkçe</a> <a href="/en/" hreflang="en" lang="en">English</a> <a href="/es/" hreflang="es" lang="es">Español</a></nav></section><!--/seo:body-->
+      <section class="workbench" id="studio" data-catalog-mode="tray" data-catalog-rows="1" aria-label="Takı tasarım atölyesi" tabindex="-1">
+        <div class="editor-layout">
+          <section class="workspace" aria-label="Tasarım sahnesi">
+            <div class="stage-shell" id="scene-stage" role="group" aria-label="3D sahne ve görünüm kontrolleri" data-i18n-attr="aria-label:atmosphere.stage.group" tabindex="-1">
+              <div class="stage-heading">
+                <span class="eyebrow" id="design-kind">Bileklik · 1 parça</span>
+                <span id="focus-caption" class="focus-caption" role="status" aria-live="polite">Tüm tasarım</span>
+              </div>
+              <div class="stage-toolbar" role="toolbar" aria-label="Sahne ve seçim araçları" data-i18n-attr="aria-label:shell.stage.tools">
+              <div class="scene-view-tools" role="group" aria-label="Tasarımı incele" data-i18n-attr="aria-label:shell.stage.viewTools">
+                <button id="full-design" class="view-button" type="button" aria-label="Tümünü gör" data-i18n-attr="aria-label:shell.stage.fullDesign" aria-pressed="true" aria-controls="scene" disabled><span aria-hidden="true">⤢</span><span class="view-label" data-i18n="shell.stage.fullDesign">Tümünü gör</span></button>
+                <button id="focus-selection" class="view-button" type="button" aria-label="Seçiliyi incele" data-i18n-attr="aria-label:shell.stage.focusSelection" aria-pressed="false" aria-controls="scene" disabled><span aria-hidden="true">⌕</span><span class="view-label" data-i18n="shell.stage.focusSelection">Seçiliyi incele</span></button>
+                <button id="reset-camera" class="view-button" type="button" title="Kamerayı sıfırla" aria-label="Sıfırla: kamerayı başlangıç görünümüne döndür" data-i18n-attr="title:shell.stage.resetTitle;aria-label:shell.stage.resetAria" aria-controls="scene" data-scene-control disabled><span aria-hidden="true">⌂</span><span class="view-label" data-i18n="shell.stage.reset">Sıfırla</span></button>
+                <button id="scene-fullscreen" class="view-button" type="button" title="Sahneyi tam ekran aç" data-i18n-attr="title:shell.stage.fullscreenTitle" aria-expanded="false" aria-controls="scene-stage" disabled>
+                  <svg class="stage-size-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path class="stage-size-icon__open" d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/>
+                    <path class="stage-size-icon__close" d="m6 6 12 12M18 6 6 18"/>
+                  </svg>
+                  <span id="scene-fullscreen-label" class="view-label" data-i18n="shell.stage.fullscreen">Tam ekran</span>
+                </button>
+              </div>
+              <div class="stage-selection-tools" data-studio-camera-obstacle="bottom" role="group" aria-label="Tasarımda parça seçimi">
+                <a id="parts-quick-link" href="#part-list" role="button" aria-haspopup="dialog" aria-controls="workshop-tools" data-workspace-target data-workshop-task="parts" aria-label="Tasarımın parça listesini aç" hidden><span class="parts-quick-label">Parça listesi</span><span class="parts-quick-short" aria-hidden="true">Liste</span></a>
+                <button id="multi-mode" class="text-button" type="button" aria-label="Çoklu seçim" aria-pressed="false"><span class="mobile-tool-icon" aria-hidden="true"><svg class="multi-mode-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" focusable="false"><rect x="8" y="3.5" width="12.5" height="12.5" rx="3"/><path d="M16 19.5a1 1 0 0 1-1 1H6.5a3 3 0 0 1-3-3V9a1 1 0 0 1 1-1"/></svg></span><span class="stage-tool-label">Çoklu</span></button>
+                <button id="multi-done" class="text-button" type="button" aria-label="Çoklu seçimi bitir" hidden><span class="mobile-tool-icon" aria-hidden="true">✓</span><span class="stage-tool-label">Bitti</span></button>
+                <button id="kesfet-open-stage" class="text-button" type="button" aria-label="Modeller: hazır modellere göz at" aria-controls="kesfet-bar"><span class="mobile-tool-icon" aria-hidden="true"><svg class="kesfet-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" focusable="false"><path d="M12 3.5 14 10l6.5 2-6.5 2-2 6.5-2-6.5-6.5-2 6.5-2Z"/></svg></span><span class="stage-tool-label">Modeller</span></button>
+              </div>
+              <div id="main-atmosphere-bar" class="main-atmosphere-bar" role="group" aria-label="Atmosfer hareketi" data-i18n-attr="aria-label:atmosphere.bar.group" data-studio-camera-obstacle="top" hidden>
+                <button id="main-atmosphere-play" type="button" aria-pressed="false" aria-describedby="main-atmosphere-status" disabled data-i18n="atmosphere.bar.play">Oynat</button>
+                <span id="main-atmosphere-status" role="status" aria-live="polite" aria-atomic="true" data-i18n="atmosphere.bar.preparing">Atmosfer hazırlanıyor…</span>
+                <button id="main-atmosphere-settings-open" type="button" aria-controls="workshop-tools" aria-haspopup="dialog" data-i18n="atmosphere.bar.settings">Ayarlar</button>
+              </div>
+              </div>
+              <button id="retry-assets" class="asset-retry" type="button" hidden data-i18n="atmosphere.stage.retryAssets">Modeli yeniden yükle ↻</button>
+              <div id="scene" class="scene" tabindex="0" role="group" aria-roledescription="3B sahne" aria-busy="true" aria-describedby="scene-keyboard-help" aria-label="3D takı sahnesi. Dokunmatikte basılı tutarak seç ve ip üzerinde sırala; fareyle tıkla veya sürükle. Klavye ile seçim için parça listesini kullan." data-i18n-attr="aria-label:atmosphere.stage.scene;aria-roledescription:atmosphere.stage.roleDescription">                <div id="scene-fallback" class="scene-fallback stage-loading"><div class="stage-loading-backdrop" aria-hidden="true"></div><img id="scene-poster" class="stage-loading-photo" alt="" decoding="async" fetchpriority="high" hidden /><div id="stage-sketch" class="stage-loading-sketch" aria-hidden="true" hidden></div><noscript><img class="stage-loading-noscript" src="/premium-poster.webp" alt="Örnek takı tasarımı" width="1440" height="1080" /></noscript><div class="scene-fallback-message"><span class="loading-ring stage-loading-mark" aria-hidden="true"><i></i><i></i><i></i></span><p data-i18n="atmosphere.scene.preparingShort">3D hazırlanıyor…</p></div></div><script>window.__jewStagePoster&&window.__jewStagePoster.mount()</script>
+              </div>
+              <p id="scene-keyboard-help" class="sr-only" data-i18n="atmosphere.stage.keyboardHelp">Sahne tek sekme durağıdır. Seçili parçayı sol ve sağ oklarla sırada taşı, Delete ile çıkar. Ürün sahnesinde sol ve sağ oklar takıyı döndürür, Home başlangıca döndürür.</p>
+              <p id="scene-expansion-status" class="sr-only" role="status" aria-live="polite"></p>
+              <p id="stage-atmosphere-caption" class="stage-atmosphere-caption" hidden></p><div id="stage-atmosphere-scenes" class="stage-atmosphere-scenes" role="group" aria-label="Sahne seç" data-i18n-attr="aria-label:atmosphere.list.title" hidden><div class="stage-atmosphere-scenes-head"><span class="stage-atmosphere-scenes-title" data-i18n="atmosphere.list.title">Sahne seç</span><button type="button" class="stage-atmosphere-scenes-done" data-i18n="atmosphere.list.done">Tamam</button></div><div class="stage-atmosphere-scenes-row"></div></div><button id="stage-atmosphere" class="stage-atmosphere" type="button" title="Taşlarının ışığıyla bir oda" aria-label="Atmosfer" data-i18n-attr="title:atmosphere.pill.hint;aria-label:atmosphere.pill.name" aria-pressed="false" hidden><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h16"/><path d="M6.5 16.5a5.5 5.5 0 0 1 11 0"/><path d="M12 4.5v2.5M5.2 7.2l1.7 1.7M18.8 7.2l-1.7 1.7"/></svg><span class="stage-atmosphere-label" data-i18n="atmosphere.pill.name">Atmosfer</span></button>
+              <div id="stage-sigils" class="stage-sigils" hidden><i class="sg-reserve" data-studio-camera-obstacle="left" aria-hidden="true"></i><i class="sg-band" aria-hidden="true"></i><div class="sg-strip" aria-hidden="true"></div></div>
+              <button id="stage-sigils-toggle" class="stage-sigils-toggle" type="button" aria-pressed="true" aria-label="Simgeleri gizle" title="Simgeleri gizle" data-i18n-attr="aria-label:shell.sigils.hide;title:shell.sigils.hide" hidden><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3.5 13.9 10.1 20.5 12 13.9 13.9 12 20.5 10.1 13.9 3.5 12 10.1 10.1Z"/><path class="sg-slash" d="M5 19 19 5"/></svg></button>
+              <button id="stage-scene-pick" class="stage-atmosphere-choose stage-infobtn" type="button" data-atmos-mode="choose" aria-expanded="false" aria-controls="stage-atmosphere-scenes" aria-label="Sahne seç" title="Sahne seç" data-i18n-attr="aria-label:atmosphere.list.pick;title:atmosphere.list.pick" hidden><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="5.5" width="16" height="13" rx="2.5"/><path d="m4.5 15.5 4-4 3.5 3.5 2.5-2.5 5 4.5"/></svg></button>
+              <div id="stage-infodock" class="stage-infodock" hidden>
+                <button id="stage-info" class="stage-infobtn" type="button" aria-expanded="false" aria-controls="stage-info-card" aria-label="Simgelerin anlamı" title="Simgelerin anlamı" data-i18n-attr="aria-label:shell.sigils.info;title:shell.sigils.info"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 7.9h.01"/></svg></button>
+                <button id="stage-fullview" class="stage-infobtn" type="button" aria-label="Tümünü göster" title="Tümünü göster" data-i18n-attr="aria-label:shell.sigils.fullView;title:shell.sigils.fullView"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"/></svg></button>
+              </div>
+              <div id="stage-info-card" class="stage-info-card" role="group" aria-label="Simgelerin anlamı" data-i18n-attr="aria-label:shell.sigils.cardLabel" hidden></div>
+              <svg id="a2-marks" class="a2-marks" aria-hidden="true"></svg><div id="a2-stageui" class="a2-stageui"></div>
+            </div>
+            <div id="a2-dock" class="a2-dock"></div>
+          </section>
+          <div class="controls-panel" id="controls-panel"><section id="a2-panel" class="a2-panel" aria-label="Düzenleme"></section>
+            <dialog id="workshop-tools" class="workshop-dialog" aria-labelledby="workshop-tools-title">
+              <div class="workshop-dialog-header">
+                <button id="workshop-sheet-handle" type="button" aria-label="Menüyü aşağı kaydırarak kapat" title="Menüyü aşağı kaydırarak kapat" data-i18n-attr="aria-label:shell.menu.handle;title:shell.menu.handle"><span aria-hidden="true"></span></button>
+                <button id="workshop-hub-link" class="workshop-hub-link" type="button" aria-controls="workshop-tools"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m14.5 6-6 6 6 6"/></svg>Tüm menü</button>
+                <h2 id="workshop-tools-title"><span class="workshop-menu-heading">Menü <small>Tasarım, parçalar, sahne ve kayıtlar.</small></span><span class="workshop-task-heading" data-task-heading="new">Yeni tasarım</span><span class="workshop-task-heading" data-task-heading="parts">Tasarımın parçaları</span><span class="workshop-task-heading" data-task-heading="edit">Parçaları düzenle</span><span class="workshop-order-heading">Hedef parçayı seç <small><span id="workshop-order-source"></span> Soluk satırlar seçili parçaları gösterir.</small></span></h2>
+                <div id="selected-motif-tools" hidden>
+                  <button id="selected-motif-open" class="text-button" type="button">Seçilenlerle motif öner</button>
+                  <p id="selected-motif-help" class="help-text" role="status" hidden></p>
+                </div>
+                <button id="workshop-size-toggle" type="button" aria-controls="workshop-tools" aria-expanded="false" aria-label="Menüyü büyüt" data-i18n-attr="aria-label:shell.menu.expandLabel" data-i18n="shell.menu.expand">Büyüt</button>
+                <button id="workshop-tools-close" class="text-button" type="button" aria-label="Menüyü kapat" data-i18n-attr="aria-label:shell.menu.closeLabel" autofocus><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+              </div>
+              <div class="quick-design-actions workshop-quick-actions" role="group" aria-label="Tasarım işlemleri"><button id="shuffle-design" class="text-button" type="button"><span aria-hidden="true">⤨</span> Karıştır</button><button id="restore-design" class="text-button" type="button" aria-haspopup="dialog">Baştan başla…</button></div>
+              <button id="scene-settings-open" class="text-button" type="button" aria-controls="workshop-settings">Sahne ve ortam</button>
+              <button id="tools-clear-selection" class="text-button" type="button" disabled hidden>Seçimi bırak</button>
+              <a id="parts-nav" href="#parts-details" data-workspace-target hidden>Seçim araçları / Liste</a>
+            <details class="design-start" id="design-start">
+              <summary id="design-start-title"><span class="workshop-group-heading">Yeni tasarım<small>Bileklik veya kolyeyle baştan başla</small></span><span class="design-current">Şimdi: <strong id="current-design-kind">Bileklik</strong></span></summary>
+              <button id="selected-motif-back" class="text-button" type="button" hidden>Parçalara dön</button>
+              <div class="starter-actions" role="group" aria-label="Takı türü">
+                <button id="bracelet-plan-open" type="button" aria-expanded="false" aria-controls="bracelet-plan">Bileklik</button>
+                <button id="necklace-plan-open" type="button" aria-expanded="false" aria-controls="bracelet-plan">Kolye</button>
+              </div>
+              <section id="bracelet-plan" class="bracelet-plan" aria-label="Bileklik başlangıcı" hidden>
+                <div class="plan-fields">
+                  <fieldset id="plan-mode">
+                    <legend id="plan-heading" tabindex="-1">Bileklik modeli</legend>
+                    <div class="plan-mode-options">
+                      <label class="plan-mode-choice"><input type="radio" name="plan-mode" value="ready" checked /><span><strong>Hazır örnek</strong><small>Düzenlemeye hazır</small></span></label>
+                      <label class="plan-mode-choice"><input type="radio" name="plan-mode" value="simple" /><span><strong>Sade</strong><small>Tek taş türü</small></span></label>
+                      <label class="plan-mode-choice"><input type="radio" name="plan-mode" value="mixed" /><span><strong>Karma</strong><small>Üç taş dönüşümlü</small></span></label>
+                      <label class="plan-mode-choice"><input type="radio" name="plan-mode" value="free" /><span><strong>Boş tasarım</strong><small>Parçaları sen ekle</small></span></label>
+                      <label class="plan-mode-choice"><input id="plan-mode-symmetric" type="radio" name="plan-mode" value="symmetric" /><span><strong>Simetrik motif</strong><small>Motif öner · en az 3 malzeme</small></span></label>
+                    </div>
+                  </fieldset>
+                  <label id="plan-cm-label"><span id="plan-cm-text">Bilek hedefi (cm)</span><input id="plan-cm" type="number" min="10" max="25" step="any" value="17" inputmode="decimal" /></label>
+                  <label id="plan-mm-label">Nominal çap <select id="plan-mm" aria-describedby="plan-estimate"><option value="" disabled hidden>Çap seç</option><option value="4">4 mm</option><option value="6">6 mm</option><option value="8" selected>8 mm</option></select></label>
+                  <p id="selected-motif-size-note" class="help-text" hidden>Yeni motif için tek nominal çap seç.</p>
+                  <label id="plan-stone-label">Taş <select id="plan-stone"><option value="realism-pearl-v1">İnci</option><option value="premium-tiger-eye">Kaplan gözü</option><option value="premium-onyx">Oniks</option></select></label>
+                  <fieldset id="plan-motif-palette" hidden>
+                    <legend>Zorunlu palet</legend>
+                    <label>Görsel tema <select id="plan-design-theme"><option value="">Serbest</option></select></label>
+                    <p id="plan-theme-note" class="help-text" role="status" hidden></p>
+                    <button id="plan-preference-open" class="text-button" type="button" aria-haspopup="dialog" aria-controls="design-preferences-dialog" aria-describedby="plan-preference-summary">Burç ve renk tercihleri</button>
+                    <p id="plan-preference-summary" class="help-text" hidden></p>
+                    <p id="plan-motif-selected">Her adayda yer alacak en az üç malzeme seç.</p>
+                    <div class="plan-motif-choices">
+                      <div>
+                        <label>Ön merkez <select id="plan-motif-center" aria-describedby="plan-motif-center-help" disabled><option value="">Otomatik</option></select></label>
+                        <small id="plan-motif-center-help" class="help-text">Sabit merkez için zorunlu paletten bir taş seç.</small>
+                      </div>
+                      <div>
+                        <label>Eşlikçi (isteğe bağlı) <select id="plan-motif-support" aria-describedby="plan-motif-support-help"><option value="">Yok</option></select></label>
+                        <small id="plan-motif-support-help" class="help-text">Zorunlu taşlara ek olarak aynı çapta bir boncuk seçebilirsin.</small>
+                      </div>
+                      <div>
+                        <label>Eşlikçi sıklığı <select id="plan-motif-support-cadence" aria-describedby="plan-motif-support-cadence-help" disabled><option value="rear">Arka çift</option><option value="every-four">4 sırada bir</option><option value="every-three">3 sırada bir</option></select></label>
+                        <small id="plan-motif-support-cadence-help" class="help-text">Ön merkezden sonraki ilk boncuk 1. sıradır. Zorunlu taşlara ayrılan ilk sıralar korunur. Yer yoksa yalnız eşlikçisiz adaylar gösterilir.</small>
+                      </div>
+                    </div>
+                    <label>Zorunlu malzeme ara <input id="plan-motif-search" type="search" /></label>
+                    <div id="plan-motif-materials"></div>
+                    <p id="plan-motif-empty" hidden>Aramaya uyan malzeme yok.</p>
+                  </fieldset>
+                  <p id="plan-sizing-help">Tahmin boncuk çaplarına dayanır. Kapama ve ara parçalar ayrı eklenir.</p>
+                </div>
+                <div class="plan-actions">
+                  <p id="plan-estimate" role="status"></p>
+                  <button id="plan-create" type="button">Sahnede önizle</button>
+                </div>
+              </section>
+              <p class="design-start-help">Mevcut tasarım · <strong id="current-design-name"></strong></p>
+            </details>
+
+            <details class="parts-details" id="parts-details">
+              <summary><span class="workshop-group-heading">Parçalar<small>Sıra, seçim, renk ve benzer motif</small></span><span id="part-count">0 parça</span></summary>
+              <div class="part-selection-tools"><label class="multi-select"><input type="checkbox" id="multi-select" /> Çoklu seçim</label><button id="select-all" class="text-button" type="button" aria-label="Tümünü seç">Tümünü seç</button></div>
+              <div class="selection-helpers" role="group" aria-label="Seçimi genişlet">
+                <button id="select-material" class="text-button" type="button">Aynı parçaları seç</button>
+                <button id="select-size" class="text-button" type="button">Aynı nominal boyut</button>
+                <button id="range-start" class="text-button" type="button" aria-pressed="false">Aralık başlangıcı</button>
+                <button id="range-end" class="text-button" type="button" disabled>Buraya kadar seç</button>
+              </div>
+              <p id="selection-helper-status" class="help-text" role="status">Yardımcılar yalnız tasarımdaki seçimi değiştirir; katalog filtreleri ayrıdır.</p>
+              <div class="bead-sizing selected-bead-sizing" id="selected-bead-sizing" role="group" aria-labelledby="selected-bead-label" tabindex="-1">
+                <label id="selected-bead-label" for="selected-bead-size">Seçili boncuk <span>tasarım çapı</span></label>
+                <select id="selected-bead-size" aria-describedby="selected-bead-help" disabled>
+                  <option id="selected-bead-current" value="">—</option>
+                  <option value="4">4 mm</option><option value="6">6 mm</option><option value="8">8 mm</option>
+                </select>
+                <p id="selected-bead-help">Boyutunu değiştirmek için bir yuvarlak boncuk seç.</p>
+              </div>
+              <div class="edit-controls" id="edit-controls" role="group" aria-label="Seçili parça işlemleri" tabindex="-1" hidden>
+                <button id="nudge-toggle" class="tool-button" type="button" aria-expanded="false" aria-controls="nudge-controls">Sıra</button>
+                <div id="nudge-controls" class="move-pad" role="group" aria-label="Taşıyıcı üzerindeki sıra" hidden><button data-nudge="-1" class="nudge-button" type="button" aria-label="Seçili parçayı bir sıra önceye al">← Önceye al</button><button data-nudge="1" class="nudge-button" type="button" aria-label="Seçili parçayı bir sıra sonraya al">Sonraya al →</button><button id="stage-move" class="nudge-button" type="button" aria-controls="stage-swap" aria-label="Seçili parçaları bir hedefin önüne taşı">Hedefin önüne taşı</button><button id="swap" class="nudge-button" type="button" aria-pressed="false" aria-label="Seçili parçanın yerini başka bir parçayla değiştir">Yer değiştir</button></div>
+                <button id="rotate" class="tool-button" type="button">Döndür</button><button id="duplicate" class="tool-button" type="button">Çoğalt</button>
+              </div>
+              <div class="precise-controls"><label>Görsel renk <input id="part-color" type="color" value="#b78a66" /></label><button id="reset-color" class="text-button" type="button">Özgün renk</button></div>
+              <button id="refresh-selected-stone-appearance" class="button" type="button" hidden>Seçili taşların görünümünü yenile</button>
+              <details class="info-disclosure selected-source-info"><summary>Parça ve önizleme bilgisi</summary><p id="source-detail" class="help-text"></p><p id="selected-preview-detail" class="help-text">Katalog önizlemesi, tasarımdaki renk ve doğal desenin birebir örneği değildir.</p></details>
+              <p id="part-list-help" class="help-text">Liste sırası, ip üzerindeki sıradır. Listede ↑/↓ (Home/End) ile gez, Enter veya Boşluk ile seç. Seçili parçayı Alt+↑/Alt+↓ veya “Sıra” ile taşı; Delete seçili parçayı çıkarır. Birlikte düzenlemek için “Çoklu”yu aç; Shift+tıklama da kullanabilirsin.</p>
+              <details id="design-axis" class="info-disclosure">
+                <summary>Başlangıç, yön, ayna ve benzer motif</summary>
+                <p class="help-text">● Arka birleşimden sağ kol boyunca ön merkeze, ardından sol kol boyunca arkaya. Takıyı çevirmek bu yönü değiştirmez.</p>
+                <div class="selection-helpers" role="group" aria-label="Yansıtma yönü">
+                  <button id="mirror-left-to-right" class="text-button" type="button">Solu sağa kopyala</button>
+                  <button id="mirror-right-to-left" class="text-button" type="button">Sağı sola kopyala</button>
+                </div>
+                <label class="mirror-selection-protection"><input id="mirror-protect-selection" type="checkbox" aria-describedby="mirror-protect-help" /> Aynalamada seçili parçaları koru</label>
+                <p id="mirror-protect-help" class="help-text">Seçili bir parça hedef koldaysa işlem durur.</p>
+                <label class="setting-field">Görsel tema <select id="controlled-theme"><option value="">Serbest</option></select></label>
+                <label class="setting-field">Sembolik element <select id="controlled-element"><option value="">Serbest</option><option value="earth">Toprak</option><option value="water">Su</option><option value="air">Hava</option><option value="fire">Ateş</option></select></label>
+                <label class="setting-field">Sembolik burç (isteğe bağlı)
+                  <select id="controlled-zodiac">
+                    <option value="">Tercih yok</option><option value="aries">Koç</option><option value="taurus">Boğa</option>
+                    <option value="gemini">İkizler</option><option value="cancer">Yengeç</option><option value="leo">Aslan</option>
+                    <option value="virgo">Başak</option><option value="libra">Terazi</option><option value="scorpius">Akrep</option>
+                    <option value="sagittarius">Yay</option><option value="capricorn">Oğlak</option>
+                    <option value="aquarius">Kova</option><option value="pisces">Balık</option>
+                  </select>
+                </label>
+                <button id="controlled-preference-open" class="text-button" type="button" aria-haspopup="dialog" aria-controls="design-preferences-dialog" aria-describedby="controlled-preference-summary">Burç ve renk tercihleri</button>
+                <p id="controlled-preference-summary" class="help-text" hidden></p>
+                <button id="controlled-motif" class="text-button" type="button">Benzer motif öner</button>
+                <p class="help-text">Tema, element, burç ve renk aday sırasını etkiler. Palet, ölçü, seçili parçalar ve ayna eşleri korunur.</p>
+                <details id="controlled-stock-options" class="info-disclosure" data-owner-gate hidden>
+                  <summary>Lot ve ölçü ile aday ara</summary>
+                  <p class="help-text">Aynı uyumluluk grubundaki kullanılabilir lotlar okunur. İsteğe bağlı aralık yalnızca boncukların kayıtlı Y ölçülerinin toplamı içindir. Ayırma üretim föyünde yapılır.</p>
+                  <label class="setting-field">Uyumluluk grubu <input id="controlled-stock-group" maxlength="100" autocomplete="off" /></label>
+                  <div class="controlled-stock-range" role="group" aria-label="Kayıtlı boncuk Y toplamı aralığı">
+                    <label class="setting-field">En az (mm) <input id="controlled-stock-min" type="number" min="0.001" step="0.001" inputmode="decimal" /></label>
+                    <label class="setting-field">En çok (mm) <input id="controlled-stock-max" type="number" min="0.001" step="0.001" inputmode="decimal" /></label>
+                  </div>
+                  <label class="setting-field">Yerel stok operatörü anahtarı <input id="controlled-stock-key" type="password" maxlength="43" autocomplete="off" spellcheck="false" /></label>
+                  <button id="controlled-stock-start" class="text-button" type="button" disabled>Lotları oku ve aday ara</button>
+                  <p id="controlled-stock-status" class="help-text" role="status"></p>
+                </details>
+              </details>
+              <div id="part-list" class="part-list" role="group" aria-label="Taşıyıcı üzerindeki parçalar" aria-describedby="part-list-help" tabindex="-1"></div>
+            </details>
+
+            <details class="workshop-group" id="workshop-settings"><summary><span class="workshop-group-heading">Sahne ve ortam<small>Uzunluk, ip, arka plan ve kamera</small></span></summary>
+            <section class="carrier-bar" id="carrier-settings" aria-label="Ölçü, taşıyıcı ve sahne" tabindex="-1">
+              <div id="legacy-notice" class="legacy-notice" role="status" hidden><p>Önceki tasarımın ip üzerine aktarıldı. Özgün konumlar JSON arşivinde korunuyor.</p><button id="export-legacy" class="text-button" type="button">Özgün tasarımı indir ↗</button></div>
+              <p class="help-text"><strong id="nominal-length-heading">Dizilim uzunluğu · nominal parça toplamı</strong><br />
+                <output id="nominal-length-value" aria-live="polite" aria-labelledby="nominal-length-heading" aria-describedby="nominal-length-help"></output><br />
+                <span id="nominal-length-help">Bilinen yuvarlak boncukların tasarım çapları toplamıdır. İp, aralık ve kapama dahil değildir; bilek ölçüsü değildir.</span>
+              </p>
+              <div class="carrier-size-group"><label id="carrier-size-label" for="carrier-size">Bileklik çapı</label><div class="carrier-stepper"><button data-resize="-0.5" type="button" aria-label="Taşıyıcı boyutunu küçült">−</button><input id="carrier-size" type="number" min="0.1" max="100" step="0.1" value="6.5" inputmode="decimal" aria-describedby="carrier-units" /><button data-resize="0.5" type="button" aria-label="Taşıyıcı boyutunu büyüt">＋</button></div><span id="carrier-units">Görsel ölçü</span><label><input id="carrier-size-lock" type="checkbox" /> Ölçüyü kilitle</label></div>
+              <label class="setting-field carrier-style-label" for="carrier-style">Taşıyıcı<select id="carrier-style"><option value="cord">İp</option><option value="chain">Zincir</option><option value="macrame">Makrome kapama</option></select></label>
+              <section id="macrame-choice" class="macrame-choice" aria-labelledby="macrame-choice-title" hidden>
+                <h3 id="macrame-choice-title" tabindex="-1">Klips de tasarımında kalacak</h3>
+                <p>Makrome kapama eklenirken mevcut klipslerini nasıl kullanmak istersin?</p>
+                <div id="macrame-clasp-list" class="macrame-clasp-list"></div>
+                <div class="macrame-choice-actions">
+                  <button id="macrame-remove" class="button button-dark" type="button">Klipsi çıkar ve devam et</button>
+                  <button id="macrame-keep" class="button" type="button">Klips kalsın</button>
+                  <button id="macrame-cancel" class="text-button" type="button">Vazgeç</button>
+                </div>
+                <p class="help-text">Değişikliği Geri al ile geri getirebilirsin.</p>
+              </section>
+              <p id="macrame-choice-status" role="status" aria-live="polite" class="help-text"></p>
+              <p id="carrier-tight" role="status" hidden>Dizi sıkışık; ölçüyü büyütebilirsin.</p>
+              <fieldset class="view-settings" id="view-controls" tabindex="-1">
+                <legend>Sahne ve görünüm</legend>
+                <label class="setting-field" for="scene-lighting">Sahne<select id="scene-lighting" disabled><option value="photo-c1" selected>Atmosfer · Opal Pavyon</option><option value="photo-s1">Stüdyo</option><option value="photo-s2">Akşam</option><option value="neutral">Nötr</option><option value="studio">Kireçtaşı</option><option value="dark">Kobalt</option><option value="editorial">Kehribar</option><option value="gallery">Gece Galerisi</option><option value="acrylic">Akrilik Işık Odası</option><option value="terrace">Taş Teras</option></select></label>
+                <fieldset id="main-atmosphere-settings" class="main-atmosphere-settings" tabindex="-1" aria-describedby="main-atmosphere-help" hidden>
+                  <legend>Atmosfer</legend>
+                  <p id="main-atmosphere-help">Ayarlar bu oturumda korunur. Tasarımın ve Geri al geçmişin değişmez. Kamerayı kendin döndürebilirsin.</p>
+                  <fieldset class="main-atmosphere-themes"><legend>Temalar</legend>
+                    <label><input type="checkbox" value="astrology" data-atmosphere-theme />Gökyüzü</label>
+                    <label><input type="checkbox" value="chakra" data-atmosphere-theme />Çakra</label>
+                    <label><input type="checkbox" value="elements" data-atmosphere-theme />Elementler</label>
+                    <label><input type="checkbox" value="energy" data-atmosphere-theme />Enerji</label>
+                    <label><input type="checkbox" value="spectrum" data-atmosphere-theme />Işık</label>
+                    <label><input type="checkbox" value="geometry" data-atmosphere-theme />Geometri</label>
+                  </fieldset>
+                  <label class="setting-field" for="main-atmosphere-presentation">Karakter<select id="main-atmosphere-presentation" data-atmosphere-field="presentation"><option value="calm">Sakin</option><option value="balanced">Dengeli</option><option value="show">Canlı</option></select></label>
+                  <label class="setting-field" for="main-atmosphere-art-direction">Görsel yön<select id="main-atmosphere-art-direction" data-atmosphere-field="artDirection"><option value="celestial">Göksel</option><option value="organic">Organik</option><option value="fusion">Birleşim</option></select></label>
+                  <label class="setting-field" for="main-atmosphere-intensity">Yoğunluk<input id="main-atmosphere-intensity" data-atmosphere-field="intensity" type="range" min="0" max="1" step="0.05" value="0.5" /></label>
+                  <label class="setting-field" for="main-atmosphere-speed">Hareket hızı<input id="main-atmosphere-speed" data-atmosphere-field="motionSpeed" type="range" min="0" max="2" step="0.1" value="1" /></label>
+                  <p id="main-atmosphere-detail" role="status" aria-live="polite"></p>
+                  <button id="main-atmosphere-gallery" type="button" hidden>Galeriye dön</button>
+                </fieldset>
+                <label class="setting-field" for="scene-quality">Görüntü kalitesi<select id="scene-quality" disabled><option value="auto">Otomatik</option><option value="balanced">Dengeli</option><option value="high" selected>Yüksek</option></select></label>
+                <label class="setting-field" for="scene-depth">Alan derinliği<select id="scene-depth" aria-describedby="scene-depth-status" disabled><option value="auto">Otomatik</option><option value="off">Net</option><option value="on">Sinematik</option></select></label>
+                <p id="scene-depth-status" class="scene-depth-status" role="status" aria-live="polite" aria-atomic="true">Net görünüm · 3D hazırlanıyor.</p>
+                <button id="refresh-stone-appearance" class="button" type="button" hidden>Tüm taşların görünümünü yenile</button>
+                <div class="camera-controls" role="group" aria-label="Kamera"><button id="top-view" class="icon-button" type="button" title="Üstten görünüm" aria-label="Üstten görünüm" aria-pressed="false" data-scene-control disabled>⊞</button><button id="zoom-in" class="icon-button" type="button" title="Yakınlaştır" aria-label="Yakınlaştır" data-scene-control disabled>＋</button><button id="zoom-out" class="icon-button" type="button" title="Uzaklaştır" aria-label="Uzaklaştır" data-scene-control disabled>−</button></div>
+                <div class="mode-control segmented" role="group" aria-label="Sahne etkileşimi"><button id="select-mode" type="button" aria-pressed="false" data-scene-control disabled>↖ Seç</button><button id="move-mode" type="button" aria-pressed="true" data-scene-control disabled>⇄ Sırala</button></div>
+                <p id="stage-hint">Dokunmatikte basılı tutup sırala; fareyle sürükle.</p>
+                <p id="scene-status" class="scene-status" role="status" aria-live="polite" data-i18n="atmosphere.scene.preparingDot">3D sahne hazırlanıyor.</p>
+              </fieldset>
+            </section></details>
+            <details class="workshop-group" id="workshop-files">
+              <summary><span class="workshop-group-heading">Tasarımlarım<small>Bu cihazdaki kayıtların ve dosyaların</small></span></summary>
+              <div class="quick-design-actions">
+                <button id="library-save" class="text-button" type="button">Bu tasarımı kaydet</button>
+                <button id="import" class="text-button" type="button">Dosya aç</button>
+                <button id="files-export" class="text-button" type="button">Dosyaya kaydet</button>
+              </div>
+              <div class="library-filters">
+                <label class="setting-field" for="library-collection">Koleksiyon
+                  <select id="library-collection"><option value="">Tümü</option></select>
+                </label>
+                <label><input id="library-favorites" type="checkbox" /> Yalnız favoriler</label>
+                <button id="library-filters-clear" class="text-button" type="button" aria-label="Filtreleri temizle · Bu cihaz" hidden>Filtreleri temizle</button>
+              </div>
+              <p id="library-status" class="help-text" role="status"></p>
+              <ul id="design-library-list" class="design-library-list"></ul>
+              <details id="owner-library" data-owner-gate hidden>
+                <summary>Yerel hesap kitaplığı</summary>
+                <p class="help-text">Bu sunucuda, oturumuna bağlı kitaplık. Cihaz kitaplığındaki kayıtlar ayrı saklanır.</p>
+                <p id="owner-library-status" class="help-text" role="status"></p>
+                <fieldset id="owner-library-controls">
+                  <legend>MORYUNA kitaplık oturumu</legend>
+                  <div id="owner-recovery-card" hidden>
+                    <p>Kitaplığı yeniden açmak için bu anahtarı şimdi sakla.</p>
+                    <label class="owner-recovery-field">Yeni kurtarma anahtarı
+                      <textarea id="owner-issued-key" rows="2" readonly spellcheck="false"></textarea>
+                    </label>
+                    <div class="quick-design-actions">
+                      <button id="owner-key-copy" type="button">Anahtarı kopyala</button>
+                      <button id="owner-key-hide" type="button">Anahtarı gizle</button>
+                    </div>
+                  </div>
+                  <div id="owner-library-guest">
+                    <button id="owner-guest-create" type="button">Misafir kitaplığı aç</button>
+                    <label class="owner-recovery-field">Kurtarma anahtarı
+                      <input id="owner-recover-key" type="password" maxlength="48" autocomplete="off" spellcheck="false" />
+                    </label>
+                    <button id="owner-guest-recover" type="button">Kitaplığı kurtar</button>
+                  </div>
+                  <div id="owner-library-account" hidden>
+                    <div class="quick-design-actions">
+                      <button id="owner-design-save" type="button">Tasarımı hesaba kaydet</button>
+                      <button id="owner-session-logout" type="button">Oturumu kapat</button>
+                    </div>
+                    <p class="help-text">Cihazda düzenlemeye açtığın tasarımın düzenleme kopyası bu cihazda otomatik kaydedilir.</p>
+                    <div class="library-filters">
+                      <label class="setting-field" for="owner-collection">Hesap koleksiyonu
+                        <select id="owner-collection"><option value="">Tümü</option></select>
+                      </label>
+                      <label><input id="owner-favorites" type="checkbox" /> Hesapta yalnız favoriler</label>
+                      <button id="owner-filters-clear" class="text-button" type="button" aria-label="Filtreleri temizle · Yerel hesap" hidden>Filtreleri temizle</button>
+                    </div>
+                    <p id="owner-designs-count" class="help-text" role="status"></p>
+                    <ul id="owner-designs" class="design-library-list"></ul>
+                    <details id="owner-archives">
+                      <summary>Hesapta kayıtlı üretim föyleri</summary>
+                      <ul id="owner-revisions" class="design-library-list"></ul>
+                    </details>
+                  </div>
+                </fieldset>
+              </details>
+            </details>
+            <details class="workshop-group" id="workshop-production" data-owner-gate="hidden" hidden>
+              <summary><span class="workshop-group-heading">Üretim ve sipariş<small>Atölye modu · özet ve üretim araçları</small></span></summary>
+              <div class="quick-design-actions">
+                <button id="order-summary-open" class="text-button" type="button" aria-haspopup="dialog" aria-controls="order-summary-dialog">Sipariş özeti</button>
+              </div>
+              <p class="help-text">Tasarımının parça ve malzeme özetini gör. Çevrim içi sipariş ve ödeme henüz açık değil.</p>
+              <details id="workshop-operator-tools" class="info-disclosure workshop-operator-tools" data-owner-gate>
+                <summary>Atölye araçları</summary>
+                <p class="help-text">Atölye ekibi için üretim föyü, föy revizyonu ve malzeme girişi.</p>
+                <div class="quick-design-actions">
+                  <button id="production-open" class="text-button" type="button">Üretim taslağını aç</button>
+                  <button id="production-revision-open" class="text-button" type="button">Föy revizyonu aç · JSON</button>
+                  <input id="production-revision-file" type="file" accept=".json,application/json" hidden />
+                  <button id="material-intake-open" class="text-button" type="button">Malzeme giriş taslağı</button>
+                </div>
+              </details>
+            </details>
+
+      <footer class="page-footer"><span>Bir parça doğa. Bir parça sen.</span><a href="/gorseller/20261102-makrome/">Stüdyo görselleri</a><p>Görsel bir tasarım alanı. Ölçü, delik ve üretim uygunluğu doğrulanmamıştır.</p><span class="footer-brand">MORYUNA · 2026</span></footer>
+            </dialog>
+          </div>
+          <section id="kesfet-bar" class="kesfet-bar" aria-labelledby="kesfet-bar-title" data-empty="false" hidden>
+            <h2 id="kesfet-bar-title" class="sr-only">Modeller: hazır modellere göz at</h2>
+            <div class="kesfet-row kesfet-row-top"><p id="kesfet-headline" class="kesfet-headline" hidden>Bir model seç, değiştir, bitir.</p><button id="kesfet-exit" class="kesfet-back" type="button" title="Modellerden çık (Esc)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 6l-6 6 6 6"/></svg><span>Tasarımına dön</span></button></div>
+            <div class="kesfet-row kesfet-row-theme">
+              <div class="kesfet-kind" role="group" aria-label="Takı türü"><button id="kesfet-kind-bracelet" type="button" aria-pressed="true">Bileklik</button><button id="kesfet-kind-necklace" type="button" aria-pressed="false">Kolye</button></div>
+            </div>
+            <div id="kesfet-stage-arrows" class="kesfet-stage-arrows" role="group" aria-label="Modeller arasında gez" hidden><button id="kesfet-stage-prev" class="kesfet-stage-arrow" type="button" aria-label="Önceki model" title="Önceki model (←)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 6l-6 6 6 6"/></svg></button><div id="kesfet-pager" class="kesfet-pager" role="group" aria-label="Modelin sırası"><span id="kesfet-pager-text" class="kesfet-pager-text"></span><span id="kesfet-pager-dots" class="kesfet-pager-dots"></span></div><button id="kesfet-stage-next" class="kesfet-stage-arrow" type="button" aria-label="Sonraki model" title="Sonraki model (→)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7"/></svg></button></div>
+            <p class="kesfet-showing"><span class="sr-only">Gösterilen: </span><span id="kesfet-category-label" class="kesfet-showing-label">Öne çıkanlar</span></p>
+            <p class="kesfet-title"><span id="kesfet-name" class="kesfet-name"></span></p>
+            <p id="kesfet-caption" class="kesfet-caption"></p>
+            <p id="kesfet-empty" class="kesfet-empty" hidden>Bu seçimden model çıkmadı. Başka bir tema seç.</p>
+            <div class="kesfet-dots-row"><div id="kesfet-dots" class="kesfet-dots" role="group" aria-label="Hazır modeller"></div><span id="kesfet-counter" class="kesfet-counter" aria-hidden="true"></span></div>
+            <div class="kesfet-row kesfet-row-nav" role="group" aria-label="Modeller arasında gez">
+              <button id="kesfet-prev" class="kesfet-icon-button kesfet-step" type="button" aria-label="Önceki model" title="Önceki model (←)"><span aria-hidden="true">‹</span></button>
+              <button id="kesfet-apply" class="kesfet-primary" type="button" disabled aria-describedby="kesfet-apply-help"><span class="kesfet-primary-label">Bunu düzenle</span></button>
+              <button id="kesfet-next" class="kesfet-icon-button kesfet-step" type="button" aria-label="Sonraki model" title="Sonraki model (→)"><span aria-hidden="true">›</span></button>
+            </div>
+            <p id="kesfet-apply-help" class="kesfet-help">Mevcut tasarımın yerine geçer · Geri al ile dönülür</p>
+            <div id="kesfet-start" class="kesfet-start"><button id="kesfet-category" class="kesfet-start-door" type="button" aria-haspopup="dialog" aria-controls="kesfet-picker"><span class="kesfet-start-title">Başka bir yoldan başla</span><span class="kesfet-start-note">Burç · renk · taş · sıfırdan</span></button></div>
+            <p id="kesfet-status" class="kesfet-status" aria-live="off"></p>
+            <section id="kesfet-series" class="kesfet-series" aria-labelledby="kesfet-series-title" hidden><h3 id="kesfet-series-title">Öne çıkanlar</h3><ol id="kesfet-series-list" class="kesfet-series-list"></ol></section><section id="kesfet-details" class="kesfet-details" aria-labelledby="kesfet-details-title" hidden><h3 id="kesfet-details-title">Bu modelde</h3><ul id="kesfet-materials" class="kesfet-materials"></ul><p id="kesfet-meta" class="kesfet-meta"></p></section>
+          </section><script id="kesfet-boot">window.__jewStagePoster&&window.__jewStagePoster.modeller()</script>
+        </div>
+      </section>
+    </main>
+    <dialog id="design-preferences-dialog" class="workshop-dialog" aria-labelledby="design-preferences-title" aria-describedby="design-preferences-help">
+      <h2 id="design-preferences-title">Burç ve renk tercihleri</h2>
+      <p id="design-preferences-help" class="help-text">İsteğe bağlı. Seçimlerin bu oturumda iki planlayıcıda da aday sırasını etkiler.</p>
+      <form id="design-preferences-form" autocomplete="off">
+        <label class="setting-field">Sembolik burç
+          <select id="design-preference-zodiac"><option value="">Tercih yok</option></select>
+        </label>
+        <label class="setting-field">Katalog rengi
+          <select id="design-preference-color"><option value="">Tercih yok</option></select>
+        </label>
+        <details id="design-preference-date" class="info-disclosure">
+          <summary>Gün ve ayla sembol öner</summary>
+          <p class="help-text">Yaklaşık geleneksel aralıklar kullanılır. Gün ve ay pencere kapanınca temizlenir.</p>
+          <div class="design-preference-date-fields">
+            <label class="setting-field">Ay <select id="design-preference-month"><option value="">Seç</option></select></label>
+            <label class="setting-field">Gün <select id="design-preference-day"><option value="">Seç</option></select></label>
+          </div>
+          <p id="design-preference-date-status" class="help-text" role="status"></p>
+          <div id="design-preference-date-choices" class="selection-helpers"></div>
+        </details>
+        <label class="design-preference-remember"><input id="design-preference-remember" type="checkbox" /> Yalnız burç ve rengi bu cihazda hatırla</label>
+        <section id="design-preference-saved" hidden aria-label="Bu cihazdaki kayıt">
+          <p id="design-preference-saved-label" class="help-text"></p>
+          <div class="selection-helpers">
+            <button id="design-preference-load" class="text-button" type="button">Kayıtlıyı getir</button>
+            <button id="design-preference-forget" class="text-button" type="button">Kayıtlı tercihi sil</button>
+          </div>
+        </section>
+        <p id="design-preference-status" class="help-text" role="status"></p>
+        <div class="dialog-actions">
+          <button id="design-preference-cancel" class="button" type="button">Vazgeç</button>
+          <button class="button button-dark" type="submit">Tercihleri uygula</button>
+        </div>
+      </form>
+    </dialog>
+    <dialog id="library-organization-dialog" class="workshop-dialog" aria-labelledby="library-organization-title" aria-describedby="library-organization-scope library-organization-help">
+      <h2 id="library-organization-title">Yeniden adlandır</h2>
+      <p id="library-organization-scope" class="help-text"></p>
+      <p id="library-organization-help" class="help-text">Adı boş bırakırsan tasarımın kayıtlı adı kullanılır. Koleksiyonu boş bırakabilirsin.</p>
+      <form id="library-organization-form">
+        <fieldset id="library-organization-fields">
+          <label class="setting-field" for="library-organization-label">Kitaplık adı
+            <input id="library-organization-label" type="text" autocomplete="off" autofocus />
+          </label>
+          <label class="setting-field" for="library-organization-collection">Koleksiyon adı
+            <input id="library-organization-collection" type="text" list="library-organization-collections" autocomplete="off" />
+          </label>
+          <datalist id="library-organization-collections"></datalist>
+          <p id="library-organization-status" class="help-text" role="status"></p>
+          <button id="library-organization-reload" class="button" type="button" hidden>Güncel kaydı yükle</button>
+          <div class="dialog-actions">
+            <button id="library-organization-cancel" class="button" type="button">Vazgeç</button>
+            <button id="library-organization-save" class="button button-dark" type="submit">Kaydet</button>
+          </div>
+        </fieldset>
+      </form>
+    </dialog>
+    <dialog id="restore-design-dialog" class="workshop-dialog restore-dialog" aria-labelledby="restore-design-title" aria-describedby="restore-design-description">
+      <h2 id="restore-design-title">Baştan başlansın mı?</h2>
+      <p id="restore-design-description">Mevcut parçaların yerine bu takı türünün başlangıç tasarımı gelir. Geri al ile önceki tasarımına dönebilirsin.</p>
+      <div class="dialog-actions"><button id="restore-cancel" class="button" type="button" autofocus>Vazgeç</button><button id="restore-confirm" class="button button-dark" type="button">Baştan başla</button></div>
+    </dialog>
+    <dialog id="bracelet-plan-confirm-dialog" class="workshop-dialog restore-dialog" aria-labelledby="bracelet-plan-confirm-title" aria-describedby="bracelet-plan-confirm-description">
+      <h2 id="bracelet-plan-confirm-title" tabindex="-1">Tasarım önizlemesi</h2>
+      <p id="bracelet-plan-confirm-description">Önceki tasarıma Geri al ile dönebilirsin.</p>
+      <section id="plan-candidate-preview" aria-label="Aday karşılaştırması">
+        <div class="candidate-controls">
+          <div class="candidate-views" role="group" aria-label="Sahnede göster">
+            <button id="plan-compare-original" type="button" aria-label="Mevcut tasarım" aria-pressed="false" disabled>Mevcut</button>
+            <button id="plan-compare-candidate" type="button" aria-pressed="false" disabled>Aday</button>
+          </div>
+          <div class="candidate-navigation" role="group" aria-label="Adaylar arasında gezin">
+            <button id="plan-candidate-prev" type="button" aria-label="Önceki aday" title="Önceki aday"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></svg></button>
+            <button id="plan-candidate-next" type="button" aria-label="Sonraki aday" title="Sonraki aday"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></button>
+          </div>
+        </div>
+        <div class="candidate-preview-state">
+          <p id="plan-comparison-status" role="status"></p>
+          <button id="plan-candidate-favorite" class="button" type="button" title="Bu cihaza ayrı kopya kaydet" disabled>Favoriye al</button>
+        </div>
+        <p id="plan-candidate-summary" role="status"></p>
+        <p id="plan-candidate-favorite-status" class="sr-only" role="status"></p>
+        <ol id="plan-candidate-motif" class="candidate-motif" aria-label="Ön merkezden örnek motif" hidden></ol>
+        <details id="plan-preference-matches" hidden><summary>Tercihle eşleşen malzemeler</summary><ul id="plan-preference-match-list"></ul></details>
+        <details id="controlled-arm-preview" hidden><summary>Ön merkezden arkaya tam sıra</summary><p id="controlled-arm-order"></p></details>
+      </section>
+      <div class="dialog-actions"><button id="bracelet-plan-cancel" class="button" type="button" autofocus>Vazgeç</button><button id="bracelet-plan-confirm" class="button button-dark" type="button">Tasarımı kullan</button></div>
+    </dialog>
+    <dialog id="order-summary-dialog" class="workshop-dialog operator-dialog order-summary-dialog finish-dialog" aria-labelledby="order-summary-title" aria-describedby="finish-lede finish-state">
+      <button id="finish-sheet-handle" class="finish-sheet-handle" type="button" aria-label="Aşağı kaydırarak kapat" title="Aşağı kaydırarak kapat" data-i18n-attr="aria-label:export.sheet.handle;title:export.sheet.handle"><span aria-hidden="true"></span></button>
+      <header class="operator-dialog-header">
+        <div class="finish-title"><h2 id="order-summary-title" data-i18n="export.sheet.titleReady">Tasarımın hazır</h2><p id="finish-hero" class="finish-hero" hidden><b id="finish-hero-total" class="finish-hero-total"></b><span id="finish-hero-note" class="finish-hero-note"></span></p><p id="finish-lede" class="finish-lede"></p></div>
+        <button id="order-summary-close" class="dialog-close" type="button" aria-label="Kapat" data-i18n-attr="aria-label:common.action.close" autofocus><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </header>
+      <div class="finish-body">
+        <!-- R3: two columns on desktop (image and name | parts and quiet actions); one column on the phone. -->
+        <div class="finish-media">
+        <figure class="finish-still">
+          <img id="finish-image" alt="Tasarımının şu anki görünümü" data-i18n-attr="alt:export.still.alt" hidden />
+          <div id="finish-image-placeholder" class="finish-still-placeholder" data-state="loading"><span class="finish-still-spin" aria-hidden="true"></span><p class="finish-still-line finish-still-wait" role="status" data-i18n="export.still.wait">Görsel hazırlanıyor…</p><p class="finish-still-line finish-still-fail" role="alert" data-i18n="export.still.fail">Görsel hazırlanamadı</p><button id="finish-image-retry" class="finish-still-retry" type="button" data-i18n="export.still.retry">Yeniden dene</button></div>
+          <span class="finish-still-tag" aria-hidden="true" data-i18n="export.still.tag">Hazırlanıyor</span>
+          <button id="finish-image-open" class="finish-expand" type="button" aria-haspopup="dialog" aria-label="Görseli tam ekran aç" data-i18n-attr="aria-label:export.still.open"><span class="finish-expand-chip" aria-hidden="true"></span></button>
+        </figure>
+        <div class="finish-still-actions"><p id="finish-look" class="finish-look" role="group" aria-label="Görselin arka planı" data-i18n-attr="aria-label:export.still.lookGroup" hidden><span class="finish-look-label" aria-hidden="true" data-i18n="export.still.lookLabel">Görsel:</span> <button type="button" class="finish-look-option" data-look="studyo" aria-pressed="true" data-i18n="export.still.studio">Stüdyo</button><span class="finish-look-sep" aria-hidden="true">|</span><button type="button" class="finish-look-option" data-look="aksam" aria-pressed="false" data-i18n="export.still.evening">Akşam</button><span class="finish-look-sep" aria-hidden="true">|</span><button type="button" class="finish-look-option" data-look="atmosfer" data-fresh="true" data-ahead="false" aria-pressed="false" data-i18n="export.still.atmosphere">Atmosfer</button></p></div>
+        <!-- Tur 1: the honest state line, right after the picture (text and mode from src/strings/tr.js, set by main.js) -->
+        <div id="finish-state" class="finish-state" role="note" data-mode=""><b id="finish-state-title" class="finish-state-title"></b><p id="finish-state-body" class="finish-state-body"></p></div>
+        <p id="order-summary-design" class="order-summary-design" hidden></p><div class="finish-name-row"><label class="finish-name" for="finish-piece-title"><span class="finish-name-label" data-i18n="export.sheet.nameLabel">Tasarımın adı</span><textarea id="finish-piece-title" rows="1" maxlength="80" autocomplete="off" autocorrect="off" autocapitalize="sentences" enterkeyhint="done" spellcheck="false" data-lpignore="true" data-1p-ignore="true"></textarea></label><button id="order-summary-save" class="button finish-save" type="button" aria-describedby="finish-save-state" data-i18n="export.sheet.save">Kaydet</button></div><p id="finish-save-state" class="finish-save-state" role="status" aria-live="polite"></p>
+        </div>
+        <div class="finish-details">
+        <p class="finish-facts"><span id="finish-meta" class="finish-meta"></span> <span id="order-summary-count" class="order-summary-count"></span></p>
+        <details id="finish-parts" class="finish-parts"><summary><span id="finish-parts-line" class="finish-parts-line"></span><span class="finish-parts-open" data-i18n="export.sheet.partsOpen">Parça listesi</span></summary>
+        <table class="order-summary-table">
+          <caption data-i18n="export.sheet.partsCaption">Parçalar</caption>
+          <thead><tr><th scope="col" data-i18n="export.sheet.colPart">Parça</th><th scope="col" data-i18n="export.sheet.colSize">Boy</th><th scope="col" data-i18n="export.sheet.colCount">Adet</th></tr></thead>
+          <tbody id="order-summary-materials"></tbody>
+        </table></details>
+        <div class="finish-portre-card"><button id="finish-portre-view" class="finish-portre-view" type="button" aria-haspopup="dialog" aria-label="Kartı tam ekran göster" data-i18n-attr="aria-label:export.card.view"><span id="finish-portre-thumb" class="finish-portre-thumb" data-state="loading" aria-hidden="true"><span class="finish-portre-spin"></span><span class="finish-portre-mark"></span></span></button><button id="finish-portre" class="finish-portre" type="button" aria-haspopup="dialog"><span class="finish-portre-text"><span class="finish-portre-title" data-i18n="export.card.title">Tasarım kartın</span><span class="finish-portre-line" data-i18n="export.card.line">Bu dizilime özgü. Taşı ya da sırayı değiştirirsen kart da değişir.</span><span class="finish-portre-open" data-i18n="export.card.open">Kartı aç</span></span></button></div>
+        <!-- Tur 1: the price. The shipping sentence directly above the total, the total once, «örnek fiyat» once, the breakdown as a disclosure. -->
+        <section id="finish-price" class="finish-price" aria-labelledby="finish-price-title">
+          <h3 id="finish-price-title" class="finish-price-title"></h3>
+          <p id="finish-price-shipping" class="finish-price-shipping"></p>
+          <p id="finish-price-totalrow" class="finish-price-total"><span id="finish-price-label"></span><b id="finish-price-total"></b></p>
+          <p id="finish-price-tax" class="finish-price-note" hidden></p>
+          <p id="finish-price-note" class="finish-price-note"></p>
+          <details id="finish-breakdown" class="finish-breakdown"><summary id="finish-breakdown-summary"></summary><div id="finish-breakdown-body"></div></details>
+        </section>
+        <label id="finish-note-field" class="finish-note-field" for="finish-note" hidden><span id="finish-note-label" class="finish-name-label"></span><textarea id="finish-note" rows="2" maxlength="300"></textarea></label>
+        <div id="finish-actions-slot"></div>
+        <details id="finish-extra" class="finish-extra">
+          <summary data-i18n="export.sheet.more">Daha fazla</summary>
+          <details id="finish-more" class="finish-more">
+            <summary data-i18n="export.sheet.moreFile">Dosya olarak sakla</summary>
+            <div class="finish-more-actions">
+              <button id="order-summary-json" class="button" type="button" data-i18n="export.sheet.moreDownloadFile">Dosya olarak indir</button>
+              <button id="finish-recovered-draft" class="button" type="button" data-i18n="export.sheet.recoveredDraft" hidden>Yedek taslağı indir</button>
+            </div>
+          </details>
+        </details>
+        <p id="order-summary-action-status" class="help-text finish-file-status" role="status" aria-live="polite"></p>
+        <p class="finish-atelier-more"><a id="finish-ask" class="finish-ask" target="_blank" rel="noopener noreferrer"></a><button id="finish-uretim" class="button" type="button" data-owner-gate="hidden" data-i18n="export.sheet.uretim" hidden>Üretim şeması</button></p>
+        </div>
+      </div>
+      <div class="finish-footer">
+        <div class="finish-actions">
+          <div class="finish-fit-row"><p id="finish-fit" class="finish-fit" hidden></p><button id="finish-fit-apply" class="button finish-fit-apply" type="button" hidden></button></div>
+          <!-- Tur 1: shown only while orders are open (deneme, acik): the consent, the total and «Sipariş ver». Texts come from src/strings/tr.js. -->
+          <div id="finish-order" class="finish-order" hidden>
+            <label class="finish-consent" for="finish-consent"><input id="finish-consent" type="checkbox" required /><span id="finish-consent-text" class="finish-consent-text"></span></label>
+            <p id="finish-order-shipping" class="finish-order-next"></p>
+            <div class="finish-order-row"><span class="finish-order-amount"><b id="finish-order-total" class="finish-order-total"></b><small id="finish-order-note" class="finish-order-note"></small></span><button id="finish-order-go" class="button button-primary finish-order-go" type="button" disabled aria-describedby="finish-order-next finish-order-status"></button></div>
+            <p id="finish-order-next" class="finish-order-next"></p>
+            <p id="finish-order-status" class="finish-order-status" role="status" aria-live="polite" tabindex="-1"></p>
+            <button id="finish-order-back" class="button finish-order-back" type="button" hidden></button>
+          </div>
+          <!-- the keep / share / picture actions: in the footer while orders are closed, in the sheet's body while they are open (main.js moves this block) -->
+          <div id="finish-actions-block" class="finish-actions-block">
+            <button id="finish-save-main" class="button button-primary finish-save-main" type="button"></button>
+            <div class="finish-two">
+              <button id="finish-share" class="button finish-sharebtn" type="button" aria-controls="finish-share-choices" aria-expanded="false"></button>
+              <button id="finish-image-download" class="button" type="button"></button>
+            </div>
+            <div class="finish-pop"><p id="finish-send-status" class="finish-send-status" role="status" aria-live="polite"></p>
+              <div id="finish-share-choices" class="finish-share-choices" role="group" hidden>
+                <p id="finish-copy-note" class="finish-copy-note"></p><button id="finish-share-copy" class="button" type="button" aria-describedby="finish-copy-note"></button><button id="finish-share-system" class="button" type="button" hidden></button><label id="finish-share-field" class="finish-share-field" hidden><span class="sr-only" data-i18n="export.sheet.shareLinkLabel">Tasarım bağlantısı</span><input id="finish-share-link" type="text" readonly /></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="finish-viewer" class="finish-viewer" aria-label="Tam ekran görüntü" data-i18n-attr="aria-label:export.viewer.label">
+      <img id="finish-viewer-image" class="finish-viewer-image" alt="" />
+      <p id="finish-viewer-wait" class="finish-viewer-wait" role="status" data-i18n="export.viewer.wait" hidden>Kart hazırlanıyor…</p>
+      <button id="finish-viewer-close" class="dialog-close finish-viewer-close" type="button" aria-label="Kapat" data-i18n-attr="aria-label:common.action.close" autofocus><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </dialog>
+    <dialog id="price-dialog" class="workshop-dialog price-dialog" aria-labelledby="price-dialog-title">
+      <header class="price-dialog-head"><h2 id="price-dialog-title"></h2><button id="price-dialog-close" class="dialog-close" type="button" autofocus><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button></header>
+      <div id="price-dialog-body" class="price-dialog-body"></div>
+    </dialog>
+    <dialog id="share-open-dialog" class="workshop-dialog share-open-dialog" aria-labelledby="share-open-title" aria-describedby="share-open-detail">
+      <h2 id="share-open-title" data-i18n="export.share.openTitle">Paylaşılan tasarım açılsın mı?</h2>
+      <span id="share-open-strand" class="share-open-strand" aria-hidden="true"></span><p id="share-open-detail" class="share-open-detail"></p>
+      <p class="help-text" data-i18n="export.share.openNote">Şu anki tasarımının yerine geçer. Geri al ile dönebilirsin.</p>
+      <div class="dialog-actions"><button id="share-open-cancel" class="button" type="button" data-i18n="export.share.openCancel">Vazgeç</button><button id="share-open-accept" class="button button-primary" type="button" data-i18n="export.share.openAccept" autofocus>Aç</button></div>
+    </dialog>
+    <dialog id="production-dialog" class="workshop-dialog operator-dialog" aria-labelledby="production-title">
+      <header class="operator-dialog-header">
+        <h2 id="production-title">Üretim taslağı</h2>
+        <div class="dialog-actions">
+          <button id="production-close" class="button" type="button">Kapat</button>
+          <button id="production-print" class="button button-primary" type="button">Yazdır / PDF</button>
+          <button id="production-revision-export" class="button" type="button">Föy revizyonunu indir</button>
+          <button id="production-revision-save-owner" class="button" type="button" hidden>Föyü hesaba kaydet</button>
+        </div>
+      </header>
+      <p id="production-summary"></p>
+      <section id="production-offers" aria-labelledby="production-offers-title" hidden>
+        <div class="production-offer-heading">
+          <h3 id="production-offers-title">Hesaptaki teklifler</h3>
+          <button id="production-offer-refresh" type="button">Yenile</button>
+        </div>
+        <p id="production-offer-status" role="status"></p>
+        <label id="production-offer-choice" hidden>İncelenecek teklif <select id="production-offer-select"></select></label>
+        <article id="production-offer-card" aria-labelledby="production-offer-name" hidden>
+          <h4 id="production-offer-name"></h4>
+          <p id="production-offer-state" class="production-offer-state"></p>
+          <dl id="production-offer-facts" class="production-offer-facts"></dl>
+          <p class="help-text">Fiyat yalnızca ürün bedelidir. Vergi ve kargo ayrıca belirlenir.</p>
+          <figure class="production-offer-schematic">
+            <div id="production-offer-diagram" aria-hidden="true"></div>
+            <figcaption>Arşivdeki parça sırası · şema. Renkler parça gruplarını ayırır.</figcaption>
+          </figure>
+          <p id="production-offer-assembly"></p>
+          <p id="production-offer-materials"></p>
+          <details id="production-offer-order">
+            <summary>Arşivdeki tam parça sırası</summary>
+            <ol id="production-offer-rows"></ol>
+          </details>
+          <p id="production-offer-receipt" tabindex="-1" hidden></p>
+          <div id="production-offer-confirmation" hidden>
+            <p id="production-offer-accept-help" class="help-text">Kabul kaydı bu teklif ve arşiv sürümüne bağlanır. Ödeme ve üretim ayrı adımlardır.</p>
+            <label class="production-offer-confirm">
+              <input id="production-offer-confirm" type="checkbox" /> Arşivdeki tasarımı, adedi, ölçüyü ve ürün bedelini inceledim.
+            </label>
+            <button id="production-offer-accept" type="button" aria-describedby="production-offer-accept-help" disabled>Bu teklifi kabul et</button>
+          </div>
+          <section id="production-checkout" aria-labelledby="production-checkout-title" hidden>
+            <h5 id="production-checkout-title">Demo ödeme hazırlığı</h5>
+            <p id="production-checkout-help" class="help-text">Demo mağaza bağlantısı, teklifin adedi ve ürün bedeli doğrulanır.</p>
+            <button id="production-checkout-start" type="button" aria-describedby="production-checkout-help" hidden disabled>Demo ödeme taslağını hazırla</button>
+            <p id="production-checkout-status" role="status" tabindex="-1"></p>
+            <dl id="production-checkout-record" class="production-offer-facts" tabindex="-1" hidden></dl>
+            <form id="production-checkout-recovery" aria-labelledby="production-checkout-recovery-title" aria-describedby="production-checkout-recovery-help" hidden>
+              <h6 id="production-checkout-recovery-title">Mevcut demo taslağını doğrula</h6>
+              <p id="production-checkout-recovery-help" class="help-text">Özgün demo mağazasının okuma kaydındaki tam taslak kimliğini gir. Eşleşen taslak bu hazırlığa bağlanır ve inceleme sürer.</p>
+              <div id="production-checkout-recovery-delivery" hidden>
+                <p class="help-text">Seçilen demo siparişi <strong id="production-checkout-recovery-order"></strong></p>
+                <button id="production-checkout-recovery-clear" type="button">Sipariş seçimini kaldır</button>
+              </div>
+              <label class="setting-field" for="production-checkout-recovery-draft">Shopify taslak kimliği (GID)
+                <input id="production-checkout-recovery-draft" maxlength="1024" pattern="gid:\/\/shopify\/DraftOrder\/[1-9][0-9]*" placeholder="gid://shopify/DraftOrder/123" autocomplete="off" spellcheck="false" autocapitalize="off" required />
+              </label>
+              <label class="setting-field" for="production-checkout-recovery-key">Yerel stok operatörü anahtarı
+                <input id="production-checkout-recovery-key" type="password" maxlength="43" pattern="[A-Za-z0-9_\-]{43}" autocomplete="off" spellcheck="false" autocapitalize="off" required />
+              </label>
+              <button id="production-checkout-recovery-submit" type="submit">Taslağı doğrula ve bağla</button>
+            </form>
+            <section id="production-demo-order" aria-labelledby="production-demo-order-title" hidden>
+              <h6 id="production-demo-order-title">Demo sipariş kaydı</h6>
+              <p id="production-demo-order-status" role="status"></p>
+              <dl id="production-demo-order-record" class="production-offer-facts" hidden></dl>
+              <button id="production-order-worksheet-open" type="button" aria-haspopup="dialog" aria-controls="production-order-worksheet-dialog" hidden>Operatör prova föyünü aç</button>
+              <button id="production-order-inbox-toggle" type="button" aria-expanded="false" aria-controls="production-order-inbox" hidden>Operatör bildirimleri</button>
+              <section id="production-order-inbox" aria-label="Operatör bildirimleri" hidden>
+                <p class="help-text" id="production-order-inbox-help">Yalnız bu teklifin demo mağazasından gelen bildirimler gösterilir. Bir bildirimi seçtiğinde sağlayıcı kaydı yeniden okunur.</p>
+                <form id="production-order-inbox-form" aria-describedby="production-order-inbox-help">
+                  <label for="production-order-inbox-key">Yerel stok operatörü anahtarı</label>
+                  <input id="production-order-inbox-key" type="password" maxlength="43" pattern="[A-Za-z0-9_\-]{43}" autocomplete="off" spellcheck="false" autocapitalize="off" required />
+                  <button id="production-order-inbox-load" type="submit">Bildirimleri getir</button>
+                </form>
+                <p id="production-order-inbox-status" role="status" tabindex="-1"></p>
+                <ul id="production-order-inbox-deliveries" role="list" aria-label="Demo sipariş bildirimleri" hidden></ul>
+                <button id="production-order-inbox-next" type="button" hidden>Daha eski bildirimler</button>
+              </section>
+            </section>
+          </section>
+        </article>
+      </section>
+      <ul id="production-holds"></ul>
+      <p id="production-revision-status" role="status"></p>
+      <div class="production-binding-input" id="production-binding-input">
+        <div class="file-picker">
+          <span id="production-bindings-label" class="file-picker-title">Ölçüm eşleştirme taslakları</span>
+          <input id="production-bindings" class="file-picker-input" type="file" accept=".json,application/json" multiple aria-labelledby="production-bindings-label production-bindings-button" aria-describedby="production-bindings-name" data-file-name="production-bindings-name" />
+          <label id="production-bindings-button" class="button file-picker-button" for="production-bindings">Dosya seç</label>
+          <span id="production-bindings-name" class="file-picker-name">Dosya seçilmedi</span>
+        </div>
+        <p id="production-binding-status" role="status"></p>
+        <p class="production-binding-lock help-text">Montaj formu bu föy revizyonuna bağlı. Eşleştirmeyi değiştirmek için taslağı indirip föyü yeniden aç.</p>
+      </div>
+      <details id="production-intent-panel">
+        <summary>Montaj prova formu</summary>
+        <p>Fiziksel ölçü hedefini ve parça bağlantılarını gir. Montaj taslağını föy revizyonuyla birlikte sakla.</p>
+        <p id="production-intent-status" role="status"></p>
+        <fieldset id="production-intent-form" hidden>
+          <legend>Fiziksel montaj girdileri</legend>
+          <div class="dialog-actions">
+            <button id="production-intent-export" type="button">Montaj taslağını indir</button>
+            <button id="production-intent-import" type="button">Montaj taslağı aç</button>
+            <input id="production-intent-file" type="file" accept=".json,application/json" hidden />
+          </div>
+          <p id="production-intent-measurement"></p>
+          <div id="production-intent-target" class="production-intent-fields" role="group" aria-label="Bitmiş ölçü hedefi"></div>
+          <details>
+            <summary>İp, uçlar ve kapama</summary>
+            <div id="production-intent-assembly" class="production-intent-fields"></div>
+          </details>
+          <details id="production-intent-parts">
+            <summary>Parça lotları ve bağlantılar</summary>
+            <label class="production-intent-slot">Föydeki parça <select id="production-intent-slot"></select></label>
+            <div id="production-intent-placement" class="production-intent-fields"></div>
+          </details>
+          <div id="production-stock" hidden>
+            <label>Yerel stok operatörü anahtarı <input id="production-stock-key" type="password" maxlength="43" autocomplete="off" spellcheck="false" /></label>
+            <button id="production-stock-check" type="button" aria-controls="production-stock-details">Stok kayıtlarıyla karşılaştır</button>
+            <p id="production-stock-status" role="status"></p>
+            <details id="production-stock-details" hidden>
+              <summary>Stok karşılaştırma ayrıntıları</summary>
+              <ul id="production-stock-results"></ul>
+            </details>
+            <details id="production-reservation-panel">
+              <summary>Montaj provası için stok ayırma</summary>
+              <p>Ayırma sürelidir. Üretim föyü fiziksel onayı bekler.</p>
+              <label>Prova için ürün adedi <input id="production-reservation-copies" type="number" min="1" max="100" step="1" value="1" inputmode="numeric" /></label>
+              <div class="dialog-actions">
+                <button id="production-reservation-create" type="button">Prova için ayır</button>
+                <button id="production-reservation-refresh" type="button">Aktif ayırmaları göster</button>
+              </div>
+              <p id="production-reservation-status" role="status"></p>
+              <ul id="production-reservations" aria-label="Bu arşivdeki aktif ayırmalar"></ul>
+            </details>
+            <details id="production-pilots-panel" hidden>
+              <summary>Fiziksel numune föyleri</summary>
+              <p>Yeni numune için tek ürünlük aktif ayırmayı aç. Kaydedilmiş numuneyi ayırma bitince de okuyabilirsin.</p>
+              <button id="production-pilots-refresh" type="button">Kaydedilmiş numuneleri göster</button>
+              <p id="production-pilots-status" role="status"></p>
+              <ul id="production-pilots" aria-label="Bu arşivdeki numuneler"></ul>
+            </details>
+            <details id="production-quotes-panel">
+              <summary>Satış teklifi taslakları</summary>
+              <p id="production-quote-guidance">Teklif, bir aktif ayırmanın fiziksel prova kaydıyla hazırlanır.</p>
+              <fieldset id="production-quote-review" hidden>
+                <legend>Fiziksel prova kaydı</legend>
+                <p id="production-quote-reservation"></p>
+                <div class="production-intent-fields">
+                  <label>Operatör referansı <input id="production-quote-operator" maxlength="200" /></label>
+                  <label>Prova kanıtı referansı <input id="production-quote-evidence" maxlength="200" /></label>
+                  <label>Ölçülen bitmiş uzunluk (mm) <input id="production-quote-measured" inputmode="decimal" maxlength="12" /></label>
+                  <label>Föydeki ölçüm yöntemi <input id="production-quote-method" maxlength="200" /></label>
+                  <label>Doğrulanan kesim adedi <input id="production-quote-cut-count" type="number" min="1" max="100" step="1" inputmode="numeric" /></label>
+                  <label>Tek parça kesim uzunluğu (mm) <input id="production-quote-cut-length" inputmode="decimal" maxlength="12" /></label>
+                </div>
+                <div class="production-quote-checks" role="group" aria-label="Fiziksel prova kontrolleri">
+                  <label><input id="production-quote-lot" type="checkbox" /> Prova, ayırmadaki lotlarla eşleşiyor</label>
+                  <label><input id="production-quote-ports" type="checkbox" /> Parça yönleri ve bağlantıları denendi</label>
+                  <label><input id="production-quote-closure" type="checkbox" /> Kapama veya düğüm denendi</label>
+                  <label><input id="production-quote-cut" type="checkbox" /> Tüm kesimler aynı lottan ve tek parça</label>
+                </div>
+                <button id="production-quote-save" type="button">Teklifi kaydet</button>
+              </fieldset>
+              <button id="production-quote-refresh" type="button">Kaydedilmiş teklifleri göster</button>
+              <p id="production-quote-status" role="status"></p>
+              <ul id="production-quotes" aria-label="Bu arşivdeki teklifler"></ul>
+            </details>
+          </div>
+        </fieldset>
+      </details>
+      <table class="production-rows-table"><caption>Parça sırası</caption><thead><tr><th scope="col">Sıra</th><th scope="col">Parça</th><th scope="col">Konum</th><th scope="col">Nominal</th><th scope="col">Kaynak kodu</th></tr></thead><tbody id="production-rows"></tbody></table>
+      <h3>Görsel parça adetleri</h3>
+      <ul id="production-bom"></ul>
+      <h3>Montaj adımları</h3>
+      <ol id="production-operations"></ol>
+    </dialog>
+    <dialog id="production-order-worksheet-dialog" class="operator-dialog" aria-labelledby="production-order-worksheet-title" aria-describedby="production-order-worksheet-warning">
+      <header class="demo-worksheet-toolbar">
+        <h2 id="production-order-worksheet-title">Operatör prova föyü</h2>
+        <button id="production-order-worksheet-print" class="button button-primary" type="button" hidden>Yazdır / PDF</button>
+        <button id="production-order-worksheet-close" class="button" type="button">Kapat</button>
+      </header>
+      <div class="demo-worksheet-body">
+        <p class="demo-worksheet-warning" id="production-order-worksheet-warning">DEMO · ÜRETİME VERİLMEZ <span>HOLD · Üretim beklemede</span></p>
+        <form id="production-order-worksheet-form">
+          <label for="production-order-worksheet-key">Yerel stok operatörü anahtarı</label>
+          <p id="production-order-worksheet-help">Arşivdeki sipariş föyünü açmak için anahtarı gir.</p>
+          <input id="production-order-worksheet-key" type="password" maxlength="43" autocomplete="off" spellcheck="false" autocapitalize="off" aria-describedby="production-order-worksheet-help" required autofocus />
+          <button id="production-order-worksheet-load" class="button button-primary" type="submit">Föyü doğrula</button>
+        </form>
+        <p id="production-order-worksheet-status" role="status"></p>
+        <article id="production-order-worksheet-content" aria-labelledby="production-order-worksheet-name" hidden></article>
+      </div>
+    </dialog>
+    <div id="production-order-worksheet-print-root" hidden></div>
+
+    <dialog id="physical-pilot-dialog" class="operator-dialog" aria-labelledby="physical-pilot-title" aria-describedby="physical-pilot-warning">
+      <header class="demo-worksheet-toolbar">
+        <h2 id="physical-pilot-title">Fiziksel prova</h2>
+        <button id="physical-pilot-print" class="button button-primary" type="button" hidden>Föyü yazdır / PDF</button>
+        <button id="physical-pilot-close" class="button" type="button">Kapat</button>
+      </header>
+      <div class="demo-worksheet-body">
+        <p class="demo-worksheet-warning" id="physical-pilot-warning">HOLD · Üretim beklemede</p>
+        <p id="physical-pilot-status" role="status" aria-atomic="true"></p>
+        <div id="physical-pilot-workspace"></div>
+      </div>
+    </dialog>
+    <div id="physical-pilot-print-root" hidden></div>
+    <dialog id="kesfet-picker" class="kesfet-picker" data-view="home" aria-labelledby="kesfet-picker-title" aria-describedby="kesfet-picker-hint kesfet-picker-note">
+      <button id="kesfet-picker-handle" class="kesfet-picker-handle" type="button" aria-label="Aşağı kaydırarak kapat" title="Aşağı kaydırarak kapat"><span aria-hidden="true"></span></button><div id="kesfet-picker-header" class="kesfet-picker-header sheet-head" data-depth="0"><button id="kesfet-picker-back" class="kesfet-icon-button kesfet-picker-back sh-back" type="button" aria-label="Geri" title="Geri" hidden><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 6l-6 6 6 6"/></svg><span id="kesfet-picker-back-label" class="sh-back-label"></span></button><h2 id="kesfet-picker-title" class="sh-title">Nasıl başlayalım?</h2><p id="kesfet-picker-sub" class="sh-sub" hidden></p><p id="kesfet-picker-hint" class="sr-only">Tek seçim: bir seçkiye basınca Modeller ona geçer; seçili seçki basılı görünür.</p><button id="kesfet-picker-close" class="kesfet-icon-button sh-close" type="button" aria-label="Seçimi kapat" title="Kapat (Esc)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+      <div class="kesfet-kind kesfet-picker-kind" role="group" aria-label="Takı türü"><button id="kesfet-picker-kind-bracelet" type="button" aria-pressed="true">Bileklik</button><button id="kesfet-picker-kind-necklace" type="button" aria-pressed="false">Kolye</button></div>
+      <nav id="kesfet-picker-home" class="kesfet-picker-home" aria-label="Başlama yolları">
+        <button id="kesfet-row-featured" class="kesfet-door kesfet-row" type="button"><span class="kesfet-door-title">Hazır modeller</span><span class="kesfet-door-note">Öne çıkan, hazır tasarımlar</span></button>
+        <button id="kesfet-row-zodiac" class="kesfet-door kesfet-row" type="button"><span class="kesfet-door-title">Burca göre</span><span class="kesfet-door-note">Burcunla anılan taşlardan modeller</span></button>
+        <button id="kesfet-row-color" class="kesfet-door kesfet-row" type="button"><span class="kesfet-door-title">Renge göre</span><span class="kesfet-door-note">Bir renk seç, modeller o renkte gelsin</span></button>
+        <button id="kesfet-door-planner" class="kesfet-door kesfet-row" type="button"><span class="kesfet-door-title">Taşa göre</span><span class="kesfet-door-note">2–4 taş seç, model önerelim</span></button>
+        <button id="kesfet-row-more" class="kesfet-door kesfet-row" type="button"><span class="kesfet-door-title">Element, enerji, niyet</span><span class="kesfet-door-note">Geleneksel anlamlarına göre</span></button>
+        <button id="kesfet-door-blank" class="kesfet-door kesfet-row" type="button"><span class="kesfet-door-title">Sıfırdan başla</span><span class="kesfet-door-note">Taşları tek tek sen seç</span></button>
+      </nav>
+      <div class="kesfet-picker-top">
+      <section id="kesfet-group-selection" class="kesfet-group" aria-labelledby="kesfet-group-selection-title" hidden><h3 id="kesfet-group-selection-title" aria-hidden="true">Seçtiğin taşlarla</h3><div id="kesfet-options-selection" role="group" aria-labelledby="kesfet-group-selection-title" class="kesfet-options"></div></section>
+      </div>
+      <section id="kesfet-group-featured" class="kesfet-group" aria-labelledby="kesfet-group-featured-title"><h3 id="kesfet-group-featured-title" class="sr-only">Öne çıkanlar</h3><div id="kesfet-options-featured" role="group" aria-labelledby="kesfet-group-featured-title" class="kesfet-options"></div></section>
+      <section id="kesfet-group-color" class="kesfet-group" aria-labelledby="kesfet-group-color-title"><h3 id="kesfet-group-color-title">Renge göre</h3><div id="kesfet-options-color" role="group" aria-labelledby="kesfet-group-color-title" class="kesfet-swatches"></div></section>
+      <section id="kesfet-group-zodiac" class="kesfet-group kesfet-group-more" aria-labelledby="kesfet-group-zodiac-title"><details id="kesfet-zodiac-more" class="kesfet-more"><summary><h3 id="kesfet-group-zodiac-title">Burçlar</h3></summary><div id="kesfet-options-zodiac" role="group" aria-labelledby="kesfet-group-zodiac-title" class="kesfet-options kesfet-options-3"></div><p id="kesfet-zodiac-soon" class="kesfet-zodiac-soon" hidden></p></details></section>
+      <section id="kesfet-group-element" class="kesfet-group kesfet-group-more" aria-labelledby="kesfet-group-element-title"><details id="kesfet-element-more" class="kesfet-more"><summary><h3 id="kesfet-group-element-title">Elementler</h3></summary><div id="kesfet-options-element" role="group" aria-labelledby="kesfet-group-element-title" class="kesfet-options kesfet-options-2"></div></details></section>
+      <section id="kesfet-group-elements" class="kesfet-group kesfet-group-more" aria-labelledby="kesfet-group-elements-title"><details id="kesfet-more" class="kesfet-more"><summary><h3 id="kesfet-group-elements-title">İkili elementler</h3></summary><div id="kesfet-options-elements" role="group" aria-labelledby="kesfet-group-elements-title" class="kesfet-options kesfet-options-2"></div></details></section>
+      <p id="kesfet-picker-note" class="kesfet-picker-note">Temalar yalnız görsel etikettir; fiziksel, bilimsel ya da sağlık etkisi iddiası yoktur.</p>
+    </dialog>
+    <div id="toast" class="toast" aria-hidden="true" hidden></div>
+    <p id="toast-live" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+    <dialog id="material-intake-dialog" class="workshop-dialog operator-dialog" aria-labelledby="material-intake-title">
+      <header class="operator-dialog-header">
+        <h2 id="material-intake-title">Malzeme giriş taslağı</h2>
+      </header>
+      <p>Fotoğraf, AI JSON ve GLB dosyalarını bu cihazda incele. Dosya adları JSON’daki adlarla eşleşmeli.</p>
+      <details><summary>AI için sabit talimat</summary><textarea id="material-intake-prompt" rows="7" readonly aria-label="Kopyalanabilir AI talimatı"></textarea></details>
+      <div class="intake-inputs">
+        <div class="file-picker">
+          <span id="material-intake-json-label" class="file-picker-title">AI JSON</span>
+          <input id="material-intake-json" class="file-picker-input" type="file" accept=".json,application/json" aria-labelledby="material-intake-json-label material-intake-json-button" aria-describedby="material-intake-json-name" data-file-name="material-intake-json-name" />
+          <label id="material-intake-json-button" class="button file-picker-button" for="material-intake-json">Dosya seç</label>
+          <span id="material-intake-json-name" class="file-picker-name">Dosya seçilmedi</span>
+        </div>
+        <div class="file-picker">
+          <span id="material-intake-photos-label" class="file-picker-title">Fotoğraflar</span>
+          <input id="material-intake-photos" class="file-picker-input" type="file" accept="image/jpeg,image/png,image/webp" multiple aria-labelledby="material-intake-photos-label material-intake-photos-button" aria-describedby="material-intake-photos-name" data-file-name="material-intake-photos-name" />
+          <label id="material-intake-photos-button" class="button file-picker-button" for="material-intake-photos">Dosya seç</label>
+          <span id="material-intake-photos-name" class="file-picker-name">Dosya seçilmedi</span>
+        </div>
+        <div class="file-picker">
+          <span id="material-intake-model-label" class="file-picker-title">GLB</span>
+          <input id="material-intake-model" class="file-picker-input" type="file" accept=".glb,model/gltf-binary" aria-labelledby="material-intake-model-label material-intake-model-button" aria-describedby="material-intake-model-name" data-file-name="material-intake-model-name" />
+          <label id="material-intake-model-button" class="button file-picker-button" for="material-intake-model">Dosya seç</label>
+          <span id="material-intake-model-name" class="file-picker-name">Dosya seçilmedi</span>
+        </div>
+      </div>
+      <p id="material-intake-status" role="status"></p>
+      <ul id="material-intake-results"></ul>
+      <label class="intake-review"><input id="material-intake-reviewed" type="checkbox" disabled /> Dosyaları inceledim. Ölçü, stok ve satış onayı bekliyor.</label>
+      <details id="material-measurement" hidden>
+        <summary>Fiziksel ölçüm kaydı</summary>
+        <p>Ölçüleri fiziksel örnekten gir. AI önerileri bu alanlara aktarılmaz. Delik yoksa adet 0, çap boş olmalı.</p>
+        <div class="intake-inputs">
+          <label>Varyant <select id="material-measurement-variant"></select></label>
+          <div class="intake-dimensions">
+            <label>X (mm) <input id="material-measurement-x" type="number" min="0.001" step="any" inputmode="decimal" /></label>
+            <label>Y (mm) <input id="material-measurement-y" type="number" min="0.001" step="any" inputmode="decimal" /></label>
+            <label>Z (mm) <input id="material-measurement-z" type="number" min="0.001" step="any" inputmode="decimal" /></label>
+            <label>Delik adedi <input id="material-measurement-hole-count" type="number" min="0" step="1" inputmode="numeric" /></label>
+            <label>Delik çapı (mm) <input id="material-measurement-hole-diameter" type="number" min="0.001" step="any" inputmode="decimal" /></label>
+          </div>
+          <label>Ölçüm yöntemi <input id="material-measurement-method" maxlength="120" /></label>
+          <label>Ölçüm kaydı veya örnek kodu <input id="material-measurement-reference" maxlength="160" /></label>
+        </div>
+        <label><input id="material-measurement-confirm" type="checkbox" /> Bu değerleri fiziksel örnekten ölçtüm.</label>
+        <button id="material-measurement-export" type="button" disabled>Ölçüm revizyonunu indir</button>
+        <p id="material-measurement-status" role="status"></p>
+        <fieldset id="material-binding" class="intake-inputs" hidden>
+          <legend>Katalog eşleştirme taslağı</legend>
+          <label>Katalog parçası <select id="material-binding-component"></select></label>
+          <p>Aynı GLB birden çok malzemede kullanılabilir. Fiziksel örneğe karşılık gelen parçayı seç.</p>
+          <label>Önerilen SKU <input id="material-binding-sku" maxlength="64" /></label>
+          <button id="material-binding-export" type="button">Eşleştirme taslağını indir</button>
+          <p id="material-binding-status" role="status"></p>
+        </fieldset>
+        <fieldset id="material-admission" class="intake-inputs" hidden>
+          <legend>Yeni parça için görsel katalog onayı</legend>
+          <p>Her kaynak fotoğrafı aç. Dijital kontrol, seçilen formun delik eksenini ve GLB’nin model ölçülerini gösterir. Fiziksel ölçüm ayrı kayıttadır.</p>
+          <label>Kaynak fotoğrafı <select id="material-admission-photo" aria-describedby="material-admission-photo-status"></select></label>
+          <img id="material-admission-photo-preview" alt="" hidden />
+          <p id="material-admission-photo-status" role="status"></p>
+          <label>Görsel form
+            <select id="material-admission-form" aria-describedby="material-admission-form-help">
+              <option value="" disabled selected>Formu seç</option>
+              <option value="round">Yuvarlak · 4/6/8 mm</option>
+              <option value="irregular-threaded">Düzensiz delikli · kaynak boyutu</option>
+              <option value="inclusion-threaded">İç kapanımlı delikli · kaynak boyutu</option>
+              <option value="offset-pendant">Kolye ucu · +Z delikli</option>
+            </select>
+          </label>
+          <p id="material-admission-form-help">Düzensiz ve iç kapanımlı parçalar ile kolye uçları kaynak GLB’nin biçimi ve ölçüsüyle dizilir.</p>
+          <div id="material-admission-bore-fields" class="intake-inputs" hidden>
+            <p id="material-admission-bore-help">+Z deliğinin merkezini, GLB’nin kaynak orijinine göre X ve Y yönünde milimetre olarak gir.</p>
+            <label>Delik merkezi X (mm) <input id="material-admission-bore-x" type="number" step="any" min="-20" max="20" aria-describedby="material-admission-bore-help" autocomplete="off" required disabled /></label>
+            <label>Delik merkezi Y (mm) <input id="material-admission-bore-y" type="number" step="any" min="-20" max="20" aria-describedby="material-admission-bore-help" autocomplete="off" required disabled /></label>
+          </div>
+          <p id="material-admission-geometry" role="status"></p>
+          <div id="material-admission-preparation" class="intake-inputs" hidden>
+            <p id="material-admission-preparation-help">Yayın kopyası, GLB’nin ek JSON bilgilerini ve sıfır hizalama kaydını düzenler. Özgün GLB’yi sakla. Özel 3B efektler varsa kopyanın gömülü görünümünü özgün görsel hedefle karşılaştır.</p>
+            <button id="material-admission-prepare" type="button" aria-describedby="material-admission-preparation-help">GLB yayın kopyasını hazırla</button>
+          </div>
+          <div class="intake-model-review">
+            <button id="material-admission-model-preview" type="button" aria-controls="material-admission-model-views" disabled>GLB’yi üç açıdan göster</button>
+            <p id="material-admission-model-status" role="status"></p>
+            <div id="material-admission-model-views" hidden>
+              <div class="intake-model-angles" role="group" aria-label="GLB inceleme açısı">
+                <button type="button" data-material-review-view="oblique" aria-pressed="true">Çapraz</button>
+                <button type="button" data-material-review-view="side" aria-pressed="false">Yandan</button>
+                <button type="button" data-material-review-view="bore" aria-pressed="false">Delik (+Y)</button>
+              </div>
+              <img id="material-admission-model-image" alt="" width="288" height="288" />
+              <p id="material-admission-model-source"></p>
+            </div>
+          </div>
+          <p id="material-admission-instructions">Aynı GLB’nin görünümünü ve yönünü buradaki açılardan veya yerel bir 3B görüntüleyiciden incele. Kullanım hakkı, GLB’nin gömülü dokularını da kapsamalı.</p>
+          <label>Katalogda görünen ad <input id="material-admission-name" maxlength="160" required /></label>
+          <label>Operatör referansı <input id="material-admission-operator" maxlength="200" required /></label>
+          <label>Kullanım hakkı kaydı <input id="material-admission-rights" maxlength="200" required /></label>
+          <label>3B görsel inceleme kaydı <input id="material-admission-review" maxlength="200" required /></label>
+          <label>Katalogdaki parça rolü
+            <select id="material-admission-role" required><option value="">Seç</option><option value="stone">Taş</option><option value="bead">Boncuk</option><option value="pendant" disabled>Kolye ucu</option></select>
+          </label>
+          <label>Malzeme türü (isteğe bağlı)
+            <select id="material-admission-class" aria-describedby="material-admission-class-help"><option value="">Beyan yok</option></select>
+          </label>
+          <p id="material-admission-class-help">Türü bir malzeme kaydına dayandır. Katalogda tür etiketi görünür. Belge referansı özel onay dosyasında kalır.</p>
+          <div id="material-admission-class-fields" class="intake-inputs" hidden>
+            <label>Malzeme türü kanıt referansı <input id="material-admission-class-evidence" maxlength="200" autocomplete="off" /></label>
+            <label class="intake-admission-confirm"><input id="material-admission-class-confirm" type="checkbox" autocomplete="off" disabled /> <span id="material-admission-class-confirm-label">Seçtiğim türü bu malzeme kaydına dayanarak onaylıyorum.</span></label>
+          </div>
+          <label class="intake-admission-confirm"><input id="material-admission-confirm" type="checkbox" autocomplete="off" aria-describedby="material-admission-instructions" disabled /> <span id="material-admission-confirm-label">Bu GLB’nin görünümünü ve yönünü inceledim, görsel katalog için onaylıyorum.</span></label>
+          <button id="material-admission-export" type="button" disabled>Özel katalog onay dosyasını indir</button>
+          <p id="material-admission-status" role="status"></p>
+        </fieldset>
+      </details>
+      <div class="dialog-actions">
+        <button id="material-intake-close" class="button" type="button">Kapat</button>
+        <button id="material-intake-inspect" class="button button-primary" type="button">Dosyaları incele</button>
+        <button id="material-intake-export" class="button" type="button" disabled>Taslak kaydını indir</button>
+      </div>
+    </dialog>
+    <input type="file" id="import-file" accept=".json,application/json" hidden />
+  </body>
+</html>
