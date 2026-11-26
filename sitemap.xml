@@ -24,4 +24,19 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://tasarla.moryuna.com/es/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tasarla.moryuna.com/" />
   </url>
+  <url>
+    <loc>https://tasarla.moryuna.com/defter/taslar/ametist/</loc>
+  </url>
+  <url>
+    <loc>https://tasarla.moryuna.com/defter/taslar/aytasi/</loc>
+  </url>
+  <url>
+    <loc>https://tasarla.moryuna.com/defter/taslar/kaplan-gozu/</loc>
+  </url>
+  <url>
+    <loc>https://tasarla.moryuna.com/defter/</loc>
+  </url>
+  <url>
+    <loc>https://tasarla.moryuna.com/hikayemiz/</loc>
+  </url>
 </urlset>
