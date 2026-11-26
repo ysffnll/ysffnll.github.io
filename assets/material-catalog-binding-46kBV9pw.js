@@ -1,0 +1,1 @@
+export{r as parseMaterialCatalogBinding}from"./material-catalog-binding-DW_p4ERK.js";

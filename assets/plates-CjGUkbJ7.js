@@ -1,0 +1,1 @@
+export{t as FIXED_SCENES}from"./plates-DhvBq-zD.js";
