@@ -1,0 +1,1 @@
+export{t as FIXED_SCENES}from"./plates-DOJvr9w3.js";
