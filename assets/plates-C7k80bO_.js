@@ -1,0 +1,1 @@
+export{t as FIXED_SCENES}from"./plates-BNKoLp0p.js";
