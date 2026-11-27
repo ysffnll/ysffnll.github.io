@@ -1,0 +1,1 @@
+export{r as parseMaterialCatalogBinding}from"./material-catalog-binding-Cwg31K85.js";
